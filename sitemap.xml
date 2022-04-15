@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>https://freeeeeeeeedom.gitee.io/tags/index.html</loc>
+    
+    <lastmod>2022-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://freeeeeeeeedom.gitee.io/repository/index.html</loc>
+    
+    <lastmod>2022-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://freeeeeeeeedom.gitee.io/links/index.html</loc>
+    
+    <lastmod>2022-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://freeeeeeeeedom.gitee.io/categories/index.html</loc>
+    
+    <lastmod>2022-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://freeeeeeeeedom.gitee.io/books/index.html</loc>
+    
+    <lastmod>2022-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://freeeeeeeeedom.gitee.io/about/index.html</loc>
+    
+    <lastmod>2022-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://freeeeeeeeedom.gitee.io/404.html</loc>
+    
+    <lastmod>2022-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://freeeeeeeeedom.gitee.io/2022/04/15/hello-world/</loc>
+    
+    <lastmod>2022-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+
+  <url>
+    <loc>https://freeeeeeeeedom.gitee.io/</loc>
+    <lastmod>2022-04-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  
+
+  
+</urlset>
