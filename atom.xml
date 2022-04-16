@@ -6,15 +6,41 @@
   <link href="https://freeeeeeeeedom.gitee.io/atom.xml" rel="self"/>
   
   <link href="https://freeeeeeeeedom.gitee.io/"/>
-  <updated>2022-04-15T16:12:32.001Z</updated>
+  <updated>2022-04-16T04:41:10.946Z</updated>
   <id>https://freeeeeeeeedom.gitee.io/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>WhooooRui</name>
     
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>April 16th</title>
+    <link href="https://freeeeeeeeedom.gitee.io/2022/04/16/April-16th/"/>
+    <id>https://freeeeeeeeedom.gitee.io/2022/04/16/April-16th/</id>
+    <published>2022-04-16T04:37:32.000Z</published>
+    <updated>2022-04-16T04:41:10.946Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="to-do"><a class="markdownIt-Anchor" href="#to-do"></a> To Do</h1><ul><li><input type="checkbox" id="checkbox0" /><label for="checkbox0">CS144 lab2</label></li><li><input type="checkbox" id="checkbox1" /><label for="checkbox1">Leetcode *3</label></li><li><input type="checkbox" id="checkbox2" /><label for="checkbox2">Leetcode 每日一题</label></li><li><input type="checkbox" id="checkbox3" /><label for="checkbox3">微信小程序</label></li><li><input type="checkbox" id="checkbox4" /><label for="checkbox4">计网实验</label></li><li><input type="checkbox" id="checkbox5" /><label for="checkbox5">数据库JDBC</label></li></ul><h1 id="总结"><a class="markdownIt-Anchor" href="#总结"></a> 总结</h1>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;to-do&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#to-do&quot;&gt;&lt;/a&gt; To Do&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input type=&quot;checkbox&quot; id=&quot;checkbox0&quot; /&gt;&lt;label for=&quot;check</summary>
+      
+    
+    
+    
+    <category term="Everday" scheme="https://freeeeeeeeedom.gitee.io/categories/Everday/"/>
+    
+    
+    <category term="2022_Spring" scheme="https://freeeeeeeeedom.gitee.io/tags/2022-Spring/"/>
+    
+  </entry>
   
   <entry>
     <title>微信小程序开发</title>
@@ -82,28 +108,6 @@
   </entry>
   
   <entry>
-    <title>Hello World</title>
-    <link href="https://freeeeeeeeedom.gitee.io/2022/04/15/hello-world/"/>
-    <id>https://freeeeeeeeedom.gitee.io/2022/04/15/hello-world/</id>
-    <published>2022-04-15T15:33:36.381Z</published>
-    <updated>2022-04-14T08:07:17.410Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="quick-start"><a class="markdownIt-Anchor" href="#quick-start"></a> Quick Start</h2><h3 id="create-a-new-post"><a class="markdownIt-Anchor" href="#create-a-new-post"></a> Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="run-server"><a class="markdownIt-Anchor" href="#run-server"></a> Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="generate-static-files"><a class="markdownIt-Anchor" href="#generate-static-files"></a> Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="deploy-to-remote-sites"><a class="markdownIt-Anchor" href="#deploy-to-remote-sites"></a> Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
-      
-    
-    
-    
-    
-    <category term="Start" scheme="https://freeeeeeeeedom.gitee.io/tags/Start/"/>
-    
-  </entry>
-  
-  <entry>
     <title>数据管理基础 ch48-53</title>
     <link href="https://freeeeeeeeedom.gitee.io/2022/04/15/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80-ch48-53/"/>
     <id>https://freeeeeeeeedom.gitee.io/2022/04/15/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80-ch48-53/</id>
@@ -158,11 +162,11 @@
   </entry>
   
   <entry>
-    <title>2022-4-15</title>
-    <link href="https://freeeeeeeeedom.gitee.io/2022/04/15/2022-4-15/"/>
-    <id>https://freeeeeeeeedom.gitee.io/2022/04/15/2022-4-15/</id>
+    <title>April 15th</title>
+    <link href="https://freeeeeeeeedom.gitee.io/2022/04/15/April-15th/"/>
+    <id>https://freeeeeeeeedom.gitee.io/2022/04/15/April-15th/</id>
     <published>2022-04-15T04:03:28.000Z</published>
-    <updated>2022-04-15T07:18:49.972Z</updated>
+    <updated>2022-04-16T04:40:52.152Z</updated>
     
     <content type="html"><![CDATA[<h1 id="to-do"><a class="markdownIt-Anchor" href="#to-do"></a> To Do</h1><ul><li><input type="checkbox" id="checkbox0" checked="true" /><label for="checkbox0">CS144 lab1</label></li><li><input type="checkbox" id="checkbox1" /><label for="checkbox1">CS144 lab2</label></li><li><input type="checkbox" id="checkbox2" checked="true" /><label for="checkbox2">核酸检测</label></li><li><input type="checkbox" id="checkbox3" checked="true" /><label for="checkbox3">Leetcode 每日一题</label></li><li><input type="checkbox" id="checkbox4" /><label for="checkbox4">Leetcode *3</label></li><li><input type="checkbox" id="checkbox5" /><label for="checkbox5">微信小程序</label></li><li><input type="checkbox" id="checkbox6" /><label for="checkbox6">计网实验</label></li><li><input type="checkbox" id="checkbox7" /><label for="checkbox7">数据库JDBC</label></li></ul><h1 id="总结"><a class="markdownIt-Anchor" href="#总结"></a> 总结</h1>]]></content>
     
@@ -374,11 +378,11 @@
   </entry>
   
   <entry>
-    <title>2022-4-14</title>
-    <link href="https://freeeeeeeeedom.gitee.io/2022/04/14/2022-4-14/"/>
-    <id>https://freeeeeeeeedom.gitee.io/2022/04/14/2022-4-14/</id>
+    <title>April 14th</title>
+    <link href="https://freeeeeeeeedom.gitee.io/2022/04/14/April-14th/"/>
+    <id>https://freeeeeeeeedom.gitee.io/2022/04/14/April-14th/</id>
     <published>2022-04-14T10:28:54.000Z</published>
-    <updated>2022-04-15T04:05:08.161Z</updated>
+    <updated>2022-04-16T04:38:28.577Z</updated>
     
     <content type="html"><![CDATA[<h1 id="to-do"><a class="markdownIt-Anchor" href="#to-do"></a> To Do</h1><ul><li><input type="checkbox" id="checkbox0" checked="true" /><label for="checkbox0">搭建博客</label></li><li><input type="checkbox" id="checkbox1" /><label for="checkbox1">CS144 lab1</label></li><li><input type="checkbox" id="checkbox2" /><label for="checkbox2">CS144 lab2</label></li><li><input type="checkbox" id="checkbox3" checked="true" /><label for="checkbox3">锻炼 5km</label></li><li><input type="checkbox" id="checkbox4" /><label for="checkbox4">核酸检测</label></li><li><input type="checkbox" id="checkbox5" /><label for="checkbox5">Leetcode *3</label></li><li><input type="checkbox" id="checkbox6" /><label for="checkbox6">微信小程序</label></li><li><input type="checkbox" id="checkbox7" /><label for="checkbox7">计网实验</label></li><li><input type="checkbox" id="checkbox8" /><label for="checkbox8">数据库JDBC</label></li></ul><h1 id="总结"><a class="markdownIt-Anchor" href="#总结"></a> 总结</h1><ul><li><p>string.assign()用法</p><p>assign方法可以理解为先将原字符串清空，然后赋予新的值作替换。</p><p>返回类型为 string类型的引用。其常用的重载也有下列几种：</p><ol><li><p>string&amp; assign(const string&amp; str);</p><p>替换字串</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">string a = <span class="string">&quot;HELLO&quot;</span>;</span><br><span class="line">a.<span class="built_in">assign</span>(<span class="string">&quot;Go&quot;</span>);</span><br><span class="line">cout&lt;&lt;a&lt;&lt;endl;</span><br><span class="line"><span class="comment">//打印结果为Go</span></span><br></pre></td></tr></table></figure></li><li><p>string&amp; assign ( const string&amp; str, size_t pos, size_t n );</p><p>将str的内容从位置pos起的n个字符作为原字串的新内容赋给原字串</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">string testassign = <span class="string">&quot;Hello World&quot;</span>;</span><br><span class="line">testassign.<span class="built_in">assign</span>(<span class="string">&quot;Come on!&quot;</span>, <span class="number">5</span>, <span class="number">2</span>);</span><br><span class="line">cout&lt;&lt;testassign&lt;&lt;endl;</span><br><span class="line"><span class="comment">//打印结果为 on</span></span><br></pre></td></tr></table></figure></li><li><p>string&amp; assign ( const char* s, size_t n );</p><p>将字符数组或者字符串的首n个字符替换原字符串内容</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">string testassign = <span class="string">&quot;Hello World&quot;</span>;</span><br><span class="line">testassign.<span class="built_in">assign</span>(<span class="string">&quot;go back to China&quot;</span>, <span class="number">7</span>);</span><br><span class="line">cout&lt;&lt;testassign&lt;&lt;endl;</span><br><span class="line"><span class="comment">//打印结果为go back</span></span><br></pre></td></tr></table></figure></li><li><p>string&amp; assign ( const char* s );</p><p>将字符串或者字符数组作为新内容替换原字串</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">string testassign = <span class="string">&quot;Hello World&quot;</span>;</span><br><span class="line"><span class="type">char</span> ch[<span class="number">20</span>] = <span class="string">&quot;go back to shanghai&quot;</span>;</span><br><span class="line">testassign.<span class="built_in">assign</span>(ch);</span><br><span class="line">cout&lt;&lt;testassign&lt;&lt;endl;</span><br><span class="line"><span class="comment">//打印结果为 go back to shanghai</span></span><br></pre></td></tr></table></figure></li><li><p>string&amp; assign ( size_t n, char c );</p><p>将原字串替换为n个字符c</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">string testassign = <span class="string">&quot;Hello World&quot;</span>;</span><br><span class="line"><span class="type">char</span> ch = <span class="string">&#x27;?&#x27;</span>;</span><br><span class="line">testassign.<span class="built_in">assign</span>(<span class="number">5</span>, ch);</span><br><span class="line">cout&lt;&lt;testassign&lt;&lt;endl;</span><br><span class="line"><span class="comment">//打印结果为?????</span></span><br></pre></td></tr></table></figure></li><li><p>template <class InputIterator>  string&amp; assign ( InputIterator first, InputIterator last );</p><p>需要include <iterator></p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">string testassign = <span class="string">&quot;Hello World&quot;</span>;</span><br><span class="line">testassign.<span class="built_in">assign</span>(<span class="built_in">istream_iterator</span>&lt;<span class="type">char</span>&gt;(cin), <span class="built_in">istream_iterator</span>&lt;<span class="type">char</span>&gt;());</span><br><span class="line"><span class="comment">//输入abcde</span></span><br><span class="line">cout&lt;&lt;testassign&lt;&lt;endl;</span><br><span class="line"><span class="comment">//打印结果为 abcde</span></span><br></pre></td></tr></table></figure></li></ol></li><li><p>5km耗时 26min26s</p></li><li><p>图床SMMS+Picgo</p></li><li><p>解决了复选框的显示问题</p></li><li><p>不过今天Leetcode没刷，cs144也没完成</p></li></ul>]]></content>
     
