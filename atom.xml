@@ -6,7 +6,7 @@
   <link href="https://freeeeeeeeedom.gitee.io/atom.xml" rel="self"/>
   
   <link href="https://freeeeeeeeedom.gitee.io/"/>
-  <updated>2022-04-17T15:02:08.266Z</updated>
+  <updated>2022-04-17T15:55:04.062Z</updated>
   <id>https://freeeeeeeeedom.gitee.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>April 18th</title>
+    <link href="https://freeeeeeeeedom.gitee.io/2022/04/18/April-18th/"/>
+    <id>https://freeeeeeeeedom.gitee.io/2022/04/18/April-18th/</id>
+    <published>2022-04-17T16:54:07.000Z</published>
+    <updated>2022-04-17T15:55:04.062Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="to-do"><a class="markdownIt-Anchor" href="#to-do"></a> To Do</h1><ul><li><input type="checkbox" id="checkbox0" /><label for="checkbox0">CS144 lab2</label></li><li><input type="checkbox" id="checkbox1" checked="true" /><label for="checkbox1">Leetcode *3</label></li><li><input type="checkbox" id="checkbox2" checked="true" /><label for="checkbox2">Leetcode 每日一题</label></li><li><input type="checkbox" id="checkbox3" /><label for="checkbox3">微信小程序</label></li><li><input type="checkbox" id="checkbox4" /><label for="checkbox4">计网实验z</label></li><li><input type="checkbox" id="checkbox5" /><label for="checkbox5">JDBC整理</label></li><li>[ ]</li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;to-do&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#to-do&quot;&gt;&lt;/a&gt; To Do&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input type=&quot;checkbox&quot; id=&quot;checkbox0&quot; /&gt;&lt;label for=&quot;check</summary>
+      
+    
+    
+    
+    <category term="Everday" scheme="https://freeeeeeeeedom.gitee.io/categories/Everday/"/>
+    
+    
+    <category term="2022_Spring" scheme="https://freeeeeeeeedom.gitee.io/tags/2022-Spring/"/>
+    
+  </entry>
   
   <entry>
     <title>JDBC</title>
@@ -336,23 +362,6 @@
     <id>https://freeeeeeeeedom.gitee.io/2022/04/17/%E4%BD%8D%E8%BF%90%E7%AE%97/</id>
     <published>2022-04-17T05:12:40.000Z</published>
     <updated>2022-04-17T05:16:56.571Z</updated>
-    
-    
-    
-    
-    <category term="数据结构与算法" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
-    
-    
-    <category term="Leetcode" scheme="https://freeeeeeeeedom.gitee.io/tags/Leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>子串匹配</title>
-    <link href="https://freeeeeeeeedom.gitee.io/2022/04/17/%E5%AD%90%E4%B8%B2%E5%8C%B9%E9%85%8D/"/>
-    <id>https://freeeeeeeeedom.gitee.io/2022/04/17/%E5%AD%90%E4%B8%B2%E5%8C%B9%E9%85%8D/</id>
-    <published>2022-04-17T05:12:32.000Z</published>
-    <updated>2022-04-17T05:17:09.966Z</updated>
     
     
     
