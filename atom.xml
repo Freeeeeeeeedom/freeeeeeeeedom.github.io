@@ -6,7 +6,7 @@
   <link href="https://freeeeeeeeedom.gitee.io/atom.xml" rel="self"/>
   
   <link href="https://freeeeeeeeedom.gitee.io/"/>
-  <updated>2022-04-18T05:23:44.914Z</updated>
+  <updated>2022-04-18T05:26:44.096Z</updated>
   <id>https://freeeeeeeeedom.gitee.io/</id>
   
   <author>
@@ -17,15 +17,40 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>CS144 Lab 3</title>
+    <link href="https://freeeeeeeeedom.gitee.io/2022/04/18/CS144-Lab-3/"/>
+    <id>https://freeeeeeeeedom.gitee.io/2022/04/18/CS144-Lab-3/</id>
+    <published>2022-04-18T05:26:44.000Z</published>
+    <updated>2022-04-18T05:26:44.096Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>CS144 Lab 2</title>
     <link href="https://freeeeeeeeedom.gitee.io/2022/04/18/CS144-Lab-2/"/>
     <id>https://freeeeeeeeedom.gitee.io/2022/04/18/CS144-Lab-2/</id>
     <published>2022-04-18T05:23:44.000Z</published>
-    <updated>2022-04-18T05:23:44.914Z</updated>
+    <updated>2022-04-18T05:26:01.938Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="cs144-lab2"><a class="markdownIt-Anchor" href="#cs144-lab2"></a> CS144 Lab2</h1>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;cs144-lab2&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#cs144-lab2&quot;&gt;&lt;/a&gt; CS144 Lab2&lt;/h1&gt;
+</summary>
+      
     
     
     
+    <category term="Computer Network" scheme="https://freeeeeeeeedom.gitee.io/categories/Computer-Network/"/>
     
+    
+    <category term="CS144" scheme="https://freeeeeeeeedom.gitee.io/tags/CS144/"/>
     
   </entry>
   
@@ -609,41 +634,6 @@
     <updated>2022-04-18T05:14:11.229Z</updated>
     
     <content type="html"><![CDATA[<table><thead><tr><th>题目</th><th>题解</th><th>难度</th><th>推荐指数</th></tr></thead><tbody><tr><td><a href="https://leetcode-cn.com/problems/repeated-dna-sequences/">187. 重复的DNA序列</a></td><td><a href="https://leetcode-cn.com/problems/repeated-dna-sequences/solution/gong-shui-san-xie-yi-ti-shuang-jie-hua-d-30pg/">LeetCode 题解链接</a></td><td>中等</td><td>🤩🤩🤩🤩</td></tr><tr><td><a href="https://leetcode-cn.com/problems/concatenated-words/">472. 连接词</a></td><td><a href="https://leetcode-cn.com/problems/concatenated-words/solution/gong-shui-san-xie-xu-lie-dpzi-fu-chuan-h-p7no/">LeetCode 题解链接</a></td><td>困难</td><td>🤩🤩🤩🤩</td></tr><tr><td><a href="https://leetcode-cn.com/problems/repeated-string-match/">686. 重复叠加字符串匹配</a></td><td><a href="https://leetcode-cn.com/problems/repeated-string-match/solution/gong-shui-san-xie-yi-ti-san-jie-qia-chan-3hbr/">LeetCode 题解链接</a></td><td>中等</td><td>🤩🤩🤩🤩</td></tr><tr><td><a href="https://leetcode-cn.com/problems/longest-duplicate-substring/">1044. 最长重复子串</a></td><td><a href="https://leetcode-cn.com/problems/longest-duplicate-substring/solution/gong-shui-san-xie-zi-fu-chuan-ha-xi-ying-hae9/">LeetCode 题解链接</a></td><td>困难</td><td>🤩🤩🤩🤩</td></tr></tbody></table>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;题目&lt;/th&gt;
-&lt;th&gt;题解&lt;/th&gt;
-&lt;th&gt;难度&lt;/th&gt;
-&lt;th&gt;推荐指数&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&quot;https://leetcode-cn.com/prob</summary>
-      
-    
-    
-    
-    <category term="数据结构与算法" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
-    
-    
-    <category term="Leetcode" scheme="https://freeeeeeeeedom.gitee.io/tags/Leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>字典树</title>
-    <link href="https://freeeeeeeeedom.gitee.io/2022/04/17/%E5%AD%97%E5%85%B8%E6%A0%91/"/>
-    <id>https://freeeeeeeeedom.gitee.io/2022/04/17/%E5%AD%97%E5%85%B8%E6%A0%91/</id>
-    <published>2022-04-17T05:12:49.000Z</published>
-    <updated>2022-04-18T05:13:58.935Z</updated>
-    
-    <content type="html"><![CDATA[<table><thead><tr><th>题目</th><th>题解</th><th>难度</th><th>推荐指数</th></tr></thead><tbody><tr><td><a href="https://leetcode-cn.com/problems/implement-trie-prefix-tree/">208. 实现 Trie (前缀树)</a></td><td><a href="https://leetcode-cn.com/problems/implement-trie-prefix-tree/solution/gong-shui-san-xie-yi-ti-shuang-jie-er-we-esm9/">LeetCode 题解链接</a></td><td>中等</td><td>🤩🤩🤩🤩🤩</td></tr><tr><td><a href="https://leetcode-cn.com/problems/design-add-and-search-words-data-structure/">211. 添加与搜索单词 - 数据结构设计</a></td><td><a href="https://leetcode-cn.com/problems/design-add-and-search-words-data-structure/solution/gong-shui-san-xie-yi-ti-shuang-jie-er-we-un94/">LeetCode 题解链接</a></td><td>中等</td><td>🤩🤩🤩🤩🤩</td></tr><tr><td><a href="https://leetcode-cn.com/problems/word-search-ii/">212. 单词搜索 II</a></td><td><a href="https://leetcode-cn.com/problems/word-search-ii/solution/gong-shui-san-xie-yi-ti-shuang-jie-hui-s-am8f/">LeetCode 题解链接</a></td><td>困难</td><td>🤩🤩🤩🤩</td></tr><tr><td><a href="https://leetcode-cn.com/problems/maximum-xor-of-two-numbers-in-an-array/">421. 数组中两个数的最大异或值</a></td><td><a href="https://leetcode-cn.com/problems/maximum-xor-of-two-numbers-in-an-array/solution/gong-shui-san-xie-noxiang-xin-ke-xue-xi-bmjdg/">LeetCode 题解链接</a></td><td>中等</td><td>🤩🤩🤩🤩</td></tr><tr><td><a href="https://leetcode-cn.com/problems/map-sum-pairs/">677. 键值映射</a></td><td><a href="https://leetcode-cn.com/problems/map-sum-pairs/solution/gong-shui-san-xie-jie-he-dfs-de-trie-yun-i4xa/">LeetCode 题解链接</a></td><td>中等</td><td>🤩🤩🤩🤩</td></tr><tr><td><a href="https://leetcode-cn.com/problems/longest-word-in-dictionary/">720. 词典中最长的单词</a></td><td><a href="https://leetcode-cn.com/problems/longest-word-in-dictionary/solution/by-ac_oier-bmot/">LeetCode 题解链接</a></td><td>简单</td><td>🤩🤩🤩🤩</td></tr><tr><td><a href="https://leetcode-cn.com/problems/maximum-xor-with-an-element-from-array/">1707. 与数组中元素的最大异或值</a></td><td><a href="https://leetcode-cn.com/problems/maximum-xor-with-an-element-from-array/solution/gong-shui-san-xie-jie-zhe-ge-wen-ti-lai-lypqr/">LeetCode 题解链接</a></td><td>困难</td><td>🤩🤩🤩</td></tr></tbody></table>]]></content>
     
     
       
