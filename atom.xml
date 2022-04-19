@@ -6,7 +6,7 @@
   <link href="https://freeeeeeeeedom.gitee.io/atom.xml" rel="self"/>
   
   <link href="https://freeeeeeeeedom.gitee.io/"/>
-  <updated>2022-04-18T16:10:50.036Z</updated>
+  <updated>2022-04-19T07:07:55.349Z</updated>
   <id>https://freeeeeeeeedom.gitee.io/</id>
   
   <author>
@@ -17,15 +17,42 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>数据管理基础 ch54-57</title>
+    <link href="https://freeeeeeeeedom.gitee.io/2022/04/19/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80-ch54-57/"/>
+    <id>https://freeeeeeeeedom.gitee.io/2022/04/19/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80-ch54-57/</id>
+    <published>2022-04-19T07:07:55.000Z</published>
+    <updated>2022-04-19T07:07:55.349Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>April 19th</title>
     <link href="https://freeeeeeeeedom.gitee.io/2022/04/19/April-19th/"/>
     <id>https://freeeeeeeeedom.gitee.io/2022/04/19/April-19th/</id>
     <published>2022-04-18T16:10:50.000Z</published>
-    <updated>2022-04-18T16:10:50.036Z</updated>
+    <updated>2022-04-18T16:11:15.714Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="to-do"><a class="markdownIt-Anchor" href="#to-do"></a> To Do</h1><ul><li><p><input type="checkbox" id="checkbox0" /><label for="checkbox0">CS144 lab2</label></p></li><li><p><input type="checkbox" id="checkbox1" /><label for="checkbox1">Leetcode *3</label></p></li><li><p><input type="checkbox" id="checkbox2" checked="true" /><label for="checkbox2">Leetcode 每日一题</label></p></li><li><p><input type="checkbox" id="checkbox3" /><label for="checkbox3">微信小程序</label></p></li><li><p><input type="checkbox" id="checkbox4" /><label for="checkbox4">计网实验</label></p></li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;to-do&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#to-do&quot;&gt;&lt;/a&gt; To Do&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;input type=&quot;checkbox&quot; id=&quot;checkbox0&quot; /&gt;&lt;label for=&quot;c</summary>
+      
     
     
     
+    <category term="Everday" scheme="https://freeeeeeeeedom.gitee.io/categories/Everday/"/>
     
+    
+    <category term="2022_Spring" scheme="https://freeeeeeeeedom.gitee.io/tags/2022-Spring/"/>
     
   </entry>
   
@@ -76,9 +103,9 @@
     <link href="https://freeeeeeeeedom.gitee.io/2022/04/18/April-18th/"/>
     <id>https://freeeeeeeeedom.gitee.io/2022/04/18/April-18th/</id>
     <published>2022-04-17T16:54:07.000Z</published>
-    <updated>2022-04-18T04:50:10.084Z</updated>
+    <updated>2022-04-18T16:11:19.440Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="to-do"><a class="markdownIt-Anchor" href="#to-do"></a> To Do</h1><ul><li><input type="checkbox" id="checkbox0" /><label for="checkbox0">CS144 lab2</label></li><li><input type="checkbox" id="checkbox1" checked="true" /><label for="checkbox1">Leetcode *3</label></li><li><input type="checkbox" id="checkbox2" checked="true" /><label for="checkbox2">Leetcode 每日一题</label></li><li><input type="checkbox" id="checkbox3" /><label for="checkbox3">微信小程序</label></li><li><input type="checkbox" id="checkbox4" /><label for="checkbox4">计网实验z</label></li><li><input type="checkbox" id="checkbox5" checked="true" /><label for="checkbox5">JDBC整理</label></li><li>[ ]</li></ul>]]></content>
+    <content type="html"><![CDATA[<h1 id="to-do"><a class="markdownIt-Anchor" href="#to-do"></a> To Do</h1><ul><li><input type="checkbox" id="checkbox0" /><label for="checkbox0">CS144 lab2</label></li><li><input type="checkbox" id="checkbox1" checked="true" /><label for="checkbox1">Leetcode *3</label></li><li><input type="checkbox" id="checkbox2" checked="true" /><label for="checkbox2">Leetcode 每日一题</label></li><li><input type="checkbox" id="checkbox3" /><label for="checkbox3">微信小程序</label></li><li><input type="checkbox" id="checkbox4" /><label for="checkbox4">计网实验</label></li><li><input type="checkbox" id="checkbox5" checked="true" /><label for="checkbox5">JDBC整理</label></li></ul>]]></content>
     
     
       
@@ -581,41 +608,6 @@
     <updated>2022-04-18T05:14:30.491Z</updated>
     
     <content type="html"><![CDATA[<table><thead><tr><th>题目</th><th>题解</th><th>难度</th><th>推荐指数</th></tr></thead><tbody><tr><td><a href="https://leetcode-cn.com/problems/nim-game/">292. Nim 游戏</a></td><td><a href="https://leetcode-cn.com/problems/nim-game/solution/gong-shui-san-xie-noxiang-xin-ke-xue-xi-wmz2t/">LeetCode 题解链接</a></td><td>中等</td><td>🤩🤩🤩🤩</td></tr><tr><td><a href="https://leetcode-cn.com/problems/chalkboard-xor-game/">810. 黑板异或游戏</a></td><td><a href="https://leetcode-cn.com/problems/chalkboard-xor-game/solution/gong-shui-san-xie-noxiang-xin-ke-xue-xi-ges7k/">LeetCode 题解链接</a></td><td>困难</td><td>🤩🤩🤩🤩</td></tr><tr><td><a href="https://leetcode-cn.com/problems/stone-game/">877. 石子游戏</a></td><td><a href="https://leetcode-cn.com/problems/stone-game/solution/gong-shui-san-xie-jing-dian-qu-jian-dp-j-wn31/">LeetCode 题解链接</a></td><td>中等</td><td>🤩🤩🤩🤩</td></tr><tr><td><a href="https://leetcode-cn.com/problems/stone-game-ix/">2029. 石子游戏 IX</a></td><td><a href="https://leetcode-cn.com/problems/stone-game-ix/solution/gong-shui-san-xie-fen-qing-kuang-tao-lun-h1oa/">LeetCode 题解链接</a></td><td>中等</td><td>🤩🤩🤩🤩</td></tr></tbody></table>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;题目&lt;/th&gt;
-&lt;th&gt;题解&lt;/th&gt;
-&lt;th&gt;难度&lt;/th&gt;
-&lt;th&gt;推荐指数&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&quot;https://leetcode-cn.com/prob</summary>
-      
-    
-    
-    
-    <category term="数据结构与算法" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
-    
-    
-    <category term="Leetcode" scheme="https://freeeeeeeeedom.gitee.io/tags/Leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>后缀数组</title>
-    <link href="https://freeeeeeeeedom.gitee.io/2022/04/17/%E5%90%8E%E7%BC%80%E6%95%B0%E7%BB%84/"/>
-    <id>https://freeeeeeeeedom.gitee.io/2022/04/17/%E5%90%8E%E7%BC%80%E6%95%B0%E7%BB%84/</id>
-    <published>2022-04-17T05:13:08.000Z</published>
-    <updated>2022-04-18T05:14:22.595Z</updated>
-    
-    <content type="html"><![CDATA[<table><thead><tr><th>题目</th><th>题解</th><th>难度</th><th>推荐指数</th></tr></thead><tbody><tr><td><a href="https://leetcode-cn.com/problems/longest-duplicate-substring/">1044. 最长重复子串</a></td><td><a href="https://leetcode-cn.com/problems/longest-duplicate-substring/solution/gong-shui-san-xie-zi-fu-chuan-ha-xi-ying-hae9/">LeetCode 题解链接</a></td><td>困难</td><td>🤩🤩🤩🤩</td></tr></tbody></table>]]></content>
     
     
       
