@@ -2,6 +2,60 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://freeeeeeeeedom.gitee.io/about/index.html</loc>
+    
+    <lastmod>2022-04-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://freeeeeeeeedom.gitee.io/music/index.html</loc>
+    
+    <lastmod>2022-04-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://freeeeeeeeedom.gitee.io/movies/index.html</loc>
+    
+    <lastmod>2022-04-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://freeeeeeeeedom.gitee.io/link/index.html</loc>
+    
+    <lastmod>2022-04-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://freeeeeeeeedom.gitee.io/books/index.html</loc>
+    
+    <lastmod>2022-04-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://freeeeeeeeedom.gitee.io/Gallery/index.html</loc>
+    
+    <lastmod>2022-04-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://freeeeeeeeedom.gitee.io/2022/04/17/JDBC/</loc>
     
     <lastmod>2022-04-19</lastmod>
@@ -560,51 +614,6 @@
   </url>
   
   <url>
-    <loc>https://freeeeeeeeedom.gitee.io/Gallery/index.html</loc>
-    
-    <lastmod>2022-04-19</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://freeeeeeeeedom.gitee.io/books/index.html</loc>
-    
-    <lastmod>2022-04-19</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://freeeeeeeeedom.gitee.io/music/index.html</loc>
-    
-    <lastmod>2022-04-19</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://freeeeeeeeedom.gitee.io/movies/index.html</loc>
-    
-    <lastmod>2022-04-19</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://freeeeeeeeedom.gitee.io/link/index.html</loc>
-    
-    <lastmod>2022-04-19</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://freeeeeeeeedom.gitee.io/categories/index.html</loc>
     
     <lastmod>2022-04-19</lastmod>
@@ -633,15 +642,6 @@
   
   <url>
     <loc>https://freeeeeeeeedom.gitee.io/404.html</loc>
-    
-    <lastmod>2022-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://freeeeeeeeedom.gitee.io/about/index.html</loc>
     
     <lastmod>2022-04-15</lastmod>
     
