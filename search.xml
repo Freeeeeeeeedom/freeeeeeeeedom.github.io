@@ -8,9 +8,23 @@
       <link href="/2022/04/20/April-20th/"/>
       <url>/2022/04/20/April-20th/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h1 id="to-do"><a class="markdownIt-Anchor" href="#to-do"></a> To Do</h1><ul><li><input type="checkbox" id="checkbox0" /><label for="checkbox0">CS144 lab2</label></li><li><input type="checkbox" id="checkbox1" checked="true" /><label for="checkbox1">Leetcode *3 （整理了一下）</label></li><li><input type="checkbox" id="checkbox2" checked="true" /><label for="checkbox2">Leetcode 每日一题</label></li><li><input type="checkbox" id="checkbox3" /><label for="checkbox3">微信小程序</label></li><li><input type="checkbox" id="checkbox4" /><label for="checkbox4">计网实验</label></li><li><input type="checkbox" id="checkbox5" checked="true" /><label for="checkbox5">体育舞蹈（好难）</label></li><li><input type="checkbox" id="checkbox6" /><label for="checkbox6">核酸</label></li></ul><h1 id="总结"><a class="markdownIt-Anchor" href="#总结"></a> 总结</h1>]]></content>
       
       
+      <categories>
+          
+          <category> Everday </category>
+          
+          <category> 2022_大二下 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 2022_Spring </tag>
+            
+        </tags>
       
     </entry>
     
@@ -54,6 +68,8 @@
       <categories>
           
           <category> Everday </category>
+          
+          <category> 2022_大二下 </category>
           
       </categories>
       
@@ -133,6 +149,8 @@
       <categories>
           
           <category> Everday </category>
+          
+          <category> 2022_大二下 </category>
           
       </categories>
       
@@ -1150,6 +1168,8 @@
           
           <category> Everday </category>
           
+          <category> 2022_大二下 </category>
+          
       </categories>
       
       
@@ -1174,6 +1194,8 @@
       <categories>
           
           <category> Everday </category>
+          
+          <category> 2022_大二下 </category>
           
       </categories>
       
@@ -1318,6 +1340,8 @@
       <categories>
           
           <category> Everday </category>
+          
+          <category> 2022_大二下 </category>
           
       </categories>
       
@@ -1532,6 +1556,8 @@
       <categories>
           
           <category> Everday </category>
+          
+          <category> 2022_大二下 </category>
           
       </categories>
       
