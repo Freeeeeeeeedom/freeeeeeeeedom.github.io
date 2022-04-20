@@ -120,15 +120,14 @@
     <link href="https://freeeeeeeeedom.gitee.io/2022/04/18/CS144-Lab-2/"/>
     <id>https://freeeeeeeeedom.gitee.io/2022/04/18/CS144-Lab-2/</id>
     <published>2022-04-18T05:23:44.000Z</published>
-    <updated>2022-04-19T16:02:31.494Z</updated>
+    <updated>2022-04-20T15:36:36.518Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="cs144-lab2"><a class="markdownIt-Anchor" href="#cs144-lab2"></a> CS144 Lab2</h1>]]></content>
+    <content type="html"><![CDATA[<h1 id="lab-checkpoint-2-the-tcp-receiver"><a class="markdownIt-Anchor" href="#lab-checkpoint-2-the-tcp-receiver"></a> <strong>Lab Checkpoint 2: the TCP receiver</strong></h1><h1 id="1-overview"><a class="markdownIt-Anchor" href="#1-overview"></a> 1 Overview</h1><ul><li>在实验0中，你实现了一个流控制的字节流（ByteStream）的抽象。</li><li>在实验1中，你创建了一个StreamReassembler，它接受一连串的子串，所有这些子串都是从同一个字节流中摘录出来的，并将它们重新组合成原始流，从同一个字节流中摘录的子串，并将它们重新组装到原始流中。</li></ul>]]></content>
     
     
       
       
-    <summary type="html">&lt;h1 id=&quot;cs144-lab2&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#cs144-lab2&quot;&gt;&lt;/a&gt; CS144 Lab2&lt;/h1&gt;
-</summary>
+    <summary type="html">&lt;h1 id=&quot;lab-checkpoint-2-the-tcp-receiver&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#lab-checkpoint-2-the-tcp-receiver&quot;&gt;&lt;/a&gt; &lt;strong&gt;Lab Checkpoin</summary>
       
     
     
