@@ -44,9 +44,9 @@
     <link href="https://freeeeeeeeedom.gitee.io/2022/04/19/April-19th/"/>
     <id>https://freeeeeeeeedom.gitee.io/2022/04/19/April-19th/</id>
     <published>2022-04-18T16:10:50.000Z</published>
-    <updated>2022-04-19T12:52:58.392Z</updated>
+    <updated>2022-04-19T16:01:37.895Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="to-do"><a class="markdownIt-Anchor" href="#to-do"></a> To Do</h1><ul><li><p><input type="checkbox" id="checkbox0" /><label for="checkbox0">CS144 lab2</label></p></li><li><p><input type="checkbox" id="checkbox1" /><label for="checkbox1">Leetcode *3</label></p></li><li><p><input type="checkbox" id="checkbox2" checked="true" /><label for="checkbox2">Leetcode 每日一题</label></p></li><li><p><input type="checkbox" id="checkbox3" /><label for="checkbox3">微信小程序</label></p></li><li><p><input type="checkbox" id="checkbox4" /><label for="checkbox4">计网实验</label></p></li></ul>]]></content>
+    <content type="html"><![CDATA[<h1 id="to-do"><a class="markdownIt-Anchor" href="#to-do"></a> To Do</h1><ul><li><p><input type="checkbox" id="checkbox0" /><label for="checkbox0">CS144 lab2</label></p></li><li><p><input type="checkbox" id="checkbox1" checked="true" /><label for="checkbox1">Leetcode *3</label></p></li><li><p><input type="checkbox" id="checkbox2" checked="true" /><label for="checkbox2">Leetcode 每日一题</label></p></li><li><p><input type="checkbox" id="checkbox3" /><label for="checkbox3">微信小程序</label></p></li><li><p><input type="checkbox" id="checkbox4" /><label for="checkbox4">计网实验</label></p></li></ul>]]></content>
     
     
       
@@ -71,12 +71,14 @@
     <link href="https://freeeeeeeeedom.gitee.io/2022/04/18/CS144-Lab-3/"/>
     <id>https://freeeeeeeeedom.gitee.io/2022/04/18/CS144-Lab-3/</id>
     <published>2022-04-18T05:26:44.000Z</published>
-    <updated>2022-04-19T12:53:11.766Z</updated>
+    <updated>2022-04-19T16:02:19.761Z</updated>
     
     
     
     
     <category term="Computer-Network" scheme="https://freeeeeeeeedom.gitee.io/categories/Computer-Network/"/>
+    
+    <category term="CS144" scheme="https://freeeeeeeeedom.gitee.io/categories/Computer-Network/CS144/"/>
     
     
     <category term="CS144" scheme="https://freeeeeeeeedom.gitee.io/tags/CS144/"/>
@@ -88,7 +90,7 @@
     <link href="https://freeeeeeeeedom.gitee.io/2022/04/18/CS144-Lab-2/"/>
     <id>https://freeeeeeeeedom.gitee.io/2022/04/18/CS144-Lab-2/</id>
     <published>2022-04-18T05:23:44.000Z</published>
-    <updated>2022-04-19T12:53:09.415Z</updated>
+    <updated>2022-04-19T16:02:31.494Z</updated>
     
     <content type="html"><![CDATA[<h1 id="cs144-lab2"><a class="markdownIt-Anchor" href="#cs144-lab2"></a> CS144 Lab2</h1>]]></content>
     
@@ -102,6 +104,8 @@
     
     
     <category term="Computer-Network" scheme="https://freeeeeeeeedom.gitee.io/categories/Computer-Network/"/>
+    
+    <category term="CS144" scheme="https://freeeeeeeeedom.gitee.io/categories/Computer-Network/CS144/"/>
     
     
     <category term="CS144" scheme="https://freeeeeeeeedom.gitee.io/tags/CS144/"/>
@@ -139,7 +143,7 @@
     <link href="https://freeeeeeeeedom.gitee.io/2022/04/17/JDBC/"/>
     <id>https://freeeeeeeeedom.gitee.io/2022/04/17/JDBC/</id>
     <published>2022-04-17T13:38:34.000Z</published>
-    <updated>2022-04-19T13:12:42.409Z</updated>
+    <updated>2022-04-19T23:41:20.359Z</updated>
     
     <content type="html"><![CDATA[<h1 id="jdbc"><a class="markdownIt-Anchor" href="#jdbc"></a> JDBC</h1><h2 id="导入jdbc包"><a class="markdownIt-Anchor" href="#导入jdbc包"></a> 导入JDBC包</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.sql.* ;  <span class="comment">// for standard JDBC programs</span></span><br><span class="line"><span class="keyword">import</span> java.math.* ; <span class="comment">// for BigDecimal and BigInteger </span></span><br></pre></td></tr></table></figure><h2 id="注册jdbc驱动程序"><a class="markdownIt-Anchor" href="#注册jdbc驱动程序"></a> 注册JDBC驱动程序</h2><p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>C</mi><mi>l</mi><mi>a</mi><mi>s</mi><mi>s</mi><mi mathvariant="normal">.</mi><mi>f</mi><mi>o</mi><mi>r</mi><mi>N</mi><mi>a</mi><mi>m</mi><mi>e</mi><mo>(</mo><mo>)</mo></mrow><annotation encoding="application/x-tex">Class.forName()</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.07153em;">C</span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mord mathit">a</span><span class="mord mathit">s</span><span class="mord mathit">s</span><span class="mord mathrm">.</span><span class="mord mathit" style="margin-right:0.10764em;">f</span><span class="mord mathit">o</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit" style="margin-right:0.10903em;">N</span><span class="mord mathit">a</span><span class="mord mathit">m</span><span class="mord mathit">e</span><span class="mopen">(</span><span class="mclose">)</span></span></span></span></p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line"> Class.forName(<span class="string">&quot;oracle.jdbc.driver.OracleDriver&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">catch</span>(ClassNotFoundException ex) &#123;</span><br><span class="line">   System.out.println(<span class="string">&quot;Error: unable to load driver class!&quot;</span>);</span><br><span class="line">   System.exit(<span class="number">1</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="使用数据库url的用户名和密码"><a class="markdownIt-Anchor" href="#使用数据库url的用户名和密码"></a> 使用数据库URL的用户名和密码</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">static</span> <span class="keyword">final</span> <span class="type">String</span> <span class="variable">JDBC_DRIVER</span> <span class="operator">=</span> <span class="string">&quot;com.mysql.cj.jdbc.Driver&quot;</span>;</span><br><span class="line"><span class="keyword">static</span> <span class="keyword">final</span> <span class="type">String</span> <span class="variable">DB_URL</span> <span class="operator">=</span> <span class="string">&quot;jdbc:mysql://localhost:3306/lab&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">static</span> <span class="keyword">final</span> <span class="type">String</span> <span class="variable">USER</span> <span class="operator">=</span> <span class="string">&quot;root&quot;</span>;</span><br><span class="line"><span class="keyword">static</span> <span class="keyword">final</span> <span class="type">String</span> <span class="variable">PASS</span> <span class="operator">=</span> <span class="string">&quot;hurui011019&quot;</span>;</span><br><span class="line"><span class="type">Connection</span> <span class="variable">conn</span> <span class="operator">=</span> <span class="literal">null</span>;</span><br><span class="line">  conn = DriverManager.getConnection(DB_URL,USER,PASS);</span><br><span class="line"></span><br></pre></td></tr></table></figure><h2 id="jdbc-statement-对象"><a class="markdownIt-Anchor" href="#jdbc-statement-对象"></a> JDBC Statement 对象</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">Statement</span> <span class="variable">stmt</span> <span class="operator">=</span> <span class="literal">null</span>;</span><br><span class="line"><span class="keyword">try</span>&#123;</span><br><span class="line">stmt = conn.createStatement();</span><br><span class="line">...</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">catch</span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;<span class="keyword">finally</span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li>执行SQL语句</li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">String sql;</span><br><span class="line">         sql = <span class="string">&quot;SELECT emp_no, first_name, last_name, birth_date FROM Employees&quot;</span>;</span><br><span class="line">         <span class="type">ResultSet</span> <span class="variable">rs</span> <span class="operator">=</span> stmt.executeQuery(sql);</span><br></pre></td></tr></table></figure><h2 id="jdbc结果集"><a class="markdownIt-Anchor" href="#jdbc结果集"></a> JDBC结果集</h2><p>查看结果集</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span>(rs.next())&#123;</span><br><span class="line">                <span class="comment">//Retrieve by column name</span></span><br><span class="line">                <span class="type">int</span> <span class="variable">emp_no</span>  <span class="operator">=</span> rs.getInt(<span class="string">&quot;emp_no&quot;</span>);</span><br><span class="line">                <span class="type">String</span> <span class="variable">first_name</span> <span class="operator">=</span> rs.getString(<span class="string">&quot;first_name&quot;</span>);</span><br><span class="line">                <span class="type">String</span> <span class="variable">last_name</span> <span class="operator">=</span> rs.getString(<span class="string">&quot;last_name&quot;</span>);</span><br><span class="line"></span><br><span class="line">                <span class="comment">//Display values</span></span><br><span class="line">                System.out.print(<span class="string">&quot;ID: &quot;</span> + emp_no);</span><br><span class="line">                System.out.print(<span class="string">&quot;, First: &quot;</span> + first_name);</span><br><span class="line">                System.out.println(<span class="string">&quot;, Last: &quot;</span> + last_name);</span><br><span class="line">            &#125;</span><br></pre></td></tr></table></figure><img src="https://s2.loli.net/2022/04/18/SocJ48ihRdGMksO.png" alt="image-20220418000522566" style="zoom:67%;" />]]></content>
     
@@ -155,8 +159,6 @@
     <category term="数据库" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
     
-    <category term="数据管理基础" scheme="https://freeeeeeeeedom.gitee.io/tags/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80/"/>
-    
   </entry>
   
   <entry>
@@ -164,7 +166,7 @@
     <link href="https://freeeeeeeeedom.gitee.io/2022/04/17/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/"/>
     <id>https://freeeeeeeeedom.gitee.io/2022/04/17/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</id>
     <published>2022-04-17T05:15:27.000Z</published>
-    <updated>2022-04-19T12:50:56.107Z</updated>
+    <updated>2022-04-19T16:06:14.870Z</updated>
     
     <content type="html"><![CDATA[<h1 id="n数之和"><a class="markdownIt-Anchor" href="#n数之和"></a> n数之和</h1><table><thead><tr><th>题目</th><th>题解</th><th>难度</th><th>推荐指数</th></tr></thead><tbody><tr><td><a href="https://leetcode-cn.com/problems/3sum/">15. 三数之和</a></td><td><a href="https://leetcode-cn.com/problems/3sum/solution/shua-chuan-lc-pai-xu-shuang-zhi-zhen-jie-cd8r/">LeetCode 题解链接</a></td><td>中等</td><td>🤩🤩🤩🤩🤩</td></tr><tr><td><a href="https://leetcode-cn.com/problems/3sum-closest/">16. 最接近的三数之和</a></td><td><a href="https://leetcode-cn.com/problems/3sum-closest/solution/shua-chuan-lc-pai-xu-shuang-zhi-zhen-jie-p2ou/">LeetCode 题解链接</a></td><td>中等</td><td>🤩🤩🤩🤩</td></tr><tr><td><a href="https://leetcode-cn.com/problems/4sum/">18. 四数之和</a></td><td><a href="https://leetcode-cn.com/problems/4sum/solution/shua-chuan-lc-pai-xu-shuang-zhi-zhen-jie-dqx7/">LeetCode 题解链接</a></td><td>中等</td><td>🤩🤩🤩🤩</td></tr></tbody></table><h1 id="组合总和"><a class="markdownIt-Anchor" href="#组合总和"></a> 组合总和</h1><table><thead><tr><th>题目</th><th>题解</th><th>难度</th><th>推荐指数</th></tr></thead><tbody><tr><td><a href="https://leetcode-cn.com/problems/combination-sum/">39. 组合总和</a></td><td><a href="https://leetcode-cn.com/problems/combination-sum/solution/dfs-hui-su-suan-fa-yi-ji-ru-he-que-ding-wpbo5/">LeetCode 题解链接</a></td><td>中等</td><td>🤩🤩🤩🤩</td></tr><tr><td><a href="https://leetcode-cn.com/problems/combination-sum-ii/">40. 组合总和 II</a></td><td><a href="https://leetcode-cn.com/problems/combination-sum-ii/solution/dfs-hui-su-jie-fa-yi-ji-ru-he-pan-duan-s-xlwy/">LeetCode 题解链接</a></td><td>中等</td><td>🤩🤩🤩🤩</td></tr></tbody></table><h1 id="括号问题"><a class="markdownIt-Anchor" href="#括号问题"></a> 括号问题</h1><table><thead><tr><th>题目</th><th>题解</th><th>难度</th><th>推荐指数</th></tr></thead><tbody><tr><td><a href="https://leetcode-cn.com/problems/valid-parentheses/">20. 有效的括号</a></td><td><a href="https://leetcode-cn.com/problems/valid-parentheses/solution/shua-chuan-lc-zhan-ascii-chai-zhi-jie-fa-00zo/">LeetCode 题解链接</a></td><td>简单</td><td>🤩🤩🤩🤩🤩</td></tr><tr><td><a href="https://leetcode-cn.com/problems/generate-parentheses/">22. 括号生成</a></td><td><a href="https://leetcode-cn.com/problems/generate-parentheses/solution/shua-chuan-lc-dfs-jie-fa-by-ac_oier-nknl/">LeetCode 题解链接</a></td><td>中等</td><td>🤩🤩🤩🤩</td></tr><tr><td><a href="https://leetcode-cn.com/problems/longest-valid-parentheses/">32. 最长有效括号</a></td><td><a href="https://leetcode-cn.com/problems/longest-valid-parentheses/solution/shua-chuan-lc-miao-dong-xi-lie-shi-yong-95ezk/">LeetCode 题解链接</a></td><td>困难</td><td>🤩🤩🤩🤩</td></tr><tr><td><a href="https://leetcode-cn.com/problems/remove-invalid-parentheses/">301. 删除无效的括号</a></td><td><a href="https://leetcode-cn.com/problems/remove-invalid-parentheses/solution/yi-fen-zhong-nei-kan-dong-jiang-gua-hao-aya6k/">LeetCode 题解链接</a></td><td>困难</td><td>🤩🤩🤩🤩</td></tr><tr><td><a href="https://leetcode-cn.com/problems/valid-parenthesis-string/">678. 有效的括号字符串</a></td><td><a href="https://leetcode-cn.com/problems/valid-parenthesis-string/solution/gong-shui-san-xie-yi-ti-shuang-jie-dong-801rq/">LeetCode 题解链接</a></td><td>中等</td><td>🤩🤩🤩🤩🤩</td></tr></tbody></table><h1 id="数独问题"><a class="markdownIt-Anchor" href="#数独问题"></a> 数独问题</h1><table><thead><tr><th>题目</th><th>题解</th><th>难度</th><th>推荐指数</th></tr></thead><tbody><tr><td><a href="https://leetcode-cn.com/problems/valid-sudoku/">36. 有效的数独</a></td><td><a href="https://leetcode-cn.com/problems/valid-sudoku/solution/gong-shui-san-xie-yi-ti-san-jie-ha-xi-bi-ssxp/">LeetCode 题解链接</a></td><td>中等</td><td>🤩🤩🤩🤩</td></tr><tr><td><a href="https://leetcode-cn.com/problems/sudoku-solver/">37. 解数独</a></td><td><a href="https://leetcode-cn.com/problems/sudoku-solver/solution/he-n-huang-hou-yi-yang-shi-yi-dao-hui-su-lfpd/">LeetCode 题解链接</a></td><td>困难</td><td>🤩🤩🤩🤩</td></tr></tbody></table><h1 id="回文串问题"><a class="markdownIt-Anchor" href="#回文串问题"></a> 回文串问题</h1><table><thead><tr><th>题目</th><th>题解</th><th>难度</th><th>推荐指数</th></tr></thead><tbody><tr><td><a href="https://leetcode-cn.com/problems/longest-palindromic-substring/">5. 最长回文子串</a></td><td><a href="https://leetcode-cn.com/problems/longest-palindromic-substring/solution/shua-chuan-lc-po-su-jie-fa-manacher-suan-i2px/">LeetCode 题解链接</a></td><td>中等</td><td>🤩🤩🤩🤩🤩</td></tr><tr><td><a href="https://leetcode-cn.com/problems/palindrome-number/">9. 回文数</a></td><td><a href="https://leetcode-cn.com/problems/palindrome-number/solution/shua-chuan-lc-zi-fu-chuan-fei-zi-fu-chua-e8l0/">LeetCode 题解链接</a></td><td>简单</td><td>🤩🤩🤩🤩</td></tr><tr><td><a href="https://leetcode-cn.com/problems/palindrome-partitioning/">131. 分割回文串</a></td><td><a href="https://leetcode-cn.com/problems/palindrome-partitioning/solution/wei-sha-yao-zhe-yang-bao-sou-ya-shi-ru-h-41gf/">LeetCode 题解链接</a></td><td>中等</td><td>🤩🤩🤩🤩</td></tr><tr><td><a href="https://leetcode-cn.com/problems/palindrome-partitioning-ii/">132. 分割回文串 II</a></td><td><a href="https://leetcode-cn.com/problems/palindrome-partitioning-ii/solution/xiang-jie-liang-bian-dong-tai-gui-hua-ji-s5xr/">LeetCode 题解链接</a></td><td>困难</td><td>🤩🤩🤩</td></tr></tbody></table><h1 id="表达式计算"><a class="markdownIt-Anchor" href="#表达式计算"></a> 表达式计算</h1><table><thead><tr><th>题目</th><th>题解</th><th>难度</th><th>推荐指数</th></tr></thead><tbody><tr><td><a href="https://leetcode-cn.com/problems/evaluate-reverse-polish-notation/">150. 逆波兰表达式求值</a></td><td><a href="https://leetcode-cn.com/problems/evaluate-reverse-polish-notation/solution/yi-ti-shuang-jie-xi-tong-zhan-shu-zu-mo-i1eq3/">LeetCode 题解链接</a></td><td>中等</td><td>🤩🤩🤩🤩</td></tr><tr><td><a href="https://leetcode-cn.com/problems/basic-calculator/">224. 基本计算器</a></td><td><a href="https://leetcode-cn.com/problems/basic-calculator/solution/shuang-zhan-jie-jue-tong-yong-biao-da-sh-olym/">LeetCode 题解链接</a></td><td>困难</td><td>🤩🤩🤩🤩</td></tr><tr><td><a href="https://leetcode-cn.com/problems/basic-calculator-ii/">227. 基本计算器 II</a></td><td><a href="https://leetcode-cn.com/problems/basic-calculator-ii/solution/shi-yong-shuang-zhan-jie-jue-jiu-ji-biao-c65k/">LeetCode 题解链接</a></td><td>中等</td><td>🤩🤩🤩🤩</td></tr><tr><td><a href="https://leetcode-cn.com/problems/clumsy-factorial/">1006. 笨阶乘</a></td><td><a href="https://leetcode-cn.com/problems/clumsy-factorial/solution/gong-shui-san-xie-tong-yong-biao-da-shi-nngfp/">LeetCode 题解链接</a></td><td>中等</td><td>🤩🤩🤩</td></tr></tbody></table><h1 id="扫描线"><a class="markdownIt-Anchor" href="#扫描线"></a> 扫描线</h1><table><thead><tr><th>题目</th><th>题解</th><th>难度</th><th>推荐指数</th></tr></thead><tbody><tr><td><a href="https://leetcode-cn.com/problems/the-skyline-problem/">218. 天际线问题</a></td><td><a href="https://leetcode-cn.com/problems/the-skyline-problem/solution/gong-shui-san-xie-sao-miao-xian-suan-fa-0z6xc/">LeetCode 题解链接</a></td><td>困难</td><td>🤩🤩🤩</td></tr><tr><td><a href="https://leetcode-cn.com/problems/perfect-rectangle/">391. 完美矩形</a></td><td><a href="https://leetcode-cn.com/problems/perfect-rectangle/solution/gong-shui-san-xie-chang-gui-sao-miao-xia-p4q4/">LeetCode 题解链接</a></td><td>困难</td><td>🤩🤩🤩🤩</td></tr></tbody></table>]]></content>
     
@@ -185,6 +187,8 @@
     
     <category term="数据结构与算法" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
     
+    <category term="Leetcode" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/Leetcode/"/>
+    
     
     <category term="Leetcode" scheme="https://freeeeeeeeedom.gitee.io/tags/Leetcode/"/>
     
@@ -195,7 +199,7 @@
     <link href="https://freeeeeeeeedom.gitee.io/2022/04/17/%E6%9E%84%E9%80%A0/"/>
     <id>https://freeeeeeeeedom.gitee.io/2022/04/17/%E6%9E%84%E9%80%A0/</id>
     <published>2022-04-17T05:15:18.000Z</published>
-    <updated>2022-04-19T12:51:19.790Z</updated>
+    <updated>2022-04-19T16:06:39.886Z</updated>
     
     <content type="html"><![CDATA[<table><thead><tr><th>题目</th><th>题解</th><th>难度</th><th>推荐指数</th></tr></thead><tbody><tr><td><a href="https://leetcode-cn.com/problems/number-of-ways-to-reconstruct-a-tree/">1719. 重构一棵树的方案数</a></td><td><a href="https://leetcode-cn.com/problems/number-of-ways-to-reconstruct-a-tree/solution/gong-shui-san-xie-gou-zao-yan-zheng-he-f-q6fc/">LeetCode 题解链接</a></td><td>困难</td><td>🤩🤩</td></tr><tr><td><a href="https://leetcode-cn.com/problems/find-missing-observations/">2028. 找出缺失的观测数据</a></td><td><a href="https://leetcode-cn.com/problems/find-missing-observations/solution/by-ac_oier-x22k/">LeetCode 题解链接</a></td><td>中等</td><td>🤩🤩🤩🤩🤩</td></tr></tbody></table>]]></content>
     
@@ -220,6 +224,8 @@
     
     <category term="数据结构与算法" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
     
+    <category term="Leetcode" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/Leetcode/"/>
+    
     
     <category term="Leetcode" scheme="https://freeeeeeeeedom.gitee.io/tags/Leetcode/"/>
     
@@ -230,7 +236,7 @@
     <link href="https://freeeeeeeeedom.gitee.io/2022/04/17/%E8%93%84%E6%B0%B4%E6%B1%A0%E6%8A%BD%E6%A0%B7/"/>
     <id>https://freeeeeeeeedom.gitee.io/2022/04/17/%E8%93%84%E6%B0%B4%E6%B1%A0%E6%8A%BD%E6%A0%B7/</id>
     <published>2022-04-17T05:15:09.000Z</published>
-    <updated>2022-04-19T12:52:30.459Z</updated>
+    <updated>2022-04-19T16:08:12.915Z</updated>
     
     <content type="html"><![CDATA[<table><thead><tr><th>题目</th><th>题解</th><th>难度</th><th>推荐指数</th></tr></thead><tbody><tr><td><a href="https://leetcode-cn.com/problems/linked-list-random-node/">382. 链表随机节点</a></td><td><a href="https://leetcode-cn.com/problems/linked-list-random-node/solution/gong-shui-san-xie-xu-shui-chi-chou-yang-1lp9d/">LeetCode 题解链接</a></td><td>中等</td><td>🤩🤩🤩🤩🤩</td></tr></tbody></table>]]></content>
     
@@ -255,6 +261,8 @@
     
     <category term="数据结构与算法" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
     
+    <category term="Leetcode" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/Leetcode/"/>
+    
     
     <category term="Leetcode" scheme="https://freeeeeeeeedom.gitee.io/tags/Leetcode/"/>
     
@@ -265,7 +273,7 @@
     <link href="https://freeeeeeeeedom.gitee.io/2022/04/17/%E9%AB%98%E7%B2%BE%E5%BA%A6/"/>
     <id>https://freeeeeeeeedom.gitee.io/2022/04/17/%E9%AB%98%E7%B2%BE%E5%BA%A6/</id>
     <published>2022-04-17T05:14:49.000Z</published>
-    <updated>2022-04-19T12:51:17.555Z</updated>
+    <updated>2022-04-19T16:06:37.865Z</updated>
     
     <content type="html"><![CDATA[<table><thead><tr><th>题目</th><th>题解</th><th>难度</th><th>推荐指数</th></tr></thead><tbody><tr><td><a href="https://leetcode-cn.com/problems/additive-number/">306. 累加数</a></td><td><a href="https://leetcode-cn.com/problems/additive-number/solution/gong-shui-san-xie-hui-su-gao-jing-du-jia-6o6b/">LeetCode 题解链接</a></td><td>中等</td><td>🤩🤩🤩🤩</td></tr></tbody></table>]]></content>
     
@@ -290,6 +298,8 @@
     
     <category term="数据结构与算法" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
     
+    <category term="Leetcode" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/Leetcode/"/>
+    
     
     <category term="Leetcode" scheme="https://freeeeeeeeedom.gitee.io/tags/Leetcode/"/>
     
@@ -300,7 +310,7 @@
     <link href="https://freeeeeeeeedom.gitee.io/2022/04/17/%E7%BA%A6%E7%91%9F%E5%A4%AB%E7%8E%AF/"/>
     <id>https://freeeeeeeeedom.gitee.io/2022/04/17/%E7%BA%A6%E7%91%9F%E5%A4%AB%E7%8E%AF/</id>
     <published>2022-04-17T05:14:41.000Z</published>
-    <updated>2022-04-19T12:52:32.619Z</updated>
+    <updated>2022-04-19T16:08:15.879Z</updated>
     
     <content type="html"><![CDATA[<table><thead><tr><th>题目</th><th>题解</th><th>难度</th><th>推荐指数</th></tr></thead><tbody><tr><td><a href="https://leetcode-cn.com/problems/elimination-game/">390. 消除游戏</a></td><td><a href="https://leetcode-cn.com/problems/elimination-game/solution/gong-shui-san-xie-yue-se-fu-huan-yun-yon-x60m/">LeetCode 题解链接</a></td><td>中等</td><td>🤩🤩🤩🤩</td></tr></tbody></table>]]></content>
     
@@ -325,6 +335,8 @@
     
     <category term="数据结构与算法" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
     
+    <category term="Leetcode" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/Leetcode/"/>
+    
     
     <category term="Leetcode" scheme="https://freeeeeeeeedom.gitee.io/tags/Leetcode/"/>
     
@@ -335,7 +347,7 @@
     <link href="https://freeeeeeeeedom.gitee.io/2022/04/17/%E6%89%93%E8%A1%A8/"/>
     <id>https://freeeeeeeeedom.gitee.io/2022/04/17/%E6%89%93%E8%A1%A8/</id>
     <published>2022-04-17T05:14:31.000Z</published>
-    <updated>2022-04-19T12:50:58.182Z</updated>
+    <updated>2022-04-19T16:06:21.498Z</updated>
     
     <content type="html"><![CDATA[<table><thead><tr><th>题目</th><th>题解</th><th>难度</th><th>推荐指数</th></tr></thead><tbody><tr><td><a href="https://leetcode-cn.com/problems/power-of-three/">326. 3的幂</a></td><td><a href="https://leetcode-cn.com/problems/power-of-three/solution/gong-shui-san-xie-yi-ti-san-jie-shu-xue-8oiip/">LeetCode 题解链接</a></td><td>简单</td><td>🤩🤩🤩</td></tr><tr><td><a href="https://leetcode-cn.com/problems/binary-watch/">401. 二进制手表</a></td><td><a href="https://leetcode-cn.com/problems/binary-watch/solution/gong-shui-san-xie-jian-dan-ti-xue-da-bia-gwn2/">LeetCode 题解链接</a></td><td>简单</td><td>🤩🤩🤩🤩🤩</td></tr><tr><td><a href="https://leetcode-cn.com/problems/2-keys-keyboard/">650. 只有两个键的键盘</a></td><td><a href="https://leetcode-cn.com/problems/2-keys-keyboard/solution/gong-shui-san-xie-yi-ti-san-jie-dong-tai-f035/">LeetCode 题解链接</a></td><td>中等</td><td>🤩🤩🤩🤩</td></tr><tr><td><a href="https://leetcode-cn.com/problems/self-dividing-numbers/">728. 自除数</a></td><td><a href="https://leetcode-cn.com/problems/self-dividing-numbers/solution/by-ac_oier-pvb1/">LeetCode 题解链接</a></td><td>简单</td><td>🤩🤩🤩</td></tr><tr><td><a href="https://leetcode-cn.com/problems/n-th-tribonacci-number/">1137. 第 N 个泰波那契数</a></td><td><a href="https://leetcode-cn.com/problems/n-th-tribonacci-number/solution/gong-shui-san-xie-yi-ti-si-jie-die-dai-d-m1ie/">LeetCode 题解链接</a></td><td>简单</td><td>🤩🤩🤩🤩</td></tr><tr><td><a href="https://leetcode-cn.com/problems/find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k/">1414. 和为 K 的最少斐波那契数字数目</a></td><td><a href="https://leetcode-cn.com/problems/find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k/solution/gong-shui-san-xie-noxiang-xin-ke-xue-xi-rgty8/">LeetCode 题解链接</a></td><td>中等</td><td>🤩🤩🤩🤩</td></tr><tr><td><a href="https://leetcode-cn.com/problems/get-maximum-in-generated-array/">1646. 获取生成数组中的最大值</a></td><td><a href="https://leetcode-cn.com/problems/get-maximum-in-generated-array/solution/gong-shui-san-xie-jian-dan-mo-ni-ti-by-a-sj53/">LeetCode 题解链接</a></td><td>简单</td><td>🤩🤩🤩🤩</td></tr><tr><td><a href="https://leetcode-cn.com/problems/fei-bo-na-qi-shu-lie-lcof/">剑指 Offer 10- I. 斐波那契数列</a></td><td><a href="https://leetcode-cn.com/problems/fei-bo-na-qi-shu-lie-lcof/solution/gong-shui-san-xie-yi-ti-si-jie-dong-tai-9zip0/">LeetCode 题解链接</a></td><td>简单</td><td>🤩🤩🤩🤩🤩</td></tr><tr><td><a href="https://leetcode-cn.com/problems/group-anagrams-lcci/">面试题 10.02. 变位词组</a></td><td><a href="https://leetcode-cn.com/problems/group-anagrams-lcci/solution/gong-shui-san-xie-tong-ji-bian-wei-ci-de-0iqe/">LeetCode 题解链接</a></td><td>中等</td><td>🤩🤩🤩🤩</td></tr></tbody></table>]]></content>
     
@@ -360,6 +372,8 @@
     
     <category term="数据结构与算法" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
     
+    <category term="Leetcode" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/Leetcode/"/>
+    
     
     <category term="Leetcode" scheme="https://freeeeeeeeedom.gitee.io/tags/Leetcode/"/>
     
@@ -370,7 +384,7 @@
     <link href="https://freeeeeeeeedom.gitee.io/2022/04/17/%E8%84%91%E7%AD%8B%E6%80%A5%E8%BD%AC%E5%BC%AF/"/>
     <id>https://freeeeeeeeedom.gitee.io/2022/04/17/%E8%84%91%E7%AD%8B%E6%80%A5%E8%BD%AC%E5%BC%AF/</id>
     <published>2022-04-17T05:14:22.000Z</published>
-    <updated>2022-04-19T12:51:45.909Z</updated>
+    <updated>2022-04-19T16:07:08.434Z</updated>
     
     <content type="html"><![CDATA[<table><thead><tr><th>题目</th><th>题解</th><th>难度</th><th>推荐指数</th></tr></thead><tbody><tr><td><a href="https://leetcode-cn.com/problems/self-crossing/">335. 路径交叉</a></td><td><a href="https://leetcode-cn.com/problems/self-crossing/solution/gong-shui-san-xie-fen-qing-kuang-tao-lun-zdrb/">LeetCode 题解链接</a></td><td>困难</td><td>🤩🤩🤩🤩</td></tr><tr><td><a href="https://leetcode-cn.com/problems/battleships-in-a-board/">419. 甲板上的战舰</a></td><td><a href="https://leetcode-cn.com/problems/battleships-in-a-board/solution/gong-shui-san-xie-ji-chong-sao-miao-xian-trmc/">LeetCode 题解链接</a></td><td>中等</td><td>🤩🤩🤩🤩</td></tr><tr><td><a href="https://leetcode-cn.com/problems/reconstruct-original-digits-from-english/">423. 从英文中重建数字</a></td><td><a href="https://leetcode-cn.com/problems/reconstruct-original-digits-from-english/solution/gong-shui-san-xie-nao-jin-ji-zhuan-wan-m-vg7a/">LeetCode 题解链接</a></td><td>中等</td><td>🤩🤩🤩🤩</td></tr><tr><td><a href="https://leetcode-cn.com/problems/remove-colored-pieces-if-both-neighbors-are-the-same-color/">2038. 如果相邻两个颜色均相同则删除当前颜色</a></td><td><a href="https://leetcode-cn.com/problems/remove-colored-pieces-if-both-neighbors-are-the-same-color/solution/gong-shui-san-xie-nao-jin-ji-zhuan-wan-y-a8xm/">LeetCode 题解链接</a></td><td>中等</td><td>🤩🤩🤩🤩🤩</td></tr><tr><td><a href="https://leetcode-cn.com/problems/walking-robot-simulation-ii/">2069. 模拟行走机器人 II</a></td><td><a href="https://leetcode-cn.com/problems/walking-robot-simulation-ii/solution/by-ac_oier-6zib/">LeetCode 题解链接</a></td><td>中等</td><td>🤩🤩🤩🤩</td></tr></tbody></table>]]></content>
     
@@ -395,6 +409,8 @@
     
     <category term="数据结构与算法" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
     
+    <category term="Leetcode" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/Leetcode/"/>
+    
     
     <category term="Leetcode" scheme="https://freeeeeeeeedom.gitee.io/tags/Leetcode/"/>
     
@@ -405,7 +421,7 @@
     <link href="https://freeeeeeeeedom.gitee.io/2022/04/17/%E6%89%BE%E8%A7%84%E5%BE%8B/"/>
     <id>https://freeeeeeeeedom.gitee.io/2022/04/17/%E6%89%BE%E8%A7%84%E5%BE%8B/</id>
     <published>2022-04-17T05:14:11.000Z</published>
-    <updated>2022-04-19T12:52:35.507Z</updated>
+    <updated>2022-04-19T16:08:26.776Z</updated>
     
     <content type="html"><![CDATA[<table><thead><tr><th>题目</th><th>题解</th><th>难度</th><th>推荐指数</th></tr></thead><tbody><tr><td><a href="https://leetcode-cn.com/problems/self-crossing/">335. 路径交叉</a></td><td><a href="https://leetcode-cn.com/problems/self-crossing/solution/gong-shui-san-xie-fen-qing-kuang-tao-lun-zdrb/">LeetCode 题解链接</a></td><td>困难</td><td>🤩🤩🤩🤩</td></tr><tr><td><a href="https://leetcode-cn.com/problems/battleships-in-a-board/">419. 甲板上的战舰</a></td><td><a href="https://leetcode-cn.com/problems/battleships-in-a-board/solution/gong-shui-san-xie-ji-chong-sao-miao-xian-trmc/">LeetCode 题解链接</a></td><td>中等</td><td>🤩🤩🤩🤩</td></tr><tr><td><a href="https://leetcode-cn.com/problems/reconstruct-original-digits-from-english/">423. 从英文中重建数字</a></td><td><a href="https://leetcode-cn.com/problems/reconstruct-original-digits-from-english/solution/gong-shui-san-xie-nao-jin-ji-zhuan-wan-m-vg7a/">LeetCode 题解链接</a></td><td>中等</td><td>🤩🤩🤩🤩</td></tr><tr><td><a href="https://leetcode-cn.com/problems/k-th-smallest-in-lexicographical-order/">440. 字典序的第K小数字</a></td><td><a href="https://leetcode-cn.com/problems/k-th-smallest-in-lexicographical-order/solution/by-ac_oier-m3zl/">LeetCode 题解链接</a></td><td>困难</td><td>🤩🤩🤩</td></tr></tbody></table>]]></content>
     
@@ -430,6 +446,8 @@
     
     <category term="数据结构与算法" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
     
+    <category term="Leetcode" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/Leetcode/"/>
+    
     
     <category term="Leetcode" scheme="https://freeeeeeeeedom.gitee.io/tags/Leetcode/"/>
     
@@ -440,7 +458,7 @@
     <link href="https://freeeeeeeeedom.gitee.io/2022/04/17/%E7%9F%A9%E9%98%B5%E5%BF%AB%E9%80%9F%E5%B9%82/"/>
     <id>https://freeeeeeeeedom.gitee.io/2022/04/17/%E7%9F%A9%E9%98%B5%E5%BF%AB%E9%80%9F%E5%B9%82/</id>
     <published>2022-04-17T05:14:01.000Z</published>
-    <updated>2022-04-19T12:51:35.283Z</updated>
+    <updated>2022-04-19T16:06:55.479Z</updated>
     
     <content type="html"><![CDATA[<table><thead><tr><th>题目</th><th>题解</th><th>难度</th><th>推荐指数</th></tr></thead><tbody><tr><td><a href="https://leetcode-cn.com/problems/student-attendance-record-ii/">552. 学生出勤记录 II</a></td><td><a href="https://leetcode-cn.com/problems/student-attendance-record-ii/solution/gong-shui-san-xie-yi-ti-san-jie-ji-yi-hu-fdfx/">LeetCode 题解链接</a></td><td>困难</td><td>🤩🤩🤩🤩</td></tr><tr><td><a href="https://leetcode-cn.com/problems/n-th-tribonacci-number/">1137. 第 N 个泰波那契数</a></td><td><a href="https://leetcode-cn.com/problems/n-th-tribonacci-number/solution/gong-shui-san-xie-yi-ti-si-jie-die-dai-d-m1ie/">LeetCode 题解链接</a></td><td>简单</td><td>🤩🤩🤩🤩🤩</td></tr><tr><td><a href="https://leetcode-cn.com/problems/count-vowels-permutation/">1220. 统计元音字母序列的数目</a></td><td><a href="https://leetcode-cn.com/problems/count-vowels-permutation/solution/gong-shui-san-xie-yi-ti-shuang-jie-xian-n8f4o/">LeetCode 题解链接</a></td><td>困难</td><td>🤩🤩🤩🤩🤩</td></tr><tr><td><a href="https://leetcode-cn.com/problems/fei-bo-na-qi-shu-lie-lcof/">剑指 Offer 10- I. 斐波那契数列</a></td><td><a href="https://leetcode-cn.com/problems/fei-bo-na-qi-shu-lie-lcof/solution/gong-shui-san-xie-yi-ti-si-jie-dong-tai-9zip0/">LeetCode 题解链接</a></td><td>简单</td><td>🤩🤩🤩🤩🤩</td></tr></tbody></table>]]></content>
     
@@ -465,6 +483,8 @@
     
     <category term="数据结构与算法" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
     
+    <category term="Leetcode" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/Leetcode/"/>
+    
     
     <category term="Leetcode" scheme="https://freeeeeeeeedom.gitee.io/tags/Leetcode/"/>
     
@@ -475,7 +495,7 @@
     <link href="https://freeeeeeeeedom.gitee.io/2022/04/17/%E5%BF%AB%E9%80%9F%E5%B9%82/"/>
     <id>https://freeeeeeeeedom.gitee.io/2022/04/17/%E5%BF%AB%E9%80%9F%E5%B9%82/</id>
     <published>2022-04-17T05:13:51.000Z</published>
-    <updated>2022-04-19T12:51:37.545Z</updated>
+    <updated>2022-04-19T16:06:57.350Z</updated>
     
     <content type="html"><![CDATA[<table><thead><tr><th>题目</th><th>题解</th><th>难度</th><th>推荐指数</th></tr></thead><tbody><tr><td><a href="https://leetcode-cn.com/problems/super-pow/">372. 超级次方</a></td><td><a href="https://leetcode-cn.com/problems/super-pow/solution/gong-shui-san-xie-di-gui-kuai-su-mi-ying-yx1j/">LeetCode 题解链接</a></td><td>中等</td><td>🤩🤩🤩🤩🤩</td></tr></tbody></table>]]></content>
     
@@ -500,6 +520,8 @@
     
     <category term="数据结构与算法" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
     
+    <category term="Leetcode" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/Leetcode/"/>
+    
     
     <category term="Leetcode" scheme="https://freeeeeeeeedom.gitee.io/tags/Leetcode/"/>
     
@@ -510,7 +532,7 @@
     <link href="https://freeeeeeeeedom.gitee.io/2022/04/17/%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%9E%9A%E4%B8%BE/"/>
     <id>https://freeeeeeeeedom.gitee.io/2022/04/17/%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%9E%9A%E4%B8%BE/</id>
     <published>2022-04-17T05:13:42.000Z</published>
-    <updated>2022-04-19T12:51:13.161Z</updated>
+    <updated>2022-04-19T16:06:34.300Z</updated>
     
     <content type="html"><![CDATA[<table><thead><tr><th>题目</th><th>题解</th><th>难度</th><th>推荐指数</th></tr></thead><tbody><tr><td><a href="https://leetcode-cn.com/problems/maximum-length-of-a-concatenated-string-with-unique-characters/">1239. 串联字符串的最大长度</a></td><td><a href="https://leetcode-cn.com/problems/maximum-length-of-a-concatenated-string-with-unique-characters/solution/gong-shui-san-xie-yi-ti-san-jie-jian-zhi-nfeb/">LeetCode 题解链接</a></td><td>中等</td><td>🤩🤩🤩</td></tr><tr><td><a href="https://leetcode-cn.com/problems/maximum-number-of-achievable-transfer-requests/">1601. 最多可达成的换楼请求数目</a></td><td><a href="https://leetcode-cn.com/problems/maximum-number-of-achievable-transfer-requests/solution/gong-shui-san-xie-er-jin-zhi-mei-ju-by-a-enef/">LeetCode 题解链接</a></td><td>中等</td><td>🤩🤩🤩🤩</td></tr><tr><td><a href="https://leetcode-cn.com/problems/count-number-of-maximum-bitwise-or-subsets/">2044. 统计按位或能得到最大值的子集数目</a></td><td><a href="https://leetcode-cn.com/problems/count-number-of-maximum-bitwise-or-subsets/solution/by-ac_oier-dos6/">LeetCode 题解链接</a></td><td>困难</td><td>🤩🤩🤩🤩</td></tr></tbody></table>]]></content>
     
@@ -535,6 +557,8 @@
     
     <category term="数据结构与算法" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
     
+    <category term="Leetcode" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/Leetcode/"/>
+    
     
     <category term="Leetcode" scheme="https://freeeeeeeeedom.gitee.io/tags/Leetcode/"/>
     
@@ -545,7 +569,7 @@
     <link href="https://freeeeeeeeedom.gitee.io/2022/04/17/%E6%B4%97%E7%89%8C%E7%AE%97%E6%B3%95/"/>
     <id>https://freeeeeeeeedom.gitee.io/2022/04/17/%E6%B4%97%E7%89%8C%E7%AE%97%E6%B3%95/</id>
     <published>2022-04-17T05:13:33.000Z</published>
-    <updated>2022-04-19T12:52:28.174Z</updated>
+    <updated>2022-04-19T16:08:09.203Z</updated>
     
     <content type="html"><![CDATA[<table><thead><tr><th>题目</th><th>题解</th><th>难度</th><th>推荐指数</th></tr></thead><tbody><tr><td><a href="https://leetcode-cn.com/problems/shuffle-an-array/">384. 打乱数组</a></td><td><a href="https://leetcode-cn.com/problems/shuffle-an-array/solution/gong-shui-san-xie-xi-pai-suan-fa-yun-yon-0qmy/">LeetCode 题解链接</a></td><td>中等</td><td>🤩🤩🤩🤩🤩</td></tr></tbody></table>]]></content>
     
@@ -570,6 +594,8 @@
     
     <category term="数据结构与算法" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
     
+    <category term="Leetcode" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/Leetcode/"/>
+    
     
     <category term="Leetcode" scheme="https://freeeeeeeeedom.gitee.io/tags/Leetcode/"/>
     
@@ -580,7 +606,7 @@
     <link href="https://freeeeeeeeedom.gitee.io/2022/04/17/%E4%B8%89%E5%88%86/"/>
     <id>https://freeeeeeeeedom.gitee.io/2022/04/17/%E4%B8%89%E5%88%86/</id>
     <published>2022-04-17T05:13:25.000Z</published>
-    <updated>2022-04-19T12:52:00.364Z</updated>
+    <updated>2022-04-19T16:07:24.180Z</updated>
     
     <content type="html"><![CDATA[<table><thead><tr><th>题目</th><th>题解</th><th>难度</th><th>推荐指数</th></tr></thead><tbody><tr><td><a href="https://leetcode-cn.com/problems/peak-index-in-a-mountain-array/">852. 山脉数组的峰顶索引</a></td><td><a href="https://leetcode-cn.com/problems/peak-index-in-a-mountain-array/solution/gong-shui-san-xie-er-fen-san-fen-cha-zhi-5gfv/">LeetCode 题解链接</a></td><td>简单</td><td>🤩🤩🤩🤩🤩</td></tr><tr><td><a href="https://leetcode-cn.com/problems/B1IidL/">剑指 Offer II 069. 山峰数组的顶部</a></td><td><a href="https://leetcode-cn.com/problems/B1IidL/solution/gong-shui-san-xie-er-fen-san-fen-ji-zhi-lc8zl/">LeetCode 题解链接</a></td><td>简单</td><td>🤩🤩🤩🤩🤩</td></tr></tbody></table>]]></content>
     
@@ -605,6 +631,8 @@
     
     <category term="数据结构与算法" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
     
+    <category term="Leetcode" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/Leetcode/"/>
+    
     
     <category term="Leetcode" scheme="https://freeeeeeeeedom.gitee.io/tags/Leetcode/"/>
     
@@ -615,7 +643,7 @@
     <link href="https://freeeeeeeeedom.gitee.io/2022/04/17/%E5%8D%9A%E5%BC%88%E8%AE%BA/"/>
     <id>https://freeeeeeeeedom.gitee.io/2022/04/17/%E5%8D%9A%E5%BC%88%E8%AE%BA/</id>
     <published>2022-04-17T05:13:17.000Z</published>
-    <updated>2022-04-19T12:50:54.074Z</updated>
+    <updated>2022-04-19T16:06:13.367Z</updated>
     
     <content type="html"><![CDATA[<table><thead><tr><th>题目</th><th>题解</th><th>难度</th><th>推荐指数</th></tr></thead><tbody><tr><td><a href="https://leetcode-cn.com/problems/nim-game/">292. Nim 游戏</a></td><td><a href="https://leetcode-cn.com/problems/nim-game/solution/gong-shui-san-xie-noxiang-xin-ke-xue-xi-wmz2t/">LeetCode 题解链接</a></td><td>中等</td><td>🤩🤩🤩🤩</td></tr><tr><td><a href="https://leetcode-cn.com/problems/chalkboard-xor-game/">810. 黑板异或游戏</a></td><td><a href="https://leetcode-cn.com/problems/chalkboard-xor-game/solution/gong-shui-san-xie-noxiang-xin-ke-xue-xi-ges7k/">LeetCode 题解链接</a></td><td>困难</td><td>🤩🤩🤩🤩</td></tr><tr><td><a href="https://leetcode-cn.com/problems/stone-game/">877. 石子游戏</a></td><td><a href="https://leetcode-cn.com/problems/stone-game/solution/gong-shui-san-xie-jing-dian-qu-jian-dp-j-wn31/">LeetCode 题解链接</a></td><td>中等</td><td>🤩🤩🤩🤩</td></tr><tr><td><a href="https://leetcode-cn.com/problems/stone-game-ix/">2029. 石子游戏 IX</a></td><td><a href="https://leetcode-cn.com/problems/stone-game-ix/solution/gong-shui-san-xie-fen-qing-kuang-tao-lun-h1oa/">LeetCode 题解链接</a></td><td>中等</td><td>🤩🤩🤩🤩</td></tr></tbody></table>]]></content>
     
@@ -639,6 +667,8 @@
     
     
     <category term="数据结构与算法" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="Leetcode" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/Leetcode/"/>
     
     
     <category term="Leetcode" scheme="https://freeeeeeeeedom.gitee.io/tags/Leetcode/"/>
