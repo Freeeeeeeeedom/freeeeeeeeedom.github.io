@@ -6,7 +6,7 @@
   <link href="https://freeeeeeeeedom.gitee.io/atom.xml" rel="self"/>
   
   <link href="https://freeeeeeeeedom.gitee.io/"/>
-  <updated>2022-04-21T05:47:56.377Z</updated>
+  <updated>2022-04-21T07:24:18.287Z</updated>
   <id>https://freeeeeeeeedom.gitee.io/</id>
   
   <author>
@@ -21,11 +21,26 @@
     <link href="https://freeeeeeeeedom.gitee.io/2022/04/21/April-21th/"/>
     <id>https://freeeeeeeeedom.gitee.io/2022/04/21/April-21th/</id>
     <published>2022-04-21T05:47:56.000Z</published>
-    <updated>2022-04-21T05:47:56.377Z</updated>
+    <updated>2022-04-21T07:24:18.287Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="to-do"><a class="markdownIt-Anchor" href="#to-do"></a> To Do</h1><ul><li><input type="checkbox" id="checkbox0" /><label for="checkbox0">CS144 lab2</label></li><li><input type="checkbox" id="checkbox1" checked="true" /><label for="checkbox1">Leetcode *3 （试水周赛，勉强三题）</label></li><li><input type="checkbox" id="checkbox2" checked="true" /><label for="checkbox2">Leetcode 每日一题</label></li><li><input type="checkbox" id="checkbox3" /><label for="checkbox3">微信小程序</label></li><li><input type="checkbox" id="checkbox4" /><label for="checkbox4">计网实验</label></li><li><input type="checkbox" id="checkbox5" checked="true" /><label for="checkbox5">核酸</label></li><li><input type="checkbox" id="checkbox6" checked="true" /><label for="checkbox6">12：30起床</label></li></ul><h1 id="总结"><a class="markdownIt-Anchor" href="#总结"></a> 总结</h1><ul><li>今天起了个早，再接再厉！！！（doge）</li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;to-do&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#to-do&quot;&gt;&lt;/a&gt; To Do&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input type=&quot;checkbox&quot; id=&quot;checkbox0&quot; /&gt;&lt;label for=&quot;check</summary>
+      
     
     
     
+    <category term="Everday" scheme="https://freeeeeeeeedom.gitee.io/categories/Everday/"/>
     
+    <category term="2022_大二下" scheme="https://freeeeeeeeedom.gitee.io/categories/Everday/2022-%E5%A4%A7%E4%BA%8C%E4%B8%8B/"/>
+    
+    
+    <category term="2022_Spring" scheme="https://freeeeeeeeedom.gitee.io/tags/2022-Spring/"/>
     
   </entry>
   
