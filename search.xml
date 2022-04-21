@@ -4,11 +4,32 @@
   
     
     <entry>
+      <title>April 22th</title>
+      <link href="/2022/04/22/April-22th/"/>
+      <url>/2022/04/22/April-22th/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> Everday </category>
+          
+          <category> 2022_大二下 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>April 21th</title>
       <link href="/2022/04/21/April-21th/"/>
       <url>/2022/04/21/April-21th/</url>
       
-        <content type="html"><![CDATA[<h1 id="to-do"><a class="markdownIt-Anchor" href="#to-do"></a> To Do</h1><ul><li><input type="checkbox" id="checkbox0" /><label for="checkbox0">CS144 lab2</label></li><li><input type="checkbox" id="checkbox1" checked="true" /><label for="checkbox1">Leetcode *3 （试水周赛，勉强三题）</label></li><li><input type="checkbox" id="checkbox2" checked="true" /><label for="checkbox2">Leetcode 每日一题</label></li><li><input type="checkbox" id="checkbox3" checked="true" /><label for="checkbox3">微信小程序（add page of categories）</label></li><li><input type="checkbox" id="checkbox4" /><label for="checkbox4">计网实验</label></li><li><input type="checkbox" id="checkbox5" checked="true" /><label for="checkbox5">核酸</label></li><li><input type="checkbox" id="checkbox6" checked="true" /><label for="checkbox6">12：30起床</label></li></ul><h1 id="总结"><a class="markdownIt-Anchor" href="#总结"></a> 总结</h1><ul><li>今天起了个早，再接再厉！！！（doge）</li></ul>]]></content>
+        <content type="html"><![CDATA[<h1 id="to-do"><a class="markdownIt-Anchor" href="#to-do"></a> To Do</h1><ul><li><input type="checkbox" id="checkbox0" /><label for="checkbox0">CS144 lab2</label></li><li><input type="checkbox" id="checkbox1" /><label for="checkbox1">Leetcode *3 （试水周赛，勉强三题）</label></li><li><input type="checkbox" id="checkbox2" checked="true" /><label for="checkbox2">Leetcode 每日一题</label></li><li><input type="checkbox" id="checkbox3" /><label for="checkbox3">微信小程序（add page of categories）</label></li><li><input type="checkbox" id="checkbox4" /><label for="checkbox4">计网实验</label></li><li><input type="checkbox" id="checkbox5" checked="true" /><label for="checkbox5">核酸</label></li><li><input type="checkbox" id="checkbox6" checked="true" /><label for="checkbox6">12：30起床</label></li></ul><h1 id="总结"><a class="markdownIt-Anchor" href="#总结"></a> 总结</h1><ul><li>今天起了个早，再接再厉！！！（doge）</li></ul>]]></content>
       
       
       <categories>
@@ -1442,7 +1463,7 @@
       <link href="/2022/04/15/%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98/"/>
       <url>/2022/04/15/%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98/</url>
       
-        <content type="html"><![CDATA[<table><thead><tr><th>日期</th><th>题目</th><th>题解</th><th>难度</th><th style="text-align:center">推荐指数</th></tr></thead><tbody><tr><td>2022.4.15</td><td><a href="https://leetcode-cn.com/problems/mini-parser/">385. 迷你语法分析器</a></td><td><a href="https://leetcode-cn.com/problems/mini-parser/solution/by-dega-vu-6tx9/">Freedom的题解</a></td><td>中等</td><td style="text-align:center">😻😻😻😻</td></tr><tr><td>2022.4.14</td><td><a href="https://leetcode-cn.com/problems/richest-customer-wealth/">1672. 最富有客户的资产总量</a></td><td><a href="https://leetcode-cn.com/problems/richest-customer-wealth/solution/emm-by-dega-vu-ecxk/">Freedom的题解</a></td><td>简单</td><td style="text-align:center">😻</td></tr><tr><td>2022.4.16</td><td><a href="https://leetcode-cn.com/problems/largest-palindrome-product/">479. 最大回文数乘积</a></td><td><a href="https://leetcode-cn.com/problems/largest-palindrome-product/solution/by-dega-vu-k9fe/">Freedom的题解</a></td><td>困难</td><td style="text-align:center">😻</td></tr><tr><td>2022.4.17</td><td><a href="https://leetcode-cn.com/problems/most-common-word/">819. 最常见的单词</a></td><td><a href="https://leetcode-cn.com/problems/most-common-word/solution/by-dega-vu-0wu3/">Freedom的题解</a></td><td>简单</td><td style="text-align:center">😻😻😻</td></tr><tr><td>2022.4.18</td><td><a href="https://leetcode-cn.com/problems/lexicographical-numbers/">386. 字典序排数</a></td><td><a href="https://leetcode-cn.com/problems/lexicographical-numbers/solution/dfs-by-dega-vu-c9vt/">Freedom的题解</a></td><td>中等</td><td style="text-align:center">😻😻😻😻</td></tr><tr><td>2022.4.19</td><td><a href="https://leetcode-cn.com/problems/shortest-distance-to-a-character/">821. 字符的最短距离</a></td><td><a href="https://leetcode-cn.com/problems/shortest-distance-to-a-character/solution/by-dega-vu-aag3/">Freedom的题解</a></td><td>简单</td><td style="text-align:center">😻</td></tr><tr><td>2022.4.20</td><td><a href="https://leetcode-cn.com/problems/longest-absolute-file-path/">388. 文件的最长绝对路径</a></td><td><a href="https://leetcode-cn.com/problems/longest-absolute-file-path/solution/zhan-by-dega-vu-gafe/">Freedom的题解</a></td><td>中等</td><td style="text-align:center">😻😻😻😻😻</td></tr><tr><td>2022.4.21</td><td><a href="https://leetcode-cn.com/problems/goat-latin/">824. 山羊拉丁文</a></td><td><a href="https://leetcode-cn.com/problems/goat-latin/solution/mo-ni-ti-zhu-yi-xi-jie-by-dega-vu-3bx0/">Freedom的题解</a></td><td>简单</td><td style="text-align:center">😻😻</td></tr><tr><td></td><td></td><td></td><td></td><td style="text-align:center"></td></tr><tr><td></td><td></td><td></td><td></td><td style="text-align:center"></td></tr></tbody></table>]]></content>
+        <content type="html"><![CDATA[<table><thead><tr><th>日期</th><th>题目</th><th>题解</th><th>难度</th><th style="text-align:center">推荐指数</th></tr></thead><tbody><tr><td>2022.4.15</td><td><a href="https://leetcode-cn.com/problems/mini-parser/">385. 迷你语法分析器</a></td><td><a href="https://leetcode-cn.com/problems/mini-parser/solution/by-dega-vu-6tx9/">Freedom的题解</a></td><td>中等</td><td style="text-align:center">😻😻😻😻</td></tr><tr><td>2022.4.14</td><td><a href="https://leetcode-cn.com/problems/richest-customer-wealth/">1672. 最富有客户的资产总量</a></td><td><a href="https://leetcode-cn.com/problems/richest-customer-wealth/solution/emm-by-dega-vu-ecxk/">Freedom的题解</a></td><td>简单</td><td style="text-align:center">😻</td></tr><tr><td>2022.4.16</td><td><a href="https://leetcode-cn.com/problems/largest-palindrome-product/">479. 最大回文数乘积</a></td><td><a href="https://leetcode-cn.com/problems/largest-palindrome-product/solution/by-dega-vu-k9fe/">Freedom的题解</a></td><td>困难</td><td style="text-align:center">😻</td></tr><tr><td>2022.4.17</td><td><a href="https://leetcode-cn.com/problems/most-common-word/">819. 最常见的单词</a></td><td><a href="https://leetcode-cn.com/problems/most-common-word/solution/by-dega-vu-0wu3/">Freedom的题解</a></td><td>简单</td><td style="text-align:center">😻😻😻</td></tr><tr><td>2022.4.18</td><td><a href="https://leetcode-cn.com/problems/lexicographical-numbers/">386. 字典序排数</a></td><td><a href="https://leetcode-cn.com/problems/lexicographical-numbers/solution/dfs-by-dega-vu-c9vt/">Freedom的题解</a></td><td>中等</td><td style="text-align:center">😻😻😻😻</td></tr><tr><td>2022.4.19</td><td><a href="https://leetcode-cn.com/problems/shortest-distance-to-a-character/">821. 字符的最短距离</a></td><td><a href="https://leetcode-cn.com/problems/shortest-distance-to-a-character/solution/by-dega-vu-aag3/">Freedom的题解</a></td><td>简单</td><td style="text-align:center">😻</td></tr><tr><td>2022.4.20</td><td><a href="https://leetcode-cn.com/problems/longest-absolute-file-path/">388. 文件的最长绝对路径</a></td><td><a href="https://leetcode-cn.com/problems/longest-absolute-file-path/solution/zhan-by-dega-vu-gafe/">Freedom的题解</a></td><td>中等</td><td style="text-align:center">😻😻😻😻😻</td></tr><tr><td>2022.4.21</td><td><a href="https://leetcode-cn.com/problems/goat-latin/">824. 山羊拉丁文</a></td><td><a href="https://leetcode-cn.com/problems/goat-latin/solution/mo-ni-ti-zhu-yi-xi-jie-by-dega-vu-3bx0/">Freedom的题解</a></td><td>简单</td><td style="text-align:center">😻😻</td></tr><tr><td>2022.4.22</td><td><a href="https://leetcode-cn.com/problems/rotate-function/">396. 旋转函数</a></td><td><a href="https://leetcode-cn.com/problems/rotate-function/solution/huan-chong-si-lu-by-dega-vu-2eex/">Freedom的题解</a></td><td>中等</td><td style="text-align:center">😻😻😻😻😻</td></tr><tr><td></td><td></td><td></td><td></td><td style="text-align:center"></td></tr></tbody></table>]]></content>
       
       
       <categories>
