@@ -6,7 +6,7 @@
   <link href="https://freeeeeeeeedom.gitee.io/atom.xml" rel="self"/>
   
   <link href="https://freeeeeeeeedom.gitee.io/"/>
-  <updated>2022-04-22T11:01:58.984Z</updated>
+  <updated>2022-04-23T08:00:13.340Z</updated>
   <id>https://freeeeeeeeedom.gitee.io/</id>
   
   <author>
@@ -15,6 +15,19 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>二维凸包（Andrew算法)</title>
+    <link href="https://freeeeeeeeedom.gitee.io/2022/04/23/%E4%BA%8C%E7%BB%B4%E5%87%B8%E5%8C%85%EF%BC%88Andrew%E7%AE%97%E6%B3%95/"/>
+    <id>https://freeeeeeeeedom.gitee.io/2022/04/23/%E4%BA%8C%E7%BB%B4%E5%87%B8%E5%8C%85%EF%BC%88Andrew%E7%AE%97%E6%B3%95/</id>
+    <published>2022-04-23T08:00:13.000Z</published>
+    <updated>2022-04-23T08:00:13.340Z</updated>
+    
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>C++OOP基础</title>
@@ -536,33 +549,6 @@
       
     <summary type="html">&lt;h2 id=&quot;c中部分特殊符号&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#c中部分特殊符号&quot;&gt;&lt;/a&gt; C++中部分特殊符号&lt;/h2&gt;
 &lt;h1 id=&quot;1-~&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1-~&quot;&gt;&lt;</summary>
-      
-    
-    
-    
-    <category term="C++" scheme="https://freeeeeeeeedom.gitee.io/categories/C/"/>
-    
-    <category term="C++结构化编程" scheme="https://freeeeeeeeedom.gitee.io/categories/C/C-%E7%BB%93%E6%9E%84%E5%8C%96%E7%BC%96%E7%A8%8B/"/>
-    
-    
-    <category term="C++高级程序设计" scheme="https://freeeeeeeeedom.gitee.io/tags/C-%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>C++部分内置函数</title>
-    <link href="https://freeeeeeeeedom.gitee.io/2022/04/22/C-%E9%83%A8%E5%88%86%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0/"/>
-    <id>https://freeeeeeeeedom.gitee.io/2022/04/22/C-%E9%83%A8%E5%88%86%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0/</id>
-    <published>2022-04-22T02:19:46.000Z</published>
-    <updated>2022-04-22T11:28:58.273Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="c部分内置函数"><a class="markdownIt-Anchor" href="#c部分内置函数"></a> C++部分内置函数</h2><h1 id="1-内置函数"><a class="markdownIt-Anchor" href="#1-内置函数"></a> 1. 内置函数</h1><table><thead><tr><th>函数</th><th>作用</th></tr></thead><tbody><tr><td>max(a,b)</td><td>取最大值</td></tr><tr><td>min(a,b)</td><td>取最小值</td></tr></tbody></table><h1 id="2-系统时间"><a class="markdownIt-Anchor" href="#2-系统时间"></a> 2. 系统时间</h1><h2 id="21-通过systemtime来进行获取"><a class="markdownIt-Anchor" href="#21-通过systemtime来进行获取"></a> 2.1. 通过SYSTEMTIME来进行获取</h2><ol><li>相应头文件:<code>windows.h</code></li><li>变量类型：SYSTEMTIME sys;</li><li>获取当前系统时间:<code>GetLocalTime(&amp;sys)</code></li><li>其结构定义如下:</li></ol><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="keyword">struct</span> <span class="title class_">_SYSTEMTIME</span> &#123;</span><br><span class="line">    WORD wYear;<span class="comment">//年</span></span><br><span class="line">    WORD wMonth;<span class="comment">//月</span></span><br><span class="line">    WORD wDayOfWeek;<span class="comment">//星期</span></span><br><span class="line">    WORD wDay;<span class="comment">//日</span></span><br><span class="line">    WORD wHour;<span class="comment">//时</span></span><br><span class="line">    WORD wMinute;<span class="comment">//分</span></span><br><span class="line">    WORD wSecond;<span class="comment">//秒</span></span><br><span class="line">    WORD wMilliseconds;<span class="comment">//毫秒</span></span><br><span class="line">  &#125; SYSTEMTIME;</span><br></pre></td></tr></table></figure><h2 id="22-参考"><a class="markdownIt-Anchor" href="#22-参考"></a> 2.2. 参考</h2><p><a href = "https://blog.csdn.net/TweeChalice/article/details/96501332">SYSTEMTIME</a></p><h1 id="3-sort函数的用法"><a class="markdownIt-Anchor" href="#3-sort函数的用法"></a> 3. sort函数的用法</h1><ol><li>被包含的头文件:<code>#include&lt;algorithm&gt;</code></li></ol><h2 id="31-sort的标准型"><a class="markdownIt-Anchor" href="#31-sort的标准型"></a> 3.1. sort()的标准型</h2><ol><li><code>sort(a,b,function_name)</code></li></ol><ul><li>可以调用定义的函数，default-&gt;整数的</li><li>function要求他们的参数应当为两个。</li></ul><ol start="2"><li>可以自定义的函数cmp(a,b)</li></ol><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sort</span>(first_pointer,second_pointer,cmp);</span><br><span class="line"><span class="comment">//cmp(a,b)可以自定义</span></span><br><span class="line"><span class="comment">//返回1表示a在b前，返回0表示a在b后面</span></span><br><span class="line"><span class="function"><span class="type">bool</span> <span class="title">cmp</span><span class="params">(<span class="type">const</span> <span class="type">int</span> &amp;a,<span class="type">const</span> <span class="type">int</span> &amp;b)</span> </span>&#123;</span><br><span class="line"><span class="keyword">return</span> a &gt; b;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">vector&lt;<span class="type">int</span>&gt; temp = &#123; <span class="number">6</span>, <span class="number">5</span>, <span class="number">4</span>, <span class="number">3</span>, <span class="number">2</span>, <span class="number">1</span> &#125;;</span><br><span class="line"><span class="built_in">out</span>(temp);</span><br><span class="line"><span class="built_in">sort</span>(temp.<span class="built_in">begin</span>(), temp.<span class="built_in">end</span>() , cmp);</span><br><span class="line"><span class="built_in">out</span>(temp);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="32-参考"><a class="markdownIt-Anchor" href="#32-参考"></a> 3.2. 参考</h2><ol><li><a href = "https://blog.csdn.net/fadedsun/article/details/78796158">c++sort函数的用法</a></li></ol><h1 id="4-put和write"><a class="markdownIt-Anchor" href="#4-put和write"></a> 4. put()和write()</h1><h2 id="41-put"><a class="markdownIt-Anchor" href="#41-put"></a> 4.1. put()</h2><ol><li>原型:<code>put()</code>:适用于wchar_t</li></ol><ul><li><code>osrteam &amp;put(char)</code></li><li>返回一个指向调用对象的引用，也就是可以直接拼接输出</li></ul><h2 id="42-write"><a class="markdownIt-Anchor" href="#42-write"></a> 4.2. write()</h2><ol><li>原型:<code>basic_ostream&lt;charT,traits&gt; &amp;write(const char_type* s,streamsize n);</code></li><li>write():方式返回一个指向调用它对象的引用，所以可以拼接，并不会遇到空制度时自动停止打印字符，而是打印指定数目的字符。</li></ol><h2 id="43-参考"><a class="markdownIt-Anchor" href="#43-参考"></a> 4.3. 参考</h2><ol><li><a href = "https://www.cnblogs.com/maqiang/archive/2012/05/02/2478400.html">c++ put()与write()</a></li></ol>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;c部分内置函数&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#c部分内置函数&quot;&gt;&lt;/a&gt; C++部分内置函数&lt;/h2&gt;
-&lt;h1 id=&quot;1-内置函数&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1-内置函数</summary>
       
     
     
