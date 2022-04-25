@@ -4,13 +4,40 @@
   
     
     <entry>
-      <title>网络层</title>
-      <link href="/2022/04/25/%E7%BD%91%E7%BB%9C%E5%B1%82/"/>
-      <url>/2022/04/25/%E7%BD%91%E7%BB%9C%E5%B1%82/</url>
+      <title>April 26th</title>
+      <link href="/2022/04/25/April-26th/"/>
+      <url>/2022/04/25/April-26th/</url>
       
         <content type="html"><![CDATA[]]></content>
       
       
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>网络层</title>
+      <link href="/2022/04/25/%E7%BD%91%E7%BB%9C%E5%B1%82/"/>
+      <url>/2022/04/25/%E7%BD%91%E7%BB%9C%E5%B1%82/</url>
+      
+        <content type="html"><![CDATA[<h1 id="layer3-network-layer-网络层"><a class="markdownIt-Anchor" href="#layer3-network-layer-网络层"></a> Layer3: Network Layer 网络层</h1><ol><li>为什么我们不用硬件地址进行通信?<ol><li>(设备数量问题)因为设备比较多，供应商也比较多</li><li>(规格问题)不同供应商的解决方案不同，所以使用硬件地址进行通信的通用性比较低。</li><li>(寻址问题)全球设备太多，如果使用硬件设备，那么进行定位比较复杂</li></ol></li><li>因为如上情况我们选择使用IP地址(逻辑地址)。</li><li>本章比较重要，期末占比会比较大。</li></ol><h1 id="overview-of-the-network-layer"><a class="markdownIt-Anchor" href="#overview-of-the-network-layer"></a> Overview of the Network Layer</h1><ol><li>对于不同帧使用同一的方案进行处理</li><li>第三层希望通过<strong>路由选择算法</strong>进行路径的选择和转发，对第二层是透明的。</li><li>第三层只能避免拥塞，但是要到第四层(运输层)才能完成流量控制(第三层不能完成流量控制)</li></ol><h2 id="responsibilities-职责"><a class="markdownIt-Anchor" href="#responsibilities-职责"></a> Responsibilities 职责</h2><ul><li><p>Move data through networks</p><p>通过网络移动数据：不同网段之间的通信，不同的广播域，两个广播域之间的进行了划分，互不干扰，不是广播的通信以及对另一个网段的广播需要能传达给对方</p></li><li><p>Use a <em>hierarchical</em> addressing scheme (opposed to MAC addressing, which is flat)</p><p>使用分层寻址方案（和MAC寻址相反，后者平坦）</p></li><li><p>Segment network and control flow of traffic</p><p>细分网络并控制流量(flow)：一步步进行细化，越近了解的越多:IP地址是一致的，也就是可以忽略物理层的不同。(具体原因在开头已经分析过了)</p></li><li><p>Reduce congestion</p><p>减少交通拥堵，基于IP做分段和传达，用来减少拥塞</p></li><li><p>Talk to other network</p><p>与其他网络交谈</p></li></ul><p><img src="https://s2.loli.net/2022/04/25/XEW8cvyLj5euDTM.png" alt="" /></p><ul><li>在上面我们可以发现，对于不同数据链路层的帧，第三层基于IP地址，来实现跨介质的逻辑理解和连通。</li><li>第三层负责进行连通和传达，数据可靠性由终端设备(第四层及以上)来进行保证(不然会带来比较大的计算量)。</li></ul><h2 id="devices-设备"><a class="markdownIt-Anchor" href="#devices-设备"></a> Devices 设备</h2><ul><li><p>Routers</p><ul><li><p>Interconnect network segments <em>or</em> networks</p><p>互联网段 or 网络</p></li><li><p>Make logical decisions based on IP addresses</p><p>根据ip地址做出合理的决定</p></li><li><p>Determine best path</p></li></ul><p>根据路由表决定最佳路径</p><ul><li>Switch packets from incoming ports to outgoing ports</li></ul><p>将数据包从入站端口切换到出站端口</p></li></ul><p>如果A网段的设备向路由器发送了一个B网段的广播地址，那么路由器会进行转发，然而如果A网段设备发射的是本网段的广播地址，路由器不会进行转发（广播域划分）</p><h1 id="ip-addresses-and-subnets-ip地址和子网划分"><a class="markdownIt-Anchor" href="#ip-addresses-and-subnets-ip地址和子网划分"></a> IP Addresses and Subnets IP地址和子网划分</h1><h2 id="packetdatagram-封包数据报格式"><a class="markdownIt-Anchor" href="#packetdatagram-封包数据报格式"></a> Packet/Datagram 封包/数据报格式</h2><p><img src="https://s2.loli.net/2022/04/25/OEoYvuZTV6FWiwX.png" alt="" /></p><p><strong>IP地址在报文中占据一部分(32bit一个IP地址)</strong></p><h2 id="ipv4-报文主要结构"><a class="markdownIt-Anchor" href="#ipv4-报文主要结构"></a> IPv4 报文主要结构</h2><p><img src="https://s2.loli.net/2022/04/25/BOsK86gY3LFrR9P.png" alt="" /></p><h3 id="首部部分"><a class="markdownIt-Anchor" href="#首部部分"></a> 首部部分</h3><blockquote><p>首部部分：上面蓝框部分的整体是首部部分</p></blockquote><h3 id="版本号"><a class="markdownIt-Anchor" href="#版本号"></a> 版本号</h3><blockquote><p>版本号:占 4 bit，指IP协议的版本。目前的 IP 协议版本号为 4 (即 IPv4)(6也就对应IPv6</p></blockquote><h3 id="首部长度"><a class="markdownIt-Anchor" href="#首部长度"></a> 首部长度</h3><blockquote><p>首部长度:占 4 bit，可表示的最大数值是15个单位(一个单位为 4 字节) 因此IP的首部长度的最大值是60字节。</p></blockquote><ol><li>因为首部长度是不确定的，所以我们需要进行标识。(用来方便读取)</li><li>首部长度的32 bit为一行，也就是4个字节为一个单位</li><li>所以IP报文首部字段长度为15行</li></ol><h3 id="服务类型"><a class="markdownIt-Anchor" href="#服务类型"></a> 服务类型</h3><blockquote><p>服务类型:占8bit，用来获得更好的服务，这个字段以前一直没有被人们使用。</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> 计算机网络 </category>
+          
+          <category> 互联网计算 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 互联网计算 </tag>
+            
+        </tags>
       
     </entry>
     
