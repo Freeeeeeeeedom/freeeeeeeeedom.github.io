@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://freeeeeeeeedom.gitee.io/2022/04/25/%E7%BD%91%E7%BB%9C%E5%B1%82/</loc>
+    
+    <lastmod>2022-04-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://freeeeeeeeedom.gitee.io/2022/04/25/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1/</loc>
     
     <lastmod>2022-04-25</lastmod>
@@ -13,7 +22,7 @@
   <url>
     <loc>https://freeeeeeeeedom.gitee.io/2022/04/25/April-25th/</loc>
     
-    <lastmod>2022-04-24</lastmod>
+    <lastmod>2022-04-25</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -1082,13 +1091,6 @@
   </url>
   
   <url>
-    <loc>https://freeeeeeeeedom.gitee.io/categories/C/C-%E7%BB%93%E6%9E%84%E5%8C%96%E7%BC%96%E7%A8%8B/</loc>
-    <lastmod>2022-04-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://freeeeeeeeedom.gitee.io/categories/C/C-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
     <lastmod>2022-04-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -1097,6 +1099,13 @@
   
   <url>
     <loc>https://freeeeeeeeedom.gitee.io/categories/C/C-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/</loc>
+    <lastmod>2022-04-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://freeeeeeeeedom.gitee.io/categories/C/C-%E7%BB%93%E6%9E%84%E5%8C%96%E7%BC%96%E7%A8%8B/</loc>
     <lastmod>2022-04-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1145,14 +1154,14 @@
   </url>
   
   <url>
-    <loc>https://freeeeeeeeedom.gitee.io/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E4%B8%8E%E8%AE%A1%E7%AE%972/</loc>
+    <loc>https://freeeeeeeeedom.gitee.io/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/</loc>
     <lastmod>2022-04-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://freeeeeeeeedom.gitee.io/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E4%B8%8E%E8%AE%A1%E7%AE%972/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/</loc>
+    <loc>https://freeeeeeeeedom.gitee.io/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E4%B8%8E%E8%AE%A1%E7%AE%972/</loc>
     <lastmod>2022-04-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
