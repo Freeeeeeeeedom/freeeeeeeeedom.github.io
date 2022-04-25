@@ -6,7 +6,7 @@
   <link href="https://freeeeeeeeedom.gitee.io/atom.xml" rel="self"/>
   
   <link href="https://freeeeeeeeedom.gitee.io/"/>
-  <updated>2022-04-24T23:40:09.420Z</updated>
+  <updated>2022-04-25T02:12:29.374Z</updated>
   <id>https://freeeeeeeeedom.gitee.io/</id>
   
   <author>
@@ -15,6 +15,19 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>人机交互设计</title>
+    <link href="https://freeeeeeeeedom.gitee.io/2022/04/25/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1/"/>
+    <id>https://freeeeeeeeedom.gitee.io/2022/04/25/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1/</id>
+    <published>2022-04-25T02:12:29.000Z</published>
+    <updated>2022-04-25T02:12:29.374Z</updated>
+    
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>April 25th</title>
@@ -535,33 +548,6 @@
       
     <summary type="html">&lt;h2 id=&quot;c-出现的部分问题&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#c-出现的部分问题&quot;&gt;&lt;/a&gt; C++ 出现的部分问题&lt;/h2&gt;
 &lt;h1 id=&quot;1-x86和x64的不同&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; h</summary>
-      
-    
-    
-    
-    <category term="C++" scheme="https://freeeeeeeeedom.gitee.io/categories/C/"/>
-    
-    <category term="C++结构化编程" scheme="https://freeeeeeeeedom.gitee.io/categories/C/C-%E7%BB%93%E6%9E%84%E5%8C%96%E7%BC%96%E7%A8%8B/"/>
-    
-    
-    <category term="C++高级程序设计" scheme="https://freeeeeeeeedom.gitee.io/tags/C-%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>C++核心关键字</title>
-    <link href="https://freeeeeeeeedom.gitee.io/2022/04/22/C-%E6%A0%B8%E5%BF%83%E5%85%B3%E9%94%AE%E5%AD%97/"/>
-    <id>https://freeeeeeeeedom.gitee.io/2022/04/22/C-%E6%A0%B8%E5%BF%83%E5%85%B3%E9%94%AE%E5%AD%97/</id>
-    <published>2022-04-22T02:20:27.000Z</published>
-    <updated>2022-04-22T10:19:16.254Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="c核心关键字"><a class="markdownIt-Anchor" href="#c核心关键字"></a> C++核心关键字</h1><h1 id="friend"><a class="markdownIt-Anchor" href="#friend"></a> Friend</h1><ol><li>private和protected不能从声明它们的同一类外部访问。</li><li>被friend关键字修饰的函数或类成为友元函数或友元类。</li></ol><h1 id="this"><a class="markdownIt-Anchor" href="#this"></a> this</h1><ol><li>在C++中，每一个对象都可以通过this指针来访问自己的地址。</li><li>this是所有成员函数的隐藏参数。</li></ol><h2 id="注意"><a class="markdownIt-Anchor" href="#注意"></a> 注意</h2><ol><li>友元函数没有this指针</li><li>this关键字之能用于成员函数，不能被修饰static的函数。</li><li>因为在C++中，this关键字是一个指向对象自己的指针，不能加点，而是用-&gt;</li></ol><h1 id="volatile"><a class="markdownIt-Anchor" href="#volatile"></a> volatile</h1><h2 id="易变性"><a class="markdownIt-Anchor" href="#易变性"></a> 易变性</h2><ol><li>也就是在汇编层面上来讲，下一条语句不会直接使用上一条语句的volatile变量的寄存器内容，而是重新从内存读取。</li></ol><h2 id="不可优化"><a class="markdownIt-Anchor" href="#不可优化"></a> 不可优化</h2><ol><li>volatile告诉编译器，不要对这个变量进行优化，保证程序员写在代码中的指令一定会被执行。</li></ol><h2 id="顺序性"><a class="markdownIt-Anchor" href="#顺序性"></a> 顺序性</h2><ol><li>保证在多线程情况下的一定的处理顺序</li></ol><h2 id="参考"><a class="markdownIt-Anchor" href="#参考"></a> 参考</h2><p><a href = "https://www.cnblogs.com/god-of-death/p/7852394.html">解释volatile关键字</a></p><h1 id="static"><a class="markdownIt-Anchor" href="#static"></a> static</h1><ul><li>用static可以为类类型的所有对象所共有，像是全局对象，但又被约束在类类型的名字空间中。static定义的静态变量在函数执行后不会释放其存储空间。<ul><li>修饰一个全局变量只对定义在同一文件中的函数可见：其他文件可以定义相同名字的变量。</li><li>修饰局部变量，这个变量值不会因为函数终止而丢失，该变量在全局函数区分配内存(局部变量在栈区)</li></ul></li><li>可以实施封装，将其放在private和protected区域</li><li>static成员没有this指针，它不是任何一个对象的组成部分，推荐使用&quot;类名::static成员名&quot;调用</li></ul><h2 id="成员函数"><a class="markdownIt-Anchor" href="#成员函数"></a> 成员函数</h2><ol><li>声明时候写static关键词</li><li>定义时候不写static关键词</li><li>不可以使用const以修饰其不改变其成员属性。<code>static void f() const&#123;&#125;;//error</code>，因为static函数不包含this指针</li><li>不能使用virtual修饰其虚拟性</li><li>目的:作为类作用域的全局函数。不能访问类的非静态数据成员。类的静态成员函数没有this指针，这导致<ol><li>不能直接存储类的非静态成员变量，调用非静态成员函数</li><li>不能被声明为virtual</li></ol></li></ol><h2 id="数据成员"><a class="markdownIt-Anchor" href="#数据成员"></a> 数据成员</h2><ol><li>声明时候写static关键词</li><li>定义时候不写static关键词，如果定义的时候加了，其实是变成了<strong>文件作用域</strong></li><li><code>static const</code>数据成员<ol><li>可以在类中声明并且初始化，然后在类定义之外再次进行定义</li><li>或者在类中声明，但在类定义外进行定义。</li></ol></li><li><strong>非const的static数据成员仅能在类中声明，并在类定义之外进行定义。</strong></li></ol><h1 id="const"><a class="markdownIt-Anchor" href="#const"></a> const</h1><ol><li>const定义的常量在超出其作用域之后<strong>其空间会被释放</strong><ol><li>const数据成员只在某个对象生存期内是常量</li><li>对于整个类是可变的，因为类是可以创建多个对象，对于不同对象其const数据成员的值可以不同</li></ol></li><li>const数据成员的初始化<strong>只能在类的构造函数的初始化列表中进行</strong>，想要建立在整个类中都恒定的常量，应该用类对的枚举常量来实现，或者static const</li><li>const成员函数主要目的是防止成员函数修改对象的内容。即const成员函数不能修改成员变量的值，但是可以访问成员变量。当方法成员函数时，该函数只能是const成员函数。</li><li><strong>数组成员不能在初始化列表中初始化</strong></li></ol><h1 id="protected"><a class="markdownIt-Anchor" href="#protected"></a> protected</h1><h1 id="private"><a class="markdownIt-Anchor" href="#private"></a> private</h1><h1 id="public"><a class="markdownIt-Anchor" href="#public"></a> public</h1><p>三个一起讲</p><ol><li><p><strong>类的一个特征就是封装，public和private作用就是实现这一目的</strong>。所以：</p><p>用户代码（类外）可以访问public成员而不能访问private成员；private成员只能由类成员（类内）和友元访问。</p></li><li><p><strong>类的另一个特征就是继承，protected的作用就是实现这一目的</strong>。所以：</p><p>protected成员可以被派生类对象访问，不能被用户代码（类外）访问。</p></li></ol><h2 id="示例"><a class="markdownIt-Anchor" href="#示例"></a> 示例</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;assert.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">class</span> <span class="title class_">A</span>&#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">  <span class="type">int</span> a;</span><br><span class="line">  <span class="built_in">A</span>()&#123;</span><br><span class="line">    a1 = <span class="number">1</span>;</span><br><span class="line">    a2 = <span class="number">2</span>;</span><br><span class="line">    a3 = <span class="number">3</span>;</span><br><span class="line">    a = <span class="number">4</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="function"><span class="type">void</span> <span class="title">fun</span><span class="params">()</span></span>&#123;</span><br><span class="line">    cout &lt;&lt; a &lt;&lt; endl;    <span class="comment">//正确</span></span><br><span class="line">    cout &lt;&lt; a1 &lt;&lt; endl;   <span class="comment">//正确</span></span><br><span class="line">    cout &lt;&lt; a2 &lt;&lt; endl;   <span class="comment">//正确，类内访问</span></span><br><span class="line">    cout &lt;&lt; a3 &lt;&lt; endl;   <span class="comment">//正确，类内访问</span></span><br><span class="line">  &#125;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">  <span class="type">int</span> a1;</span><br><span class="line"><span class="keyword">protected</span>:</span><br><span class="line">  <span class="type">int</span> a2;</span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">  <span class="type">int</span> a3;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">  A itema;</span><br><span class="line">  itema.a = <span class="number">10</span>;    <span class="comment">//正确</span></span><br><span class="line">  itema.a1 = <span class="number">20</span>;    <span class="comment">//正确</span></span><br><span class="line">  itema.a2 = <span class="number">30</span>;    <span class="comment">//错误，类外不能访问protected成员</span></span><br><span class="line">  itema.a3 = <span class="number">40</span>;    <span class="comment">//错误，类外不能访问private成员</span></span><br><span class="line">  <span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">  <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><strong>继承中的特点：</strong></p><p>先记住：不管是否继承，上面的规则永远适用！</p><p>有public, protected, private三种继承方式，它们相应地改变了基类成员的访问属性。</p><p>**1.public继承：**基类public成员，protected成员，private成员的访问属性在派生类中分别变成：public, protected, private</p><p>**2.protected继承：**基类public成员，protected成员，private成员的访问属性在派生类中分别变成：protected, protected, private</p><p>**3.private继承：**基类public成员，protected成员，private成员的访问属性在派生类中分别变成：private, private, private</p><p><strong>！！！但无论哪种继承方式，上面两点都没有改变</strong>：</p><p>1.private成员只能被本类成员（类内）和友元访问，不能被派生类访问；</p><p>2.protected成员可以被派生类访问。</p><h2 id="参考-2"><a class="markdownIt-Anchor" href="#参考-2"></a> 参考</h2><p><a href="https://zhuanlan.zhihu.com/p/70758317">深入理解C++中public、protected及private用法 - 知乎 (zhihu.com)</a></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;c核心关键字&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#c核心关键字&quot;&gt;&lt;/a&gt; C++核心关键字&lt;/h1&gt;
-&lt;h1 id=&quot;friend&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#friend&quot;&gt;&lt;</summary>
       
     
     
