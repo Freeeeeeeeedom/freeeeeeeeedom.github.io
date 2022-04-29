@@ -8,7 +8,7 @@
       <link href="/2022/04/29/April-29th/"/>
       <url>/2022/04/29/April-29th/</url>
       
-        <content type="html"><![CDATA[<h1 id="to-do"><a class="markdownIt-Anchor" href="#to-do"></a> To Do</h1><ul><li><input type="checkbox" id="checkbox0" /><label for="checkbox0">Leetcode每日一题 （前缀和 + DFS）</label></li><li><input type="checkbox" id="checkbox1" /><label for="checkbox1">钢琴课</label></li><li><input type="checkbox" id="checkbox2" /><label for="checkbox2">核酸寄</label></li><li><input type="checkbox" id="checkbox3" /><label for="checkbox3">CS144</label></li></ul><h1 id="总结"><a class="markdownIt-Anchor" href="#总结"></a> 总结</h1><p>无</p>]]></content>
+        <content type="html"><![CDATA[<h1 id="to-do"><a class="markdownIt-Anchor" href="#to-do"></a> To Do</h1><ul><li><input type="checkbox" id="checkbox0" checked="true" /><label for="checkbox0">Leetcode每日一题 （前缀和 + DFS）</label></li><li><input type="checkbox" id="checkbox1" checked="true" /><label for="checkbox1">钢琴课</label></li><li><input type="checkbox" id="checkbox2" /><label for="checkbox2">核酸寄</label></li><li><input type="checkbox" id="checkbox3" /><label for="checkbox3">CS144</label></li></ul><h1 id="总结"><a class="markdownIt-Anchor" href="#总结"></a> 总结</h1><p>无</p>]]></content>
       
       
       <categories>
