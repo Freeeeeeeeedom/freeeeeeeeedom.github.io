@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://freeeeeeeeedom.gitee.io/2022/05/03/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80-ch08-10/</loc>
+    
+    <lastmod>2022-05-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://freeeeeeeeedom.gitee.io/2022/05/03/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80-ch00-07/</loc>
     
     <lastmod>2022-05-03</lastmod>
@@ -1164,14 +1173,14 @@
   </url>
   
   <url>
-    <loc>https://freeeeeeeeedom.gitee.io/tags/Algorithm/</loc>
+    <loc>https://freeeeeeeeedom.gitee.io/tags/Leetcode/</loc>
     <lastmod>2022-05-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://freeeeeeeeedom.gitee.io/tags/Leetcode/</loc>
+    <loc>https://freeeeeeeeedom.gitee.io/tags/Algorithm/</loc>
     <lastmod>2022-05-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
