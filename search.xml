@@ -4,13 +4,40 @@
   
     
     <entry>
-      <title>May 5th</title>
-      <link href="/2022/05/05/May-5th/"/>
-      <url>/2022/05/05/May-5th/</url>
+      <title>HashDict</title>
+      <link href="/2022/05/05/HashDict/"/>
+      <url>/2022/05/05/HashDict/</url>
       
         <content type="html"><![CDATA[]]></content>
       
       
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>May 5th</title>
+      <link href="/2022/05/05/May-5th/"/>
+      <url>/2022/05/05/May-5th/</url>
+      
+        <content type="html"><![CDATA[<h1 id="to-do"><a class="markdownIt-Anchor" href="#to-do"></a> To Do</h1><ul><li><input type="checkbox" id="checkbox0" checked="true" /><label for="checkbox0">Leetcode</label></li><li><input type="checkbox" id="checkbox1" /><label for="checkbox1">数据库作业</label></li><li><input type="checkbox" id="checkbox2" /><label for="checkbox2">复习C++</label></li><li><input type="checkbox" id="checkbox3" /><label for="checkbox3">计算机网络</label></li></ul><h1 id="总结"><a class="markdownIt-Anchor" href="#总结"></a> 总结</h1>]]></content>
+      
+      
+      <categories>
+          
+          <category> Everday </category>
+          
+          <category> 2022_大二下 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 2022_Spring </tag>
+            
+        </tags>
       
     </entry>
     
