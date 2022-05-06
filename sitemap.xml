@@ -1181,13 +1181,6 @@
 
   
   <url>
-    <loc>https://freeeeeeeeedom.gitee.io/tags/C-%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/</loc>
-    <lastmod>2022-05-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://freeeeeeeeedom.gitee.io/tags/2022-Spring/</loc>
     <lastmod>2022-05-06</lastmod>
     <changefreq>weekly</changefreq>
@@ -1195,14 +1188,7 @@
   </url>
   
   <url>
-    <loc>https://freeeeeeeeedom.gitee.io/tags/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80/</loc>
-    <lastmod>2022-05-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://freeeeeeeeedom.gitee.io/tags/Leetcode/</loc>
+    <loc>https://freeeeeeeeedom.gitee.io/tags/C-%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/</loc>
     <lastmod>2022-05-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1223,7 +1209,21 @@
   </url>
   
   <url>
+    <loc>https://freeeeeeeeedom.gitee.io/tags/Leetcode/</loc>
+    <lastmod>2022-05-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://freeeeeeeeedom.gitee.io/tags/Algorithm/</loc>
+    <lastmod>2022-05-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://freeeeeeeeedom.gitee.io/tags/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80/</loc>
     <lastmod>2022-05-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1239,21 +1239,7 @@
 
   
   <url>
-    <loc>https://freeeeeeeeedom.gitee.io/categories/C/</loc>
-    <lastmod>2022-05-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://freeeeeeeeedom.gitee.io/categories/Everday/</loc>
-    <lastmod>2022-05-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://freeeeeeeeedom.gitee.io/categories/C/C-%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1hw/</loc>
     <lastmod>2022-05-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1267,28 +1253,14 @@
   </url>
   
   <url>
-    <loc>https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
+    <loc>https://freeeeeeeeedom.gitee.io/categories/C/</loc>
     <lastmod>2022-05-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/</loc>
-    <lastmod>2022-05-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80/</loc>
-    <lastmod>2022-05-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/Leetcode/</loc>
+    <loc>https://freeeeeeeeedom.gitee.io/categories/C/C-%E7%BB%93%E6%9E%84%E5%8C%96%E7%BC%96%E7%A8%8B/</loc>
     <lastmod>2022-05-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1309,13 +1281,6 @@
   </url>
   
   <url>
-    <loc>https://freeeeeeeeedom.gitee.io/categories/C/C-%E7%BB%93%E6%9E%84%E5%8C%96%E7%BC%96%E7%A8%8B/</loc>
-    <lastmod>2022-05-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://freeeeeeeeedom.gitee.io/categories/Computer-Network/</loc>
     <lastmod>2022-05-06</lastmod>
     <changefreq>weekly</changefreq>
@@ -1330,6 +1295,20 @@
   </url>
   
   <url>
+    <loc>https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
+    <lastmod>2022-05-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/</loc>
+    <lastmod>2022-05-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://freeeeeeeeedom.gitee.io/categories/Computer-Network/CS144/</loc>
     <lastmod>2022-05-06</lastmod>
     <changefreq>weekly</changefreq>
@@ -1338,6 +1317,27 @@
   
   <url>
     <loc>https://freeeeeeeeedom.gitee.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/</loc>
+    <lastmod>2022-05-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/Leetcode/</loc>
+    <lastmod>2022-05-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80/</loc>
+    <lastmod>2022-05-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://freeeeeeeeedom.gitee.io/categories/C/C-%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1hw/</loc>
     <lastmod>2022-05-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
