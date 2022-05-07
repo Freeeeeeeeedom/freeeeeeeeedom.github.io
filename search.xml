@@ -8,9 +8,23 @@
       <link href="/2022/05/06/May-6th/"/>
       <url>/2022/05/06/May-6th/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h1 id="to-do"><a class="markdownIt-Anchor" href="#to-do"></a> To Do</h1><ul><li><input type="checkbox" id="checkbox0" checked="true" /><label for="checkbox0">C++机考</label></li><li><input type="checkbox" id="checkbox1" checked="true" /><label for="checkbox1">Leetcode</label></li><li><input type="checkbox" id="checkbox2" /><label for="checkbox2">微信小程序</label></li></ul>]]></content>
       
       
+      <categories>
+          
+          <category> Everday </category>
+          
+          <category> 2022_大二下 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 2022_Spring </tag>
+            
+        </tags>
       
     </entry>
     
@@ -36,60 +50,6 @@
         <tags>
             
             <tag> C++高级程序设计 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>May 5th</title>
-      <link href="/2022/05/05/May-5th/"/>
-      <url>/2022/05/05/May-5th/</url>
-      
-        <content type="html"><![CDATA[<h1 id="to-do"><a class="markdownIt-Anchor" href="#to-do"></a> To Do</h1><ul><li><input type="checkbox" id="checkbox0" checked="true" /><label for="checkbox0">Leetcode</label></li><li><input type="checkbox" id="checkbox1" /><label for="checkbox1">数据库作业</label></li><li><input type="checkbox" id="checkbox2" checked="true" /><label for="checkbox2">复习C++</label></li><li><input type="checkbox" id="checkbox3" /><label for="checkbox3">计算机网络</label></li></ul><h1 id="总结"><a class="markdownIt-Anchor" href="#总结"></a> 总结</h1>]]></content>
-      
-      
-      <categories>
-          
-          <category> Everday </category>
-          
-          <category> 2022_大二下 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 2022_Spring </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>May 4th</title>
-      <link href="/2022/05/04/May-4th/"/>
-      <url>/2022/05/04/May-4th/</url>
-      
-        <content type="html"><![CDATA[<h1 id="to-do"><a class="markdownIt-Anchor" href="#to-do"></a> To Do</h1><ul><li><input type="checkbox" id="checkbox0" checked="true" /><label for="checkbox0">Leetcode</label></li><li><input type="checkbox" id="checkbox1" checked="true" /><label for="checkbox1">C++复习（麻了</label></li><li><input type="checkbox" id="checkbox2" /><label for="checkbox2">微信小程序</label></li><li><input type="checkbox" id="checkbox3" /><label for="checkbox3">计算机网络</label></li><li><input type="checkbox" id="checkbox4" checked="true" /><label for="checkbox4">计网实验</label></li></ul><h1 id="总结"><a class="markdownIt-Anchor" href="#总结"></a> 总结</h1>]]></content>
-      
-      
-      <categories>
-          
-          <category> Everday </category>
-          
-          <category> 2022_大二下 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 2022_Spring </tag>
             
         </tags>
       
@@ -152,33 +112,6 @@
     
     
     <entry>
-      <title>May 3th</title>
-      <link href="/2022/05/03/May-3th/"/>
-      <url>/2022/05/03/May-3th/</url>
-      
-        <content type="html"><![CDATA[<h1 id="to-do"><a class="markdownIt-Anchor" href="#to-do"></a> To Do</h1><ul><li><input type="checkbox" id="checkbox0" checked="true" /><label for="checkbox0">Leetcode</label></li><li><input type="checkbox" id="checkbox1" /><label for="checkbox1">CS144</label></li><li><input type="checkbox" id="checkbox2" checked="true" /><label for="checkbox2">数据管理基础</label></li><li><input type="checkbox" id="checkbox3" checked="true" /><label for="checkbox3">核酸</label></li><li><input type="checkbox" id="checkbox4" checked="true" /><label for="checkbox4">鞋子发货</label></li><li><input type="checkbox" id="checkbox5" checked="true" /><label for="checkbox5">买纸</label></li><li><input type="checkbox" id="checkbox6" checked="true" /><label for="checkbox6">回溯算法入门</label></li></ul><h1 id="summary"><a class="markdownIt-Anchor" href="#summary"></a> Summary</h1><ul><li>stable_sort()的用法</li></ul>]]></content>
-      
-      
-      <categories>
-          
-          <category> Everday </category>
-          
-          <category> 2022_大二下 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 2022_Spring </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>数据管理基础 ch58-61</title>
       <link href="/2022/05/03/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80-ch58-61/"/>
       <url>/2022/05/03/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80-ch58-61/</url>
@@ -198,168 +131,6 @@
         <tags>
             
             <tag> 数据管理基础 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>May 2th</title>
-      <link href="/2022/05/01/May-2th/"/>
-      <url>/2022/05/01/May-2th/</url>
-      
-        <content type="html"><![CDATA[<h1 id="to-do"><a class="markdownIt-Anchor" href="#to-do"></a> To Do</h1><ul><li><input type="checkbox" id="checkbox0" checked="true" /><label for="checkbox0">软工二</label></li><li><input type="checkbox" id="checkbox1" /><label for="checkbox1">CS144</label></li><li><input type="checkbox" id="checkbox2" /><label for="checkbox2">计网-小程序</label></li><li><input type="checkbox" id="checkbox3" checked="true" /><label for="checkbox3">体育舞蹈</label></li></ul>]]></content>
-      
-      
-      <categories>
-          
-          <category> Everday </category>
-          
-          <category> 2022_大二下 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 2022_Spring </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>May 1th</title>
-      <link href="/2022/05/01/May-1th/"/>
-      <url>/2022/05/01/May-1th/</url>
-      
-        <content type="html"><![CDATA[<h1 id="to-do"><a class="markdownIt-Anchor" href="#to-do"></a> To Do</h1><ul><li><input type="checkbox" id="checkbox0" checked="true" /><label for="checkbox0">Leetcode每日一题</label></li><li><input type="checkbox" id="checkbox1" checked="true" /><label for="checkbox1">Leetcode</label></li><li><input type="checkbox" id="checkbox2" /><label for="checkbox2">软工二</label></li><li><input type="checkbox" id="checkbox3" /><label for="checkbox3">CS144</label></li><li><input type="checkbox" id="checkbox4" /><label for="checkbox4">计网-小程序</label></li></ul><h1 id="总结"><a class="markdownIt-Anchor" href="#总结"></a> 总结</h1><p>Never go grocery shopping when you’re hungry!</p><p>You grab wrong things.</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Everday </category>
-          
-          <category> 2022_大二下 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 2022_Spring </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>April 30th</title>
-      <link href="/2022/04/30/April-30th/"/>
-      <url>/2022/04/30/April-30th/</url>
-      
-        <content type="html"><![CDATA[<h1 id="to-do"><a class="markdownIt-Anchor" href="#to-do"></a> To Do</h1><ul><li><input type="checkbox" id="checkbox0" checked="true" /><label for="checkbox0">Leetcode每日一题</label></li><li><input type="checkbox" id="checkbox1" checked="true" /><label for="checkbox1">Leetcode</label></li><li><input type="checkbox" id="checkbox2" /><label for="checkbox2">软工二</label></li><li><input type="checkbox" id="checkbox3" /><label for="checkbox3">CS144</label></li><li><input type="checkbox" id="checkbox4" /><label for="checkbox4">计网-小程序</label></li></ul>]]></content>
-      
-      
-      <categories>
-          
-          <category> Everday </category>
-          
-          <category> 2022_大二下 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 2022_Spring </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>April 29th</title>
-      <link href="/2022/04/29/April-29th/"/>
-      <url>/2022/04/29/April-29th/</url>
-      
-        <content type="html"><![CDATA[<h1 id="to-do"><a class="markdownIt-Anchor" href="#to-do"></a> To Do</h1><ul><li><input type="checkbox" id="checkbox0" checked="true" /><label for="checkbox0">Leetcode每日一题 （前缀和 + DFS）</label></li><li><input type="checkbox" id="checkbox1" checked="true" /><label for="checkbox1">钢琴课</label></li><li><input type="checkbox" id="checkbox2" /><label for="checkbox2">核酸寄</label></li><li><input type="checkbox" id="checkbox3" /><label for="checkbox3">CS144</label></li></ul><h1 id="总结"><a class="markdownIt-Anchor" href="#总结"></a> 总结</h1><p>无</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Everday </category>
-          
-          <category> 2022_大二下 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 2022_Spring </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>April 28th</title>
-      <link href="/2022/04/28/April-28th/"/>
-      <url>/2022/04/28/April-28th/</url>
-      
-        <content type="html"><![CDATA[<h1 id="to-do"><a class="markdownIt-Anchor" href="#to-do"></a> To Do</h1><ul><li><input type="checkbox" id="checkbox0" checked="true" /><label for="checkbox0">练琴1h</label></li><li><input type="checkbox" id="checkbox1" checked="true" /><label for="checkbox1">Leetcode每日一题</label></li><li><input type="checkbox" id="checkbox2" checked="true" /><label for="checkbox2">Leetcode</label></li><li><input type="checkbox" id="checkbox3" /><label for="checkbox3">CS144。。。（别鸽了）</label></li><li><input type="checkbox" id="checkbox4" checked="true" /><label for="checkbox4">全州拌饭！</label></li><li><input type="checkbox" id="checkbox5" checked="true" /><label for="checkbox5">计网实验课</label></li></ul><h1 id="总结"><a class="markdownIt-Anchor" href="#总结"></a> 总结</h1><p>芜湖</p><p>逆天</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Everday </category>
-          
-          <category> 2022_大二下 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 2022_Spring </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>April 27th</title>
-      <link href="/2022/04/27/April-27th/"/>
-      <url>/2022/04/27/April-27th/</url>
-      
-        <content type="html"><![CDATA[<h1 id="to-do"><a class="markdownIt-Anchor" href="#to-do"></a> To Do</h1><ul><li><input type="checkbox" id="checkbox0" checked="true" /><label for="checkbox0">Leetcode每日一题(只看了DFS一种，还有BFS和并查集做法下次一定)</label></li><li><input type="checkbox" id="checkbox1" checked="true" /><label for="checkbox1">Leetcode（摸鱼成瘾。。）</label></li><li><input type="checkbox" id="checkbox2" checked="true" /><label for="checkbox2">微信小程序</label></li><li><input type="checkbox" id="checkbox3" checked="true" /><label for="checkbox3">计算机网络-整理</label></li></ul><h1 id="总结"><a class="markdownIt-Anchor" href="#总结"></a> 总结</h1>]]></content>
-      
-      
-      <categories>
-          
-          <category> Everday </category>
-          
-          <category> 2022_大二下 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 2022_Spring </tag>
             
         </tags>
       
@@ -516,33 +287,6 @@
     
     
     <entry>
-      <title>April 26th</title>
-      <link href="/2022/04/25/April-26th/"/>
-      <url>/2022/04/25/April-26th/</url>
-      
-        <content type="html"><![CDATA[<h1 id="to-do"><a class="markdownIt-Anchor" href="#to-do"></a> To Do</h1><ul><li><input type="checkbox" id="checkbox0" checked="true" /><label for="checkbox0">数据库作业</label></li><li><input type="checkbox" id="checkbox1" checked="true" /><label for="checkbox1">Leetcode每日一题</label></li><li><input type="checkbox" id="checkbox2" /><label for="checkbox2">Leetcode</label></li><li><input type="checkbox" id="checkbox3" checked="true" /><label for="checkbox3">计算机网络（网络层）</label></li><li><input type="checkbox" id="checkbox4" /><label for="checkbox4">微信小程序</label></li><li><input type="checkbox" id="checkbox5" checked="true" /><label for="checkbox5">练琴2h</label></li></ul><h1 id="总结"><a class="markdownIt-Anchor" href="#总结"></a> 总结</h1>]]></content>
-      
-      
-      <categories>
-          
-          <category> Everday </category>
-          
-          <category> 2022_大二下 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 2022_Spring </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>网络层</title>
       <link href="/2022/04/25/%E7%BD%91%E7%BB%9C%E5%B1%82/"/>
       <url>/2022/04/25/%E7%BD%91%E7%BB%9C%E5%B1%82/</url>
@@ -589,87 +333,6 @@
         <tags>
             
             <tag> 软件工程 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>April 25th</title>
-      <link href="/2022/04/25/April-25th/"/>
-      <url>/2022/04/25/April-25th/</url>
-      
-        <content type="html"><![CDATA[<h1 id="to-do"><a class="markdownIt-Anchor" href="#to-do"></a> To Do</h1><ul><li><input type="checkbox" id="checkbox0" checked="true" /><label for="checkbox0">麦当当！！！</label></li><li><input type="checkbox" id="checkbox1" /><label for="checkbox1">数据库作业</label></li><li><input type="checkbox" id="checkbox2" checked="true" /><label for="checkbox2">Leetcode每日一题</label></li><li><input type="checkbox" id="checkbox3" /><label for="checkbox3">Leetcode</label></li><li><input type="checkbox" id="checkbox4" /><label for="checkbox4">计算机网络</label></li></ul><h1 id="总结"><a class="markdownIt-Anchor" href="#总结"></a> 总结</h1>]]></content>
-      
-      
-      <categories>
-          
-          <category> Everday </category>
-          
-          <category> 2022_大二下 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 2022_Spring </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>April 24th</title>
-      <link href="/2022/04/24/April-24th/"/>
-      <url>/2022/04/24/April-24th/</url>
-      
-        <content type="html"><![CDATA[<h1 id="to-do"><a class="markdownIt-Anchor" href="#to-do"></a> To Do</h1><ul><li><input type="checkbox" id="checkbox0" /><label for="checkbox0">CS144 lab2</label></li><li><input type="checkbox" id="checkbox1" checked="true" /><label for="checkbox1">Leetcode *3</label></li><li><input type="checkbox" id="checkbox2" checked="true" /><label for="checkbox2">Leetcode 每日一题</label></li><li><input type="checkbox" id="checkbox3" /><label for="checkbox3">微信小程序</label></li><li><input type="checkbox" id="checkbox4" /><label for="checkbox4">计网实验</label></li><li><input type="checkbox" id="checkbox5" checked="true" /><label for="checkbox5">核酸</label></li></ul><h1 id="总结"><a class="markdownIt-Anchor" href="#总结"></a> 总结</h1>]]></content>
-      
-      
-      <categories>
-          
-          <category> Everday </category>
-          
-          <category> 2022_大二下 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 2022_Spring </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>April 23th</title>
-      <link href="/2022/04/24/April-23th/"/>
-      <url>/2022/04/24/April-23th/</url>
-      
-        <content type="html"><![CDATA[<h1 id="to-do"><a class="markdownIt-Anchor" href="#to-do"></a> To Do</h1><ul><li><input type="checkbox" id="checkbox0" /><label for="checkbox0">CS144 lab2</label></li><li><input type="checkbox" id="checkbox1" /><label for="checkbox1">Leetcode *3</label></li><li><input type="checkbox" id="checkbox2" checked="true" /><label for="checkbox2">Leetcode 每日一题</label></li><li><input type="checkbox" id="checkbox3" /><label for="checkbox3">微信小程序（add page of categories）</label></li><li><input type="checkbox" id="checkbox4" /><label for="checkbox4">计网实验</label></li></ul><h1 id="总结"><a class="markdownIt-Anchor" href="#总结"></a> 总结</h1><p>麻了</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Everday </category>
-          
-          <category> 2022_大二下 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 2022_Spring </tag>
             
         </tags>
       
@@ -1486,87 +1149,6 @@
     
     
     <entry>
-      <title>April 22th</title>
-      <link href="/2022/04/22/April-22th/"/>
-      <url>/2022/04/22/April-22th/</url>
-      
-        <content type="html"><![CDATA[<h1 id="to-do"><a class="markdownIt-Anchor" href="#to-do"></a> To Do</h1><ul><li><input type="checkbox" id="checkbox0" /><label for="checkbox0">CS144 lab2</label></li><li><input type="checkbox" id="checkbox1" checked="true" /><label for="checkbox1">Leetcode *3 （三条二分，宫水三叶yyds）</label></li><li><input type="checkbox" id="checkbox2" checked="true" /><label for="checkbox2">Leetcode 每日一题</label></li><li><input type="checkbox" id="checkbox3" /><label for="checkbox3">微信小程序（add page of categories）</label></li><li><input type="checkbox" id="checkbox4" /><label for="checkbox4">计网实验</label></li><li><input type="checkbox" id="checkbox5" checked="true" /><label for="checkbox5">整理 友元 、继承</label></li></ul><h1 id="总结"><a class="markdownIt-Anchor" href="#总结"></a> 总结</h1><ul><li>初步扫了一下学长的C++的笔记，还有好多地方需要加强</li></ul>]]></content>
-      
-      
-      <categories>
-          
-          <category> Everday </category>
-          
-          <category> 2022_大二下 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 2022_Spring </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>April 21th</title>
-      <link href="/2022/04/21/April-21th/"/>
-      <url>/2022/04/21/April-21th/</url>
-      
-        <content type="html"><![CDATA[<h1 id="to-do"><a class="markdownIt-Anchor" href="#to-do"></a> To Do</h1><ul><li><input type="checkbox" id="checkbox0" /><label for="checkbox0">CS144 lab2</label></li><li><input type="checkbox" id="checkbox1" /><label for="checkbox1">Leetcode *3 （试水周赛，勉强三题）</label></li><li><input type="checkbox" id="checkbox2" checked="true" /><label for="checkbox2">Leetcode 每日一题</label></li><li><input type="checkbox" id="checkbox3" /><label for="checkbox3">微信小程序（add page of categories）</label></li><li><input type="checkbox" id="checkbox4" /><label for="checkbox4">计网实验</label></li><li><input type="checkbox" id="checkbox5" checked="true" /><label for="checkbox5">核酸</label></li><li><input type="checkbox" id="checkbox6" checked="true" /><label for="checkbox6">12：30起床</label></li></ul><h1 id="总结"><a class="markdownIt-Anchor" href="#总结"></a> 总结</h1><ul><li>今天起了个早，再接再厉！！！（doge）</li></ul>]]></content>
-      
-      
-      <categories>
-          
-          <category> Everday </category>
-          
-          <category> 2022_大二下 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 2022_Spring </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>April 20th</title>
-      <link href="/2022/04/20/April-20th/"/>
-      <url>/2022/04/20/April-20th/</url>
-      
-        <content type="html"><![CDATA[<h1 id="to-do"><a class="markdownIt-Anchor" href="#to-do"></a> To Do</h1><ul><li><input type="checkbox" id="checkbox0" /><label for="checkbox0">CS144 lab2</label></li><li><input type="checkbox" id="checkbox1" checked="true" /><label for="checkbox1">Leetcode *3 （整理了一下）</label></li><li><input type="checkbox" id="checkbox2" checked="true" /><label for="checkbox2">Leetcode 每日一题</label></li><li><input type="checkbox" id="checkbox3" /><label for="checkbox3">微信小程序</label></li><li><input type="checkbox" id="checkbox4" /><label for="checkbox4">计网实验</label></li><li><input type="checkbox" id="checkbox5" checked="true" /><label for="checkbox5">体育舞蹈（好难）</label></li><li><input type="checkbox" id="checkbox6" /><label for="checkbox6">核酸</label></li></ul><h1 id="总结"><a class="markdownIt-Anchor" href="#总结"></a> 总结</h1>]]></content>
-      
-      
-      <categories>
-          
-          <category> Everday </category>
-          
-          <category> 2022_大二下 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 2022_Spring </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>数据管理基础 ch54-57</title>
       <link href="/2022/04/19/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80-ch54-57/"/>
       <url>/2022/04/19/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80-ch54-57/</url>
@@ -1586,33 +1168,6 @@
         <tags>
             
             <tag> 数据管理基础 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>April 19th</title>
-      <link href="/2022/04/19/April-19th/"/>
-      <url>/2022/04/19/April-19th/</url>
-      
-        <content type="html"><![CDATA[<h1 id="to-do"><a class="markdownIt-Anchor" href="#to-do"></a> To Do</h1><ul><li><p><input type="checkbox" id="checkbox0" /><label for="checkbox0">CS144 lab2</label></p></li><li><p><input type="checkbox" id="checkbox1" checked="true" /><label for="checkbox1">Leetcode *3</label></p></li><li><p><input type="checkbox" id="checkbox2" checked="true" /><label for="checkbox2">Leetcode 每日一题</label></p></li><li><p><input type="checkbox" id="checkbox3" /><label for="checkbox3">微信小程序</label></p></li><li><p><input type="checkbox" id="checkbox4" /><label for="checkbox4">计网实验</label></p></li></ul>]]></content>
-      
-      
-      <categories>
-          
-          <category> Everday </category>
-          
-          <category> 2022_大二下 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 2022_Spring </tag>
             
         </tags>
       
@@ -1667,33 +1222,6 @@
         <tags>
             
             <tag> CS144 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>April 18th</title>
-      <link href="/2022/04/18/April-18th/"/>
-      <url>/2022/04/18/April-18th/</url>
-      
-        <content type="html"><![CDATA[<h1 id="to-do"><a class="markdownIt-Anchor" href="#to-do"></a> To Do</h1><ul><li><input type="checkbox" id="checkbox0" /><label for="checkbox0">CS144 lab2</label></li><li><input type="checkbox" id="checkbox1" checked="true" /><label for="checkbox1">Leetcode *3</label></li><li><input type="checkbox" id="checkbox2" checked="true" /><label for="checkbox2">Leetcode 每日一题</label></li><li><input type="checkbox" id="checkbox3" /><label for="checkbox3">微信小程序</label></li><li><input type="checkbox" id="checkbox4" /><label for="checkbox4">计网实验</label></li><li><input type="checkbox" id="checkbox5" checked="true" /><label for="checkbox5">JDBC整理</label></li></ul>]]></content>
-      
-      
-      <categories>
-          
-          <category> Everday </category>
-          
-          <category> 2022_大二下 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 2022_Spring </tag>
             
         </tags>
       
@@ -2693,60 +2221,6 @@
     
     
     <entry>
-      <title>April 17th</title>
-      <link href="/2022/04/17/April-17th/"/>
-      <url>/2022/04/17/April-17th/</url>
-      
-        <content type="html"><![CDATA[<h1 id="to-do"><a class="markdownIt-Anchor" href="#to-do"></a> To Do</h1><ul><li><input type="checkbox" id="checkbox0" /><label for="checkbox0">CS144 lab2</label></li><li><input type="checkbox" id="checkbox1" checked="true" /><label for="checkbox1">Leetcode *3</label></li><li><input type="checkbox" id="checkbox2" checked="true" /><label for="checkbox2">Leetcode 每日一题</label></li><li><input type="checkbox" id="checkbox3" /><label for="checkbox3">微信小程序</label></li><li><input type="checkbox" id="checkbox4" /><label for="checkbox4">计网实验</label></li><li><input type="checkbox" id="checkbox5" checked="true" /><label for="checkbox5">数据库JDBC</label></li><li><input type="checkbox" id="checkbox6" checked="true" /><label for="checkbox6">练琴2h</label></li></ul><h1 id="总结"><a class="markdownIt-Anchor" href="#总结"></a> 总结</h1><ul><li>数据库JDBC需要整理一下</li><li>CS144！！！ &amp;&amp; 计网</li></ul>]]></content>
-      
-      
-      <categories>
-          
-          <category> Everday </category>
-          
-          <category> 2022_大二下 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 2022_Spring </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>April 16th</title>
-      <link href="/2022/04/16/April-16th/"/>
-      <url>/2022/04/16/April-16th/</url>
-      
-        <content type="html"><![CDATA[<h1 id="to-do"><a class="markdownIt-Anchor" href="#to-do"></a> To Do</h1><ul><li><input type="checkbox" id="checkbox0" /><label for="checkbox0">CS144 lab2</label></li><li><input type="checkbox" id="checkbox1" checked="true" /><label for="checkbox1">Leetcode *3</label></li><li><input type="checkbox" id="checkbox2" checked="true" /><label for="checkbox2">Leetcode 每日一题</label></li><li><input type="checkbox" id="checkbox3" /><label for="checkbox3">微信小程序</label></li><li><input type="checkbox" id="checkbox4" /><label for="checkbox4">计网实验</label></li><li><input type="checkbox" id="checkbox5" /><label for="checkbox5">数据库JDBC</label></li><li><input type="checkbox" id="checkbox6" checked="true" /><label for="checkbox6">练琴1h</label></li></ul><h1 id="总结"><a class="markdownIt-Anchor" href="#总结"></a> 总结</h1><ul><li>今晚月色真美</li><li>写Leetcode时间太长了，而且上午全荒废了</li><li>明天首要任务是JDMC，微信小程序和CS144</li><li>Leetcode控制在1.5h之内！</li></ul>]]></content>
-      
-      
-      <categories>
-          
-          <category> Everday </category>
-          
-          <category> 2022_大二下 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 2022_Spring </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>数据管理基础 ch48-53</title>
       <link href="/2022/04/15/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80-ch48-53/"/>
       <url>/2022/04/15/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80-ch48-53/</url>
@@ -2793,33 +2267,6 @@
         <tags>
             
             <tag> 数据管理基础 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>April 15th</title>
-      <link href="/2022/04/15/April-15th/"/>
-      <url>/2022/04/15/April-15th/</url>
-      
-        <content type="html"><![CDATA[<h1 id="to-do"><a class="markdownIt-Anchor" href="#to-do"></a> To Do</h1><ul><li><input type="checkbox" id="checkbox0" checked="true" /><label for="checkbox0">CS144 lab1</label></li><li><input type="checkbox" id="checkbox1" /><label for="checkbox1">CS144 lab2</label></li><li><input type="checkbox" id="checkbox2" checked="true" /><label for="checkbox2">核酸检测</label></li><li><input type="checkbox" id="checkbox3" checked="true" /><label for="checkbox3">Leetcode 每日一题</label></li><li><input type="checkbox" id="checkbox4" /><label for="checkbox4">Leetcode *3</label></li><li><input type="checkbox" id="checkbox5" /><label for="checkbox5">微信小程序</label></li><li><input type="checkbox" id="checkbox6" /><label for="checkbox6">计网实验</label></li><li><input type="checkbox" id="checkbox7" /><label for="checkbox7">数据库JDBC</label></li></ul><h1 id="总结"><a class="markdownIt-Anchor" href="#总结"></a> 总结</h1>]]></content>
-      
-      
-      <categories>
-          
-          <category> Everday </category>
-          
-          <category> 2022_大二下 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 2022_Spring </tag>
             
         </tags>
       
@@ -3009,33 +2456,6 @@
         <tags>
             
             <tag> 数据管理基础 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>April 14th</title>
-      <link href="/2022/04/14/April-14th/"/>
-      <url>/2022/04/14/April-14th/</url>
-      
-        <content type="html"><![CDATA[<h1 id="to-do"><a class="markdownIt-Anchor" href="#to-do"></a> To Do</h1><ul><li><input type="checkbox" id="checkbox0" checked="true" /><label for="checkbox0">搭建博客</label></li><li><input type="checkbox" id="checkbox1" /><label for="checkbox1">CS144 lab1</label></li><li><input type="checkbox" id="checkbox2" /><label for="checkbox2">CS144 lab2</label></li><li><input type="checkbox" id="checkbox3" checked="true" /><label for="checkbox3">锻炼 5km</label></li><li><input type="checkbox" id="checkbox4" /><label for="checkbox4">核酸检测</label></li><li><input type="checkbox" id="checkbox5" /><label for="checkbox5">Leetcode *3</label></li><li><input type="checkbox" id="checkbox6" /><label for="checkbox6">微信小程序</label></li><li><input type="checkbox" id="checkbox7" /><label for="checkbox7">计网实验</label></li><li><input type="checkbox" id="checkbox8" /><label for="checkbox8">数据库JDBC</label></li></ul><h1 id="总结"><a class="markdownIt-Anchor" href="#总结"></a> 总结</h1><ul><li><p>string.assign()用法</p><p>assign方法可以理解为先将原字符串清空，然后赋予新的值作替换。</p><p>返回类型为 string类型的引用。其常用的重载也有下列几种：</p><ol><li><p>string&amp; assign(const string&amp; str);</p><p>替换字串</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">string a = <span class="string">&quot;HELLO&quot;</span>;</span><br><span class="line">a.<span class="built_in">assign</span>(<span class="string">&quot;Go&quot;</span>);</span><br><span class="line">cout&lt;&lt;a&lt;&lt;endl;</span><br><span class="line"><span class="comment">//打印结果为Go</span></span><br></pre></td></tr></table></figure></li><li><p>string&amp; assign ( const string&amp; str, size_t pos, size_t n );</p><p>将str的内容从位置pos起的n个字符作为原字串的新内容赋给原字串</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">string testassign = <span class="string">&quot;Hello World&quot;</span>;</span><br><span class="line">testassign.<span class="built_in">assign</span>(<span class="string">&quot;Come on!&quot;</span>, <span class="number">5</span>, <span class="number">2</span>);</span><br><span class="line">cout&lt;&lt;testassign&lt;&lt;endl;</span><br><span class="line"><span class="comment">//打印结果为 on</span></span><br></pre></td></tr></table></figure></li><li><p>string&amp; assign ( const char* s, size_t n );</p><p>将字符数组或者字符串的首n个字符替换原字符串内容</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">string testassign = <span class="string">&quot;Hello World&quot;</span>;</span><br><span class="line">testassign.<span class="built_in">assign</span>(<span class="string">&quot;go back to China&quot;</span>, <span class="number">7</span>);</span><br><span class="line">cout&lt;&lt;testassign&lt;&lt;endl;</span><br><span class="line"><span class="comment">//打印结果为go back</span></span><br></pre></td></tr></table></figure></li><li><p>string&amp; assign ( const char* s );</p><p>将字符串或者字符数组作为新内容替换原字串</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">string testassign = <span class="string">&quot;Hello World&quot;</span>;</span><br><span class="line"><span class="type">char</span> ch[<span class="number">20</span>] = <span class="string">&quot;go back to shanghai&quot;</span>;</span><br><span class="line">testassign.<span class="built_in">assign</span>(ch);</span><br><span class="line">cout&lt;&lt;testassign&lt;&lt;endl;</span><br><span class="line"><span class="comment">//打印结果为 go back to shanghai</span></span><br></pre></td></tr></table></figure></li><li><p>string&amp; assign ( size_t n, char c );</p><p>将原字串替换为n个字符c</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">string testassign = <span class="string">&quot;Hello World&quot;</span>;</span><br><span class="line"><span class="type">char</span> ch = <span class="string">&#x27;?&#x27;</span>;</span><br><span class="line">testassign.<span class="built_in">assign</span>(<span class="number">5</span>, ch);</span><br><span class="line">cout&lt;&lt;testassign&lt;&lt;endl;</span><br><span class="line"><span class="comment">//打印结果为?????</span></span><br></pre></td></tr></table></figure></li><li><p>template <class InputIterator>  string&amp; assign ( InputIterator first, InputIterator last );</p><p>需要include <iterator></p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">string testassign = <span class="string">&quot;Hello World&quot;</span>;</span><br><span class="line">testassign.<span class="built_in">assign</span>(<span class="built_in">istream_iterator</span>&lt;<span class="type">char</span>&gt;(cin), <span class="built_in">istream_iterator</span>&lt;<span class="type">char</span>&gt;());</span><br><span class="line"><span class="comment">//输入abcde</span></span><br><span class="line">cout&lt;&lt;testassign&lt;&lt;endl;</span><br><span class="line"><span class="comment">//打印结果为 abcde</span></span><br></pre></td></tr></table></figure></li></ol></li><li><p>5km耗时 26min26s</p></li><li><p>图床SMMS+Picgo</p></li><li><p>解决了复选框的显示问题</p></li><li><p>不过今天Leetcode没刷，cs144也没完成</p></li></ul>]]></content>
-      
-      
-      <categories>
-          
-          <category> Everday </category>
-          
-          <category> 2022_大二下 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 2022_Spring </tag>
             
         </tags>
       
