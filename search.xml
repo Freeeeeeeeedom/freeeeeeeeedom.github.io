@@ -8,9 +8,23 @@
       <link href="/2022/05/09/%E5%8D%95%E8%B0%83%E6%A0%88/"/>
       <url>/2022/05/09/%E5%8D%95%E8%B0%83%E6%A0%88/</url>
       
-        <content type="html"><![CDATA[<h2 id="任意一个元素找左边和右边第一个比自己大小的位置用单调栈"><a class="markdownIt-Anchor" href="#任意一个元素找左边和右边第一个比自己大小的位置用单调栈"></a> 任意一个元素找左边和右边第一个比自己大/小的位置，用<a href="https://so.csdn.net/so/search?q=%E5%8D%95%E8%B0%83%E6%A0%88&amp;spm=1001.2101.3001.7020">单调栈</a>。</h2><ul><li>单调栈主要可以用来解决区间最值问题</li><li>比如求一个一维数组的中某一个数的右边第一个比他大的元素或者元素下标。</li></ul>]]></content>
+        <content type="html"><![CDATA[<h1 id="单调栈"><a class="markdownIt-Anchor" href="#单调栈"></a> 单调栈</h1><p><strong>任意一个元素找左边和右边第一个比自己大/小的位置，用<a href="https://so.csdn.net/so/search?q=%E5%8D%95%E8%B0%83%E6%A0%88&amp;spm=1001.2101.3001.7020">单调栈</a>。</strong></p><ul><li>单调栈主要可以用来解决区间最值问题</li><li>比如求一个一维数组的中某一个数的右边第一个比他大的元素或者元素下标。</li></ul><p><strong><a href="https://leetcode.cn/problems/daily-temperatures/">739. 每日温度</a></strong></p><p>给定一个整数数组 temperatures ，表示每天的温度，返回一个数组 answer ，其中 answer[i] 是指在第 i 天之后，才会有更高的温度。如果气温在这之后都不会升高，请在该位置用 0 来代替</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">dailyTemperatures</span><span class="params">(vector&lt;<span class="type">int</span>&gt;&amp; temperatures)</span> </span>&#123;</span><br><span class="line">        <span class="type">int</span> n = temperatures.<span class="built_in">size</span>();</span><br><span class="line">        <span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">ans</span><span class="params">(n,<span class="number">0</span>)</span></span>;</span><br><span class="line">        stack&lt;<span class="type">int</span>&gt; st;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++)&#123;</span><br><span class="line">            <span class="type">int</span> t = temperatures[i];</span><br><span class="line">            <span class="keyword">while</span>(!st.<span class="built_in">empty</span>() &amp;&amp; t &gt; temperatures[st.<span class="built_in">top</span>()])&#123;</span><br><span class="line">                ans[st.<span class="built_in">top</span>()] = i - st.<span class="built_in">top</span>();</span><br><span class="line">                st.<span class="built_in">pop</span>();</span><br><span class="line">            &#125;</span><br><span class="line">            st.<span class="built_in">push</span>(i);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><p>只需遍历一遍数组，极大减少了时间复杂度</p>]]></content>
       
       
+      <categories>
+          
+          <category> 数据结构与算法 </category>
+          
+          <category> 常用算法 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Algorithm </tag>
+            
+        </tags>
       
     </entry>
     

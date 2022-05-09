@@ -6,7 +6,7 @@
   <link href="https://freeeeeeeeedom.gitee.io/atom.xml" rel="self"/>
   
   <link href="https://freeeeeeeeedom.gitee.io/"/>
-  <updated>2022-05-09T15:41:31.191Z</updated>
+  <updated>2022-05-09T15:46:48.273Z</updated>
   <id>https://freeeeeeeeedom.gitee.io/</id>
   
   <author>
@@ -21,18 +21,25 @@
     <link href="https://freeeeeeeeedom.gitee.io/2022/05/09/%E5%8D%95%E8%B0%83%E6%A0%88/"/>
     <id>https://freeeeeeeeedom.gitee.io/2022/05/09/%E5%8D%95%E8%B0%83%E6%A0%88/</id>
     <published>2022-05-09T15:41:20.000Z</published>
-    <updated>2022-05-09T15:41:31.191Z</updated>
+    <updated>2022-05-09T15:46:48.273Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="任意一个元素找左边和右边第一个比自己大小的位置用单调栈"><a class="markdownIt-Anchor" href="#任意一个元素找左边和右边第一个比自己大小的位置用单调栈"></a> 任意一个元素找左边和右边第一个比自己大/小的位置，用<a href="https://so.csdn.net/so/search?q=%E5%8D%95%E8%B0%83%E6%A0%88&amp;spm=1001.2101.3001.7020">单调栈</a>。</h2><ul><li>单调栈主要可以用来解决区间最值问题</li><li>比如求一个一维数组的中某一个数的右边第一个比他大的元素或者元素下标。</li></ul>]]></content>
+    <content type="html"><![CDATA[<h1 id="单调栈"><a class="markdownIt-Anchor" href="#单调栈"></a> 单调栈</h1><p><strong>任意一个元素找左边和右边第一个比自己大/小的位置，用<a href="https://so.csdn.net/so/search?q=%E5%8D%95%E8%B0%83%E6%A0%88&amp;spm=1001.2101.3001.7020">单调栈</a>。</strong></p><ul><li>单调栈主要可以用来解决区间最值问题</li><li>比如求一个一维数组的中某一个数的右边第一个比他大的元素或者元素下标。</li></ul><p><strong><a href="https://leetcode.cn/problems/daily-temperatures/">739. 每日温度</a></strong></p><p>给定一个整数数组 temperatures ，表示每天的温度，返回一个数组 answer ，其中 answer[i] 是指在第 i 天之后，才会有更高的温度。如果气温在这之后都不会升高，请在该位置用 0 来代替</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">dailyTemperatures</span><span class="params">(vector&lt;<span class="type">int</span>&gt;&amp; temperatures)</span> </span>&#123;</span><br><span class="line">        <span class="type">int</span> n = temperatures.<span class="built_in">size</span>();</span><br><span class="line">        <span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">ans</span><span class="params">(n,<span class="number">0</span>)</span></span>;</span><br><span class="line">        stack&lt;<span class="type">int</span>&gt; st;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++)&#123;</span><br><span class="line">            <span class="type">int</span> t = temperatures[i];</span><br><span class="line">            <span class="keyword">while</span>(!st.<span class="built_in">empty</span>() &amp;&amp; t &gt; temperatures[st.<span class="built_in">top</span>()])&#123;</span><br><span class="line">                ans[st.<span class="built_in">top</span>()] = i - st.<span class="built_in">top</span>();</span><br><span class="line">                st.<span class="built_in">pop</span>();</span><br><span class="line">            &#125;</span><br><span class="line">            st.<span class="built_in">push</span>(i);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><p>只需遍历一遍数组，极大减少了时间复杂度</p>]]></content>
     
     
       
       
-    <summary type="html">&lt;h2 id=&quot;任意一个元素找左边和右边第一个比自己大小的位置用单调栈&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#任意一个元素找左边和右边第一个比自己大小的位置用单调栈&quot;&gt;&lt;/a&gt; 任意一个元素找左边和右边第一个比自己大/小的位置，用&lt;a href</summary>
+    <summary type="html">&lt;h1 id=&quot;单调栈&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#单调栈&quot;&gt;&lt;/a&gt; 单调栈&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;任意一个元素找左边和右边第一个比自己大/小的位置，用&lt;a href=&quot;https://so.csdn.net/so/sea</summary>
       
     
     
     
+    <category term="数据结构与算法" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="常用算法" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="Algorithm" scheme="https://freeeeeeeeedom.gitee.io/tags/Algorithm/"/>
     
   </entry>
   
