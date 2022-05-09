@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>单调栈</title>
+      <link href="/2022/05/09/%E5%8D%95%E8%B0%83%E6%A0%88/"/>
+      <url>/2022/05/09/%E5%8D%95%E8%B0%83%E6%A0%88/</url>
+      
+        <content type="html"><![CDATA[<h2 id="任意一个元素找左边和右边第一个比自己大小的位置用单调栈"><a class="markdownIt-Anchor" href="#任意一个元素找左边和右边第一个比自己大小的位置用单调栈"></a> 任意一个元素找左边和右边第一个比自己大/小的位置，用<a href="https://so.csdn.net/so/search?q=%E5%8D%95%E8%B0%83%E6%A0%88&amp;spm=1001.2101.3001.7020">单调栈</a>。</h2><ul><li>单调栈主要可以用来解决区间最值问题</li><li>比如求一个一维数组的中某一个数的右边第一个比他大的元素或者元素下标。</li></ul>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>树的非递归遍历</title>
       <link href="/2022/05/09/%E6%A0%91%E7%9A%84%E9%9D%9E%E9%80%92%E5%BD%92%E9%81%8D%E5%8E%86/"/>
       <url>/2022/05/09/%E6%A0%91%E7%9A%84%E9%9D%9E%E9%80%92%E5%BD%92%E9%81%8D%E5%8E%86/</url>
@@ -14,6 +27,8 @@
       <categories>
           
           <category> 数据结构与算法 </category>
+          
+          <category> 常用算法 </category>
           
       </categories>
       
@@ -40,6 +55,8 @@
           
           <category> 数据结构与算法 </category>
           
+          <category> 常用算法 </category>
+          
       </categories>
       
       
@@ -64,6 +81,8 @@
       <categories>
           
           <category> 数据结构与算法 </category>
+          
+          <category> 常用算法 </category>
           
       </categories>
       
