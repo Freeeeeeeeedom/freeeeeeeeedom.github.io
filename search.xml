@@ -8,9 +8,25 @@
       <link href="/2022/05/11/%E5%8F%8C%E5%90%91%E9%98%9F%E5%88%97/"/>
       <url>/2022/05/11/%E5%8F%8C%E5%90%91%E9%98%9F%E5%88%97/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h1 id="双端单调队列"><a class="markdownIt-Anchor" href="#双端单调队列"></a> 双端单调队列</h1><h2 id="239-滑动窗口最大值"><a class="markdownIt-Anchor" href="#239-滑动窗口最大值"></a> <a href="https://leetcode.cn/problems/sliding-window-maximum/">239. 滑动窗口最大值</a></h2><p>给你一个整数数组 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi><mi>u</mi><mi>m</mi><mi>s</mi></mrow><annotation encoding="application/x-tex">nums</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">n</span><span class="mord mathit">u</span><span class="mord mathit">m</span><span class="mord mathit">s</span></span></span></span>，有一个大小为 k 的滑动窗口从数组的最左侧移动到数组的最右侧。你只可以看到在滑动窗口内的 k 个数字。滑动窗口每次只向右移动一位。</p><p><em>返回 滑动窗口中的最大值</em> 。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">输入：nums = [1,3,-1,-3,5,3,6,7], k = 3</span><br><span class="line">输出：[3,3,5,5,6,7]</span><br><span class="line">解释：</span><br><span class="line">滑动窗口的位置                最大值</span><br><span class="line">---------------               -----</span><br><span class="line">[1  3  -1] -3  5  3  6  7       3</span><br><span class="line"> 1 [3  -1  -3] 5  3  6  7       3</span><br><span class="line"> 1  3 [-1  -3  5] 3  6  7       5</span><br><span class="line"> 1  3  -1 [-3  5  3] 6  7       5</span><br><span class="line"> 1  3  -1  -3 [5  3  6] 7       6</span><br><span class="line"> 1  3  -1  -3  5 [3  6  7]      7</span><br><span class="line"></span><br></pre></td></tr></table></figure><blockquote><p><strong>提示：</strong></p><p>1 &lt;= nums.length &lt;= 105</p><p>-104 &lt;= nums[i] &lt;= 104</p><p>1 &lt;= k &lt;= nums.length</p></blockquote><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">maxSlidingWindow</span><span class="params">(vector&lt;<span class="type">int</span>&gt;&amp; nums, <span class="type">int</span> k)</span> </span>&#123;</span><br><span class="line">        deque&lt;<span class="type">int</span>&gt;q; <span class="comment">//双端队列</span></span><br><span class="line">        vector&lt;<span class="type">int</span>&gt;res;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; nums.<span class="built_in">size</span>(); i++)&#123;</span><br><span class="line">            <span class="keyword">while</span>(q.<span class="built_in">size</span>() &amp;&amp;  i - k + <span class="number">1</span> &gt; q.<span class="built_in">front</span>())  q.<span class="built_in">pop_front</span>(); <span class="comment">//判断队头是否在滑动窗口范围内</span></span><br><span class="line">            <span class="keyword">while</span>(q.<span class="built_in">size</span>() &amp;&amp; nums[i] &gt;= nums[q.<span class="built_in">back</span>()]) q.<span class="built_in">pop_back</span>();<span class="comment">//维护单调递减队列</span></span><br><span class="line">            q.<span class="built_in">push_back</span>(i); <span class="comment">//将当前元素插入队尾</span></span><br><span class="line">            <span class="keyword">if</span>(i &gt;= k - <span class="number">1</span>)  res.<span class="built_in">push_back</span>(nums[q.<span class="built_in">front</span>()]); <span class="comment">//滑动窗口的元素达到了k个，才可以将其加入答案数组中</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><h2 id="其他参考"><a class="markdownIt-Anchor" href="#其他参考"></a> 其他参考</h2><p><a href="https://freeeeeeeeedom.gitee.io/2022/05/09/%E5%8D%95%E8%B0%83%E6%A0%88/">单调栈-Freedom</a></p>]]></content>
       
       
+      <categories>
+          
+          <category> 数据结构与算法 </category>
+          
+          <category> 常用算法 </category>
+          
+          <category> 板子 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Algorithm </tag>
+            
+        </tags>
       
     </entry>
     
@@ -56,6 +72,8 @@
           <category> 数据结构与算法 </category>
           
           <category> 常用算法 </category>
+          
+          <category> 板子 </category>
           
       </categories>
       
@@ -109,6 +127,8 @@
           
           <category> 常用算法 </category>
           
+          <category> 板子 </category>
+          
       </categories>
       
       
@@ -135,6 +155,8 @@
           <category> 数据结构与算法 </category>
           
           <category> 常用算法 </category>
+          
+          <category> 板子 </category>
           
       </categories>
       
