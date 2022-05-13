@@ -3,11 +3,11 @@
   <title>投降输一半</title>
   
   <subtitle>Joker</subtitle>
-  <link href="https://freeeeeeeeedom.gitee.io/atom.xml" rel="self"/>
+  <link href="https://freeeeeeeeedom.github.io/atom.xml" rel="self"/>
   
-  <link href="https://freeeeeeeeedom.gitee.io/"/>
-  <updated>2022-05-12T13:57:50.854Z</updated>
-  <id>https://freeeeeeeeedom.gitee.io/</id>
+  <link href="https://freeeeeeeeedom.github.io/"/>
+  <updated>2022-05-13T07:14:34.234Z</updated>
+  <id>https://freeeeeeeeedom.github.io/</id>
   
   <author>
     <name>胡小小小小睿</name>
@@ -18,21 +18,35 @@
   
   <entry>
     <title>数据管理基础 NoSQL</title>
-    <link href="https://freeeeeeeeedom.gitee.io/2022/05/12/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80-NoSQL/"/>
-    <id>https://freeeeeeeeedom.gitee.io/2022/05/12/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80-NoSQL/</id>
+    <link href="https://freeeeeeeeedom.github.io/2022/05/12/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80-NoSQL/"/>
+    <id>https://freeeeeeeeedom.github.io/2022/05/12/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80-NoSQL/</id>
     <published>2022-05-12T13:57:50.000Z</published>
-    <updated>2022-05-12T13:57:50.854Z</updated>
+    <updated>2022-05-13T07:14:34.234Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="ch-64-聚合"><a class="markdownIt-Anchor" href="#ch-64-聚合"></a> ch 64 聚合</h1><h2 id="聚合"><a class="markdownIt-Anchor" href="#聚合"></a> 聚合</h2><ul><li>把一组相互关联的对象视为一个整体单元来操作，而这个单元就叫聚合（aggregate）。<ul><li>通过原子操作(atomic operation)更新聚合的值（含一致性管理）</li><li>以聚合为单位与数据存储通信</li><li>在集群中操作数据库时，用聚合为单位来复制和分片</li><li>由于程序员经常通过聚合结构来操作数据，故而采用聚合也能让其工作更为轻松。</li></ul></li><li>面向聚合操作数据时所用的单元，其结构比元组集合复杂得多<ul><li>“键值数据库”、“文档数据库”、“列族数据库”</li></ul></li></ul><h2 id="关系模型"><a class="markdownIt-Anchor" href="#关系模型"></a> 关系模型</h2><p><img src="https://s2.loli.net/2022/05/13/XsivCTwIqMBu1ex.png" alt="" /></p><h2 id="关系实例"><a class="markdownIt-Anchor" href="#关系实例"></a> 关系实例</h2><p><img src="https://s2.loli.net/2022/05/13/ovr8NUq5XhQ7egM.png" alt="" /></p><h2 id="聚合数据模型"><a class="markdownIt-Anchor" href="#聚合数据模型"></a> 聚合数据模型</h2><p><img src="https://s2.loli.net/2022/05/13/S9IMVpGkyNRwuAt.png" alt="" /></p><h2 id="聚合实例两个聚合"><a class="markdownIt-Anchor" href="#聚合实例两个聚合"></a> 聚合实例（两个聚合）</h2><p><img src="https://s2.loli.net/2022/05/13/IoX3fC2thez4uVT.png" alt="" /></p><h2 id="另一种聚合"><a class="markdownIt-Anchor" href="#另一种聚合"></a> 另一种聚合</h2><p><img src="https://s2.loli.net/2022/05/13/WEVQbfhk1KroHNs.png" alt="" /></p><h2 id="聚合实例一个聚合"><a class="markdownIt-Anchor" href="#聚合实例一个聚合"></a> 聚合实例（一个聚合）</h2><p><img src="https://s2.loli.net/2022/05/13/PL6dIeDzri97hvK.png" alt="" /></p><h2 id="聚合无知"><a class="markdownIt-Anchor" href="#聚合无知"></a> 聚合无知</h2><ul><li>关系型数据库的数据模型中，没有“聚合”这一概念，因此我们称之为“聚合无知”(aggregate- ignorant)。<ul><li>“图数据库&quot;也是聚合无知的。</li></ul></li><li>聚合反应数据操作的边界，很难在共享数据的多个场景中“正确” 划分，对某些数据交互有用的聚合结构，可能会阻碍另一些数据交互<ul><li>在客户下单并核查订单，以及零售商处理订单时，将订单视为一个聚合结构就比较合适。</li><li>如零售商要分析过去几个月的产品销售情况，那么把订单做成一个聚合结构反而麻烦了。要取得商品销售记录，就必须深挖数据库中的每一个聚合。</li></ul></li><li>若是采用“聚合无知模型”，那么很容易就能以不同方式来查看数据<ul><li>在操作数据时，如果没有一种占主导地位的结构，那么选用此模型效果会更好。</li></ul></li></ul><h2 id="聚合之间的关系"><a class="markdownIt-Anchor" href="#聚合之间的关系"></a> 聚合之间的关系</h2><ul><li>例如：把订单和客户放在两个聚合中，但是想在它们之间设定某种关系，以便能根据订单查出客户数据。<ul><li>要提供这种关联，最简单的办法就是把客户ID嵌入订单的聚合数据中。在应用层级提供关联。</li><li>在数据库层级提供聚合之间关系的表达机制</li></ul></li><li>操作多个有关联的聚合，由应用保证其正确性<ul><li>面向聚合数据库获取数据时以聚合为单元，只能保证单一聚合内部内容的原子性。</li></ul></li></ul><h2 id="聚合-集群和事务处理"><a class="markdownIt-Anchor" href="#聚合-集群和事务处理"></a> 聚合、集群和事务处理</h2><ul><li>在集群上运行时，需要把采集数据时所需的节点数降至最小<ul><li>如果在数据库中明确包含聚合结构，那么它就可以根据这一重要信息，知道哪些数据需要一起操作了，而且这些数据应该放在同一个节点中</li></ul></li><li>通常情况下，面向聚合的数据库不支持跨越多个聚合的ACID事务。它每次只能在一个聚合结构上执行原子操作。<ul><li>如果想以原子方式操作多个聚合，那么就必须自己组织应用程序的代码</li><li>在实际应用中，大多数原子操作都可以局限于某个聚合结构内部，而且，在将数据划分为聚合时，这也是要考虑的因素之一</li></ul></li></ul><h1 id="ch-65-主要的nosql数据模型"><a class="markdownIt-Anchor" href="#ch-65-主要的nosql数据模型"></a> ch 65 主要的NoSQL数据模型</h1><h2 id="键值数据模型与文档数据模型"><a class="markdownIt-Anchor" href="#键值数据模型与文档数据模型"></a> 键值数据模型与文档数据模型</h2><ul><li>这两类数据库都包含<strong>大量聚合</strong>，每个聚合中都有一个获取数据所用的键或ID。</li><li>两种模型的区别是:<ul><li><strong>键值数据库的聚合不透明</strong>，只包含一些没有太多意义的大块信息<ul><li>聚合中可以存储任意数据。数据库可能会限制聚合的总大小，但除此之外，其他方面都很随意</li><li>在键值数据库中，要访问聚合内容，<strong>只能通过键来查找</strong></li></ul></li><li>在文档数据库的聚合中，可以<strong>看到其结构</strong>。<ul><li>限制其中存放的内容，它定义了其允许的结构与数据类型</li><li>能够<strong>更加灵活</strong>地访问数据。通过用聚合中的字段查询，可以只获取一部分聚合，而不用获取全部内容</li><li>可以<strong>按照聚合内容创建索引</strong></li></ul></li></ul></li></ul><h2 id="列族存储"><a class="markdownIt-Anchor" href="#列族存储"></a> 列族存储</h2><p><strong>列族存储 1</strong></p><ul><li>部分数据库都以行为单元存储数据。然而，有些情况下写入操作执行得很少，但是经常需要一次读取若干行中的很多列。此时，列存储数据库将所有行的某一组列作为基本数据存储单元</li><li>列族数据库将列组织为列族。每一列都必须是某个列族的一部分，而且访问数据的单元也得是列<ul><li>某个列族中的数据经常需要一起访问。</li></ul></li><li>列族模型将其视为两级聚合结构(two-level aggregate structure)。<ul><li>与“键值存储”相同，第一个键通常代表行标识符，可以用它来获取想要的聚合。</li><li>列族结构与“键值存储”的区别在于，其“行聚合”(row aggregate)本身又是一个映射，其中包含一些更为详细的值。这些“二级值&quot; (second-level value)就叫做“列”。与整体访问某行数据一样，我们也可以操作特定的列</li></ul></li></ul><p><strong>列族存储 2</strong></p><p><img src="https://s2.loli.net/2022/05/13/GaELBJm3r2ysgt7.png" alt="" /></p><p><strong>列族存储 3</strong></p><ul><li>两种数据组织方式<ul><li>面向行( row-oriented)：每一行都是一个聚合(例如ID为1234的顾客就是一个聚合)，该聚合内部存有一些包含有用数据块(客户信息、订单记录)的列族</li><li>面向列(column-oriented): 每个列族都定义了一种记录类型(例如客户信息)，其中每行都表示一条记录。数据库中的大“行”理解为列族中每一个短行记录的串接</li></ul></li></ul><h2 id="面向聚合的数据模型"><a class="markdownIt-Anchor" href="#面向聚合的数据模型"></a> 面向聚合的数据模型</h2><ul><li>共同点<ul><li>都使用聚合这一概念，而且聚合中都有一个可以查找其内容的索引键。</li><li>在集群上运行时，聚合是中心环节，因为数据库必须保证将聚合内的数据存放在同一个节点上。</li><li>聚合是“更新”操作的最小数据单位(atomic unit)，对事务控制来说，以聚合为操作单元</li></ul></li><li>差别<ul><li>键值数据模型将聚合看作不透明的整体，只能根据键来查出整个聚合，而不能仅仅查询或获取其中的一部分</li><li>文档模型的聚合对数据库透明，于是就可以只查询并获取其中一部分数据了，不过，由于文档没有模式，因此在想优化存储并获取聚合中的部分内容时，数据库不太好调整文档结构</li><li>列族模型把聚合分为列族，让数据库将其视为行聚合内的一个数据单元。此类聚合的结构有某种限制，但是数据库可利用此种结构的优点来提高其易访问性。</li></ul></li></ul><h2 id="图结构"><a class="markdownIt-Anchor" href="#图结构"></a> 图结构</h2><img src="https://s2.loli.net/2022/05/13/qI17bZjQKCtdALn.png" style="zoom:50%;" /><h2 id="图数据库"><a class="markdownIt-Anchor" href="#图数据库"></a> 图数据库</h2><ul><li>图数据库的基本数据模型：由边(或称“弧”，arc)连接而成的若干节点。</li><li>可以用专门为“图”而设计的查询操作来搜寻图数据库的网络了<ul><li>指定节点，通过边进行查询</li></ul></li><li>关系型数据可以通过“外键”实现，查询中的多次连接，效率较差</li></ul><h2 id="无模式"><a class="markdownIt-Anchor" href="#无模式"></a> 无模式</h2><ul><li>关系型数据库中，首先必须定义“模式”，然后才能存放数据。</li><li>NoSQL数据库，无模式：<ul><li>“键值数据库&quot;可以把任何数据存放在一个“键”的名下。</li><li>“文档数据库” 对所存储的文档结构没有限制</li><li>在列族数据库中，任意列里面都可以随意存放数据</li><li>图数据库中可以新增边，也可以随意向节点和边中添加属性。</li></ul></li></ul><h2 id="格式不一致的数据"><a class="markdownIt-Anchor" href="#格式不一致的数据"></a> 格式不一致的数据</h2><ul><li>每条记录都拥有不同字段集(set of field)</li><li>关系型数据库中，“模式”会将表内每一行的数据类型强行统一，若不同行所存放的数据类型不同，那这么做就很别扭。<ul><li>要么得分别用很多列来存放这些数据，而且把用不到的字段值填成null(这就成了&quot;稀疏表”，sparse table)，</li><li>要么就要使用类似custom column 4这样没有意义的列类型。</li></ul></li><li>无模式表则没有这么麻烦，每条记录只要包含其需要的数据即可，不用再担心上面的问题了</li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;ch-64-聚合&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#ch-64-聚合&quot;&gt;&lt;/a&gt; ch 64 聚合&lt;/h1&gt;
+&lt;h2 id=&quot;聚合&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#聚合&quot;&gt;&lt;/a&gt; </summary>
+      
     
     
     
+    <category term="数据库" scheme="https://freeeeeeeeedom.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
+    <category term="数据管理基础" scheme="https://freeeeeeeeedom.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="数据管理基础" scheme="https://freeeeeeeeedom.github.io/tags/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80/"/>
     
   </entry>
   
   <entry>
     <title>DP入门</title>
-    <link href="https://freeeeeeeeedom.gitee.io/2022/05/12/DP%E5%85%A5%E9%97%A8/"/>
-    <id>https://freeeeeeeeedom.gitee.io/2022/05/12/DP%E5%85%A5%E9%97%A8/</id>
+    <link href="https://freeeeeeeeedom.github.io/2022/05/12/DP%E5%85%A5%E9%97%A8/"/>
+    <id>https://freeeeeeeeedom.github.io/2022/05/12/DP%E5%85%A5%E9%97%A8/</id>
     <published>2022-05-12T09:57:49.000Z</published>
     <updated>2022-05-12T11:17:35.363Z</updated>
     
@@ -48,19 +62,19 @@
     
     
     
-    <category term="数据结构与算法" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
+    <category term="数据结构与算法" scheme="https://freeeeeeeeedom.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
     
-    <category term="常用算法" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95/"/>
+    <category term="常用算法" scheme="https://freeeeeeeeedom.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95/"/>
     
     
-    <category term="Algorithm" scheme="https://freeeeeeeeedom.gitee.io/tags/Algorithm/"/>
+    <category term="Algorithm" scheme="https://freeeeeeeeedom.github.io/tags/Algorithm/"/>
     
   </entry>
   
   <entry>
     <title>双向队列</title>
-    <link href="https://freeeeeeeeedom.gitee.io/2022/05/11/%E5%8F%8C%E5%90%91%E9%98%9F%E5%88%97/"/>
-    <id>https://freeeeeeeeedom.gitee.io/2022/05/11/%E5%8F%8C%E5%90%91%E9%98%9F%E5%88%97/</id>
+    <link href="https://freeeeeeeeedom.github.io/2022/05/11/%E5%8F%8C%E5%90%91%E9%98%9F%E5%88%97/"/>
+    <id>https://freeeeeeeeedom.github.io/2022/05/11/%E5%8F%8C%E5%90%91%E9%98%9F%E5%88%97/</id>
     <published>2022-05-11T15:54:14.000Z</published>
     <updated>2022-05-12T06:44:30.892Z</updated>
     
@@ -75,21 +89,21 @@
     
     
     
-    <category term="数据结构与算法" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
+    <category term="数据结构与算法" scheme="https://freeeeeeeeedom.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
     
-    <category term="常用算法" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95/"/>
+    <category term="常用算法" scheme="https://freeeeeeeeedom.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95/"/>
     
-    <category term="板子" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E6%9D%BF%E5%AD%90/"/>
+    <category term="板子" scheme="https://freeeeeeeeedom.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E6%9D%BF%E5%AD%90/"/>
     
     
-    <category term="Algorithm" scheme="https://freeeeeeeeedom.gitee.io/tags/Algorithm/"/>
+    <category term="Algorithm" scheme="https://freeeeeeeeedom.github.io/tags/Algorithm/"/>
     
   </entry>
   
   <entry>
     <title>微信小程序开发</title>
-    <link href="https://freeeeeeeeedom.gitee.io/2022/05/11/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91/"/>
-    <id>https://freeeeeeeeedom.gitee.io/2022/05/11/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91/</id>
+    <link href="https://freeeeeeeeedom.github.io/2022/05/11/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91/"/>
+    <id>https://freeeeeeeeedom.github.io/2022/05/11/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91/</id>
     <published>2022-05-11T11:16:14.000Z</published>
     <updated>2022-05-11T12:33:42.812Z</updated>
     
@@ -104,19 +118,19 @@
     
     
     
-    <category term="计算机网络" scheme="https://freeeeeeeeedom.gitee.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    <category term="计算机网络" scheme="https://freeeeeeeeedom.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
     
-    <category term="互联网计算" scheme="https://freeeeeeeeedom.gitee.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
+    <category term="互联网计算" scheme="https://freeeeeeeeedom.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
     
     
-    <category term="微信小程序" scheme="https://freeeeeeeeedom.gitee.io/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    <category term="微信小程序" scheme="https://freeeeeeeeedom.github.io/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
     
   </entry>
   
   <entry>
     <title>序列化与反序列化</title>
-    <link href="https://freeeeeeeeedom.gitee.io/2022/05/11/%E5%BA%8F%E5%88%97%E5%8C%96%E4%B8%8E%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96/"/>
-    <id>https://freeeeeeeeedom.gitee.io/2022/05/11/%E5%BA%8F%E5%88%97%E5%8C%96%E4%B8%8E%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96/</id>
+    <link href="https://freeeeeeeeedom.github.io/2022/05/11/%E5%BA%8F%E5%88%97%E5%8C%96%E4%B8%8E%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96/"/>
+    <id>https://freeeeeeeeedom.github.io/2022/05/11/%E5%BA%8F%E5%88%97%E5%8C%96%E4%B8%8E%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96/</id>
     <published>2022-05-11T01:09:14.000Z</published>
     <updated>2022-05-12T04:40:42.737Z</updated>
     
@@ -130,21 +144,21 @@
     
     
     
-    <category term="数据结构与算法" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
+    <category term="数据结构与算法" scheme="https://freeeeeeeeedom.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
     
-    <category term="常用算法" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95/"/>
+    <category term="常用算法" scheme="https://freeeeeeeeedom.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95/"/>
     
-    <category term="板子" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E6%9D%BF%E5%AD%90/"/>
+    <category term="板子" scheme="https://freeeeeeeeedom.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E6%9D%BF%E5%AD%90/"/>
     
     
-    <category term="Algorithm" scheme="https://freeeeeeeeedom.gitee.io/tags/Algorithm/"/>
+    <category term="Algorithm" scheme="https://freeeeeeeeedom.github.io/tags/Algorithm/"/>
     
   </entry>
   
   <entry>
     <title>猫鼠游戏</title>
-    <link href="https://freeeeeeeeedom.gitee.io/2022/05/10/%E7%8C%AB%E9%BC%A0%E6%B8%B8%E6%88%8F/"/>
-    <id>https://freeeeeeeeedom.gitee.io/2022/05/10/%E7%8C%AB%E9%BC%A0%E6%B8%B8%E6%88%8F/</id>
+    <link href="https://freeeeeeeeedom.github.io/2022/05/10/%E7%8C%AB%E9%BC%A0%E6%B8%B8%E6%88%8F/"/>
+    <id>https://freeeeeeeeedom.github.io/2022/05/10/%E7%8C%AB%E9%BC%A0%E6%B8%B8%E6%88%8F/</id>
     <published>2022-05-10T03:04:06.000Z</published>
     <updated>2022-05-10T03:21:51.612Z</updated>
     
@@ -158,17 +172,17 @@
     
     
     
-    <category term="数据结构与算法" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
+    <category term="数据结构与算法" scheme="https://freeeeeeeeedom.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
     
     
-    <category term="Algorithm" scheme="https://freeeeeeeeedom.gitee.io/tags/Algorithm/"/>
+    <category term="Algorithm" scheme="https://freeeeeeeeedom.github.io/tags/Algorithm/"/>
     
   </entry>
   
   <entry>
     <title>单调栈</title>
-    <link href="https://freeeeeeeeedom.gitee.io/2022/05/09/%E5%8D%95%E8%B0%83%E6%A0%88/"/>
-    <id>https://freeeeeeeeedom.gitee.io/2022/05/09/%E5%8D%95%E8%B0%83%E6%A0%88/</id>
+    <link href="https://freeeeeeeeedom.github.io/2022/05/09/%E5%8D%95%E8%B0%83%E6%A0%88/"/>
+    <id>https://freeeeeeeeedom.github.io/2022/05/09/%E5%8D%95%E8%B0%83%E6%A0%88/</id>
     <published>2022-05-09T15:41:20.000Z</published>
     <updated>2022-05-12T04:40:29.879Z</updated>
     
@@ -183,42 +197,42 @@
     
     
     
-    <category term="数据结构与算法" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
+    <category term="数据结构与算法" scheme="https://freeeeeeeeedom.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
     
-    <category term="常用算法" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95/"/>
+    <category term="常用算法" scheme="https://freeeeeeeeedom.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95/"/>
     
-    <category term="板子" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E6%9D%BF%E5%AD%90/"/>
+    <category term="板子" scheme="https://freeeeeeeeedom.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E6%9D%BF%E5%AD%90/"/>
     
     
-    <category term="Algorithm" scheme="https://freeeeeeeeedom.gitee.io/tags/Algorithm/"/>
+    <category term="Algorithm" scheme="https://freeeeeeeeedom.github.io/tags/Algorithm/"/>
     
   </entry>
   
   <entry>
     <title>树的非递归遍历</title>
-    <link href="https://freeeeeeeeedom.gitee.io/2022/05/09/%E6%A0%91%E7%9A%84%E9%9D%9E%E9%80%92%E5%BD%92%E9%81%8D%E5%8E%86/"/>
-    <id>https://freeeeeeeeedom.gitee.io/2022/05/09/%E6%A0%91%E7%9A%84%E9%9D%9E%E9%80%92%E5%BD%92%E9%81%8D%E5%8E%86/</id>
+    <link href="https://freeeeeeeeedom.github.io/2022/05/09/%E6%A0%91%E7%9A%84%E9%9D%9E%E9%80%92%E5%BD%92%E9%81%8D%E5%8E%86/"/>
+    <id>https://freeeeeeeeedom.github.io/2022/05/09/%E6%A0%91%E7%9A%84%E9%9D%9E%E9%80%92%E5%BD%92%E9%81%8D%E5%8E%86/</id>
     <published>2022-05-09T11:35:25.000Z</published>
     <updated>2022-05-12T04:40:35.588Z</updated>
     
     
     
     
-    <category term="数据结构与算法" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
+    <category term="数据结构与算法" scheme="https://freeeeeeeeedom.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
     
-    <category term="常用算法" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95/"/>
+    <category term="常用算法" scheme="https://freeeeeeeeedom.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95/"/>
     
-    <category term="板子" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E6%9D%BF%E5%AD%90/"/>
+    <category term="板子" scheme="https://freeeeeeeeedom.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E6%9D%BF%E5%AD%90/"/>
     
     
-    <category term="Algorithm" scheme="https://freeeeeeeeedom.gitee.io/tags/Algorithm/"/>
+    <category term="Algorithm" scheme="https://freeeeeeeeedom.github.io/tags/Algorithm/"/>
     
   </entry>
   
   <entry>
     <title>区间DP</title>
-    <link href="https://freeeeeeeeedom.gitee.io/2022/05/09/%E5%8C%BA%E9%97%B4DP/"/>
-    <id>https://freeeeeeeeedom.gitee.io/2022/05/09/%E5%8C%BA%E9%97%B4DP/</id>
+    <link href="https://freeeeeeeeedom.github.io/2022/05/09/%E5%8C%BA%E9%97%B4DP/"/>
+    <id>https://freeeeeeeeedom.github.io/2022/05/09/%E5%8C%BA%E9%97%B4DP/</id>
     <published>2022-05-09T11:34:03.000Z</published>
     <updated>2022-05-09T13:40:31.889Z</updated>
     
@@ -233,19 +247,19 @@
     
     
     
-    <category term="数据结构与算法" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
+    <category term="数据结构与算法" scheme="https://freeeeeeeeedom.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
     
-    <category term="常用算法" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95/"/>
+    <category term="常用算法" scheme="https://freeeeeeeeedom.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95/"/>
     
     
-    <category term="Algorithm" scheme="https://freeeeeeeeedom.gitee.io/tags/Algorithm/"/>
+    <category term="Algorithm" scheme="https://freeeeeeeeedom.github.io/tags/Algorithm/"/>
     
   </entry>
   
   <entry>
     <title>记忆化搜索</title>
-    <link href="https://freeeeeeeeedom.gitee.io/2022/05/09/%E8%AE%B0%E5%BF%86%E5%8C%96%E6%90%9C%E7%B4%A2/"/>
-    <id>https://freeeeeeeeedom.gitee.io/2022/05/09/%E8%AE%B0%E5%BF%86%E5%8C%96%E6%90%9C%E7%B4%A2/</id>
+    <link href="https://freeeeeeeeedom.github.io/2022/05/09/%E8%AE%B0%E5%BF%86%E5%8C%96%E6%90%9C%E7%B4%A2/"/>
+    <id>https://freeeeeeeeedom.github.io/2022/05/09/%E8%AE%B0%E5%BF%86%E5%8C%96%E6%90%9C%E7%B4%A2/</id>
     <published>2022-05-09T11:33:42.000Z</published>
     <updated>2022-05-09T13:40:25.631Z</updated>
     
@@ -261,19 +275,19 @@
     
     
     
-    <category term="数据结构与算法" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
+    <category term="数据结构与算法" scheme="https://freeeeeeeeedom.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
     
-    <category term="常用算法" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95/"/>
+    <category term="常用算法" scheme="https://freeeeeeeeedom.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95/"/>
     
     
-    <category term="Algorithm" scheme="https://freeeeeeeeedom.gitee.io/tags/Algorithm/"/>
+    <category term="Algorithm" scheme="https://freeeeeeeeedom.github.io/tags/Algorithm/"/>
     
   </entry>
   
   <entry>
     <title>HashDict</title>
-    <link href="https://freeeeeeeeedom.gitee.io/2022/05/05/HashDict/"/>
-    <id>https://freeeeeeeeedom.gitee.io/2022/05/05/HashDict/</id>
+    <link href="https://freeeeeeeeedom.github.io/2022/05/05/HashDict/"/>
+    <id>https://freeeeeeeeedom.github.io/2022/05/05/HashDict/</id>
     <published>2022-05-05T09:50:43.000Z</published>
     <updated>2022-05-11T12:35:06.166Z</updated>
     
@@ -289,17 +303,17 @@
     
     
     
-    <category term="C++" scheme="https://freeeeeeeeedom.gitee.io/categories/C/"/>
+    <category term="C++" scheme="https://freeeeeeeeedom.github.io/categories/C/"/>
     
     
-    <category term="C++高级程序设计" scheme="https://freeeeeeeeedom.gitee.io/tags/C-%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    <category term="C++高级程序设计" scheme="https://freeeeeeeeedom.github.io/tags/C-%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
     
   </entry>
   
   <entry>
     <title>数据管理基础 ch08-10</title>
-    <link href="https://freeeeeeeeedom.gitee.io/2022/05/03/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80-ch08-10/"/>
-    <id>https://freeeeeeeeedom.gitee.io/2022/05/03/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80-ch08-10/</id>
+    <link href="https://freeeeeeeeedom.github.io/2022/05/03/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80-ch08-10/"/>
+    <id>https://freeeeeeeeedom.github.io/2022/05/03/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80-ch08-10/</id>
     <published>2022-05-03T09:39:24.000Z</published>
     <updated>2022-05-03T13:54:52.599Z</updated>
     
@@ -314,19 +328,19 @@
     
     
     
-    <category term="数据库" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    <category term="数据库" scheme="https://freeeeeeeeedom.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
-    <category term="数据管理基础" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80/"/>
+    <category term="数据管理基础" scheme="https://freeeeeeeeedom.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80/"/>
     
     
-    <category term="数据管理基础" scheme="https://freeeeeeeeedom.gitee.io/tags/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80/"/>
+    <category term="数据管理基础" scheme="https://freeeeeeeeedom.github.io/tags/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80/"/>
     
   </entry>
   
   <entry>
     <title>数据管理基础 ch00-07</title>
-    <link href="https://freeeeeeeeedom.gitee.io/2022/05/03/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80-ch00-07/"/>
-    <id>https://freeeeeeeeedom.gitee.io/2022/05/03/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80-ch00-07/</id>
+    <link href="https://freeeeeeeeedom.github.io/2022/05/03/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80-ch00-07/"/>
+    <id>https://freeeeeeeeedom.github.io/2022/05/03/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80-ch00-07/</id>
     <published>2022-05-03T09:04:27.000Z</published>
     <updated>2022-05-03T09:38:50.485Z</updated>
     
@@ -341,23 +355,23 @@
     
     
     
-    <category term="数据库" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    <category term="数据库" scheme="https://freeeeeeeeedom.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
-    <category term="数据管理基础" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80/"/>
+    <category term="数据管理基础" scheme="https://freeeeeeeeedom.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80/"/>
     
     
-    <category term="数据管理基础" scheme="https://freeeeeeeeedom.gitee.io/tags/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80/"/>
+    <category term="数据管理基础" scheme="https://freeeeeeeeedom.github.io/tags/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80/"/>
     
   </entry>
   
   <entry>
     <title>数据管理基础 ch58-61</title>
-    <link href="https://freeeeeeeeedom.gitee.io/2022/05/03/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80-ch58-61/"/>
-    <id>https://freeeeeeeeedom.gitee.io/2022/05/03/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80-ch58-61/</id>
+    <link href="https://freeeeeeeeedom.github.io/2022/05/03/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80-ch58-61/"/>
+    <id>https://freeeeeeeeedom.github.io/2022/05/03/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80-ch58-61/</id>
     <published>2022-05-03T05:59:55.000Z</published>
-    <updated>2022-05-03T09:04:48.567Z</updated>
+    <updated>2022-05-12T15:40:24.481Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="ch-58-查询处理"><a class="markdownIt-Anchor" href="#ch-58-查询处理"></a> ch 58 查询处理</h1><h2 id="查询处理步骤"><a class="markdownIt-Anchor" href="#查询处理步骤"></a> 查询处理步骤</h2><p><img src="https://s2.loli.net/2022/05/03/KDoc6FWNXC4laqu.png" alt="" /></p><h2 id="查询分析"><a class="markdownIt-Anchor" href="#查询分析"></a> 查询分析</h2><ul><li>查询分析的任务：对查询语句进行扫描、词法分析和语法分析<ul><li>词法分析：从查询语句中识别出正确的语言符号</li><li>语法分析：进行语法检查</li></ul></li></ul><h2 id="查询检查"><a class="markdownIt-Anchor" href="#查询检查"></a> 查询检查</h2><p>**查询检查 1 **</p><ul><li>查询检查的任务<ul><li>合法权检查</li><li>视图转换</li><li>安全性检查</li><li>完整性初步检查</li></ul></li><li>根据数据字典中有关的模式定义检查语句中的数据库对象，如关系名、属性名是否存在和有效</li><li>如果是对视图的操作，则要用视图消解方法把对视图的操作转换成对基本表的操作</li></ul><p><strong>查询检查 2</strong></p><ul><li>根据数据字典中的用户权限和完整性约束定义对用户的存取权限进行检查</li><li>检查通过后把SQL查询语句转换成内部表示，即等价的关系代数表达式。</li><li>关系数据库管理系统一般都用查询树，也称为语法分析树来表示扩展的关系代数表达式。</li></ul><h2 id="查询优化"><a class="markdownIt-Anchor" href="#查询优化"></a> 查询优化</h2><ul><li>查询优化：选择一个高效执行的查询处理策略</li><li>查询优化分类<ul><li>代数优化/逻辑优化：指关系代数表达式的优化</li><li>物理优化：指存取路径和底层操作算法的选择</li></ul></li><li>查询优化的选择依据<ul><li>基于规则(rule based)</li><li>基于代价(cost based)</li><li>基于语义(semantic based)</li></ul></li></ul><h2 id="查询执行"><a class="markdownIt-Anchor" href="#查询执行"></a> 查询执行</h2><ul><li>依据优化器得到的执行策略生成查询执行计划</li><li>代码生成器(code generator)生成执行查询计划的代码</li><li>两种执行方法<ul><li>自顶向下</li><li>自底向上</li></ul></li></ul><h2 id="选择操作的实现"><a class="markdownIt-Anchor" href="#选择操作的实现"></a> 选择操作的实现</h2><p><strong>选择操作的实现 1</strong></p><ul><li>选择操作典型实现方法：<ul><li>全表扫描方法 (Table Scan)<ul><li>对查询的基本表顺序扫描，逐一检查每个元组是否满足</li><li>选择条件，把满足条件的元组作为结果输出</li><li>适合小表，不适合大表</li></ul></li><li>索引扫描方法 (Index Scan)<ul><li>适合于选择条件中的属性上有索引(例如B+树索引或Hash索引)</li><li>通过索引先找到满足条件的元组主码或元组指针，再通过元组指针直接在查询的基本表中找到元组</li></ul></li></ul></li></ul><p><strong>选择操作的实现 2</strong></p><p><img src="https://s2.loli.net/2022/05/03/lZgIPYpiqFKRNkE.png" alt="" /></p><p><strong>选择操作的实现 3</strong></p><ul><li>全表扫描算法<ul><li>假设可以使用的内存为M块，全表扫描算法思想：<ol><li>按照物理次序读Student的M块到内存</li><li>检查内存的每个元组t，如果满足选择条件，则输出t</li><li>如果student还有其他块未被处理，重复①和②</li></ol></li></ul></li></ul><p><strong>选择操作的实现 4</strong></p><ul><li>索引扫描算法</li></ul><p><img src="https://s2.loli.net/2022/05/03/diXQMHjWsumGazS.png" alt="" /></p><p><strong>选择操作的实现 5</strong></p><p><img src="https://s2.loli.net/2022/05/03/cv8rECJ59KqDO4a.png" alt="" /></p><p><strong>选择操作的实现 6</strong></p><p><img src="https://s2.loli.net/2022/05/03/DucFvqSQoLmVbnX.png" alt="" /></p><h2 id="连接操作的实现"><a class="markdownIt-Anchor" href="#连接操作的实现"></a> 连接操作的实现</h2><ul><li>连接操作是查询处理中最耗时的操作之一</li><li>本节只讨论等值连接(或自然连接)最常用的实现算法<ul><li>嵌套循环算法(nested loop join)</li><li>排序-合并算法(sort-merge join 或merge join)</li><li>索引连接(index join)算法</li><li>Hash Join算法</li></ul></li></ul><p><img src="https://s2.loli.net/2022/05/03/cFMU5oQZA2yEiae.png" alt="" /></p><h2 id="嵌套循环算法"><a class="markdownIt-Anchor" href="#嵌套循环算法"></a> 嵌套循环算法</h2><ul><li>嵌套循环算法(nested loop join)<ul><li>对外层循环(Student表)的每一个元组(s)，检索内层循环(SC表)中的每一个元组(sc)</li><li>检查这两个元组在连接属性(Sno)上是否相等</li><li>如果满足连接条件，则串接后作为结果输出，直到外层循环表中的元组处理完为止</li></ul></li></ul><p><img src="https://s2.loli.net/2022/05/03/OtQHbspvxYrCG1J.png" alt="" /></p><h2 id="排序-合并算法"><a class="markdownIt-Anchor" href="#排序-合并算法"></a> 排序-合并算法</h2><p><strong>排序-合并算法 1</strong></p><ul><li>排序-合并算法(sort-merge join 或merge join)<ul><li>如果连接的表没有排好序，先对Student表和SC表按连接属性Sno排序</li><li>取Student表中第一个Sno，依次扫描SC表中具有相同Sno的元组</li><li>当扫描到Sno不相同的第一个SC元组时，返回Student表扫描它的下一个元组，再扫描SC表中具有相同Sno的元组，把它们连接起来</li><li>重复上述步骤直到Student 表扫描完</li></ul></li><li>Student表和SC表都只要扫描一遍</li><li>如果两个表原来无序，执行时间要加上对两个表的排序时间</li><li>对于大表，先排序后使用排序-合并连接算法执行连接，总的时间一般仍会减少</li></ul><p><strong>排序-合并算法 2</strong></p><p><img src="https://s2.loli.net/2022/05/03/RyE8lpNOwYHs6PI.png" alt="" /></p><p><img src="https://s2.loli.net/2022/05/03/PwJisVEKfvOdl4e.png" alt="" /></p><h2 id="索引连接算法"><a class="markdownIt-Anchor" href="#索引连接算法"></a> 索引连接算法</h2><ul><li>索引连接(index join)算法<ul><li>步骤：</li><li>在SC表上已经建立属性Sno的索引。</li><li>对Student中每一个元组，由Sno值通过SC的索引查找相应的SC元组。</li><li>把这些SC元组和Student元组连接起来</li><li>循环执行②③，直到Student表中的元组处理完为止</li></ul></li></ul><h2 id="hash-join算法"><a class="markdownIt-Anchor" href="#hash-join算法"></a> Hash Join算法</h2><ul><li>Hash Join算法<ul><li>把连接属性作为hash码，用同一个hash函数把Student表和SC表中的元组散列到hash表中。</li><li>划分阶段(building phase, 也称为partitioning phase)<ul><li>对包含较少元组的表(如Student表)进行一遍处理</li><li>把它的元组按hash函数分散到hash表的桶中</li></ul></li><li>试探阶段(probing phase,也称为连接阶段join phase)<ul><li>对另一个表(SC表)进行一遍处理</li><li>把SC表的元组也按同一个hash函数（hash码是连接属性）进行散列</li><li>把SC元组与桶中来自Student表并与之相匹配的元组连接起来</li></ul></li></ul></li><li>hash join算法前提：假设两个表中较小的表在第一阶段后可以完全放入内存的hash桶中</li></ul><h1 id="ch-59-查询优化"><a class="markdownIt-Anchor" href="#ch-59-查询优化"></a> ch 59 查询优化</h1><h2 id="查询优化概述"><a class="markdownIt-Anchor" href="#查询优化概述"></a> 查询优化概述</h2><p><strong>查询优化概述 1</strong></p><ul><li>关系系统的查询优化<ul><li>是关系数据库管理系统实现的关键技术又是关系系统的优点所在</li><li>减轻了用户选择存取路径的负担</li></ul></li><li>关系查询优化是影响关系数据库管理系统性能的关键因素</li><li>由于关系表达式的语义级别很高，使关系系统可以从关系表达式中分析查询语义，提供了执行查询优化的可能性</li></ul><p><strong>查询优化概述 2</strong></p><ul><li>非关系系统<ul><li>用户使用过程化的语言表达查询要求，执行何种记录级的操作，以及操作的序列是由用户来决定的</li><li>用户必须了解存取路径，系统要提供用户选择存取路径的手段，查询效率由用户的存取策略决定</li><li>如果用户做了不当的选择，系统是无法对此加以改进的</li></ul></li></ul><p><strong>查询优化概述 3</strong></p><ul><li>查询优化的优点<ul><li>用户不必考虑如何最好地表达查询以获得较好的效率</li><li>系统可以比用户程序的“优化”做得更好<ul><li>优化器可以从数据字典中获取许多统计信息，而用户程序则难以获得这些信息。</li><li>如果数据库的物理统计信息改变了，系统可以自动对查询重新优化以选择相适应的执行计划。在非关系系统中必须重写程序，而重写程序在实际应用中往往是不太可能的。</li><li>优化器可以考虑数百种不同的执行计划，程序员一般只能考虑有限的几种可能性。</li><li>优化器中包括了很多复杂的优化技术，这些优化技术往往只有最好的程序员才能掌握。系统的自动优化相当于使得所有人都拥有这些优化技术。</li></ul></li></ul></li></ul><h2 id="查询优化的总目标"><a class="markdownIt-Anchor" href="#查询优化的总目标"></a> 查询优化的总目标</h2><ul><li>关系数据库管理系统通过某种代价模型计算出各种查询执行策略的执行代价，然后选取代价最小的执行方案<ul><li>集中式数据库<ul><li>执行开销主要包括：磁盘存取块数(I/O代价)+处理机时间(CPU代价)+查询的内存开销</li><li>I/O代价是最主要的</li></ul></li><li>分布式数据库<ul><li>总代价=I/O代价+CPU代价+内存代价＋通信代价</li></ul></li></ul></li><li>查询优化的总目标<ul><li>选择有效的策略</li><li>求得给定关系表达式的值</li><li>使得查询代价最小(实际上是较小)</li></ul></li><li>一个关系查询可以对应不同的执行方案，其效率可能相差非常大。</li></ul><h2 id="查询优化的实例"><a class="markdownIt-Anchor" href="#查询优化的实例"></a> 查询优化的实例</h2><p><img src="https://s2.loli.net/2022/05/03/TJsvaiNjmeRXfAZ.png" alt="查询优化的实例" /></p><h2 id="方案a"><a class="markdownIt-Anchor" href="#方案a"></a> 方案A</h2><p><strong>方案A 1</strong></p><p>Q1=πSname(σStudent.Sno=SC.Sno∧SC.Cno='2' (Student×SC))</p><p><img src="https://s2.loli.net/2022/05/03/HUnKpOJxasPWQT7.png"  /><img src="https://s2.loli.net/2022/05/03/3jlc2b5tDsoXeUH.png"  /></p><p><strong>方案A 2</strong></p><p><img src="https://s2.loli.net/2022/05/03/kN1mZbd6PzBGi24.png" alt="" /></p><h2 id="方案b"><a class="markdownIt-Anchor" href="#方案b"></a> <strong>方案B</strong></h2><p><strong><img src="https://s2.loli.net/2022/05/03/wIYaTkZhnS2NJ1u.png" alt="" /></strong></p><p><img src="https://s2.loli.net/2022/05/03/KSt2r3hnaLjMeJb.png" alt="" /></p><h2 id="方案c"><a class="markdownIt-Anchor" href="#方案c"></a> 方案C</h2><p><img src="https://s2.loli.net/2022/05/03/j8x5vfthOB9LVwY.png" alt="" /></p><h2 id="拥有索引的实例"><a class="markdownIt-Anchor" href="#拥有索引的实例"></a> 拥有索引的实例</h2><p><img src="https://s2.loli.net/2022/05/03/c2y7lTunCaXoERH.png" alt="" /></p><h2 id="优化实例"><a class="markdownIt-Anchor" href="#优化实例"></a> 优化实例</h2><p><img src="https://s2.loli.net/2022/05/03/uyv1gDCINa3bpUc.png" alt="" /></p><h2 id="ch-60-代数优化"><a class="markdownIt-Anchor" href="#ch-60-代数优化"></a> ch 60 代数优化</h2><h2 id="关系代数表达式等价变换规则"><a class="markdownIt-Anchor" href="#关系代数表达式等价变换规则"></a> 关系代数表达式等价变换规则</h2><ul><li>代数优化策略：通过对关系代数表达式的等价变换来提高查询效率</li><li>关系代数表达式的等价：指用相同的关系代替两个表达式中相应的关系所得到的结果是相同的</li><li>两个关系表达式E1和E2是等价的，可记为E1≡E2</li></ul><h2 id="常用的等价变换规则"><a class="markdownIt-Anchor" href="#常用的等价变换规则"></a> 常用的等价变换规则</h2><p><strong>常用的等价变换规则 1</strong></p><p><img src="https://s2.loli.net/2022/05/03/By93ogAKfclqOCj.png" alt="" /></p><p><strong>常用的等价变换规则 2</strong></p><p><img src="https://s2.loli.net/2022/05/03/yQk9cKH1ElIOrwW.png" alt="" /></p><p><strong>常用的等价变换规则 3</strong></p><p><img src="https://s2.loli.net/2022/05/03/oYp9t4NzXDgwfFb.png" alt="" /></p><p><strong>常用的等价变换规则 4</strong></p><p><img src="https://s2.loli.net/2022/05/03/xA5mufIheN4EWgQ.png" alt="" /></p><h2 id="典型的启发式规则"><a class="markdownIt-Anchor" href="#典型的启发式规则"></a> 典型的启发式规则</h2><p><img src="https://s2.loli.net/2022/05/03/jQky6YZ4gSrIJbR.png" alt="" /></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="ch-58-查询处理"><a class="markdownIt-Anchor" href="#ch-58-查询处理"></a> ch 58 查询处理</h1><h2 id="查询处理步骤"><a class="markdownIt-Anchor" href="#查询处理步骤"></a> 查询处理步骤</h2><p><img src="https://s2.loli.net/2022/05/03/KDoc6FWNXC4laqu.png" alt="" /></p><h2 id="查询分析"><a class="markdownIt-Anchor" href="#查询分析"></a> 查询分析</h2><ul><li>查询分析的任务：对查询语句进行扫描、词法分析和语法分析<ul><li>词法分析：从查询语句中识别出正确的语言符号</li><li>语法分析：进行语法检查</li></ul></li></ul><h2 id="查询检查"><a class="markdownIt-Anchor" href="#查询检查"></a> 查询检查</h2><p>**查询检查 1 **</p><ul><li>查询检查的任务<ul><li>合法权检查</li><li>视图转换</li><li>安全性检查</li><li>完整性初步检查</li></ul></li><li>根据数据字典中有关的模式定义检查语句中的数据库对象，如关系名、属性名是否存在和有效</li><li>如果是对视图的操作，则要用视图消解方法把对视图的操作转换成对基本表的操作</li></ul><p><strong>查询检查 2</strong></p><ul><li>根据数据字典中的用户权限和完整性约束定义对用户的存取权限进行检查</li><li>检查通过后把SQL查询语句转换成内部表示，即等价的关系代数表达式。</li><li>关系数据库管理系统一般都用查询树，也称为语法分析树来表示扩展的关系代数表达式。</li></ul><h2 id="查询优化"><a class="markdownIt-Anchor" href="#查询优化"></a> 查询优化</h2><ul><li>查询优化：选择一个高效执行的查询处理策略</li><li>查询优化分类<ul><li>代数优化/逻辑优化：指关系代数表达式的优化</li><li>物理优化：指存取路径和底层操作算法的选择</li></ul></li><li>查询优化的选择依据<ul><li>基于规则(rule based)</li><li>基于代价(cost based)</li><li>基于语义(semantic based)</li></ul></li></ul><h2 id="查询执行"><a class="markdownIt-Anchor" href="#查询执行"></a> 查询执行</h2><ul><li>依据优化器得到的执行策略生成查询执行计划</li><li>代码生成器(code generator)生成执行查询计划的代码</li><li>两种执行方法<ul><li>自顶向下</li><li>自底向上</li></ul></li></ul><h2 id="选择操作的实现"><a class="markdownIt-Anchor" href="#选择操作的实现"></a> 选择操作的实现</h2><p><strong>选择操作的实现 1</strong></p><ul><li>选择操作典型实现方法：<ul><li>全表扫描方法 (Table Scan)<ul><li>对查询的基本表顺序扫描，逐一检查每个元组是否满足</li><li>选择条件，把满足条件的元组作为结果输出</li><li>适合小表，不适合大表</li></ul></li><li>索引扫描方法 (Index Scan)<ul><li>适合于选择条件中的属性上有索引(例如B+树索引或Hash索引)</li><li>通过索引先找到满足条件的元组主码或元组指针，再通过元组指针直接在查询的基本表中找到元组</li></ul></li></ul></li></ul><p><strong>选择操作的实现 2</strong></p><p><img src="https://s2.loli.net/2022/05/03/lZgIPYpiqFKRNkE.png" alt="" /></p><p><strong>选择操作的实现 3</strong></p><ul><li>全表扫描算法<ul><li>假设可以使用的内存为M块，全表扫描算法思想：<ol><li>按照物理次序读Student的M块到内存</li><li>检查内存的每个元组t，如果满足选择条件，则输出t</li><li>如果student还有其他块未被处理，重复①和②</li></ol></li></ul></li></ul><p><strong>选择操作的实现 4</strong></p><ul><li>索引扫描算法</li></ul><p><img src="https://s2.loli.net/2022/05/03/diXQMHjWsumGazS.png" alt="" /></p><p><strong>选择操作的实现 5</strong></p><p><img src="https://s2.loli.net/2022/05/03/cv8rECJ59KqDO4a.png" alt="" /></p><p><strong>选择操作的实现 6</strong></p><p><img src="https://s2.loli.net/2022/05/03/DucFvqSQoLmVbnX.png" alt="" /></p><h2 id="连接操作的实现"><a class="markdownIt-Anchor" href="#连接操作的实现"></a> 连接操作的实现</h2><ul><li>连接操作是查询处理中最耗时的操作之一</li><li>本节只讨论等值连接(或自然连接)最常用的实现算法<ul><li>嵌套循环算法(nested loop join)</li><li>排序-合并算法(sort-merge join 或merge join)</li><li>索引连接(index join)算法</li><li>Hash Join算法</li></ul></li></ul><p><img src="https://s2.loli.net/2022/05/03/cFMU5oQZA2yEiae.png" alt="" /></p><h2 id="嵌套循环算法"><a class="markdownIt-Anchor" href="#嵌套循环算法"></a> 嵌套循环算法</h2><ul><li>嵌套循环算法(nested loop join)<ul><li>对外层循环(Student表)的每一个元组(s)，检索内层循环(SC表)中的每一个元组(sc)</li><li>检查这两个元组在连接属性(Sno)上是否相等</li><li>如果满足连接条件，则串接后作为结果输出，直到外层循环表中的元组处理完为止</li></ul></li></ul><p><img src="https://s2.loli.net/2022/05/03/OtQHbspvxYrCG1J.png" alt="" /></p><h2 id="排序-合并算法"><a class="markdownIt-Anchor" href="#排序-合并算法"></a> 排序-合并算法</h2><p><strong>排序-合并算法 1</strong></p><ul><li>排序-合并算法(sort-merge join 或merge join)<ul><li>如果连接的表没有排好序，先对Student表和SC表按连接属性Sno排序</li><li>取Student表中第一个Sno，依次扫描SC表中具有相同Sno的元组</li><li>当扫描到Sno不相同的第一个SC元组时，返回Student表扫描它的下一个元组，再扫描SC表中具有相同Sno的元组，把它们连接起来</li><li>重复上述步骤直到Student 表扫描完</li></ul></li><li>Student表和SC表都只要扫描一遍</li><li>如果两个表原来无序，执行时间要加上对两个表的排序时间</li><li>对于大表，先排序后使用排序-合并连接算法执行连接，总的时间一般仍会减少</li></ul><p><strong>排序-合并算法 2</strong></p><p><img src="https://s2.loli.net/2022/05/03/RyE8lpNOwYHs6PI.png" alt="" /></p><p><img src="https://s2.loli.net/2022/05/03/PwJisVEKfvOdl4e.png" alt="" /></p><h2 id="索引连接算法"><a class="markdownIt-Anchor" href="#索引连接算法"></a> 索引连接算法</h2><ul><li>索引连接(index join)算法<ul><li>步骤：</li><li>在SC表上已经建立属性Sno的索引。</li><li>对Student中每一个元组，由Sno值通过SC的索引查找相应的SC元组。</li><li>把这些SC元组和Student元组连接起来</li><li>循环执行②③，直到Student表中的元组处理完为止</li></ul></li></ul><h2 id="hash-join算法"><a class="markdownIt-Anchor" href="#hash-join算法"></a> Hash Join算法</h2><ul><li>Hash Join算法<ul><li>把连接属性作为hash码，用同一个hash函数把Student表和SC表中的元组散列到hash表中。</li><li>划分阶段(building phase, 也称为partitioning phase)<ul><li>对包含较少元组的表(如Student表)进行一遍处理</li><li>把它的元组按hash函数分散到hash表的桶中</li></ul></li><li>试探阶段(probing phase,也称为连接阶段join phase)<ul><li>对另一个表(SC表)进行一遍处理</li><li>把SC表的元组也按同一个hash函数（hash码是连接属性）进行散列</li><li>把SC元组与桶中来自Student表并与之相匹配的元组连接起来</li></ul></li></ul></li><li>hash join算法前提：假设两个表中较小的表在第一阶段后可以完全放入内存的hash桶中</li></ul><h1 id="ch-59-查询优化"><a class="markdownIt-Anchor" href="#ch-59-查询优化"></a> ch 59 查询优化</h1><h2 id="查询优化概述"><a class="markdownIt-Anchor" href="#查询优化概述"></a> 查询优化概述</h2><p><strong>查询优化概述 1</strong></p><ul><li>关系系统的查询优化<ul><li>是关系数据库管理系统实现的关键技术又是关系系统的优点所在</li><li>减轻了用户选择存取路径的负担</li></ul></li><li>关系查询优化是影响关系数据库管理系统性能的关键因素</li><li>由于关系表达式的语义级别很高，使关系系统可以从关系表达式中分析查询语义，提供了执行查询优化的可能性</li></ul><p><strong>查询优化概述 2</strong></p><ul><li>非关系系统<ul><li>用户使用过程化的语言表达查询要求，执行何种记录级的操作，以及操作的序列是由用户来决定的</li><li>用户必须了解存取路径，系统要提供用户选择存取路径的手段，查询效率由用户的存取策略决定</li><li>如果用户做了不当的选择，系统是无法对此加以改进的</li></ul></li></ul><p><strong>查询优化概述 3</strong></p><ul><li>查询优化的优点<ul><li>用户不必考虑如何最好地表达查询以获得较好的效率</li><li>系统可以比用户程序的“优化”做得更好<ul><li>优化器可以从数据字典中获取许多统计信息，而用户程序则难以获得这些信息。</li><li>如果数据库的物理统计信息改变了，系统可以自动对查询重新优化以选择相适应的执行计划。在非关系系统中必须重写程序，而重写程序在实际应用中往往是不太可能的。</li><li>优化器可以考虑数百种不同的执行计划，程序员一般只能考虑有限的几种可能性。</li><li>优化器中包括了很多复杂的优化技术，这些优化技术往往只有最好的程序员才能掌握。系统的自动优化相当于使得所有人都拥有这些优化技术。</li></ul></li></ul></li></ul><h2 id="查询优化的总目标"><a class="markdownIt-Anchor" href="#查询优化的总目标"></a> 查询优化的总目标</h2><ul><li>关系数据库管理系统通过某种代价模型计算出各种查询执行策略的执行代价，然后选取代价最小的执行方案<ul><li>集中式数据库<ul><li>执行开销主要包括：磁盘存取块数(I/O代价)+处理机时间(CPU代价)+查询的内存开销</li><li>I/O代价是最主要的</li></ul></li><li>分布式数据库<ul><li>总代价=I/O代价+CPU代价+内存代价＋通信代价</li></ul></li></ul></li><li>查询优化的总目标<ul><li>选择有效的策略</li><li>求得给定关系表达式的值</li><li>使得查询代价最小(实际上是较小)</li></ul></li><li>一个关系查询可以对应不同的执行方案，其效率可能相差非常大。</li></ul><h2 id="查询优化的实例"><a class="markdownIt-Anchor" href="#查询优化的实例"></a> 查询优化的实例</h2><p><img src="https://s2.loli.net/2022/05/03/TJsvaiNjmeRXfAZ.png" alt="查询优化的实例" /></p><h2 id="方案a"><a class="markdownIt-Anchor" href="#方案a"></a> 方案A</h2><p><strong>方案A 1</strong></p><p>Q1=πSname(σStudent.Sno=SC.Sno∧SC.Cno='2' (Student×SC))</p><p><img src="https://s2.loli.net/2022/05/03/HUnKpOJxasPWQT7.png"  /><img src="https://s2.loli.net/2022/05/03/3jlc2b5tDsoXeUH.png"  /></p><p><strong>方案A 2</strong></p><p><img src="https://s2.loli.net/2022/05/03/kN1mZbd6PzBGi24.png" alt="" /></p><h2 id="方案b"><a class="markdownIt-Anchor" href="#方案b"></a> <strong>方案B</strong></h2><p><strong><img src="https://s2.loli.net/2022/05/03/wIYaTkZhnS2NJ1u.png" alt="" /></strong></p><p><img src="https://s2.loli.net/2022/05/03/KSt2r3hnaLjMeJb.png" alt="" /></p><h2 id="方案c"><a class="markdownIt-Anchor" href="#方案c"></a> 方案C</h2><p><img src="https://s2.loli.net/2022/05/03/j8x5vfthOB9LVwY.png" alt="" /></p><h2 id="拥有索引的实例"><a class="markdownIt-Anchor" href="#拥有索引的实例"></a> 拥有索引的实例</h2><p><img src="https://s2.loli.net/2022/05/03/c2y7lTunCaXoERH.png" alt="" /></p><h2 id="优化实例"><a class="markdownIt-Anchor" href="#优化实例"></a> 优化实例</h2><p><img src="https://s2.loli.net/2022/05/03/uyv1gDCINa3bpUc.png" alt="" /></p><h1 id="ch-60-代数优化"><a class="markdownIt-Anchor" href="#ch-60-代数优化"></a> ch 60 代数优化</h1><h2 id="关系代数表达式等价变换规则"><a class="markdownIt-Anchor" href="#关系代数表达式等价变换规则"></a> 关系代数表达式等价变换规则</h2><ul><li>代数优化策略：通过对关系代数表达式的等价变换来提高查询效率</li><li>关系代数表达式的等价：指用相同的关系代替两个表达式中相应的关系所得到的结果是相同的</li><li>两个关系表达式E1和E2是等价的，可记为E1≡E2</li></ul><h2 id="常用的等价变换规则"><a class="markdownIt-Anchor" href="#常用的等价变换规则"></a> 常用的等价变换规则</h2><p><strong>常用的等价变换规则 1</strong></p><p><img src="https://s2.loli.net/2022/05/03/By93ogAKfclqOCj.png" alt="" /></p><p><strong>常用的等价变换规则 2</strong></p><p><img src="https://s2.loli.net/2022/05/03/yQk9cKH1ElIOrwW.png" alt="" /></p><p><strong>常用的等价变换规则 3</strong></p><p><img src="https://s2.loli.net/2022/05/03/oYp9t4NzXDgwfFb.png" alt="" /></p><p><strong>常用的等价变换规则 4</strong></p><p><img src="https://s2.loli.net/2022/05/03/xA5mufIheN4EWgQ.png" alt="" /></p><h2 id="典型的启发式规则"><a class="markdownIt-Anchor" href="#典型的启发式规则"></a> 典型的启发式规则</h2><p><img src="https://s2.loli.net/2022/05/03/jQky6YZ4gSrIJbR.png" alt="" /></p><ul><li>笛卡尔积的使用比较少</li></ul><h2 id="查询树的启发式优化"><a class="markdownIt-Anchor" href="#查询树的启发式优化"></a> 查询树的启发式优化</h2><p><strong>查询树的启发式优化 1</strong></p><ul><li><p>遵循这些启发式规则，应用等价变换公式来优化关系表达式的算法</p><p><img src="https://s2.loli.net/2022/05/12/kzhjolVq1ZFLxeC.png" alt="" /></p></li></ul><p><strong>查询树的启发式优化 2</strong></p>]]></content>
     
     
       
@@ -368,19 +382,19 @@
     
     
     
-    <category term="数据库" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    <category term="数据库" scheme="https://freeeeeeeeedom.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
-    <category term="数据管理基础" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80/"/>
+    <category term="数据管理基础" scheme="https://freeeeeeeeedom.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80/"/>
     
     
-    <category term="数据管理基础" scheme="https://freeeeeeeeedom.gitee.io/tags/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80/"/>
+    <category term="数据管理基础" scheme="https://freeeeeeeeedom.github.io/tags/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80/"/>
     
   </entry>
   
   <entry>
     <title>数据链路层</title>
-    <link href="https://freeeeeeeeedom.gitee.io/2022/04/26/%E6%95%B0%E6%8D%AE%E9%93%BE%E8%B7%AF%E5%B1%82/"/>
-    <id>https://freeeeeeeeedom.gitee.io/2022/04/26/%E6%95%B0%E6%8D%AE%E9%93%BE%E8%B7%AF%E5%B1%82/</id>
+    <link href="https://freeeeeeeeedom.github.io/2022/04/26/%E6%95%B0%E6%8D%AE%E9%93%BE%E8%B7%AF%E5%B1%82/"/>
+    <id>https://freeeeeeeeedom.github.io/2022/04/26/%E6%95%B0%E6%8D%AE%E9%93%BE%E8%B7%AF%E5%B1%82/</id>
     <published>2022-04-26T15:04:49.000Z</published>
     <updated>2022-04-27T15:10:35.521Z</updated>
     
@@ -395,19 +409,19 @@
     
     
     
-    <category term="计算机网络" scheme="https://freeeeeeeeedom.gitee.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    <category term="计算机网络" scheme="https://freeeeeeeeedom.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
     
-    <category term="互联网计算" scheme="https://freeeeeeeeedom.gitee.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
+    <category term="互联网计算" scheme="https://freeeeeeeeedom.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
     
     
-    <category term="互联网计算" scheme="https://freeeeeeeeedom.gitee.io/tags/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
+    <category term="互联网计算" scheme="https://freeeeeeeeedom.github.io/tags/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
     
   </entry>
   
   <entry>
     <title>物理层</title>
-    <link href="https://freeeeeeeeedom.gitee.io/2022/04/26/%E7%89%A9%E7%90%86%E5%B1%82/"/>
-    <id>https://freeeeeeeeedom.gitee.io/2022/04/26/%E7%89%A9%E7%90%86%E5%B1%82/</id>
+    <link href="https://freeeeeeeeedom.github.io/2022/04/26/%E7%89%A9%E7%90%86%E5%B1%82/"/>
+    <id>https://freeeeeeeeedom.github.io/2022/04/26/%E7%89%A9%E7%90%86%E5%B1%82/</id>
     <published>2022-04-26T15:04:37.000Z</published>
     <updated>2022-04-27T13:08:07.678Z</updated>
     
@@ -425,57 +439,57 @@
     
     
     
-    <category term="计算机网络" scheme="https://freeeeeeeeedom.gitee.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    <category term="计算机网络" scheme="https://freeeeeeeeedom.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
     
-    <category term="互联网计算" scheme="https://freeeeeeeeedom.gitee.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
+    <category term="互联网计算" scheme="https://freeeeeeeeedom.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
     
     
-    <category term="互联网计算" scheme="https://freeeeeeeeedom.gitee.io/tags/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
+    <category term="互联网计算" scheme="https://freeeeeeeeedom.github.io/tags/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
     
   </entry>
   
   <entry>
     <title>Routing Protocols</title>
-    <link href="https://freeeeeeeeedom.gitee.io/2022/04/26/Routing-Protocols/"/>
-    <id>https://freeeeeeeeedom.gitee.io/2022/04/26/Routing-Protocols/</id>
+    <link href="https://freeeeeeeeedom.github.io/2022/04/26/Routing-Protocols/"/>
+    <id>https://freeeeeeeeedom.github.io/2022/04/26/Routing-Protocols/</id>
     <published>2022-04-26T15:04:22.000Z</published>
     <updated>2022-04-26T15:07:34.562Z</updated>
     
     
     
     
-    <category term="计算机网络" scheme="https://freeeeeeeeedom.gitee.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    <category term="计算机网络" scheme="https://freeeeeeeeedom.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
     
-    <category term="互联网计算" scheme="https://freeeeeeeeedom.gitee.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
+    <category term="互联网计算" scheme="https://freeeeeeeeedom.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
     
     
-    <category term="互联网计算" scheme="https://freeeeeeeeedom.gitee.io/tags/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
+    <category term="互联网计算" scheme="https://freeeeeeeeedom.github.io/tags/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
     
   </entry>
   
   <entry>
     <title>路由器和网络</title>
-    <link href="https://freeeeeeeeedom.gitee.io/2022/04/26/%E8%B7%AF%E7%94%B1%E5%99%A8%E5%92%8C%E7%BD%91%E7%BB%9C/"/>
-    <id>https://freeeeeeeeedom.gitee.io/2022/04/26/%E8%B7%AF%E7%94%B1%E5%99%A8%E5%92%8C%E7%BD%91%E7%BB%9C/</id>
+    <link href="https://freeeeeeeeedom.github.io/2022/04/26/%E8%B7%AF%E7%94%B1%E5%99%A8%E5%92%8C%E7%BD%91%E7%BB%9C/"/>
+    <id>https://freeeeeeeeedom.github.io/2022/04/26/%E8%B7%AF%E7%94%B1%E5%99%A8%E5%92%8C%E7%BD%91%E7%BB%9C/</id>
     <published>2022-04-26T15:04:06.000Z</published>
     <updated>2022-04-26T15:06:21.510Z</updated>
     
     
     
     
-    <category term="计算机网络" scheme="https://freeeeeeeeedom.gitee.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    <category term="计算机网络" scheme="https://freeeeeeeeedom.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
     
-    <category term="互联网计算" scheme="https://freeeeeeeeedom.gitee.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
+    <category term="互联网计算" scheme="https://freeeeeeeeedom.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
     
     
-    <category term="互联网计算" scheme="https://freeeeeeeeedom.gitee.io/tags/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
+    <category term="互联网计算" scheme="https://freeeeeeeeedom.github.io/tags/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
     
   </entry>
   
   <entry>
     <title>应用层</title>
-    <link href="https://freeeeeeeeedom.gitee.io/2022/04/26/%E5%BA%94%E7%94%A8%E5%B1%82/"/>
-    <id>https://freeeeeeeeedom.gitee.io/2022/04/26/%E5%BA%94%E7%94%A8%E5%B1%82/</id>
+    <link href="https://freeeeeeeeedom.github.io/2022/04/26/%E5%BA%94%E7%94%A8%E5%B1%82/"/>
+    <id>https://freeeeeeeeedom.github.io/2022/04/26/%E5%BA%94%E7%94%A8%E5%B1%82/</id>
     <published>2022-04-26T15:03:51.000Z</published>
     <updated>2022-04-26T15:03:51.959Z</updated>
     
@@ -487,20 +501,20 @@
   
   <entry>
     <title>运输层</title>
-    <link href="https://freeeeeeeeedom.gitee.io/2022/04/26/%E8%BF%90%E8%BE%93%E5%B1%82/"/>
-    <id>https://freeeeeeeeedom.gitee.io/2022/04/26/%E8%BF%90%E8%BE%93%E5%B1%82/</id>
+    <link href="https://freeeeeeeeedom.github.io/2022/04/26/%E8%BF%90%E8%BE%93%E5%B1%82/"/>
+    <id>https://freeeeeeeeedom.github.io/2022/04/26/%E8%BF%90%E8%BE%93%E5%B1%82/</id>
     <published>2022-04-26T15:03:40.000Z</published>
     <updated>2022-04-26T15:06:03.659Z</updated>
     
     
     
     
-    <category term="计算机网络" scheme="https://freeeeeeeeedom.gitee.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    <category term="计算机网络" scheme="https://freeeeeeeeedom.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
     
-    <category term="互联网计算" scheme="https://freeeeeeeeedom.gitee.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
+    <category term="互联网计算" scheme="https://freeeeeeeeedom.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
     
     
-    <category term="互联网计算" scheme="https://freeeeeeeeedom.gitee.io/tags/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
+    <category term="互联网计算" scheme="https://freeeeeeeeedom.github.io/tags/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
     
   </entry>
   
