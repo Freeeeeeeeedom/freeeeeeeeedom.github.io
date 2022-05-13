@@ -3,11 +3,11 @@
   <title>投降输一半</title>
   
   <subtitle>Joker</subtitle>
-  <link href="https://freeeeeeeeedom.github.io/atom.xml" rel="self"/>
+  <link href="https://freeeeeeeeedom.gitee.io/atom.xml" rel="self"/>
   
-  <link href="https://freeeeeeeeedom.github.io/"/>
+  <link href="https://freeeeeeeeedom.gitee.io/"/>
   <updated>2022-05-13T07:14:34.234Z</updated>
-  <id>https://freeeeeeeeedom.github.io/</id>
+  <id>https://freeeeeeeeedom.gitee.io/</id>
   
   <author>
     <name>胡小小小小睿</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>数据管理基础 NoSQL</title>
-    <link href="https://freeeeeeeeedom.github.io/2022/05/12/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80-NoSQL/"/>
-    <id>https://freeeeeeeeedom.github.io/2022/05/12/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80-NoSQL/</id>
+    <link href="https://freeeeeeeeedom.gitee.io/2022/05/12/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80-NoSQL/"/>
+    <id>https://freeeeeeeeedom.gitee.io/2022/05/12/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80-NoSQL/</id>
     <published>2022-05-12T13:57:50.000Z</published>
     <updated>2022-05-13T07:14:34.234Z</updated>
     
@@ -34,19 +34,19 @@
     
     
     
-    <category term="数据库" scheme="https://freeeeeeeeedom.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    <category term="数据库" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
-    <category term="数据管理基础" scheme="https://freeeeeeeeedom.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80/"/>
+    <category term="数据管理基础" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80/"/>
     
     
-    <category term="数据管理基础" scheme="https://freeeeeeeeedom.github.io/tags/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80/"/>
+    <category term="数据管理基础" scheme="https://freeeeeeeeedom.gitee.io/tags/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80/"/>
     
   </entry>
   
   <entry>
     <title>DP入门</title>
-    <link href="https://freeeeeeeeedom.github.io/2022/05/12/DP%E5%85%A5%E9%97%A8/"/>
-    <id>https://freeeeeeeeedom.github.io/2022/05/12/DP%E5%85%A5%E9%97%A8/</id>
+    <link href="https://freeeeeeeeedom.gitee.io/2022/05/12/DP%E5%85%A5%E9%97%A8/"/>
+    <id>https://freeeeeeeeedom.gitee.io/2022/05/12/DP%E5%85%A5%E9%97%A8/</id>
     <published>2022-05-12T09:57:49.000Z</published>
     <updated>2022-05-12T11:17:35.363Z</updated>
     
@@ -62,19 +62,19 @@
     
     
     
-    <category term="数据结构与算法" scheme="https://freeeeeeeeedom.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
+    <category term="数据结构与算法" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
     
-    <category term="常用算法" scheme="https://freeeeeeeeedom.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95/"/>
+    <category term="常用算法" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95/"/>
     
     
-    <category term="Algorithm" scheme="https://freeeeeeeeedom.github.io/tags/Algorithm/"/>
+    <category term="Algorithm" scheme="https://freeeeeeeeedom.gitee.io/tags/Algorithm/"/>
     
   </entry>
   
   <entry>
     <title>双向队列</title>
-    <link href="https://freeeeeeeeedom.github.io/2022/05/11/%E5%8F%8C%E5%90%91%E9%98%9F%E5%88%97/"/>
-    <id>https://freeeeeeeeedom.github.io/2022/05/11/%E5%8F%8C%E5%90%91%E9%98%9F%E5%88%97/</id>
+    <link href="https://freeeeeeeeedom.gitee.io/2022/05/11/%E5%8F%8C%E5%90%91%E9%98%9F%E5%88%97/"/>
+    <id>https://freeeeeeeeedom.gitee.io/2022/05/11/%E5%8F%8C%E5%90%91%E9%98%9F%E5%88%97/</id>
     <published>2022-05-11T15:54:14.000Z</published>
     <updated>2022-05-12T06:44:30.892Z</updated>
     
@@ -89,21 +89,21 @@
     
     
     
-    <category term="数据结构与算法" scheme="https://freeeeeeeeedom.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
+    <category term="数据结构与算法" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
     
-    <category term="常用算法" scheme="https://freeeeeeeeedom.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95/"/>
+    <category term="常用算法" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95/"/>
     
-    <category term="板子" scheme="https://freeeeeeeeedom.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E6%9D%BF%E5%AD%90/"/>
+    <category term="板子" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E6%9D%BF%E5%AD%90/"/>
     
     
-    <category term="Algorithm" scheme="https://freeeeeeeeedom.github.io/tags/Algorithm/"/>
+    <category term="Algorithm" scheme="https://freeeeeeeeedom.gitee.io/tags/Algorithm/"/>
     
   </entry>
   
   <entry>
     <title>微信小程序开发</title>
-    <link href="https://freeeeeeeeedom.github.io/2022/05/11/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91/"/>
-    <id>https://freeeeeeeeedom.github.io/2022/05/11/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91/</id>
+    <link href="https://freeeeeeeeedom.gitee.io/2022/05/11/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91/"/>
+    <id>https://freeeeeeeeedom.gitee.io/2022/05/11/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91/</id>
     <published>2022-05-11T11:16:14.000Z</published>
     <updated>2022-05-11T12:33:42.812Z</updated>
     
@@ -118,19 +118,19 @@
     
     
     
-    <category term="计算机网络" scheme="https://freeeeeeeeedom.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    <category term="计算机网络" scheme="https://freeeeeeeeedom.gitee.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
     
-    <category term="互联网计算" scheme="https://freeeeeeeeedom.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
+    <category term="互联网计算" scheme="https://freeeeeeeeedom.gitee.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
     
     
-    <category term="微信小程序" scheme="https://freeeeeeeeedom.github.io/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    <category term="微信小程序" scheme="https://freeeeeeeeedom.gitee.io/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
     
   </entry>
   
   <entry>
     <title>序列化与反序列化</title>
-    <link href="https://freeeeeeeeedom.github.io/2022/05/11/%E5%BA%8F%E5%88%97%E5%8C%96%E4%B8%8E%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96/"/>
-    <id>https://freeeeeeeeedom.github.io/2022/05/11/%E5%BA%8F%E5%88%97%E5%8C%96%E4%B8%8E%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96/</id>
+    <link href="https://freeeeeeeeedom.gitee.io/2022/05/11/%E5%BA%8F%E5%88%97%E5%8C%96%E4%B8%8E%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96/"/>
+    <id>https://freeeeeeeeedom.gitee.io/2022/05/11/%E5%BA%8F%E5%88%97%E5%8C%96%E4%B8%8E%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96/</id>
     <published>2022-05-11T01:09:14.000Z</published>
     <updated>2022-05-12T04:40:42.737Z</updated>
     
@@ -144,21 +144,21 @@
     
     
     
-    <category term="数据结构与算法" scheme="https://freeeeeeeeedom.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
+    <category term="数据结构与算法" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
     
-    <category term="常用算法" scheme="https://freeeeeeeeedom.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95/"/>
+    <category term="常用算法" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95/"/>
     
-    <category term="板子" scheme="https://freeeeeeeeedom.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E6%9D%BF%E5%AD%90/"/>
+    <category term="板子" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E6%9D%BF%E5%AD%90/"/>
     
     
-    <category term="Algorithm" scheme="https://freeeeeeeeedom.github.io/tags/Algorithm/"/>
+    <category term="Algorithm" scheme="https://freeeeeeeeedom.gitee.io/tags/Algorithm/"/>
     
   </entry>
   
   <entry>
     <title>猫鼠游戏</title>
-    <link href="https://freeeeeeeeedom.github.io/2022/05/10/%E7%8C%AB%E9%BC%A0%E6%B8%B8%E6%88%8F/"/>
-    <id>https://freeeeeeeeedom.github.io/2022/05/10/%E7%8C%AB%E9%BC%A0%E6%B8%B8%E6%88%8F/</id>
+    <link href="https://freeeeeeeeedom.gitee.io/2022/05/10/%E7%8C%AB%E9%BC%A0%E6%B8%B8%E6%88%8F/"/>
+    <id>https://freeeeeeeeedom.gitee.io/2022/05/10/%E7%8C%AB%E9%BC%A0%E6%B8%B8%E6%88%8F/</id>
     <published>2022-05-10T03:04:06.000Z</published>
     <updated>2022-05-10T03:21:51.612Z</updated>
     
@@ -172,17 +172,17 @@
     
     
     
-    <category term="数据结构与算法" scheme="https://freeeeeeeeedom.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
+    <category term="数据结构与算法" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
     
     
-    <category term="Algorithm" scheme="https://freeeeeeeeedom.github.io/tags/Algorithm/"/>
+    <category term="Algorithm" scheme="https://freeeeeeeeedom.gitee.io/tags/Algorithm/"/>
     
   </entry>
   
   <entry>
     <title>单调栈</title>
-    <link href="https://freeeeeeeeedom.github.io/2022/05/09/%E5%8D%95%E8%B0%83%E6%A0%88/"/>
-    <id>https://freeeeeeeeedom.github.io/2022/05/09/%E5%8D%95%E8%B0%83%E6%A0%88/</id>
+    <link href="https://freeeeeeeeedom.gitee.io/2022/05/09/%E5%8D%95%E8%B0%83%E6%A0%88/"/>
+    <id>https://freeeeeeeeedom.gitee.io/2022/05/09/%E5%8D%95%E8%B0%83%E6%A0%88/</id>
     <published>2022-05-09T15:41:20.000Z</published>
     <updated>2022-05-12T04:40:29.879Z</updated>
     
@@ -197,42 +197,42 @@
     
     
     
-    <category term="数据结构与算法" scheme="https://freeeeeeeeedom.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
+    <category term="数据结构与算法" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
     
-    <category term="常用算法" scheme="https://freeeeeeeeedom.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95/"/>
+    <category term="常用算法" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95/"/>
     
-    <category term="板子" scheme="https://freeeeeeeeedom.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E6%9D%BF%E5%AD%90/"/>
+    <category term="板子" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E6%9D%BF%E5%AD%90/"/>
     
     
-    <category term="Algorithm" scheme="https://freeeeeeeeedom.github.io/tags/Algorithm/"/>
+    <category term="Algorithm" scheme="https://freeeeeeeeedom.gitee.io/tags/Algorithm/"/>
     
   </entry>
   
   <entry>
     <title>树的非递归遍历</title>
-    <link href="https://freeeeeeeeedom.github.io/2022/05/09/%E6%A0%91%E7%9A%84%E9%9D%9E%E9%80%92%E5%BD%92%E9%81%8D%E5%8E%86/"/>
-    <id>https://freeeeeeeeedom.github.io/2022/05/09/%E6%A0%91%E7%9A%84%E9%9D%9E%E9%80%92%E5%BD%92%E9%81%8D%E5%8E%86/</id>
+    <link href="https://freeeeeeeeedom.gitee.io/2022/05/09/%E6%A0%91%E7%9A%84%E9%9D%9E%E9%80%92%E5%BD%92%E9%81%8D%E5%8E%86/"/>
+    <id>https://freeeeeeeeedom.gitee.io/2022/05/09/%E6%A0%91%E7%9A%84%E9%9D%9E%E9%80%92%E5%BD%92%E9%81%8D%E5%8E%86/</id>
     <published>2022-05-09T11:35:25.000Z</published>
     <updated>2022-05-12T04:40:35.588Z</updated>
     
     
     
     
-    <category term="数据结构与算法" scheme="https://freeeeeeeeedom.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
+    <category term="数据结构与算法" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
     
-    <category term="常用算法" scheme="https://freeeeeeeeedom.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95/"/>
+    <category term="常用算法" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95/"/>
     
-    <category term="板子" scheme="https://freeeeeeeeedom.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E6%9D%BF%E5%AD%90/"/>
+    <category term="板子" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E6%9D%BF%E5%AD%90/"/>
     
     
-    <category term="Algorithm" scheme="https://freeeeeeeeedom.github.io/tags/Algorithm/"/>
+    <category term="Algorithm" scheme="https://freeeeeeeeedom.gitee.io/tags/Algorithm/"/>
     
   </entry>
   
   <entry>
     <title>区间DP</title>
-    <link href="https://freeeeeeeeedom.github.io/2022/05/09/%E5%8C%BA%E9%97%B4DP/"/>
-    <id>https://freeeeeeeeedom.github.io/2022/05/09/%E5%8C%BA%E9%97%B4DP/</id>
+    <link href="https://freeeeeeeeedom.gitee.io/2022/05/09/%E5%8C%BA%E9%97%B4DP/"/>
+    <id>https://freeeeeeeeedom.gitee.io/2022/05/09/%E5%8C%BA%E9%97%B4DP/</id>
     <published>2022-05-09T11:34:03.000Z</published>
     <updated>2022-05-09T13:40:31.889Z</updated>
     
@@ -247,19 +247,19 @@
     
     
     
-    <category term="数据结构与算法" scheme="https://freeeeeeeeedom.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
+    <category term="数据结构与算法" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
     
-    <category term="常用算法" scheme="https://freeeeeeeeedom.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95/"/>
+    <category term="常用算法" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95/"/>
     
     
-    <category term="Algorithm" scheme="https://freeeeeeeeedom.github.io/tags/Algorithm/"/>
+    <category term="Algorithm" scheme="https://freeeeeeeeedom.gitee.io/tags/Algorithm/"/>
     
   </entry>
   
   <entry>
     <title>记忆化搜索</title>
-    <link href="https://freeeeeeeeedom.github.io/2022/05/09/%E8%AE%B0%E5%BF%86%E5%8C%96%E6%90%9C%E7%B4%A2/"/>
-    <id>https://freeeeeeeeedom.github.io/2022/05/09/%E8%AE%B0%E5%BF%86%E5%8C%96%E6%90%9C%E7%B4%A2/</id>
+    <link href="https://freeeeeeeeedom.gitee.io/2022/05/09/%E8%AE%B0%E5%BF%86%E5%8C%96%E6%90%9C%E7%B4%A2/"/>
+    <id>https://freeeeeeeeedom.gitee.io/2022/05/09/%E8%AE%B0%E5%BF%86%E5%8C%96%E6%90%9C%E7%B4%A2/</id>
     <published>2022-05-09T11:33:42.000Z</published>
     <updated>2022-05-09T13:40:25.631Z</updated>
     
@@ -275,19 +275,19 @@
     
     
     
-    <category term="数据结构与算法" scheme="https://freeeeeeeeedom.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
+    <category term="数据结构与算法" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
     
-    <category term="常用算法" scheme="https://freeeeeeeeedom.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95/"/>
+    <category term="常用算法" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95/"/>
     
     
-    <category term="Algorithm" scheme="https://freeeeeeeeedom.github.io/tags/Algorithm/"/>
+    <category term="Algorithm" scheme="https://freeeeeeeeedom.gitee.io/tags/Algorithm/"/>
     
   </entry>
   
   <entry>
     <title>HashDict</title>
-    <link href="https://freeeeeeeeedom.github.io/2022/05/05/HashDict/"/>
-    <id>https://freeeeeeeeedom.github.io/2022/05/05/HashDict/</id>
+    <link href="https://freeeeeeeeedom.gitee.io/2022/05/05/HashDict/"/>
+    <id>https://freeeeeeeeedom.gitee.io/2022/05/05/HashDict/</id>
     <published>2022-05-05T09:50:43.000Z</published>
     <updated>2022-05-11T12:35:06.166Z</updated>
     
@@ -303,17 +303,17 @@
     
     
     
-    <category term="C++" scheme="https://freeeeeeeeedom.github.io/categories/C/"/>
+    <category term="C++" scheme="https://freeeeeeeeedom.gitee.io/categories/C/"/>
     
     
-    <category term="C++高级程序设计" scheme="https://freeeeeeeeedom.github.io/tags/C-%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    <category term="C++高级程序设计" scheme="https://freeeeeeeeedom.gitee.io/tags/C-%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
     
   </entry>
   
   <entry>
     <title>数据管理基础 ch08-10</title>
-    <link href="https://freeeeeeeeedom.github.io/2022/05/03/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80-ch08-10/"/>
-    <id>https://freeeeeeeeedom.github.io/2022/05/03/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80-ch08-10/</id>
+    <link href="https://freeeeeeeeedom.gitee.io/2022/05/03/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80-ch08-10/"/>
+    <id>https://freeeeeeeeedom.gitee.io/2022/05/03/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80-ch08-10/</id>
     <published>2022-05-03T09:39:24.000Z</published>
     <updated>2022-05-03T13:54:52.599Z</updated>
     
@@ -328,19 +328,19 @@
     
     
     
-    <category term="数据库" scheme="https://freeeeeeeeedom.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    <category term="数据库" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
-    <category term="数据管理基础" scheme="https://freeeeeeeeedom.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80/"/>
+    <category term="数据管理基础" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80/"/>
     
     
-    <category term="数据管理基础" scheme="https://freeeeeeeeedom.github.io/tags/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80/"/>
+    <category term="数据管理基础" scheme="https://freeeeeeeeedom.gitee.io/tags/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80/"/>
     
   </entry>
   
   <entry>
     <title>数据管理基础 ch00-07</title>
-    <link href="https://freeeeeeeeedom.github.io/2022/05/03/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80-ch00-07/"/>
-    <id>https://freeeeeeeeedom.github.io/2022/05/03/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80-ch00-07/</id>
+    <link href="https://freeeeeeeeedom.gitee.io/2022/05/03/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80-ch00-07/"/>
+    <id>https://freeeeeeeeedom.gitee.io/2022/05/03/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80-ch00-07/</id>
     <published>2022-05-03T09:04:27.000Z</published>
     <updated>2022-05-03T09:38:50.485Z</updated>
     
@@ -355,19 +355,19 @@
     
     
     
-    <category term="数据库" scheme="https://freeeeeeeeedom.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    <category term="数据库" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
-    <category term="数据管理基础" scheme="https://freeeeeeeeedom.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80/"/>
+    <category term="数据管理基础" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80/"/>
     
     
-    <category term="数据管理基础" scheme="https://freeeeeeeeedom.github.io/tags/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80/"/>
+    <category term="数据管理基础" scheme="https://freeeeeeeeedom.gitee.io/tags/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80/"/>
     
   </entry>
   
   <entry>
     <title>数据管理基础 ch58-61</title>
-    <link href="https://freeeeeeeeedom.github.io/2022/05/03/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80-ch58-61/"/>
-    <id>https://freeeeeeeeedom.github.io/2022/05/03/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80-ch58-61/</id>
+    <link href="https://freeeeeeeeedom.gitee.io/2022/05/03/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80-ch58-61/"/>
+    <id>https://freeeeeeeeedom.gitee.io/2022/05/03/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80-ch58-61/</id>
     <published>2022-05-03T05:59:55.000Z</published>
     <updated>2022-05-12T15:40:24.481Z</updated>
     
@@ -382,19 +382,19 @@
     
     
     
-    <category term="数据库" scheme="https://freeeeeeeeedom.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    <category term="数据库" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
-    <category term="数据管理基础" scheme="https://freeeeeeeeedom.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80/"/>
+    <category term="数据管理基础" scheme="https://freeeeeeeeedom.gitee.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80/"/>
     
     
-    <category term="数据管理基础" scheme="https://freeeeeeeeedom.github.io/tags/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80/"/>
+    <category term="数据管理基础" scheme="https://freeeeeeeeedom.gitee.io/tags/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80/"/>
     
   </entry>
   
   <entry>
     <title>数据链路层</title>
-    <link href="https://freeeeeeeeedom.github.io/2022/04/26/%E6%95%B0%E6%8D%AE%E9%93%BE%E8%B7%AF%E5%B1%82/"/>
-    <id>https://freeeeeeeeedom.github.io/2022/04/26/%E6%95%B0%E6%8D%AE%E9%93%BE%E8%B7%AF%E5%B1%82/</id>
+    <link href="https://freeeeeeeeedom.gitee.io/2022/04/26/%E6%95%B0%E6%8D%AE%E9%93%BE%E8%B7%AF%E5%B1%82/"/>
+    <id>https://freeeeeeeeedom.gitee.io/2022/04/26/%E6%95%B0%E6%8D%AE%E9%93%BE%E8%B7%AF%E5%B1%82/</id>
     <published>2022-04-26T15:04:49.000Z</published>
     <updated>2022-04-27T15:10:35.521Z</updated>
     
@@ -409,19 +409,19 @@
     
     
     
-    <category term="计算机网络" scheme="https://freeeeeeeeedom.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    <category term="计算机网络" scheme="https://freeeeeeeeedom.gitee.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
     
-    <category term="互联网计算" scheme="https://freeeeeeeeedom.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
+    <category term="互联网计算" scheme="https://freeeeeeeeedom.gitee.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
     
     
-    <category term="互联网计算" scheme="https://freeeeeeeeedom.github.io/tags/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
+    <category term="互联网计算" scheme="https://freeeeeeeeedom.gitee.io/tags/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
     
   </entry>
   
   <entry>
     <title>物理层</title>
-    <link href="https://freeeeeeeeedom.github.io/2022/04/26/%E7%89%A9%E7%90%86%E5%B1%82/"/>
-    <id>https://freeeeeeeeedom.github.io/2022/04/26/%E7%89%A9%E7%90%86%E5%B1%82/</id>
+    <link href="https://freeeeeeeeedom.gitee.io/2022/04/26/%E7%89%A9%E7%90%86%E5%B1%82/"/>
+    <id>https://freeeeeeeeedom.gitee.io/2022/04/26/%E7%89%A9%E7%90%86%E5%B1%82/</id>
     <published>2022-04-26T15:04:37.000Z</published>
     <updated>2022-04-27T13:08:07.678Z</updated>
     
@@ -439,57 +439,57 @@
     
     
     
-    <category term="计算机网络" scheme="https://freeeeeeeeedom.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    <category term="计算机网络" scheme="https://freeeeeeeeedom.gitee.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
     
-    <category term="互联网计算" scheme="https://freeeeeeeeedom.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
+    <category term="互联网计算" scheme="https://freeeeeeeeedom.gitee.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
     
     
-    <category term="互联网计算" scheme="https://freeeeeeeeedom.github.io/tags/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
+    <category term="互联网计算" scheme="https://freeeeeeeeedom.gitee.io/tags/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
     
   </entry>
   
   <entry>
     <title>Routing Protocols</title>
-    <link href="https://freeeeeeeeedom.github.io/2022/04/26/Routing-Protocols/"/>
-    <id>https://freeeeeeeeedom.github.io/2022/04/26/Routing-Protocols/</id>
+    <link href="https://freeeeeeeeedom.gitee.io/2022/04/26/Routing-Protocols/"/>
+    <id>https://freeeeeeeeedom.gitee.io/2022/04/26/Routing-Protocols/</id>
     <published>2022-04-26T15:04:22.000Z</published>
     <updated>2022-04-26T15:07:34.562Z</updated>
     
     
     
     
-    <category term="计算机网络" scheme="https://freeeeeeeeedom.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    <category term="计算机网络" scheme="https://freeeeeeeeedom.gitee.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
     
-    <category term="互联网计算" scheme="https://freeeeeeeeedom.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
+    <category term="互联网计算" scheme="https://freeeeeeeeedom.gitee.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
     
     
-    <category term="互联网计算" scheme="https://freeeeeeeeedom.github.io/tags/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
+    <category term="互联网计算" scheme="https://freeeeeeeeedom.gitee.io/tags/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
     
   </entry>
   
   <entry>
     <title>路由器和网络</title>
-    <link href="https://freeeeeeeeedom.github.io/2022/04/26/%E8%B7%AF%E7%94%B1%E5%99%A8%E5%92%8C%E7%BD%91%E7%BB%9C/"/>
-    <id>https://freeeeeeeeedom.github.io/2022/04/26/%E8%B7%AF%E7%94%B1%E5%99%A8%E5%92%8C%E7%BD%91%E7%BB%9C/</id>
+    <link href="https://freeeeeeeeedom.gitee.io/2022/04/26/%E8%B7%AF%E7%94%B1%E5%99%A8%E5%92%8C%E7%BD%91%E7%BB%9C/"/>
+    <id>https://freeeeeeeeedom.gitee.io/2022/04/26/%E8%B7%AF%E7%94%B1%E5%99%A8%E5%92%8C%E7%BD%91%E7%BB%9C/</id>
     <published>2022-04-26T15:04:06.000Z</published>
     <updated>2022-04-26T15:06:21.510Z</updated>
     
     
     
     
-    <category term="计算机网络" scheme="https://freeeeeeeeedom.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    <category term="计算机网络" scheme="https://freeeeeeeeedom.gitee.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
     
-    <category term="互联网计算" scheme="https://freeeeeeeeedom.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
+    <category term="互联网计算" scheme="https://freeeeeeeeedom.gitee.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
     
     
-    <category term="互联网计算" scheme="https://freeeeeeeeedom.github.io/tags/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
+    <category term="互联网计算" scheme="https://freeeeeeeeedom.gitee.io/tags/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
     
   </entry>
   
   <entry>
     <title>应用层</title>
-    <link href="https://freeeeeeeeedom.github.io/2022/04/26/%E5%BA%94%E7%94%A8%E5%B1%82/"/>
-    <id>https://freeeeeeeeedom.github.io/2022/04/26/%E5%BA%94%E7%94%A8%E5%B1%82/</id>
+    <link href="https://freeeeeeeeedom.gitee.io/2022/04/26/%E5%BA%94%E7%94%A8%E5%B1%82/"/>
+    <id>https://freeeeeeeeedom.gitee.io/2022/04/26/%E5%BA%94%E7%94%A8%E5%B1%82/</id>
     <published>2022-04-26T15:03:51.000Z</published>
     <updated>2022-04-26T15:03:51.959Z</updated>
     
@@ -501,20 +501,20 @@
   
   <entry>
     <title>运输层</title>
-    <link href="https://freeeeeeeeedom.github.io/2022/04/26/%E8%BF%90%E8%BE%93%E5%B1%82/"/>
-    <id>https://freeeeeeeeedom.github.io/2022/04/26/%E8%BF%90%E8%BE%93%E5%B1%82/</id>
+    <link href="https://freeeeeeeeedom.gitee.io/2022/04/26/%E8%BF%90%E8%BE%93%E5%B1%82/"/>
+    <id>https://freeeeeeeeedom.gitee.io/2022/04/26/%E8%BF%90%E8%BE%93%E5%B1%82/</id>
     <published>2022-04-26T15:03:40.000Z</published>
     <updated>2022-04-26T15:06:03.659Z</updated>
     
     
     
     
-    <category term="计算机网络" scheme="https://freeeeeeeeedom.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    <category term="计算机网络" scheme="https://freeeeeeeeedom.gitee.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
     
-    <category term="互联网计算" scheme="https://freeeeeeeeedom.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
+    <category term="互联网计算" scheme="https://freeeeeeeeedom.gitee.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
     
     
-    <category term="互联网计算" scheme="https://freeeeeeeeedom.github.io/tags/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
+    <category term="互联网计算" scheme="https://freeeeeeeeedom.gitee.io/tags/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
     
   </entry>
   
