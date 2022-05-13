@@ -1082,13 +1082,6 @@
 
   
   <url>
-    <loc>https://freeeeeeeeedom.github.io/tags/Algorithm/</loc>
-    <lastmod>2022-05-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://freeeeeeeeedom.github.io/tags/C-%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/</loc>
     <lastmod>2022-05-13</lastmod>
     <changefreq>weekly</changefreq>
@@ -1096,7 +1089,7 @@
   </url>
   
   <url>
-    <loc>https://freeeeeeeeedom.github.io/tags/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80/</loc>
+    <loc>https://freeeeeeeeedom.github.io/tags/Algorithm/</loc>
     <lastmod>2022-05-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1110,6 +1103,13 @@
   </url>
   
   <url>
+    <loc>https://freeeeeeeeedom.github.io/tags/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80/</loc>
+    <lastmod>2022-05-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://freeeeeeeeedom.github.io/tags/Leetcode/</loc>
     <lastmod>2022-05-13</lastmod>
     <changefreq>weekly</changefreq>
@@ -1117,14 +1117,14 @@
   </url>
   
   <url>
-    <loc>https://freeeeeeeeedom.github.io/tags/CS144/</loc>
+    <loc>https://freeeeeeeeedom.github.io/tags/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/</loc>
     <lastmod>2022-05-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://freeeeeeeeedom.github.io/tags/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/</loc>
+    <loc>https://freeeeeeeeedom.github.io/tags/CS144/</loc>
     <lastmod>2022-05-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1140,14 +1140,14 @@
 
   
   <url>
-    <loc>https://freeeeeeeeedom.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/</loc>
+    <loc>https://freeeeeeeeedom.github.io/categories/C/</loc>
     <lastmod>2022-05-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://freeeeeeeeedom.github.io/categories/C/</loc>
+    <loc>https://freeeeeeeeedom.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/</loc>
     <lastmod>2022-05-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1161,14 +1161,14 @@
   </url>
   
   <url>
-    <loc>https://freeeeeeeeedom.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
+    <loc>https://freeeeeeeeedom.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</loc>
     <lastmod>2022-05-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://freeeeeeeeedom.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</loc>
+    <loc>https://freeeeeeeeedom.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
     <lastmod>2022-05-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1189,13 +1189,6 @@
   </url>
   
   <url>
-    <loc>https://freeeeeeeeedom.github.io/categories/C/C-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/</loc>
-    <lastmod>2022-05-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://freeeeeeeeedom.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E6%9D%BF%E5%AD%90/</loc>
     <lastmod>2022-05-13</lastmod>
     <changefreq>weekly</changefreq>
@@ -1203,7 +1196,7 @@
   </url>
   
   <url>
-    <loc>https://freeeeeeeeedom.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80/</loc>
+    <loc>https://freeeeeeeeedom.github.io/categories/C/C-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/</loc>
     <lastmod>2022-05-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1211,6 +1204,13 @@
   
   <url>
     <loc>https://freeeeeeeeedom.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/</loc>
+    <lastmod>2022-05-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://freeeeeeeeedom.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80/</loc>
     <lastmod>2022-05-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
