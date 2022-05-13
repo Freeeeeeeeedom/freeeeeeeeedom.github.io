@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://little-hurui.cloud/2022/05/12/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80-NoSQL/</loc>
+    <loc>http://little-hurui.cloud/2022/04/15/%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98/</loc>
     
     <lastmod>2022-05-13</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>http://little-hurui.cloud/2022/04/15/%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98/</loc>
+    <loc>http://little-hurui.cloud/2022/05/12/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80-NoSQL/</loc>
     
     <lastmod>2022-05-13</lastmod>
     
@@ -1147,14 +1147,14 @@
   </url>
   
   <url>
-    <loc>http://little-hurui.cloud/categories/C/C-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/</loc>
+    <loc>http://little-hurui.cloud/categories/C/C-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
     <lastmod>2022-05-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://little-hurui.cloud/categories/C/C-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
+    <loc>http://little-hurui.cloud/categories/C/C-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/</loc>
     <lastmod>2022-05-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1189,6 +1189,13 @@
   </url>
   
   <url>
+    <loc>http://little-hurui.cloud/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/</loc>
+    <lastmod>2022-05-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://little-hurui.cloud/categories/Computer-Network/CS144/</loc>
     <lastmod>2022-05-13</lastmod>
     <changefreq>weekly</changefreq>
@@ -1197,13 +1204,6 @@
   
   <url>
     <loc>http://little-hurui.cloud/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/</loc>
-    <lastmod>2022-05-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://little-hurui.cloud/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/</loc>
     <lastmod>2022-05-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
