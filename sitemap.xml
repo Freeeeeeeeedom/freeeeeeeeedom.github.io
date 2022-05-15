@@ -2,6 +2,33 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://little-hurui.cloud/2022/04/26/%E8%BF%90%E8%BE%93%E5%B1%82/</loc>
+    
+    <lastmod>2022-05-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://little-hurui.cloud/2022/05/15/%E5%8C%BA%E9%97%B4%E5%90%88%E5%B9%B6/</loc>
+    
+    <lastmod>2022-05-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://little-hurui.cloud/2022/04/18/CS144-Lab-3/</loc>
+    
+    <lastmod>2022-05-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://little-hurui.cloud/2022/04/18/CS144-Lab-3/</loc>
     
     <lastmod>2022-05-15</lastmod>
@@ -48,15 +75,6 @@
   
   <url>
     <loc>http://little-hurui.cloud/2022/05/03/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80-ch58-61/</loc>
-    
-    <lastmod>2022-05-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://little-hurui.cloud/2022/05/15/%E5%8C%BA%E9%97%B4%E5%90%88%E5%B9%B6/</loc>
     
     <lastmod>2022-05-15</lastmod>
     
@@ -354,15 +372,6 @@
   
   <url>
     <loc>http://little-hurui.cloud/2022/04/26/%E8%B7%AF%E7%94%B1%E5%99%A8%E5%92%8C%E7%BD%91%E7%BB%9C/</loc>
-    
-    <lastmod>2022-04-26</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://little-hurui.cloud/2022/04/26/%E8%BF%90%E8%BE%93%E5%B1%82/</loc>
     
     <lastmod>2022-04-26</lastmod>
     
