@@ -567,7 +567,7 @@
       <link href="/2022/04/26/%E8%BF%90%E8%BE%93%E5%B1%82/"/>
       <url>/2022/04/26/%E8%BF%90%E8%BE%93%E5%B1%82/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h1 id="transport-layer-运输层"><a class="markdownIt-Anchor" href="#transport-layer-运输层"></a> Transport Layer 运输层</h1><ul><li>运输层为相互通信的应用进程提供逻辑通信</li><li>端口 和 套接字 的意义</li><li>无连接的 UDP 的特点</li><li>面向连接的 TCP 的特点</li><li>在不可靠的网络上实现可靠传输的工作原理，停止等待协议和ARQ协议</li><li>TCP 的滑动窗口、流量控制、拥塞控制和连接控制</li></ul><h2 id="运输层协议概述"><a class="markdownIt-Anchor" href="#运输层协议概述"></a> 运输层协议概述</h2><ul><li><strong>运输层向它上面的应用层提供通信服务</strong>，属于面向通信部分的最高层，同时是用户功能种的最底层</li><li>当网络边缘部分的两个主机使用网络的核心部分功能进行 <strong>端到端</strong> 的通信时，<strong>只有主机的协议栈</strong>才有运输层，而网络核心部分中的路由器在转发分组时都<strong>只用到下三层</strong>的功能</li></ul><p>局域网1上的主机 <strong>A</strong> 和 局域网2上的主机 <strong>B</strong> 通过互连的广域网进行通信，</p><p><img src="https://s2.loli.net/2022/05/15/JHpVGPXfI8F1jQB.png" alt="" /></p>]]></content>
       
       
       <categories>
