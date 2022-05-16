@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Cpp特性</title>
+      <link href="/2022/05/16/Cpp%E7%89%B9%E6%80%A7/"/>
+      <url>/2022/05/16/Cpp%E7%89%B9%E6%80%A7/</url>
+      
+        <content type="html"><![CDATA[<h1 id="stl-all_of-any_of-none_of"><a class="markdownIt-Anchor" href="#stl-all_of-any_of-none_of"></a> (STL) all_of 、 any_of、 none_of</h1><p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>a</mi><mi>l</mi><mi>g</mi><mi>o</mi><mi>r</mi><mi>i</mi><mi>t</mi><mi>h</mi><mi>m</mi></mrow><annotation encoding="application/x-tex">algorithm</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord mathit">a</span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mord mathit" style="margin-right:0.03588em;">g</span><span class="mord mathit">o</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">i</span><span class="mord mathit">t</span><span class="mord mathit">h</span><span class="mord mathit">m</span></span></span></span> 头文件中定义了 3 种算法，用来检查在算法应用到序列中的元素上时，什么时候使谓词返回 true。这些算法的前两个参数是定义谓词应用范围的输入迭代器；第三个参数指定了谓词。检查元素是否能让谓词返回 true 似乎很简单，但它却是十分有用的。</p><ul><li>all_of() 算法会返回 true，前提是序列中的所有元素都可以使谓词返回 true。</li><li>any_of() 算法会返回 true，前提是序列中的任意一个元素都可以使谓词返回 true。</li><li>none_of() 算法会返回 true，前提是序列中没有元素可以使谓词返回 true</li></ul><blockquote><p>合理使用会大幅减少代码的整体耗时和空间</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> C++ </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> C++ </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>区间合并</title>
       <link href="/2022/05/15/%E5%8C%BA%E9%97%B4%E5%90%88%E5%B9%B6/"/>
       <url>/2022/05/15/%E5%8C%BA%E9%97%B4%E5%90%88%E5%B9%B6/</url>

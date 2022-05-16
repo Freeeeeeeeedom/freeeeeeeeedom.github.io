@@ -6,7 +6,7 @@
   <link href="http://little-hurui.cloud/atom.xml" rel="self"/>
   
   <link href="http://little-hurui.cloud/"/>
-  <updated>2022-05-15T08:37:12.713Z</updated>
+  <updated>2022-05-16T01:49:11.043Z</updated>
   <id>http://little-hurui.cloud/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Cpp特性</title>
+    <link href="http://little-hurui.cloud/2022/05/16/Cpp%E7%89%B9%E6%80%A7/"/>
+    <id>http://little-hurui.cloud/2022/05/16/Cpp%E7%89%B9%E6%80%A7/</id>
+    <published>2022-05-16T01:44:04.000Z</published>
+    <updated>2022-05-16T01:49:11.043Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="stl-all_of-any_of-none_of"><a class="markdownIt-Anchor" href="#stl-all_of-any_of-none_of"></a> (STL) all_of 、 any_of、 none_of</h1><p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>a</mi><mi>l</mi><mi>g</mi><mi>o</mi><mi>r</mi><mi>i</mi><mi>t</mi><mi>h</mi><mi>m</mi></mrow><annotation encoding="application/x-tex">algorithm</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord mathit">a</span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mord mathit" style="margin-right:0.03588em;">g</span><span class="mord mathit">o</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">i</span><span class="mord mathit">t</span><span class="mord mathit">h</span><span class="mord mathit">m</span></span></span></span> 头文件中定义了 3 种算法，用来检查在算法应用到序列中的元素上时，什么时候使谓词返回 true。这些算法的前两个参数是定义谓词应用范围的输入迭代器；第三个参数指定了谓词。检查元素是否能让谓词返回 true 似乎很简单，但它却是十分有用的。</p><ul><li>all_of() 算法会返回 true，前提是序列中的所有元素都可以使谓词返回 true。</li><li>any_of() 算法会返回 true，前提是序列中的任意一个元素都可以使谓词返回 true。</li><li>none_of() 算法会返回 true，前提是序列中没有元素可以使谓词返回 true</li></ul><blockquote><p>合理使用会大幅减少代码的整体耗时和空间</p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;stl-all_of-any_of-none_of&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#stl-all_of-any_of-none_of&quot;&gt;&lt;/a&gt; (STL) all_of 、 any_of、 none_of&lt;/h1&gt;
+&lt;</summary>
+      
+    
+    
+    
+    <category term="C++" scheme="http://little-hurui.cloud/categories/C/"/>
+    
+    
+    <category term="C++" scheme="http://little-hurui.cloud/tags/C/"/>
+    
+  </entry>
   
   <entry>
     <title>区间合并</title>
@@ -510,25 +535,6 @@
     <id>http://little-hurui.cloud/2022/04/26/Routing-Protocols/</id>
     <published>2022-04-26T15:04:22.000Z</published>
     <updated>2022-04-26T15:07:34.562Z</updated>
-    
-    
-    
-    
-    <category term="计算机网络" scheme="http://little-hurui.cloud/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-    
-    <category term="互联网计算" scheme="http://little-hurui.cloud/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
-    
-    
-    <category term="互联网计算" scheme="http://little-hurui.cloud/tags/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>路由器和网络</title>
-    <link href="http://little-hurui.cloud/2022/04/26/%E8%B7%AF%E7%94%B1%E5%99%A8%E5%92%8C%E7%BD%91%E7%BB%9C/"/>
-    <id>http://little-hurui.cloud/2022/04/26/%E8%B7%AF%E7%94%B1%E5%99%A8%E5%92%8C%E7%BD%91%E7%BB%9C/</id>
-    <published>2022-04-26T15:04:06.000Z</published>
-    <updated>2022-04-26T15:06:21.510Z</updated>
     
     
     
