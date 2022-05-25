@@ -4,26 +4,29 @@
   
     
     <entry>
-      <title>应用层</title>
-      <link href="/2022/05/25/%E5%BA%94%E7%94%A8%E5%B1%82-1/"/>
-      <url>/2022/05/25/%E5%BA%94%E7%94%A8%E5%B1%82-1/</url>
+      <title>表示层</title>
+      <link href="/2022/05/25/%E8%A1%A8%E7%A4%BA%E5%B1%82/"/>
+      <url>/2022/05/25/%E8%A1%A8%E7%A4%BA%E5%B1%82/</url>
       
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>展示层</title>
-      <link href="/2022/05/25/%E5%B1%95%E7%A4%BA%E5%B1%82/"/>
-      <url>/2022/05/25/%E5%B1%95%E7%A4%BA%E5%B1%82/</url>
-      
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h1 id="layer-6-the-presentation-layer-第六层-表示层"><a class="markdownIt-Anchor" href="#layer-6-the-presentation-layer-第六层-表示层"></a> Layer 6 - The Presentation Layer 第六层 表示层</h1><ol><li>表示层负责以接受<strong>设备可以理解</strong>的形式表示数据<ol><li>传送语法协商</li><li>接受语法协商</li></ol></li><li>表示层具有三个主要功能<ol><li>数据格式（format）</li><li>数据压缩（compression）: 早起网络比较慢，倾向于先压缩再发送</li><li>数据加密（encryption）</li></ol></li><li>协商编码方式可以在会话层中实现</li></ol><h2 id="数据格式"><a class="markdownIt-Anchor" href="#数据格式"></a> 数据格式</h2><ol><li>想象两个不同的（dissimilar）的系统<ol><li>一种使用拓展二进制编码的十进制交换码（EBCDIC,Extended Binary Coded Decimal Interchange Code） 格式化文本</li><li>另一种使用**美国信息交换标准码（ASCII）**标准化文本</li><li>选择大家都能识别的编码形式传输，保证大家都能理解</li></ol></li><li>第六层提供了这两种不同类型的代码之间的转换</li></ol><h3 id="图形文件格式"><a class="markdownIt-Anchor" href="#图形文件格式"></a> 图形文件格式</h3><ol><li>互联网通常使用两种二进制文件格式来显示图像<ol><li>图形交换格式（GIF， Graphic Interchange Format)</li><li>联合图像专家组（JPEG, Joint Photographic Experts Group）</li></ol></li><li>任何具有读取器的GIF和JPEG文件格式的计算机都可以读取这些文件类型，而与计算机的类型无关</li></ol><h3 id="多媒体文件格式"><a class="markdownIt-Anchor" href="#多媒体文件格式"></a> 多媒体文件格式</h3><ol><li>多媒体文件格式是另一种二进制文件，它存储声音，音乐和视屏<ol><li>这些文件可以完全下载，然后播放，也可以在播放时下载</li><li>后一种方法称为流音频</li></ol></li></ol><h2 id="数据加密与压缩"><a class="markdownIt-Anchor" href="#数据加密与压缩"></a> 数据加密与压缩</h2><ol><li>第六层负责数据加密：数据加密可在信息传输过程中保护信息</li><li>表示层还负责文件的压缩</li></ol>]]></content>
       
       
+      <categories>
+          
+          <category> 计算机网络 </category>
+          
+          <category> 互联网计算 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 计算机网络 </tag>
+            
+            <tag> 互联网计算 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -34,9 +37,25 @@
       <link href="/2022/05/25/%E4%BC%9A%E8%AF%9D%E5%B1%82/"/>
       <url>/2022/05/25/%E4%BC%9A%E8%AF%9D%E5%B1%82/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h1 id="第五层-the-session-layer-会话层"><a class="markdownIt-Anchor" href="#第五层-the-session-layer-会话层"></a> 第五层： The Session Layer 会话层</h1><ul><li>TCP 控制传输，如果用户想要完成一定的数据控制，就会对应在会话层完成</li></ul><h2 id="第五层的职责"><a class="markdownIt-Anchor" href="#第五层的职责"></a> 第五层的职责</h2><p><img src="https://s2.loli.net/2022/05/25/8y5P3qJt4oml19L.png" alt="" /></p><ul><li>基于令牌进行交互发言，通过数据同步保证数据完整性（应用逻辑）</li><li>进行数据分段，拼接，保证传输的有效</li><li>同步技术，保证故障恢复</li></ul><h2 id="第五层的服务"><a class="markdownIt-Anchor" href="#第五层的服务"></a> 第五层的服务</h2><p><img src="https://s2.loli.net/2022/05/25/LuARX1FsIPrVHMv.png" alt="" /></p><ol><li>双向同步通讯<ol><li>全双工通信</li><li>半双工通信</li><li>单工通信</li></ol></li><li>双向交替控制<ol><li>会话连接，活动开始，数据校验（同步）</li><li>令牌转换等</li></ol></li><li>是否同步了你的会话的主题</li></ol><p><img src="https://s2.loli.net/2022/05/25/hMLbFKrVgAe2Xi9.png" alt="" /></p><ol><li>同步点（<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>C</mi><mi>h</mi><mi>e</mi><mi>c</mi><mi>k</mi><mi>P</mi><mi>o</mi><mi>i</mi><mi>n</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">CheckPoint</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.69444em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.07153em;">C</span><span class="mord mathit">h</span><span class="mord mathit">e</span><span class="mord mathit">c</span><span class="mord mathit" style="margin-right:0.03148em;">k</span><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mord mathit">o</span><span class="mord mathit">i</span><span class="mord mathit">n</span><span class="mord mathit">t</span></span></span></span>）用于分隔会话的各个部分，以前称为对话（<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>d</mi><mi>i</mi><mi>a</mi><mi>l</mi><mi>o</mi><mi>g</mi><mi>u</mi><mi>e</mi><mi>s</mi></mrow><annotation encoding="application/x-tex">dialogues</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord mathit">d</span><span class="mord mathit">i</span><span class="mord mathit">a</span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mord mathit">o</span><span class="mord mathit" style="margin-right:0.03588em;">g</span><span class="mord mathit">u</span><span class="mord mathit">e</span><span class="mord mathit">s</span></span></span></span>）<ol><li>同步点： 发送一定数据后设置同步点</li><li>次同步点： 作为同步点的一个子集，进行数据校验</li><li>主同步点： 按照主同步点进行校验确认</li><li>如果错误，恢复到上次都已经同步的主同步点</li></ol></li><li>对话分离（<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>S</mi><mi>e</mi><mi>p</mi><mi>e</mi><mi>r</mi><mi>a</mi><mi>t</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow><annotation encoding="application/x-tex">Seperation</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.8777699999999999em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mord mathit">e</span><span class="mord mathit">p</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">a</span><span class="mord mathit">t</span><span class="mord mathit">i</span><span class="mord mathit">o</span><span class="mord mathit">n</span></span></span></span>）是通信的有序启动，终止和管理</li><li>尽量保证了通话的效率和可靠性</li></ol><h2 id="第五层设备"><a class="markdownIt-Anchor" href="#第五层设备"></a> 第五层设备</h2><p><img src="https://s2.loli.net/2022/05/25/7yku9WFPDOzINGU.png" alt="" /></p><ul><li>Client-Server 客户端-服务器模式：通过会话实现</li></ul>]]></content>
       
       
+      <categories>
+          
+          <category> 计算机网络 </category>
+          
+          <category> 互联网计算 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 计算机网络 </tag>
+            
+            <tag> 互联网计算 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -774,8 +793,16 @@
       <link href="/2022/04/26/%E5%BA%94%E7%94%A8%E5%B1%82/"/>
       <url>/2022/04/26/%E5%BA%94%E7%94%A8%E5%B1%82/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h1 id="layer-7-the-application-layer-应用层"><a class="markdownIt-Anchor" href="#layer-7-the-application-layer-应用层"></a> Layer 7： The Application Layer 应用层</h1>]]></content>
       
+      
+      <categories>
+          
+          <category> 计算机网络 </category>
+          
+          <category> 互联网计算 </category>
+          
+      </categories>
       
       
         <tags>
