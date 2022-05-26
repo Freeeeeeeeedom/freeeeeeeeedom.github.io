@@ -4,11 +4,40 @@
   
     
     <entry>
+      <title>线段树</title>
+      <link href="/2022/05/26/%E7%BA%BF%E6%AE%B5%E6%A0%91/"/>
+      <url>/2022/05/26/%E7%BA%BF%E6%AE%B5%E6%A0%91/</url>
+      
+        <content type="html"><![CDATA[<h1 id="线段树"><a class="markdownIt-Anchor" href="#线段树"></a> 线段树</h1><hr /><p>求解【值域爆炸，查询有限】的区间问题的几种方式</p><hr />]]></content>
+      
+      
+      <categories>
+          
+          <category> 数据结构与算法 </category>
+          
+          <category> 常用算法 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Algorithm </tag>
+            
+            <tag> 线段树 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>应用层</title>
       <link href="/2022/05/25/%E5%BA%94%E7%94%A8%E5%B1%82/"/>
       <url>/2022/05/25/%E5%BA%94%E7%94%A8%E5%B1%82/</url>
       
-        <content type="html"><![CDATA[<h1 id="layer-7-the-application-layer-应用层"><a class="markdownIt-Anchor" href="#layer-7-the-application-layer-应用层"></a> Layer 7： The Application Layer 应用层</h1>]]></content>
+        <content type="html"><![CDATA[<h1 id="layer-7-the-application-layer-应用层"><a class="markdownIt-Anchor" href="#layer-7-the-application-layer-应用层"></a> Layer 7： The Application Layer 应用层</h1><p><img src="https://s2.loli.net/2022/05/25/wNIodOR1UnsSYr4.png" alt="" /></p><ol><li>上图中各层的一些协议和使用：对端口进行管理</li><li>应用程序层（最接近用户）支持应用程序的通信组件</li></ol><h2 id="应用层职责"><a class="markdownIt-Anchor" href="#应用层职责"></a> 应用层职责</h2><ol><li>确定并确定预期的通用合作伙伴的可用性</li><li>同步合作的应用程序</li><li>tong’bu’xie</li></ol>]]></content>
       
       
       <categories>
@@ -140,9 +169,9 @@
             
             <tag> Algorithm </tag>
             
-            <tag> 动态规划 </tag>
-            
             <tag> 博弈论 </tag>
+            
+            <tag> 动态规划 </tag>
             
         </tags>
       
@@ -167,9 +196,9 @@
       
         <tags>
             
-            <tag> 模拟 </tag>
-            
             <tag> C++高级程序设计 </tag>
+            
+            <tag> 模拟 </tag>
             
         </tags>
       
@@ -519,9 +548,9 @@
             
             <tag> Algorithm </tag>
             
-            <tag> 动态规划 </tag>
-            
             <tag> 博弈论 </tag>
+            
+            <tag> 动态规划 </tag>
             
         </tags>
       
@@ -666,9 +695,9 @@
       
         <tags>
             
-            <tag> 模拟 </tag>
-            
             <tag> C++高级程序设计 </tag>
+            
+            <tag> 模拟 </tag>
             
         </tags>
       
@@ -2220,9 +2249,9 @@
       
         <tags>
             
-            <tag> 博弈论 </tag>
-            
             <tag> Leetcode </tag>
+            
+            <tag> 博弈论 </tag>
             
         </tags>
       
@@ -2597,9 +2626,9 @@
       
         <tags>
             
-            <tag> 动态规划 </tag>
-            
             <tag> Leetcode </tag>
+            
+            <tag> 动态规划 </tag>
             
         </tags>
       
@@ -2945,9 +2974,9 @@
       
         <tags>
             
-            <tag> 模拟 </tag>
-            
             <tag> Leetcode </tag>
+            
+            <tag> 模拟 </tag>
             
         </tags>
       
@@ -3003,9 +3032,9 @@
       
         <tags>
             
-            <tag> Algorithm </tag>
-            
             <tag> Leetcode </tag>
+            
+            <tag> Algorithm </tag>
             
         </tags>
       
