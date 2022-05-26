@@ -8,7 +8,7 @@
       <link href="/2022/05/26/%E7%BA%BF%E6%AE%B5%E6%A0%91/"/>
       <url>/2022/05/26/%E7%BA%BF%E6%AE%B5%E6%A0%91/</url>
       
-        <content type="html"><![CDATA[<h1 id="线段树"><a class="markdownIt-Anchor" href="#线段树"></a> 线段树</h1><hr /><p>求解【值域爆炸，查询有限】的区间问题的几种方式</p><hr />]]></content>
+        <content type="html"><![CDATA[<h1 id="线段树"><a class="markdownIt-Anchor" href="#线段树"></a> 线段树</h1><hr /><p>求解【值域爆炸，查询有限】的区间问题的几种方式</p><hr /><h2 id="example"><a class="markdownIt-Anchor" href="#example"></a> Example</h2><h3 id="729-我的日程安排表-i"><a class="markdownIt-Anchor" href="#729-我的日程安排表-i"></a> <a href="https://leetcode.cn/problems/my-calendar-i/">729. 我的日程安排表 I</a></h3><p>实现一个 MyCalendar 类来存放你的日程安排。如果要添加的日程安排不会造成 重复预订 ，则可以存储这个新的日程安排。</p><p>当两个日程安排有一些时间上的交叉时（例如两个日程安排都在同一时间内），就会产生 重复预订 。</p><p>日程可以用一对整数 start 和 end 表示，这里的时间是半开区间，即 [start, end), 实数 x 的范围为，  start &lt;= x &lt; end 。</p><p>实现 MyCalendar 类：</p><p>MyCalendar() 初始化日历对象。<br />boolean book(int start, int end) 如果可以将日程安排成功添加到日历中而不会导致重复预订，返回 true 。否则，返回 false 并且不要将该日程安排添加到日历中</p><p><strong>提示：</strong></p><blockquote><p><code>0 &lt;= start &lt; end &lt;= 109</code></p><p>每个测试用例，调用 <code>book</code> 方法的次数最多不超过 <code>1000</code> 次。</p></blockquote><h2 id="solution"><a class="markdownIt-Anchor" href="#solution"></a> Solution</h2><p><strong>线段树（动态开点）</strong></p><p>线段树维护的节点信息包括：</p><ol><li><code>ls/rs</code>：分别代表当前节点的左右子节点在线段树数组<code>tr</code>中的下表</li><li><code>add</code>：懒标记</li><li><code>val</code>：为当前区间的所包含的点的数量</li></ol>]]></content>
       
       
       <categories>
@@ -16,6 +16,8 @@
           <category> 数据结构与算法 </category>
           
           <category> 常用算法 </category>
+          
+          <category> 板子 </category>
           
       </categories>
       
@@ -169,9 +171,9 @@
             
             <tag> Algorithm </tag>
             
-            <tag> 博弈论 </tag>
-            
             <tag> 动态规划 </tag>
+            
+            <tag> 博弈论 </tag>
             
         </tags>
       
@@ -196,9 +198,9 @@
       
         <tags>
             
-            <tag> C++高级程序设计 </tag>
-            
             <tag> 模拟 </tag>
+            
+            <tag> C++高级程序设计 </tag>
             
         </tags>
       
@@ -548,9 +550,9 @@
             
             <tag> Algorithm </tag>
             
-            <tag> 博弈论 </tag>
-            
             <tag> 动态规划 </tag>
+            
+            <tag> 博弈论 </tag>
             
         </tags>
       
@@ -695,9 +697,9 @@
       
         <tags>
             
-            <tag> C++高级程序设计 </tag>
-            
             <tag> 模拟 </tag>
+            
+            <tag> C++高级程序设计 </tag>
             
         </tags>
       
@@ -2249,9 +2251,9 @@
       
         <tags>
             
-            <tag> Leetcode </tag>
-            
             <tag> 博弈论 </tag>
+            
+            <tag> Leetcode </tag>
             
         </tags>
       
@@ -2626,9 +2628,9 @@
       
         <tags>
             
-            <tag> Leetcode </tag>
-            
             <tag> 动态规划 </tag>
+            
+            <tag> Leetcode </tag>
             
         </tags>
       
@@ -2974,9 +2976,9 @@
       
         <tags>
             
-            <tag> Leetcode </tag>
-            
             <tag> 模拟 </tag>
+            
+            <tag> Leetcode </tag>
             
         </tags>
       
@@ -3032,9 +3034,9 @@
       
         <tags>
             
-            <tag> Leetcode </tag>
-            
             <tag> Algorithm </tag>
+            
+            <tag> Leetcode </tag>
             
         </tags>
       
