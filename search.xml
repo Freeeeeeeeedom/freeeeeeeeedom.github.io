@@ -4,29 +4,13 @@
   
     
     <entry>
-      <title>局域网交换和vlan</title>
+      <title></title>
       <link href="/2022/05/31/%E5%B1%80%E5%9F%9F%E7%BD%91%E4%BA%A4%E6%8D%A2%E5%92%8Cvlan/"/>
       <url>/2022/05/31/%E5%B1%80%E5%9F%9F%E7%BD%91%E4%BA%A4%E6%8D%A2%E5%92%8Cvlan/</url>
       
-        <content type="html"><![CDATA[<h1 id="局域网交换-与-vlan"><a class="markdownIt-Anchor" href="#局域网交换-与-vlan"></a> 局域网交换 与 vlan</h1><ul><li>网桥和路由器一般是通过软件来完成的，基于操作系统的</li><li>交换机是基于硬件的</li></ul><h1 id="交换机"><a class="markdownIt-Anchor" href="#交换机"></a> 交换机</h1><h2 id="交换机基本功能"><a class="markdownIt-Anchor" href="#交换机基本功能"></a> 交换机基本功能</h2><ul><li>根据MAC地址建立和维护 交换表（类似于网桥表</li><li>将帧切换出接口到目标</li></ul><h2 id="对称交换-symmetric-switching"><a class="markdownIt-Anchor" href="#对称交换-symmetric-switching"></a> 对称交换 Symmetric Switching</h2><ul><li><p>对称交换可再具有相同带宽的端口之间提供交换连接（10/10Mbps or 100/100Mbps）</p></li><li><p>用户尝试访问其他网段上的服务器时，可能会导致瓶颈（对称交换可能会导致带宽不足）</p><p><img src="https://s2.loli.net/2022/05/31/vaixpZjm7nqEkUK.png" alt="" /></p></li></ul><blockquote><p>多个客户端 向服务器访问的话， 服务器端口流量会比较阻塞</p><p>（在对称切换中，双端的带宽时完全对称的，这是一个瓶颈）</p></blockquote><h2 id="非对称交换-asymmetric-switching"><a class="markdownIt-Anchor" href="#非对称交换-asymmetric-switching"></a> 非对称交换 Asymmetric Switching</h2><ul><li><p>通过将带有服务器的网段连接到更高带宽的端口(100 Mbps)，非对称交换(asymmetric switching)减少了服务器上潜在瓶颈的可能性</p></li><li><p>非对称交换需要在交换器中进行内存缓冲</p></li><li><p>非对称交换端口解决对称交换端口中的对称阻塞问题(进一步保证了服务器的稳定实现)</p></li></ul><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Internet-computing/img/lec09/2.png" alt="" /></p><h3 id="内存缓冲"><a class="markdownIt-Anchor" href="#内存缓冲"></a> 内存缓冲</h3><ol><li>交换机中存储目标  和  传输数据的内存区域，直到可以将其切换出正确的端口为止。<ol><li>基于端口(Port)的内存缓冲<ol><li>数据包存储在每个端口的队列中</li><li>由于目标端口繁忙，一个数据包可能会延迟其他数据包的传输</li><li>其他端口存在不均衡的问题。</li></ol></li><li>共享(Shared)内存缓冲<ol><li>所有端口共享的公用内存缓冲</li><li>允许将数据包在一个端口上接收并在另一个端口上发送出去，而无需将其更改为其他队列。</li><li>需要自己记录端口的信息</li></ol></li></ol></li><li>发生阻塞的时候，根据情况按照端口或者内存将包缓存下来</li></ol>]]></content>
+        <content type="html"><![CDATA[<p>layout: posts<br />title: 局域网交换和vlan<br />date: 2022-05-31 14:28:06<br />tags:</p><ul><li>互联网计算</li><li>计算机网络<br />categories:</li><li>计算机网络</li><li>互联网计算<br />cover:</li></ul><h1 id="局域网交换-与-vlan"><a class="markdownIt-Anchor" href="#局域网交换-与-vlan"></a> 局域网交换 与 vlan</h1><ul><li>网桥和路由器一般是通过软件来完成的，基于操作系统的</li><li>交换机是基于硬件的</li></ul><h1 id="交换机"><a class="markdownIt-Anchor" href="#交换机"></a> 交换机</h1><h2 id="交换机基本功能"><a class="markdownIt-Anchor" href="#交换机基本功能"></a> 交换机基本功能</h2><ul><li>根据MAC地址建立和维护 交换表（类似于网桥表</li><li>将帧切换出接口到目标</li></ul><h2 id="对称交换-symmetric-switching"><a class="markdownIt-Anchor" href="#对称交换-symmetric-switching"></a> 对称交换 Symmetric Switching</h2><ul><li><p>对称交换可再具有相同带宽的端口之间提供交换连接（10/10Mbps or 100/100Mbps）</p></li><li><p>用户尝试访问其他网段上的服务器时，可能会导致瓶颈（对称交换可能会导致带宽不足）</p><p><img src="https://s2.loli.net/2022/06/01/c3qhxPfeFDnjTaR.png" alt="" /></p></li></ul><blockquote><p>多个客户端 向服务器访问的话， 服务器端口流量会比较阻塞</p><p>（在对称切换中，双端的带宽时完全对称的，这是一个瓶颈）</p></blockquote><h2 id="非对称交换-asymmetric-switching"><a class="markdownIt-Anchor" href="#非对称交换-asymmetric-switching"></a> 非对称交换 Asymmetric Switching</h2><ul><li><p>通过将带有服务器的网段连接到更高带宽的端口(100 Mbps)，非对称交换(asymmetric switching)减少了服务器上潜在瓶颈的可能性</p></li><li><p>非对称交换需要在交换器中进行内存缓冲</p></li><li><p>非对称交换端口解决对称交换端口中的对称阻塞问题(进一步保证了服务器的稳定实现)</p></li></ul><p><img src="https://s2.loli.net/2022/06/01/4vwEJ7xUBbrTtkM.png" alt="" /></p><h3 id="内存缓冲"><a class="markdownIt-Anchor" href="#内存缓冲"></a> 内存缓冲</h3><ol><li>交换机中存储目标  和  传输数据的内存区域，直到可以将其切换出正确的端口为止。<ol><li>基于端口(Port)的内存缓冲<ol><li>数据包存储在每个端口的队列中</li><li>由于目标端口繁忙，一个数据包可能会延迟其他数据包的传输</li><li>其他端口存在不均衡的问题。</li></ol></li><li>共享(Shared)内存缓冲<ol><li>所有端口共享的公用内存缓冲</li><li>允许将数据包在一个端口上接收并在另一个端口上发送出去，而无需将其更改为其他队列。</li><li>需要自己记录端口的信息</li></ol></li></ol></li><li>发生阻塞的时候，根据情况按照端口或者内存将包缓存下来</li></ol><h2 id="交换方式"><a class="markdownIt-Anchor" href="#交换方式"></a> 交换方式</h2><h3 id="储存转发-store-and-forward-网桥-路由器等通过软件的设备"><a class="markdownIt-Anchor" href="#储存转发-store-and-forward-网桥-路由器等通过软件的设备"></a> 储存转发 (Store and Forward ,网桥 路由器等通过软件的设备)</h3><ul><li>交换机接受整个帧，最后将其计算为CRC，然后再将其发送到目的地</li><li>接受后，校验，正确再发送</li></ul><h3 id="cut-through-直通"><a class="markdownIt-Anchor" href="#cut-through-直通"></a> Cut through 直通</h3><ol><li>转发会增加延迟，通过使用直通切换方法可以减少</li><li>快速转发切换：仅在立即转发帧之前侦察目标MAC（只看到帧的目的地址就转发，不看帧的后面部分）</li></ol><h3 id="segment-free-switching-无碎片转发"><a class="markdownIt-Anchor" href="#segment-free-switching-无碎片转发"></a> Segment free Switching 无碎片转发</h3><ol><li><p>​碎片释放：在转发帧之前读取前64个字典以减少错误，避免碰撞和帧碎片</p></li><li><p>Example：（三种不同查看方式）</p><p><img src="https://s2.loli.net/2022/06/01/NfZa1IdQKisUcGT.png" alt="" /></p></li></ol><h2 id="第二层交换机"><a class="markdownIt-Anchor" href="#第二层交换机"></a> 第二层交换机</h2><p><img src="https://s2.loli.net/2022/06/01/CWj3uywt67zIBqk.png" alt="" /></p><ul><li>大规模集成电路，保证链路效率，低时延，低成本</li><li>有一个MAC地址</li></ul><h2 id="第三层交换机"><a class="markdownIt-Anchor" href="#第三层交换机"></a> 第三层交换机</h2><p><img src="https://s2.loli.net/2022/06/01/Uiefl85qr93CL2I.png" alt="" /></p><ol><li>基于硬件的帧转发机制</li><li>较高的帧转发性能</li><li>较高速的计算</li><li>低延迟</li><li>流控制</li><li>安全性更高</li><li>对数据流进行路由，生成MAC和IP的映射</li></ol><p>MAC地址过来的时候直接根据表从第二层进行通过</p><h2 id="第四层交换机"><a class="markdownIt-Anchor" href="#第四层交换机"></a> 第四层交换机</h2><p><img src="https://s2.loli.net/2022/06/01/vo56H8dq1xaUENp.png" alt="" /></p><ol><li>数据段在数据报里面，数据报在数据帧里面</li><li>只有交换机可以看到数据帧的数据部分的首部</li><li>可以根据端口主机的应用特点进行一定的流量控制</li><li>和Net OS是不一样的，没有那么智能</li><li>识别到前80个字节的数据报长度，对指定应用进行管理</li></ol><h2 id="多层交换机总结"><a class="markdownIt-Anchor" href="#多层交换机总结"></a> 多层交换机总结</h2><p><img src="https://s2.loli.net/2022/06/01/t5EiJwNZRDMnrAG.png" alt="" /></p><ol><li>一般我们只是用二层交换机</li><li>交换机可以简单识别第三层和第四层信息</li></ol><h1 id="生成树协议stp-the-spanning-tree-protocol"><a class="markdownIt-Anchor" href="#生成树协议stp-the-spanning-tree-protocol"></a> 生成树协议(STP, The Spanning-Tree Protocol)</h1><h2 id="回路"><a class="markdownIt-Anchor" href="#回路"></a> 回路</h2><ol><li>出于各种原因，网络中可能会出现<strong>环路</strong><ol><li>通常，网络中的环路是故意(deliberate)提供冗余的结果。</li><li>也可能由于配置错误而发生:在桥接网络中，环路可能是绝对灾难性的两个主要原因：<ol><li>广播回路(广播风暴)，没有TTL</li><li>路由表的错误</li></ol></li></ol></li><li>往往是<strong>第二层交换机</strong>的冗余导致的桥回路。</li><li>接入层到核心层的接入往往<strong>要有冗余</strong>，这个区域是主干网(backbone)</li></ol><h2 id="冗余造成了路由回路"><a class="markdownIt-Anchor" href="#冗余造成了路由回路"></a> 冗余造成了路由回路</h2><p><img src="https://s2.loli.net/2022/06/01/nQlU3ADuLiImfg9.png" alt="" /></p><ul><li>设备通过backbone和远端设备进行链接</li></ul><h2 id="第二层路由回路"><a class="markdownIt-Anchor" href="#第二层路由回路"></a> 第二层路由回路</h2><ol><li>广播和第2层循环可能是危险的组合。</li><li>以太网帧没有TTL字段</li><li>以太网帧开始循环后，它可能会继续下去，直到有人关闭其中一台交换机或断开链路为止(外部条件)</li><li>交换机将抖动(flip flop)主机A的桥接表条目(创建极高的CPU利用率)。</li><li>消耗CPU和内存</li></ol><h3 id="第二层路由回路-泛洪单播帧"><a class="markdownIt-Anchor" href="#第二层路由回路-泛洪单播帧"></a> 第二层路由回路-泛洪单播帧</h3><p><img src="https://s2.loli.net/2022/06/01/d9BDfXaGNx4wKsc.png" alt="" /></p><ul><li>过一段时间CAT-1和CAT-2没有收到Host-B的信息，删除表中的对应记录</li><li>在这之后，Host A发送给Host B信息，然后在CAT-1和CAT-2之间进行循环</li></ul><h2 id="生成树协议-综述"><a class="markdownIt-Anchor" href="#生成树协议-综述"></a> 生成树协议 综述</h2><ol><li>生成树协议的元素<ol><li>主要功能：在<strong>交换/桥接网络</strong>中允许<strong>冗余路径</strong>，而不会因环路的影响而引起延迟。</li><li>STP通过计算<strong>稳定的生成树</strong>网络拓扑来防止环路</li><li><strong>生成树帧</strong>(称为桥协议数据单元-BPDU)用于确定生成树拓扑</li></ol></li><li>在正常情况下禁用一些端口来防止出现冗余</li></ol><h3 id="stp决策顺序seqence"><a class="markdownIt-Anchor" href="#stp决策顺序seqence"></a> STP决策顺序(Seqence)</h3><ol><li>生成树始终使用相同的四步决策序列：<ol><li>在拓扑里面最低的root BID(网桥标识)</li><li>找到 Root bridgh的最低路径成本</li><li>每个路径都会选择一个最低BID的sender 这个是针对一个链路的，详见例子</li><li>每个路径再指定一个最低的ID端口</li></ol></li></ol><h3 id="bpdus-bridge-protocol-data-unit"><a class="markdownIt-Anchor" href="#bpdus-bridge-protocol-data-unit"></a> BPDUs (Bridge Protocol Data Unit)</h3><ol><li>BPDU是交换机之间的流量；它们不承载最终用户(end-user)流量。</li><li>STP建立一个称为<strong>根网桥的根节点</strong>，生成的树源自根桥。</li><li>不属于最短路径树的冗余连接将被阻止。(block 端口，不转发，但是接收)</li><li>在阻塞的链接上收到的数据帧将被丢弃。</li><li>交换机发送的允许形成无环逻辑拓扑的消息是BPDU</li></ol><p><img src="https://s2.loli.net/2022/06/01/T9cYgnlLaqm8esF.png" alt="" /></p><ul><li>BPDU里面包含几个字段标识协议、版本、数据类型、标志等，记录它认可的Root BID(类似OSPF)、到BID最小的代价、发送的交换机的ID、从哪个端口发送</li><li>和OSPF不一样的:不一定以自己为根</li><li>这样在选举之后，冗余链路就被屏蔽掉了</li></ul><h3 id="stp的bpdu帧"><a class="markdownIt-Anchor" href="#stp的bpdu帧"></a> STP的BPDU帧</h3><p><img src="https://s2.loli.net/2022/06/01/PdnXvft7VMC6AcT.png" alt="" />注意前四个是很有意义的</p><ul><li>默认交换机每2s发送一次BPDU</li><li>主要是维护最短的路径</li><li>接收到BPDU帧的时候，会比较根ID，计算，如果更优则接受，反之则不接受。</li><li>经过一段时间的传递后会全局稳定</li></ul><h3 id="bridge-identificationbid"><a class="markdownIt-Anchor" href="#bridge-identificationbid"></a> Bridge Identification/BID</h3><ol><li>网桥ID(BID)：8个字节(2 + 6)<ol><li>高阶BID子字段(2个字节)：网桥优先级<ol><li>216个可能的值：0-65,535(默认值：32,768)</li><li>通常以十进制格式表示</li></ol></li><li>低阶子字段(6个字节)：分配给交换机的MAC地址，以十六进制格式表示</li></ol></li><li>STP成本值：成本越低越好</li></ol><h3 id="选举根交换机"><a class="markdownIt-Anchor" href="#选举根交换机"></a> 选举根交换机</h3><ol><li>交换机通过查找具有<strong>最低BID</strong>的交换机(通常称为根战争)来选择单个根交换机。</li><li>如果所有交换机都使用默认的网桥优先级32768，则最低的MAC地址将作为平局。</li><li>配置优先级来调整根桥</li></ol><h2 id="路径代价-cost"><a class="markdownIt-Anchor" href="#路径代价-cost"></a> 路径代价 Cost</h2><p><img src="https://s2.loli.net/2022/06/01/DyS54QtwOChjLPl.png" alt="" /></p><ol><li>桥梁使用成本的概念来评估它们与其他桥梁的距离。</li><li>和OSPF算法相同的，这个标准是比较合适的，比之前OSPF要新，用固定的数值除以带宽来获得代价</li></ol><h2 id="five-stp-states-5个stp状态"><a class="markdownIt-Anchor" href="#five-stp-states-5个stp状态"></a> Five STP States 5个STP状态</h2><ol><li>通过根据策略配置每个端口来建立状态</li><li>然后，STP根据流量模式(traffic Patterns)和潜在环路(Protential Loops)修改状态</li><li>STP状态的默认顺序为：<ol><li>阻塞:没有转发帧，听到了BPDU</li><li>监听:不转发任何帧，监听数据帧(确定自己可以参加的交换)，也会发送一些数据帧表示自己状态变了</li><li>学习:不转发帧，学习地址</li><li>转发:转发帧，学习地址</li><li>禁用:没有转发帧，没有听到BPDU</li></ol></li></ol><p><img src="https://s2.loli.net/2022/06/01/AlISN9e4Li7pt3b.png" alt="" /></p><blockquote><p>STP过程：Blocking -&gt; 20s Listening -&gt; 15s Learning -&gt; 15s Fowarding或者Disabled</p></blockquote><p><img src="https://s2.loli.net/2022/06/01/E16DpXngofWqYwF.png" alt="" /></p><p><img src="https://s2.loli.net/2022/06/01/75O6iZqpBTGhbIP.png" alt="" /></p><ul><li>2s可以调整</li><li>老化时间:保存的时间</li></ul><h2 id="初始stp收敛"><a class="markdownIt-Anchor" href="#初始stp收敛"></a> 初始STP收敛</h2><ol><li>当网络首次启动时，所有网桥都会混合使用BPDU信息来泛洪网络。(开始泛洪BPDU信息)</li><li>立即，他们应用决策序列，允许他们BPDU进行PK，然后选择出来ROOT，从而形成整个网络的单个生成树</li></ol><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">(Step 1) 根交换机决定：选择一个根桥作为该网络的中心点</span><br><span class="line">(Step 2) 选择根端口：所有剩余的网桥都会计算出一组根端口</span><br><span class="line">(Step 3) 选择指定端口：其余所有网桥计算一组指定端口</span><br></pre></td></tr></table></figure><ul><li>Root switch针对一个特定的交换机</li><li>根端口针对一个交换机</li><li>指定端口对应链路</li></ul><h3 id="步骤1根交换机决定"><a class="markdownIt-Anchor" href="#步骤1根交换机决定"></a> 步骤1：根交换机决定</h3><ol><li>宣布自己为根</li><li>检查端口上收到的所有BPDU以及将在该端口上发送的BPDU</li><li>对于每个到达的BPDU，如果其值小于为端口保存的现有BPDU</li><li>旧值被替换</li><li>BPDU的发送者被接受为新的根</li></ol><p><img src="https://s2.loli.net/2022/06/01/kZWUSDaL9GiCwvz.png" alt="" /></p><ul><li>BC收到后将根修改为A</li><li>比如在BC链路中，B的MAC地址比较小，作为链路的Sender BID，这个port是指定端口</li></ul><h3 id="步骤2选择根端口"><a class="markdownIt-Anchor" href="#步骤2选择根端口"></a> 步骤2：选择根端口</h3><ol><li>每个非根桥必须选择一个根端口。<ol><li>桥的根端口是最接近根桥的端口。</li><li>根路径成本是到根网桥的所有链接的累积(cumulative)成本。</li></ol></li><li>STP成本随着在端口上接收到BPDU而增加，而不是随着它们从端口发送出去而增加</li></ol><p><img src="https://s2.loli.net/2022/06/01/7gdsQ1JRKYHW5ZA.png" alt="" /></p><blockquote><p>B会把上面一个端口做为Root Port，虽然两个可达，但是上面一个更快，C也是同样</p></blockquote><h3 id="步骤3选择网段的指定端口i"><a class="markdownIt-Anchor" href="#步骤3选择网段的指定端口i"></a> 步骤3：选择网段的指定端口(I)</h3><ol><li>每个网段都有一个指定的端口：充当单个网桥/交换机端口，该端口既向该网段又向根网桥发送流量，也从该网段和根网桥接收流量。</li><li>包含给定网段的指定端口的网桥/交换机称为该网段的指定网桥。</li><li>所有网桥/交换机将阻止它们上未指定的端口，根网桥上的每个活动端口都将成为指定端口</li><li>每个链路只有一个指定端口，一旦选定其他就block了</li></ol><p><img src="https://s2.loli.net/2022/06/01/JCz9tV2W6seKpYq.png" alt="" /></p><ul><li>BC之间的，左边是指定端口(BID小)</li><li>MAC地址唯一的</li><li>Root Port都是上面的</li></ul><p><img src="https://s2.loli.net/2022/06/01/xF6yLAMRw7Jo5sY.png" alt="" /></p><ul><li>AB和AC之间的链路的指定端口是A上面的端口</li></ul><h1 id="vlan-virtual-local-area-network-虚拟局域网"><a class="markdownIt-Anchor" href="#vlan-virtual-local-area-network-虚拟局域网"></a> VLAN (Virtual Local Area Network 虚拟局域网)</h1><h2 id="为什么引入vlan"><a class="markdownIt-Anchor" href="#为什么引入vlan"></a> 为什么引入VLAN？</h2><ul><li>传统的局域网使用的是集线器（Hub)，Hub只有一根总线，一根总线就是一个冲突域。所以传统的局域网是一个扁平的网络，一个局域网属于同一个冲突域。<strong>任何一台主机</strong>发出的报文都会被同一冲突域中的所有其他机器接收到。</li><li>后来，组网时使用<strong>交换机代替集线器</strong>，每个端口可以看成是一根单独的总线，冲突域缩小到每个端口，使得网络发送单播报文的效率大大提高，与此同时极大地提高了二层网络的性能。</li><li>但是假如一台主机发出广播报文，连接在交换机的所有设备仍然可以接收到该广播信息，通常把广播报文所能传输的范围称为广播域。交换机在传递广播报文的时候依然要将广播报文复制多份，发送到网络的各个角落。所以随着<strong>网络规模的扩大</strong>，网络中的广播报文越来越多，严重<strong>影响网络性能</strong>，这就是所谓的广播风暴的问题。由干交换机二层网络工作原理的限制，交换机对广播风暴的问题无能为力。为了提高网络效率，一般需要将网络进行分段:<strong>把一个大的广播域划分成几个小的广播域</strong>。</li><li>过去往往通过路由器对网络进行分段，这样可以使得广播报文的发送范围大大减小，这种方案解决了广播风暴的问题，但用路由器是在网络层上分段将网络隔离的，网络规划复杂,组网方式不灵活，并且大大增加了管理维护的难度。作为替代的LAN分段方法，虚拟局域网(VLAN）就出现了，专门用来<strong>解决大型的二层网络环境</strong>面临的问题。</li></ul><h2 id="vlan可以不通过路由器就隔离广播域吗"><a class="markdownIt-Anchor" href="#vlan可以不通过路由器就隔离广播域吗"></a> VLAN可以不通过路由器就隔离广播域吗？</h2><ul><li>虚拟局域网（VLAN) 逻辑上把<strong>网络资源</strong>和<strong>网络用户</strong>按照一定的原则进行划分，把一个物理上实际的网络划分成多个小的逻辑的网络。这些小的逻辑的网络形成各自的广播域，也就是虚拟局域网VLAN。</li><li>从下图中可以看出，一共有3个虚拟局域网，它们形成各自的广播域，广播报文不能跨越这些广播域传送。</li><li>从图中还可以看出，各大主机都是不枸泥于所处的物理位置，因为它们既可以挂接在同一个交换机中，也可以挂接在不同的交换机中。</li></ul><p><img src="https://s2.loli.net/2022/06/01/d1eGEjz8xoUqc5I.png" alt="" /></p><h2 id="虚拟局域网介绍"><a class="markdownIt-Anchor" href="#虚拟局域网介绍"></a> 虚拟局域网介绍</h2><h3 id="现有的共享局域网配置"><a class="markdownIt-Anchor" href="#现有的共享局域网配置"></a> 现有的共享局域网配置</h3><ol><li>在典型的共享局域网中…<ol><li>根据用户所插入(plug)的集线器对用户进行物理分组</li><li>路由器分割局域网并提供广播防火墙</li></ol></li><li>在虚拟局域网中<ol><li>您可以按使用的功能，部门或应用程序对用户进行逻辑分组</li><li>通过专有软件进行配置</li></ol></li></ol><h3 id="lan和vlan之间的差异"><a class="markdownIt-Anchor" href="#lan和vlan之间的差异"></a> LAN和VLAN之间的差异</h3><ol><li>虚拟局域网<ol><li>在第2层和第3层工作</li><li>控制网络广播</li><li>允许用户由网络管理员分配。</li><li>提供更严格的网络安全性</li></ol></li></ol><p><img src="https://s2.loli.net/2022/06/01/r6SPz7QcRHVNOsA.png" alt="" /></p><ul><li>左边是基于地理位置划分成子网(传统局域网)</li><li>VLAN是是通过逻辑位置进行划分</li><li>VLAN1的报文不会发送给VLAN2(虽然连接在一个交换机上)</li></ul><h3 id="vlans-ieee-8021q"><a class="markdownIt-Anchor" href="#vlans-ieee-8021q"></a> VLANs (IEEE 802.1q)</h3><ol><li>特点<ol><li>不限于物理交换机网段的网络设备或用户的<strong>逻辑分组</strong>。</li><li>VLAN中的设备或用户可以按功能，部门，应用程序等进行分组，而<strong>不管其物理网段的位置</strong>如何。</li><li>VLAN<strong>创建一个不限于物理网段</strong>的单个广播域，并且将其视为子网。</li><li>VLAN设置是由网络管理员使用供应商的软件在交换机中完成的。</li></ol></li><li>优点:<ol><li>限制广播包，提高带宽的利用率。</li><li>增强通信的安全性:其他VLAN用户网络收不到非本VLAN的报文，避免被监听</li><li>创建虚拟工作组：可以一个部门工作的人划分为一个VLAN，这样子即使他移动了办公位置，仍然能够正常办公</li><li>增强网络的健壮性：将一些网络故障限制在一个VLAN中</li></ol></li></ol><h3 id="分组用户"><a class="markdownIt-Anchor" href="#分组用户"></a> 分组用户</h3><ol><li>VLAN可以从逻辑上将用户划分为不同的子网(广播域)</li><li>广播帧仅在具有相同VLAN ID的一个或多个交换机的端口之间切换。(VLAN ID属于端口)</li><li>可以通过基于以下内容的软件对用户进行逻辑分组：<ol><li>端口号</li><li>MAC地址</li><li>使用的协议</li><li>使用的应用</li></ol></li></ol><p><strong>没有vlan的网络广播</strong></p><p><img src="https://s2.loli.net/2022/06/01/7bcYoiEwZaxD26T.png" alt="大家在一个交换机上不可以进行划分" /></p><p><strong>划分了vlan的网络广播</strong></p><p><img src="https://s2.loli.net/2022/06/01/mLV4aJA9doE73Kr.png" alt="各自角色之间单独进行通信，虽然连接的是同一个交换机，如果不在同一个VLAN上，相互之间也不能通信" /></p><h3 id="vlan-间通信"><a class="markdownIt-Anchor" href="#vlan-间通信"></a> VLAN 间通信</h3><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Internet-computing/img/lec09/21.png" alt="img" /></p>]]></content>
       
       
-      <categories>
-          
-          <category> 计算机网络 </category>
-          
-          <category> 互联网计算 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 计算机网络 </tag>
-            
-            <tag> 互联网计算 </tag>
-            
-        </tags>
       
     </entry>
     
@@ -200,9 +184,9 @@
             
             <tag> Algorithm </tag>
             
-            <tag> 博弈论 </tag>
-            
             <tag> 动态规划 </tag>
+            
+            <tag> 博弈论 </tag>
             
         </tags>
       
@@ -227,9 +211,9 @@
       
         <tags>
             
-            <tag> C++高级程序设计 </tag>
-            
             <tag> 模拟 </tag>
+            
+            <tag> C++高级程序设计 </tag>
             
         </tags>
       
@@ -519,9 +503,9 @@
       
         <tags>
             
-            <tag> 互联网计算 </tag>
-            
             <tag> 微信小程序 </tag>
+            
+            <tag> 互联网计算 </tag>
             
         </tags>
       
@@ -579,9 +563,9 @@
             
             <tag> Algorithm </tag>
             
-            <tag> 博弈论 </tag>
-            
             <tag> 动态规划 </tag>
+            
+            <tag> 博弈论 </tag>
             
         </tags>
       
@@ -726,9 +710,9 @@
       
         <tags>
             
-            <tag> C++高级程序设计 </tag>
-            
             <tag> 模拟 </tag>
+            
+            <tag> C++高级程序设计 </tag>
             
         </tags>
       
@@ -2280,9 +2264,9 @@
       
         <tags>
             
-            <tag> Leetcode </tag>
-            
             <tag> 博弈论 </tag>
+            
+            <tag> Leetcode </tag>
             
         </tags>
       
@@ -2657,9 +2641,9 @@
       
         <tags>
             
-            <tag> Leetcode </tag>
-            
             <tag> 动态规划 </tag>
+            
+            <tag> Leetcode </tag>
             
         </tags>
       
@@ -3005,9 +2989,9 @@
       
         <tags>
             
-            <tag> Leetcode </tag>
-            
             <tag> 模拟 </tag>
+            
+            <tag> Leetcode </tag>
             
         </tags>
       
@@ -3063,9 +3047,9 @@
       
         <tags>
             
-            <tag> Leetcode </tag>
-            
             <tag> Algorithm </tag>
+            
+            <tag> Leetcode </tag>
             
         </tags>
       
