@@ -6,7 +6,7 @@
   <link href="http://little-hurui.cloud/atom.xml" rel="self"/>
   
   <link href="http://little-hurui.cloud/"/>
-  <updated>2022-06-01T01:46:00.187Z</updated>
+  <updated>2022-06-01T02:20:27.920Z</updated>
   <id>http://little-hurui.cloud/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>网络安全</title>
+    <link href="http://little-hurui.cloud/2022/06/01/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
+    <id>http://little-hurui.cloud/2022/06/01/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/</id>
+    <published>2022-06-01T02:18:54.000Z</published>
+    <updated>2022-06-01T02:20:27.920Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="network-security"><a class="markdownIt-Anchor" href="#network-security"></a> Network Security</h1><h1 id="网络安全问题概述"><a class="markdownIt-Anchor" href="#网络安全问题概述"></a> 网络安全问题概述</h1><ol><li>计算机网络上的通信面临以下的四种威胁：</li></ol><table><thead><tr><th>威胁</th><th>解释</th><th>攻击类型</th></tr></thead><tbody><tr><td>截获</td><td>从网络上窃听他人的通信内容。</td><td>被动攻击</td></tr><tr><td>中断</td><td>有意中断他人在网络上的通信。</td><td>主动攻击</td></tr><tr><td>篡改</td><td>故意篡改网络上传送的报文。</td><td>主动攻击</td></tr><tr><td>伪造</td><td>伪造信息在网络上传送。</td><td>主动攻击</td></tr></tbody></table>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;network-security&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#network-security&quot;&gt;&lt;/a&gt; Network Security&lt;/h1&gt;
+&lt;h1 id=&quot;网络安全问题概述&quot;&gt;&lt;a class=&quot;markd</summary>
+      
+    
+    
+    
+    <category term="计算机网络" scheme="http://little-hurui.cloud/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+    <category term="互联网计算" scheme="http://little-hurui.cloud/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
+    
+    
+    <category term="计算机网络" scheme="http://little-hurui.cloud/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+    <category term="互联网计算" scheme="http://little-hurui.cloud/tags/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
+    
+  </entry>
   
   <entry>
     <title>WANS</title>
@@ -39,9 +68,9 @@
     <category term="互联网计算" scheme="http://little-hurui.cloud/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
     
     
-    <category term="互联网计算" scheme="http://little-hurui.cloud/tags/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
-    
     <category term="计算机网络" scheme="http://little-hurui.cloud/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+    <category term="互联网计算" scheme="http://little-hurui.cloud/tags/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
     
   </entry>
   
@@ -70,9 +99,9 @@
     <category term="互联网计算" scheme="http://little-hurui.cloud/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
     
     
-    <category term="互联网计算" scheme="http://little-hurui.cloud/tags/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
-    
     <category term="计算机网络" scheme="http://little-hurui.cloud/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+    <category term="互联网计算" scheme="http://little-hurui.cloud/tags/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
     
   </entry>
   
@@ -99,9 +128,9 @@
     <category term="互联网计算" scheme="http://little-hurui.cloud/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
     
     
-    <category term="互联网计算" scheme="http://little-hurui.cloud/tags/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
-    
     <category term="计算机网络" scheme="http://little-hurui.cloud/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+    <category term="互联网计算" scheme="http://little-hurui.cloud/tags/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
     
   </entry>
   
@@ -192,9 +221,9 @@
     <category term="互联网计算" scheme="http://little-hurui.cloud/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
     
     
-    <category term="互联网计算" scheme="http://little-hurui.cloud/tags/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
-    
     <category term="计算机网络" scheme="http://little-hurui.cloud/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+    <category term="互联网计算" scheme="http://little-hurui.cloud/tags/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
     
   </entry>
   
@@ -573,39 +602,9 @@
     <category term="互联网计算" scheme="http://little-hurui.cloud/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
     
     
-    <category term="互联网计算" scheme="http://little-hurui.cloud/tags/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
-    
     <category term="微信小程序" scheme="http://little-hurui.cloud/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
     
-  </entry>
-  
-  <entry>
-    <title>序列化与反序列化</title>
-    <link href="http://little-hurui.cloud/2022/05/11/%E5%BA%8F%E5%88%97%E5%8C%96%E4%B8%8E%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96/"/>
-    <id>http://little-hurui.cloud/2022/05/11/%E5%BA%8F%E5%88%97%E5%8C%96%E4%B8%8E%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96/</id>
-    <published>2022-05-11T01:09:14.000Z</published>
-    <updated>2022-05-17T15:21:58.188Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="449-序列化和反序列化二叉搜索树"><a class="markdownIt-Anchor" href="#449-序列化和反序列化二叉搜索树"></a> <a href="https://leetcode.cn/problems/serialize-and-deserialize-bst/">449. 序列化和反序列化二叉搜索树</a></h1><p>序列化是将数据结构或对象转换为一系列位的过程，以便它可以存储在文件或内存缓冲区中，或通过网络连接链路传输，以便稍后在同一个或另一个计算机环境中重建。</p><p>设计一个算法来序列化和反序列化 <strong>二叉搜索树</strong> 。 对序列化/反序列化算法的工作方式没有限制。 您只需确保二叉搜索树可以序列化为字符串，并且可以将该字符串反序列化为最初的二叉搜索树。</p><p><strong>编码的字符串应尽可能紧凑</strong>。</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Codec</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="comment">// Encodes a tree to a single string.</span></span><br><span class="line">    <span class="function">string <span class="title">serialize</span><span class="params">(TreeNode* root)</span> </span>&#123;</span><br><span class="line">        string res;</span><br><span class="line">        vector&lt;<span class="type">int</span>&gt; arr;</span><br><span class="line">        <span class="built_in">postOrder</span>(root,arr);</span><br><span class="line">        <span class="type">int</span> n = arr.<span class="built_in">size</span>();</span><br><span class="line">        <span class="keyword">if</span>(n == <span class="number">0</span>) <span class="keyword">return</span> res;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n<span class="number">-1</span>;i++)&#123;</span><br><span class="line">            res += <span class="built_in">to_string</span>(arr[i])+<span class="string">&#x27;*&#x27;</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        res += <span class="built_in">to_string</span>(arr.<span class="built_in">back</span>());</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="comment">// Decodes your encoded data to tree.</span></span><br><span class="line">    <span class="function">TreeNode* <span class="title">deserialize</span><span class="params">(string data)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(data.<span class="built_in">size</span>()==<span class="number">0</span>) <span class="keyword">return</span> <span class="literal">nullptr</span>;</span><br><span class="line">        vector&lt;string&gt; arr = <span class="built_in">split</span>(data,<span class="string">&#x27;*&#x27;</span>);</span><br><span class="line">        stack&lt;<span class="type">int</span>&gt; st;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">auto</span>&amp; str:arr)&#123;</span><br><span class="line">            st.<span class="built_in">push</span>(<span class="built_in">stoi</span>(str));</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">construct</span>(INT_MIN,INT_MAX,st);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">postOrder</span><span class="params">(TreeNode* root,vector&lt;<span class="type">int</span>&gt;&amp; arr)</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(root==<span class="literal">nullptr</span>) <span class="keyword">return</span>;</span><br><span class="line">        <span class="built_in">postOrder</span>(root-&gt;left,arr);</span><br><span class="line">        <span class="built_in">postOrder</span>(root-&gt;right,arr);</span><br><span class="line">        arr.<span class="built_in">push_back</span>(root-&gt;val);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function">vector&lt;string&gt; <span class="title">split</span><span class="params">(<span class="type">const</span> string &amp;str, <span class="type">char</span> dec)</span> </span>&#123;</span><br><span class="line">        <span class="type">int</span> pos = <span class="number">0</span>;</span><br><span class="line">        <span class="type">int</span> start = <span class="number">0</span>;</span><br><span class="line">        vector&lt;string&gt; res;</span><br><span class="line">        <span class="keyword">while</span> (pos &lt; str.<span class="built_in">size</span>()) &#123;</span><br><span class="line">            <span class="keyword">while</span> (pos &lt; str.<span class="built_in">size</span>() &amp;&amp; str[pos] == dec) &#123;</span><br><span class="line">                pos++;</span><br><span class="line">            &#125;</span><br><span class="line">            start = pos;</span><br><span class="line">            <span class="keyword">while</span> (pos &lt; str.<span class="built_in">size</span>() &amp;&amp; str[pos] != dec) &#123;</span><br><span class="line">                pos++;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> (start &lt; str.<span class="built_in">size</span>()) &#123;</span><br><span class="line">                res.<span class="built_in">emplace_back</span>(str.<span class="built_in">substr</span>(start, pos - start));</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function">TreeNode* <span class="title">construct</span><span class="params">(<span class="type">int</span> lower,<span class="type">int</span> upper,stack&lt;<span class="type">int</span>&gt;&amp; st)</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(st.<span class="built_in">size</span>()==<span class="number">0</span> || st.<span class="built_in">top</span>() &lt; lower || st.<span class="built_in">top</span>() &gt; upper) <span class="keyword">return</span> <span class="literal">nullptr</span>;</span><br><span class="line">        <span class="type">int</span> val = st.<span class="built_in">top</span>();</span><br><span class="line">        st.<span class="built_in">pop</span>();</span><br><span class="line">        TreeNode* root = <span class="keyword">new</span> <span class="built_in">TreeNode</span>(val);</span><br><span class="line">        root-&gt;right = <span class="built_in">construct</span>(val,upper,st);</span><br><span class="line">        root-&gt;left  = <span class="built_in">construct</span>(lower,val,st);</span><br><span class="line">        <span class="keyword">return</span> root;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">    </span><br><span class="line">&#125;;</span><br><span class="line"></span><br></pre></td></tr></table></figure><blockquote><p>文艺复兴了</p></blockquote>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;449-序列化和反序列化二叉搜索树&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#449-序列化和反序列化二叉搜索树&quot;&gt;&lt;/a&gt; &lt;a href=&quot;https://leetcode.cn/problems/serialize-and-d</summary>
-      
-    
-    
-    
-    <category term="数据结构与算法" scheme="http://little-hurui.cloud/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
-    
-    <category term="常用算法" scheme="http://little-hurui.cloud/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95/"/>
-    
-    <category term="板子" scheme="http://little-hurui.cloud/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E6%9D%BF%E5%AD%90/"/>
-    
-    
-    <category term="Algorithm" scheme="http://little-hurui.cloud/tags/Algorithm/"/>
-    
-    <category term="二叉搜索树" scheme="http://little-hurui.cloud/tags/%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91/"/>
+    <category term="互联网计算" scheme="http://little-hurui.cloud/tags/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
     
   </entry>
   
