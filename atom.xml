@@ -6,7 +6,7 @@
   <link href="http://little-hurui.cloud/atom.xml" rel="self"/>
   
   <link href="http://little-hurui.cloud/"/>
-  <updated>2022-06-01T01:02:35.122Z</updated>
+  <updated>2022-06-01T01:06:20.462Z</updated>
   <id>http://little-hurui.cloud/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>WANS</title>
+    <link href="http://little-hurui.cloud/2022/06/01/WANS/"/>
+    <id>http://little-hurui.cloud/2022/06/01/WANS/</id>
+    <published>2022-06-01T01:04:07.000Z</published>
+    <updated>2022-06-01T01:06:20.462Z</updated>
+    
+    
+    
+    
+    <category term="计算机网络" scheme="http://little-hurui.cloud/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+    <category term="互联网计算" scheme="http://little-hurui.cloud/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
+    
+    
+    <category term="计算机网络" scheme="http://little-hurui.cloud/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+    <category term="互联网计算" scheme="http://little-hurui.cloud/tags/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
+    
+  </entry>
   
   <entry>
     <title>局域网交换和vlan</title>
@@ -544,9 +565,9 @@
     <category term="互联网计算" scheme="http://little-hurui.cloud/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
     
     
-    <category term="微信小程序" scheme="http://little-hurui.cloud/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
-    
     <category term="互联网计算" scheme="http://little-hurui.cloud/tags/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
+    
+    <category term="微信小程序" scheme="http://little-hurui.cloud/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
     
   </entry>
   
@@ -577,34 +598,6 @@
     <category term="Algorithm" scheme="http://little-hurui.cloud/tags/Algorithm/"/>
     
     <category term="二叉搜索树" scheme="http://little-hurui.cloud/tags/%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>猫鼠游戏</title>
-    <link href="http://little-hurui.cloud/2022/05/10/%E7%8C%AB%E9%BC%A0%E6%B8%B8%E6%88%8F/"/>
-    <id>http://little-hurui.cloud/2022/05/10/%E7%8C%AB%E9%BC%A0%E6%B8%B8%E6%88%8F/</id>
-    <published>2022-05-10T03:04:06.000Z</published>
-    <updated>2022-05-17T15:20:30.699Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="913-猫和老鼠"><a class="markdownIt-Anchor" href="#913-猫和老鼠"></a> <a href="https://leetcode.cn/problems/cat-and-mouse/">913. 猫和老鼠</a></h1><blockquote><p>据说当时周赛国内没一个人ac</p></blockquote><p>两位玩家分别扮演猫和老鼠，在一张 无向 图上进行游戏，两人轮流行动。</p><p>图的形式是：graph[a] 是一个列表，由满足 ab 是图中的一条边的所有节点 b 组成。</p><p>老鼠从节点 1 开始，第一个出发；猫从节点 2 开始，第二个出发。在节点 0 处有一个洞。</p><p>在每个玩家的行动中，他们 <strong>必须</strong> 沿着图中与所在当前位置连通的一条边移动。例如，如果老鼠在节点 1 ，那么它必须移动到 graph[1] 中的任一节点。</p><p>此外，猫无法移动到洞中（节点 0）。</p><p>然后，游戏在出现以下三种情形之一时结束：</p><ul><li>如果猫和老鼠出现在同一个节点，猫获胜。</li><li>如果老鼠到达洞中，老鼠获胜。</li><li>如果某一位置重复出现（即，玩家的位置和移动顺序都与上一次行动相同），游戏平局。</li></ul><p>给你一张图 graph ，并假设两位玩家都都以最佳状态参与游戏：</p><ul><li>如果老鼠获胜，则返回 1；</li><li>如果猫获胜，则返回 2；</li><li>如果平局，则返回 0 。</li></ul><p><img src="https://s2.loli.net/2022/05/10/hVL8E3wtSqI4xHM.png" alt="" /></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入：graph = [[2,5],[3],[0,4,5],[1,4,5],[2,3],[0,2,3]]</span><br><span class="line">输出：0</span><br></pre></td></tr></table></figure><p><strong>提示：</strong></p><blockquote><p>3 &lt;= graph.length &lt;= 50<br />1 &lt;= graph[i].length &lt; graph.length<br />0 &lt;= graph[ i ][ j ] &lt; graph.length<br />graph[ i ][ j ] != i</p><p>graph[i] 互不相同<br />猫和老鼠在游戏中总是移动</p></blockquote><h2 id="博弈知识介绍"><a class="markdownIt-Anchor" href="#博弈知识介绍"></a> 博弈知识介绍</h2><p>这道题是博弈问题，猫和老鼠都按照<strong>最优策略</strong>参与游戏。</p><p>在阐述具体解法之前，首先介绍博弈问题中的三个概念：必胜状态、必败状态与必和状态。</p><p>对于特定状态，如果游戏已经结束，则根据结束时的状态决定必胜状态、必败状态与必和状态。</p><p>如果分出胜负，则该特定状态对于获胜方为必胜状态，对于落败方为必败状态。</p><p>如果是平局，则该特定状态对于双方都为必和状态。</p><p>从特定状态开始，如果存在一种操作将状态变成必败状态，则当前玩家可以选择该操作，将必败状态留给对方玩家，因此该特定状态对于当前玩家为必胜状态。</p><p>从特定状态开始，如果所有操作都会将状态变成必胜状态，则无论当前玩家选择哪种操作，都会将必胜状态留给对方玩家，因此该特定状态对于当前玩家为必败状态。</p><p>从特定状态开始，如果任何操作都不能将状态变成必败状态，但是存在一种操作将状态变成必和状态，则当前玩家可以选择该操作，将必和状态留给对方玩家，因此该特定状态对于双方玩家都为必和状态。</p><p>对于每个玩家，最优策略如下：</p><p><strong>争取将必胜状态留给自己，将必败状态留给对方玩家。</strong></p><p><strong>在自己无法到达必胜状态的情况下，争取将必和状态留给自己。</strong></p><h2 id="自顶向下动态规划解法介绍"><a class="markdownIt-Anchor" href="#自顶向下动态规划解法介绍"></a> <strong>自顶向下动态规划解法介绍</strong></h2><p>博弈问题通常可以使用<strong>动态规划</strong>求解。这道题由于数据规模的原因，动态规划方法不适用，因此只是介绍</p><p>。</p><blockquote><p>改日再战</p></blockquote><h1 id="1728-猫和老鼠-ii"><a class="markdownIt-Anchor" href="#1728-猫和老鼠-ii"></a> <a href="https://leetcode.cn/problems/cat-and-mouse-ii/">1728. 猫和老鼠 II</a></h1><p>！shit！</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;913-猫和老鼠&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#913-猫和老鼠&quot;&gt;&lt;/a&gt; &lt;a href=&quot;https://leetcode.cn/problems/cat-and-mouse/&quot;&gt;913. 猫和老鼠&lt;/a&gt;&lt;/h1</summary>
-      
-    
-    
-    
-    <category term="数据结构与算法" scheme="http://little-hurui.cloud/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
-    
-    
-    <category term="Algorithm" scheme="http://little-hurui.cloud/tags/Algorithm/"/>
-    
-    <category term="博弈论" scheme="http://little-hurui.cloud/tags/%E5%8D%9A%E5%BC%88%E8%AE%BA/"/>
-    
-    <category term="动态规划" scheme="http://little-hurui.cloud/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
     
   </entry>
   
