@@ -8,7 +8,7 @@
       <link href="/2022/06/01/WANS/"/>
       <url>/2022/06/01/WANS/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h1 id="广域网技术和设备"><a class="markdownIt-Anchor" href="#广域网技术和设备"></a> 广域网技术和设备</h1><h2 id="广域网服务-wan-services"><a class="markdownIt-Anchor" href="#广域网服务-wan-services"></a> 广域网服务 WAN Services</h2><p>WAN是通过WAN服务提供商连接LAN的通信网络</p><ul><li>一般不是一个单位来做，而是由运营商完成，而在运营商之间沟通好相互的接入问题。</li><li>WAN在OSI的前三层运行，但<strong>主要集中在物理和数据链路层</strong>。</li><li>广域网和局域网相比相对低效</li><li>广域网位于物理层和数据链路层</li></ul><h2 id="公司的发展"><a class="markdownIt-Anchor" href="#公司的发展"></a> 公司的发展</h2><p><img src="https://s2.loli.net/2022/06/01/z6VekiY5wyM98XI.jpg" alt="" /></p><ul><li>广域网的最小单位是公司</li><li>随着公司逐渐的发展才发展(公司的发展是需求)</li><li>最上角:公司刚成立的时候，小的局域网就可以搞定了(几台主机)，对外提供服务少，局域网协同办公。</li><li>右上角:随着公司的发展，一家发展到几十家，需要将不同的项目分开，每一个项目都有对应的项目经理和开发人员，多个局域网组成一个AS(自治系统)。还是一个出口，ASP要求高，VLAN隔离和防火墙</li><li>左下角:再次发展，有多个分支机构，区域办事处等，物理上隔离的很远，这时候建立一个数据中心(存放全部业务数据)，保证团队可以在任何位置访问，公司向ISP请求租用一个广域网链路。</li><li>右下角:最后进一步发展，覆盖全球:公司规模足够大，考虑成本，需要部署站点到站点之间的VPN，保证效率更高</li></ul><h2 id="广域网物理结构"><a class="markdownIt-Anchor" href="#广域网物理结构"></a> 广域网物理结构</h2><p><img src="https://s2.loli.net/2022/06/01/pNqLWFKulHzCSQa.png" alt="WAN_structure" /></p><ul><li>涉及到具体一个公司的接入</li><li>通过NetWork远程接入，通过WSP提供的CO Swtich来连接到中心局</li><li>CPE:位于公司本地的设备(主要是接入设备)，可以向ISP购买或者租用，购买上网服务(猫)</li><li>CPE和远端通过Local loop连接(最后一公里)，ISP做解决方案。</li><li>Demarcation(分界点)：分界点一侧是ISP做解决方案，而另一侧是本地进行管理</li></ul><h2 id="广域网虚拟电路"><a class="markdownIt-Anchor" href="#广域网虚拟电路"></a> 广域网虚拟电路</h2><ol><li>交换虚拟电路(SVC，Switched Virtual Circuits)是到目的地的WAN路径，可根据需要建立(established)和终止(terminated)</li></ol><h3 id="广域网虚拟电路的三个阶段phases"><a class="markdownIt-Anchor" href="#广域网虚拟电路的三个阶段phases"></a> 广域网虚拟电路的三个阶段(phases)</h3><ol><li>电路建立–创建虚拟电路(逻辑确定)</li><li>数据传输–发送和接收用户数据(含有虚电路号等)</li><li>电路中断–拆除虚拟电路</li></ol><h3 id="广域网虚拟电路的用途和特点"><a class="markdownIt-Anchor" href="#广域网虚拟电路的用途和特点"></a> 广域网虚拟电路的用途和特点</h3><ol><li>电话服务和ATM使用SVC</li><li>增加带宽使用但降低成本(多人同时使用)</li></ol><h3 id="广域网永久虚拟电路"><a class="markdownIt-Anchor" href="#广域网永久虚拟电路"></a> 广域网永久虚拟电路</h3><blockquote><p>永久(Permanent)虚拟电路(PVC)是采用以下一种模式的永久建立的电路：数据传输</p></blockquote><ol><li>X.25和帧中继使用PVC</li><li>减少带宽使用，但增加成本</li><li>用户和运营商进行硬件(专用线路)</li><li>对应于数据传输量持久且大</li></ol><p><img src="https://s2.loli.net/2022/06/01/64jy2IstnHpVGMY.png" alt="" /></p><ul><li>分组交换是稳定性和使用时间不确定</li><li>VPN:加密信息，避免被截获</li></ul><p><img src="https://s2.loli.net/2022/06/01/8Tp5K1x2mWoeyuB.png" alt="" /></p><h2 id="链接类型和带宽"><a class="markdownIt-Anchor" href="#链接类型和带宽"></a> 链接类型和带宽</h2><p><img src="https://s2.loli.net/2022/06/01/liTyKXMubC5f9Wj.png" alt="" /></p><ol><li>T：美国标准</li><li>E：欧洲标准</li></ol><p><img src="https://s2.loli.net/2022/06/01/VeNc9sz1BDW7rbQ.jpg" alt="" /></p><h2 id="交换电路连接"><a class="markdownIt-Anchor" href="#交换电路连接"></a> 交换电路连接</h2><p><img src="https://s2.loli.net/2022/06/01/cXYmLWv84brNxwj.png" alt="" /></p><blockquote><p>PSTN：需要调节器，慢</p></blockquote><p><img src="https://s2.loli.net/2022/06/01/MGeP4gq1Ux8VrKy.jpg" alt="" /></p><blockquote><p>ISDN:多个B信道和P信道组合</p></blockquote><ul><li>BRI:2个B和一个D</li><li>PRI:T1:23B + D 和 E1:30B + D</li></ul>]]></content>
       
       
       <categories>
@@ -22,9 +22,9 @@
       
         <tags>
             
-            <tag> 计算机网络 </tag>
-            
             <tag> 互联网计算 </tag>
+            
+            <tag> 计算机网络 </tag>
             
         </tags>
       
@@ -51,9 +51,9 @@
       
         <tags>
             
-            <tag> 计算机网络 </tag>
-            
             <tag> 互联网计算 </tag>
+            
+            <tag> 计算机网络 </tag>
             
         </tags>
       
@@ -80,9 +80,9 @@
       
         <tags>
             
-            <tag> 计算机网络 </tag>
-            
             <tag> 互联网计算 </tag>
+            
+            <tag> 计算机网络 </tag>
             
         </tags>
       
@@ -169,9 +169,9 @@
       
         <tags>
             
-            <tag> 计算机网络 </tag>
-            
             <tag> 互联网计算 </tag>
+            
+            <tag> 计算机网络 </tag>
             
         </tags>
       
@@ -867,9 +867,9 @@
       
         <tags>
             
-            <tag> 计算机网络 </tag>
-            
             <tag> 互联网计算 </tag>
+            
+            <tag> 计算机网络 </tag>
             
         </tags>
       
@@ -896,9 +896,9 @@
       
         <tags>
             
-            <tag> 计算机网络 </tag>
-            
             <tag> 互联网计算 </tag>
+            
+            <tag> 计算机网络 </tag>
             
         </tags>
       
@@ -925,9 +925,9 @@
       
         <tags>
             
-            <tag> 计算机网络 </tag>
-            
             <tag> 互联网计算 </tag>
+            
+            <tag> 计算机网络 </tag>
             
         </tags>
       
@@ -1849,9 +1849,9 @@
       
         <tags>
             
-            <tag> CS144 </tag>
-            
             <tag> 计算机网络 </tag>
+            
+            <tag> CS144 </tag>
             
         </tags>
       
@@ -1878,9 +1878,9 @@
       
         <tags>
             
-            <tag> CS144 </tag>
-            
             <tag> 计算机网络 </tag>
+            
+            <tag> CS144 </tag>
             
         </tags>
       
@@ -3092,9 +3092,9 @@
       
         <tags>
             
-            <tag> Leetcode </tag>
-            
             <tag> Algorithm </tag>
+            
+            <tag> Leetcode </tag>
             
         </tags>
       
@@ -3237,9 +3237,9 @@
       
         <tags>
             
-            <tag> CS144 </tag>
-            
             <tag> 计算机网络 </tag>
+            
+            <tag> CS144 </tag>
             
         </tags>
       
@@ -3266,9 +3266,9 @@
       
         <tags>
             
-            <tag> CS144 </tag>
-            
             <tag> 计算机网络 </tag>
+            
+            <tag> CS144 </tag>
             
         </tags>
       
