@@ -106,37 +106,6 @@
   
   <entry>
     <title>搜索class文件</title>
-    <link href="http://little-hurui.cloud/2022/07/04/%E6%90%9C%E7%B4%A2class%E6%96%87%E4%BB%B6/"/>
-    <id>http://little-hurui.cloud/2022/07/04/%E6%90%9C%E7%B4%A2class%E6%96%87%E4%BB%B6/</id>
-    <published>2022-07-04T13:10:25.000Z</published>
-    <updated>2022-07-10T12:22:25.042Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="搜索class文件">搜索class文件</h1><p><strong>Java命令启动Java应用程序的流程：</strong></p><ol type="1"><li>启动Java虚拟机</li><li>加载主类</li><li>调用主类的main（）方法</li></ol><p>​ 但是，即使是一个最简单的 <code>helloworld</code> ，加载之前需要加载他的超类<code>Java.lang.Object</code> ，在调用<code>main()</code>方法之前，虚拟机需要准备好参数数组，所以也需要加载 <code>java.lang.Stirng</code> 和 <code>java.lang.String[]</code>类，将字符串打印还需要<code>java.lang.System</code>类，等等等等，所以我们需要直到 Java虚拟机从哪里寻找这些类。</p><h2 id="类路径">类路径</h2><blockquote><p>不同的虚拟机可以采用不同的类搜索方法,Oracle的Java虚拟机根据 class path来搜索类</p></blockquote><p>类路径分为</p><ol type="1"><li>启动类路径 bootstrap classpath</li><li>扩展类路径 extension classpath</li><li>用户类路径 user classpath</li></ol><p>值得一提的是，可以给java命令传递<code>-classpath/-cp</code>来指定用户类路径</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">java -cp path\to\classes ...</span><br><span class="line">java -cp path\to\classes;lib\a.jar;lib\b.jar;lib\c.zip...</span><br><span class="line">java -cp classes;lib\*...</span><br></pre></td></tr></table></figure><h2 id="实现类路径">实现类路径</h2><p>我们采用组合模式来实现类路径（composite pattern)</p><h3 id="entry接口">Entry接口</h3><p>四种实现 <code>DirEntry</code> <code>ZipEntry</code> <code>CompositeEntry</code> <code>WildcardEntry</code></p><h4 id="direntry">DirEntry</h4><p>表示目录形式的类路径</p><h4 id="zipentry">ZipEntry</h4><p>表示ZIP或JAR文件形式的类路径</p><h4 id="compositeentry">CompositeEntry</h4><p>由更小的Entry组成，表示成[]Entry</p><h4 id="wildcardentry">WildcardEntry</h4><p>实际上也是CompositeEntry，含通配符的类路径</p><h2 id="classpath结构体">classpath结构体</h2><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">type</span> Classpath <span class="keyword">struct</span>{</span><br><span class="line">bootClasspath Entry</span><br><span class="line">extClasspath  Entry</span><br><span class="line">userClasspath Entry</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">-Xjre选项解析启动类路径和拓展类路径</span><br><span class="line">-classpath选项解析用户类路径</span><br></pre></td></tr></table></figure><p>成功编译之后，执行.exe文件，就可以输出class文件的字节码了！</p><figure><img src="https://s2.loli.net/2022/07/10/WUpj4JT3Yno2XQR.png" alt="输出结果"><figcaption aria-hidden="true">输出结果</figcaption></figure>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;搜索class文件&quot;&gt;搜索class文件&lt;/h1&gt;
-&lt;p&gt;&lt;strong&gt;Java命令启动Java应用程序的流程：&lt;/strong&gt;&lt;/p&gt;
-&lt;ol type=&quot;1&quot;&gt;
-&lt;li&gt;启动Java虚拟机&lt;/li&gt;
-&lt;li&gt;加载主类&lt;/li&gt;
-&lt;li&gt;调用主类的</summary>
-      
-    
-    
-    
-    <category term="Java" scheme="http://little-hurui.cloud/categories/Java/"/>
-    
-    <category term="Java虚拟机" scheme="http://little-hurui.cloud/categories/Java/Java%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
-    
-    
-    <category term="Java虚拟机" scheme="http://little-hurui.cloud/tags/Java%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>搜索class文件</title>
     <link href="http://little-hurui.cloud/2022/07/04/%E8%87%AA%E5%B7%B1%E5%8A%A8%E6%89%8B%E5%86%99Java%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
     <id>http://little-hurui.cloud/2022/07/04/%E8%87%AA%E5%B7%B1%E5%8A%A8%E6%89%8B%E5%86%99Java%E8%99%9A%E6%8B%9F%E6%9C%BA/</id>
     <published>2022-07-04T13:10:24.000Z</published>
@@ -414,9 +383,9 @@
     <category term="互联网计算" scheme="http://little-hurui.cloud/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
     
     
-    <category term="互联网计算" scheme="http://little-hurui.cloud/tags/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
-    
     <category term="计算机网络" scheme="http://little-hurui.cloud/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+    <category term="互联网计算" scheme="http://little-hurui.cloud/tags/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
     
   </entry>
   
@@ -446,9 +415,9 @@
     <category term="互联网计算" scheme="http://little-hurui.cloud/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
     
     
-    <category term="互联网计算" scheme="http://little-hurui.cloud/tags/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
-    
     <category term="计算机网络" scheme="http://little-hurui.cloud/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+    <category term="互联网计算" scheme="http://little-hurui.cloud/tags/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
     
   </entry>
   
@@ -480,9 +449,9 @@
     <category term="互联网计算" scheme="http://little-hurui.cloud/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
     
     
-    <category term="互联网计算" scheme="http://little-hurui.cloud/tags/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
-    
     <category term="计算机网络" scheme="http://little-hurui.cloud/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+    <category term="互联网计算" scheme="http://little-hurui.cloud/tags/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
     
   </entry>
   
@@ -512,9 +481,9 @@
     <category term="互联网计算" scheme="http://little-hurui.cloud/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
     
     
-    <category term="互联网计算" scheme="http://little-hurui.cloud/tags/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
-    
     <category term="计算机网络" scheme="http://little-hurui.cloud/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+    <category term="互联网计算" scheme="http://little-hurui.cloud/tags/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
     
   </entry>
   
@@ -542,9 +511,9 @@
     <category term="互联网计算" scheme="http://little-hurui.cloud/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
     
     
-    <category term="互联网计算" scheme="http://little-hurui.cloud/tags/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
-    
     <category term="计算机网络" scheme="http://little-hurui.cloud/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+    <category term="互联网计算" scheme="http://little-hurui.cloud/tags/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
     
   </entry>
   
@@ -573,9 +542,9 @@
     <category term="互联网计算" scheme="http://little-hurui.cloud/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
     
     
-    <category term="互联网计算" scheme="http://little-hurui.cloud/tags/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
-    
     <category term="计算机网络" scheme="http://little-hurui.cloud/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+    <category term="互联网计算" scheme="http://little-hurui.cloud/tags/%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%A1%E7%AE%97/"/>
     
   </entry>
   
@@ -644,6 +613,39 @@
     <category term="Algorithm" scheme="http://little-hurui.cloud/tags/Algorithm/"/>
     
     <category term="线段树" scheme="http://little-hurui.cloud/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>代码设计</title>
+    <link href="http://little-hurui.cloud/2022/05/26/%E4%BB%A3%E7%A0%81%E8%AE%BE%E8%AE%A1/"/>
+    <id>http://little-hurui.cloud/2022/05/26/%E4%BB%A3%E7%A0%81%E8%AE%BE%E8%AE%A1/</id>
+    <published>2022-05-26T02:15:43.000Z</published>
+    <updated>2022-06-04T13:35:09.746Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="代码设计">代码设计</h2><h1 id="设计易读的代码">设计易读的代码</h1><ol type="1"><li>维护的需要(维护的工作量已经超过了开发的工作量)<ol type="1"><li>50%-90%的维护时间在于阅读代码</li></ol></li><li>团队协作的需要</li></ol><h2 id="代码规范">代码规范</h2><h3 id="布局格式">布局格式</h3><ol type="1"><li>用缩进与对齐表达逻辑结构(Python)<ol type="1"><li>统一缩进格式一或者缩进格式二，主要符合团队编程的习惯即可</li><li>IDEA统一格式化:Ctrl + Alt + L</li></ol></li></ol><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt18/1.png"></p><ol start="2" type="1"><li>将相关逻辑组织在一起<ol type="1"><li>成员变量声明</li><li>构造方法和析构方法</li><li>public方法</li><li>protected方法</li><li>private方法</li></ol></li></ol><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt18/3.png"> <img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt18/4.png"></p><ol start="3" type="1"><li>将空行分隔逻辑(将大规模的逻辑划分的片段进行分隔)</li><li>将语句进行分隔(将过长的语句分隔到几行中进行显示)</li></ol><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt18/5.png"></p><h3 id="命名">命名</h3><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt18/6.png"></p><h3 id="注释">注释</h3><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt18/7.png"> <img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt18/8.png"></p><ol type="1"><li>怎么写:去Github学习</li></ol><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt18/9.png"></p><ol type="1"><li>JavaDoc可以生成API文档</li></ol><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt18/10.png"></p><ol start="2" type="1"><li>例子:</li></ol><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt18/11.png"></p><ol start="3" type="1"><li>类内部注释</li></ol><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt18/12.png"></p><ol start="4" type="1"><li>例子</li></ol><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt18/13.png"></p><h1 id="设计易维护的代码">设计易维护的代码</h1><h2 id="小型任务">小型任务</h2><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt18/14.png"></p><h2 id="复杂决策">复杂决策</h2><ol type="1"><li>使用新的布尔变量，代替复杂决策</li></ol><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt18/15.png"></p><ol start="2" type="1"><li>使用有意义的名称封装复杂决策</li></ol><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt18/16.png"></p><ol start="3" type="1"><li>表驱动</li></ol><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt18/17.png"> <img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt18/18.png"></p><h2 id="数据使用">数据使用</h2><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt18/19.png"></p><h2 id="明确依赖关系">明确依赖关系</h2><ol type="1"><li>类之间模糊的依赖关系会影响到代码的理解与修改，非常容易导致修改时产生未预期的连锁反应。</li></ol><h1 id="设计可靠的代码-重要">设计可靠的代码 重要</h1><h2 id="契约式设计">契约式设计</h2><h3 id="异常方式">异常方式</h3><ol type="1"><li>代码会很臃肿</li></ol><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt18/20.png"></p><h3 id="断言方式">断言方式</h3><ol type="1"><li>Java提供的断言语句:<code>assert Expression1(: Expression2);</code></li><li>Expression1是一个布尔表达式，在契约式设计中可以将其设置为前置条件或后置条件</li><li>Expression2是一个值，如果存在，则会在排除异常的时候作为参数沟改造AssertionError</li></ol><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt18/21.png"> <img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt18/22.png"></p><h2 id="防御式编程">防御式编程</h2><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt18/23.png"></p><ol type="1"><li>防御式编程往往会带来比较冗余和复杂的代码，但是会有效地提高程序的抗干扰能力和回复能力，有利于人机交互。</li></ol><h2 id="表驱动编程">表驱动编程</h2><ol type="1"><li>复杂逻辑到决策表再到表驱动</li></ol><h1 id="使用模型辅助设计复杂的代码">使用模型辅助设计复杂的代码</h1><ol type="1"><li>决策表:多个if/else</li><li>伪代码:在纸或者白板上</li><li>程序流程图</li></ol><h2 id="决策表">决策表</h2><table><thead><tr class="header"><th>条件和行动</th><th>规则</th></tr></thead><tbody><tr class="odd"><td>条件声明</td><td>条件选项</td></tr><tr class="even"><td>行为声明</td><td>行为选项</td></tr></tbody></table><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt18/24.png"></p><ol type="1"><li>决策表有效地保证了决策分析的完备性，可以和表驱动编程结合使用。</li></ol><h2 id="伪代码">伪代码</h2><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt18/25.png"></p><ol type="1"><li>结合课本详细的描述</li><li>使用了IF、THEN、ELSE、DO、DO WHILE、DO UNTIL等关键字来表示程序的逻辑组织。</li><li>通过类似编程语言的缩进方式来表明程序逻辑</li><li>使用尽可能短的语句，只是用名词和动词，避免使用容易产生歧义的形容词的使用</li><li>实例详见课本P312页</li></ol><h2 id="程序流程图">程序流程图</h2><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt18/26.png"></p><ol type="1"><li>圆角:开始或者结束</li><li>平行四边形:输入或输出</li><li>直角:处理步骤</li><li>菱形:控制结构</li></ol><h1 id="为代码开发单元测试用例">为代码开发单元测试用例</h1><h2 id="为方法开发测试用例">为方法开发测试用例</h2><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt18/27.png"></p><ol type="1"><li>测试驱动的编程</li><li>方便集成和开发</li><li>等价类进行划分和区别</li><li>覆盖方式:<ol type="1"><li>路径覆盖</li><li>分支覆盖</li><li>语句覆盖</li></ol></li></ol><h3 id="sales方法">Sales方法</h3><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt18/28.png"></p><ol type="1"><li>使用桩程序代替没有写的方法</li></ol><h2 id="使用mock-object测试类的方法">使用Mock Object测试类的方法</h2><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt18/29.png"></p><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt18/32.png"></p><h2 id="为类开发测试用例">为类开发测试用例</h2><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt18/30.png"></p><ul><li>我们使用状态图来辅助我们分析，通过状态图生成测试用例线索表，最后生成一个测试用例</li></ul><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt18/58.png"> <img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt18/31.png"> <img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt18/59.png"></p><h1 id="代码复杂度度量">代码复杂度度量</h1><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt18/33.png"></p><ul><li>重要:这里涉及到两种计算方法</li></ul><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt18/34.png"> <img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt18/35.png"></p><h2 id="度量的意义">度量的意义</h2><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt18/36.png"></p><p><span class="math inline"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.777ex;" xmlns="http://www.w3.org/2000/svg" width="24.5ex" height="2.563ex" role="img" focusable="false" viewBox="0 -789.6 10828.8 1132.9"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">类</text></g><g data-mml-node="mi" transform="translate(1000,0)"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">的</text></g><g data-mml-node="mi" transform="translate(2000,0)"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">加</text></g><g data-mml-node="mi" transform="translate(3000,0)"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">权</text></g><g data-mml-node="mi" transform="translate(4000,0)"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">方</text></g><g data-mml-node="mi" transform="translate(5000,0)"><text data-variant="normal" transform="scale(1,-1)" font-size="884px" font-family="serif">法</text></g><g data-mml-node="mo" transform="translate(6277.8,0)"><path data-c="3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path></g><g data-mml-node="munderover" transform="translate(7333.6,0)"><g data-mml-node="mo"><path data-c="2211" d="M61 748Q64 750 489 750H913L954 640Q965 609 976 579T993 533T999 516H979L959 517Q936 579 886 621T777 682Q724 700 655 705T436 710H319Q183 710 183 709Q186 706 348 484T511 259Q517 250 513 244L490 216Q466 188 420 134T330 27L149 -187Q149 -188 362 -188Q388 -188 436 -188T506 -189Q679 -189 778 -162T936 -43Q946 -27 959 6H999L913 -249L489 -250Q65 -250 62 -248Q56 -246 56 -239Q56 -234 118 -161Q186 -81 245 -11L428 206Q428 207 242 462L57 717L56 728Q56 744 61 748Z"></path></g><g data-mml-node="TeXAtom" transform="translate(1089,477.1) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><path data-c="1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></g></g><g data-mml-node="TeXAtom" transform="translate(1089,-285.4) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><path data-c="1D456" d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="mo" transform="translate(345,0)"><path data-c="2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"></path></g><g data-mml-node="mn" transform="translate(1123,0)"><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path></g></g></g><g data-mml-node="msub" transform="translate(9786.9,0)"><g data-mml-node="mi"><path data-c="1D436" d="M50 252Q50 367 117 473T286 641T490 704Q580 704 633 653Q642 643 648 636T656 626L657 623Q660 623 684 649Q691 655 699 663T715 679T725 690L740 705H746Q760 705 760 698Q760 694 728 561Q692 422 692 421Q690 416 687 415T669 413H653Q647 419 647 422Q647 423 648 429T650 449T651 481Q651 552 619 605T510 659Q484 659 454 652T382 628T299 572T226 479Q194 422 175 346T156 222Q156 108 232 58Q280 24 350 24Q441 24 512 92T606 240Q610 253 612 255T628 257Q648 257 648 248Q648 243 647 239Q618 132 523 55T319 -22Q206 -22 128 53T50 252Z"></path></g><g data-mml-node="TeXAtom" transform="translate(748,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><path data-c="1D456" d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"></path></g></g></g></g></g></svg></mjx-container></span></p><h1 id="代码大全书">代码大全(书)</h1><h2 id="变量">变量</h2><h3 id="变量定义">变量定义</h3><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt18/37.png"></p><h3 id="变量初始化">变量初始化</h3><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt18/38.png"></p><ol type="1"><li>使用内存访问工具来检查所有的指针的有效性。</li></ol><h3 id="作用域">作用域</h3><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt18/39.png"></p><ol type="1"><li>生命周期越长越容易出现问题</li></ol><h3 id="减少作用域的一般原则">减少作用域的一般原则</h3><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt18/41.png"></p><h3 id="持续性">持续性</h3><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt18/42.png"> <img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt18/43.png"></p><h3 id="为变量制定单一用途">为变量制定单一用途</h3><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt18/44.png"></p><ol type="1"><li>哪怕是临时变量也尽量避免重复使用。</li></ol><h3 id="两个变量用于两种用途">. 两个变量用于两种用途</h3><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt18/45.png"></p><h3 id="避免让代码具有隐含意义">避免让代码具有隐含意义</h3><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt18/46.png"></p><h3 id="变量的命名">变量的命名</h3><ol type="1"><li>一定要用规范的方式命名变量</li></ol><h2 id="数值理论">数值理论</h2><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt18/47.png"></p><ol type="1"><li>整数:<ol type="1"><li>检查整数除法</li><li>检查整数溢出</li><li>检查中间结果溢出(浮点运算)</li></ol></li></ol><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt18/48.png"></p><h2 id="创建子程序的正当理由">创建子程序的正当理由</h2><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt18/49.png"></p><h2 id="子程序的命名">子程序的命名</h2><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt18/50.png"></p><h2 id="算法的设计">算法的设计</h2><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt18/51.png"></p><ol type="1"><li>了解编译器的优化</li></ol><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt18/40.png"></p><h2 id="一般控制问题">一般控制问题</h2><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt18/53.png"> <img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt18/60.png"> <img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt18/54.png"></p><h2 id="空语句">空语句</h2><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt18/55.png"></p><h2 id="更加清晰的非空循环体">更加清晰的非空循环体</h2><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt18/56.png"></p><h2 id="处理危险的深层嵌套">处理危险的深层嵌套</h2><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt18/55.png"></p><h1 id="问题代码与建议">问题代码与建议</h1><h2 id="green-1997-how-to-write-unmaintable-code">[Green 1997] How to Write Unmaintable Code</h2><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt18/61.png"> <img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt18/62.png"> <img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt18/63.png"> <img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt18/64.png"> <img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt18/65.png"> <img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt18/65.png"> <img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt18/66.png"> <img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt18/67.png"> <img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt18/68.png"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;代码设计&quot;&gt;代码设计&lt;/h2&gt;
+&lt;h1 id=&quot;设计易读的代码&quot;&gt;设计易读的代码&lt;/h1&gt;
+&lt;ol type=&quot;1&quot;&gt;
+&lt;li&gt;维护的需要(维护的工作量已经超过了开发的工作量)
+&lt;ol type=&quot;1&quot;&gt;
+&lt;li&gt;50%-90%的维护时间在于阅读代码&lt;/</summary>
+      
+    
+    
+    
+    <category term="软件工程" scheme="http://little-hurui.cloud/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/"/>
+    
+    <category term="软件工程与计算2" scheme="http://little-hurui.cloud/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E4%B8%8E%E8%AE%A1%E7%AE%972/"/>
+    
+    
+    <category term="代码设计" scheme="http://little-hurui.cloud/tags/%E4%BB%A3%E7%A0%81%E8%AE%BE%E8%AE%A1/"/>
+    
+    <category term="软件工程" scheme="http://little-hurui.cloud/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/"/>
     
   </entry>
   
