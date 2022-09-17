@@ -6,7 +6,7 @@
   <link href="http://little-hurui.cloud/atom.xml" rel="self"/>
   
   <link href="http://little-hurui.cloud/"/>
-  <updated>2022-09-15T16:17:53.778Z</updated>
+  <updated>2022-09-16T08:27:20.383Z</updated>
   <id>http://little-hurui.cloud/</id>
   
   <author>
@@ -15,6 +15,39 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>扫描线</title>
+    <link href="http://little-hurui.cloud/2022/09/16/%E6%89%AB%E6%8F%8F%E7%BA%BF/"/>
+    <id>http://little-hurui.cloud/2022/09/16/%E6%89%AB%E6%8F%8F%E7%BA%BF/</id>
+    <published>2022-09-16T07:11:39.000Z</published>
+    <updated>2022-09-16T08:27:20.383Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="矩形面积-ii"><a href="https://leetcode.cn/problems/rectangle-area-ii/">850. 矩形面积 II</a></h4><p>我们给出了一个（轴对齐的）二维矩形列表 <code>rectangles</code> 。 对于 <code>rectangle[i] = [x1, y1, x2, y2]</code>，其中（x1，y1）是矩形 <code>i</code> 左下角的坐标， <code>(xi1, yi1)</code> 是该矩形 <strong>左下角</strong> 的坐标， <code>(xi2, yi2)</code> 是该矩形 <strong>右上角</strong> 的坐标。</p><p>计算平面中所有 <code>rectangles</code> 所覆盖的 <strong>总面积</strong> 。任何被两个或多个矩形覆盖的区域应只计算 <strong>一次</strong> 。</p><p>返回 <strong><em>总面积</em></strong> 。因为答案可能太大，返回 <code>109 + 7</code> 的 <strong>模</strong> 。</p><p><strong>示例 1：</strong></p><p><img src="https://s3-lc-upload.s3.amazonaws.com/uploads/2018/06/06/rectangle_area_ii_pic.png" alt="img"></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">输入：rectangles = [[0,0,2,2],[1,0,2,3],[1,0,3,1]]</span><br><span class="line">输出：6</span><br><span class="line">解释：如图所示，三个矩形覆盖了总面积为6的区域。</span><br><span class="line">从(1,1)到(2,2)，绿色矩形和红色矩形重叠。</span><br><span class="line">从(1,0)到(2,3)，三个矩形都重叠。</span><br></pre></td></tr></table></figure><p><strong>示例 2：</strong></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">输入：rectangles = [[0,0,1000000000,1000000000]]</span><br><span class="line">输出：49</span><br><span class="line">解释：答案是 1018 对 (109 + 7) 取模的结果， 即 49 。</span><br></pre></td></tr></table></figure><p><strong>提示：</strong></p><ul><li><code>1 &lt;= rectangles.length &lt;= 200</code></li><li><code>rectanges[i].length = 4</code></li><li><code>0 &lt;= xi1, yi1, xi2, yi2 &lt;= 109</code></li><li>矩形叠加覆盖后的总面积不会超越 <code>2^63 - 1</code> ，这意味着可以用一个 64 位有符号整数来保存面积结果。</li></ul><h1 id="题解">题解</h1>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h4 id=&quot;矩形面积-ii&quot;&gt;&lt;a href=&quot;https://leetcode.cn/problems/rectangle-area-ii/&quot;&gt;850. 矩形面积 II&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;我们给出了一个（轴对齐的）二维矩形列表 &lt;code&gt;rectangles&lt;/c</summary>
+      
+    
+    
+    
+    <category term="数据结构与算法" scheme="http://little-hurui.cloud/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="常用算法" scheme="http://little-hurui.cloud/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="Algorithm" scheme="http://little-hurui.cloud/tags/Algorithm/"/>
+    
+    <category term="线段树" scheme="http://little-hurui.cloud/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/"/>
+    
+    <category term="扫描线" scheme="http://little-hurui.cloud/tags/%E6%89%AB%E6%8F%8F%E7%BA%BF/"/>
+    
+    <category term="有序集合" scheme="http://little-hurui.cloud/tags/%E6%9C%89%E5%BA%8F%E9%9B%86%E5%90%88/"/>
+    
+  </entry>
   
   <entry>
     <title>位运算 vs 找规律</title>
@@ -350,9 +383,9 @@
     <link href="http://little-hurui.cloud/2022/09/06/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/"/>
     <id>http://little-hurui.cloud/2022/09/06/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/</id>
     <published>2022-09-06T03:00:41.000Z</published>
-    <updated>2022-09-09T02:17:17.501Z</updated>
+    <updated>2022-09-16T03:28:46.394Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="软件失效行为刻画的挑战">软件失效行为刻画的挑战</h2><p>执行路径距离实例</p><ul><li>海明距离</li></ul><blockquote><p>由于软件系统结</p></blockquote><h2 id="人机协同智能-人工标注-半监督">人机协同智能 人工标注 + 半监督</h2><p>标注信息</p><ul><li>Must-Link： 相同软件行为 M</li><li>Cannot-Link： 不同软件行为 C</li></ul><h1 id="软件缺陷的出发与传播机理">软件缺陷的出发与传播机理</h1><h2 id="什么叫bug">什么叫Bug</h2><ul><li>Software Fault ：A static defect in the software</li><li>Software Error</li><li>Software Failure</li></ul><h2 id="测试的局限性">测试的局限性</h2><p><img src="https://s2.loli.net/2022/09/07/rxGVufJnRicXHyh.png"></p><h2 id="自动化测试脚本修复">自动化测试脚本修复</h2>]]></content>
+    <content type="html"><![CDATA[<h2 id="软件失效行为刻画的挑战">软件失效行为刻画的挑战</h2><p>执行路径距离实例</p><ul><li>海明距离</li></ul><blockquote><p>由于软件系统结</p></blockquote><h2 id="人机协同智能-人工标注-半监督">人机协同智能 人工标注 + 半监督</h2><p>标注信息</p><ul><li>Must-Link： 相同软件行为 M</li><li>Cannot-Link： 不同软件行为 C</li></ul><h1 id="软件缺陷的出发与传播机理">软件缺陷的出发与传播机理</h1><h2 id="什么叫bug">什么叫Bug</h2><ul><li>Software Fault ：A static defect in the software</li><li>Software Error</li><li>Software Failure</li></ul><h2 id="测试的局限性">测试的局限性</h2><p><img src="https://s2.loli.net/2022/09/07/rxGVufJnRicXHyh.png"></p><h2 id="自动化测试脚本修复">自动化测试脚本修复</h2><h1 id="变异测试">变异测试</h1><h2 id="变异测试背景">变异测试背景</h2><h3 id="变异分析与变异测试">变异分析与变异测试</h3><ul><li>Mutation Analysis</li><li>Mutation Test</li></ul><h3 id="变异体">变异体</h3><ul><li>Mutant<ul><li>基于语法规则，对源程序进行变换</li></ul></li><li>假设<ul><li>源程序不包含缺陷</li><li>变异体表达了某种缺陷</li></ul></li></ul><h3 id="变异杀死的条件">变异杀死的条件</h3><ul><li><p>缺陷传播模型：RIPR 和 PIE</p></li><li><p>杀死条件 Mutant Killing Condition</p><ul><li>受程序行为的定义影响</li><li>程序行为</li></ul></li></ul><h3 id="变异分类">变异分类</h3><ol type="1"><li>Weak mutation (R &amp; E)</li><li>Firm mutation (I)</li><li>Strong mutation (P &amp; PR)</li></ol><h3 id="变异算子">变异算子</h3><ul><li>Mutation Operator</li></ul><h2 id="变异测试过程">变异测试过程</h2><h2 id="变异测试应用">变异测试应用</h2>]]></content>
     
     
       
@@ -455,82 +488,19 @@
   </entry>
   
   <entry>
-    <title>拓扑排序构造</title>
-    <link href="http://little-hurui.cloud/2022/07/23/%E6%8B%93%E6%89%91%E6%8E%92%E5%BA%8F%E6%9E%84%E9%80%A0/"/>
-    <id>http://little-hurui.cloud/2022/07/23/%E6%8B%93%E6%89%91%E6%8E%92%E5%BA%8F%E6%9E%84%E9%80%A0/</id>
-    <published>2022-07-23T02:24:27.000Z</published>
-    <updated>2022-07-23T02:24:27.499Z</updated>
-    
-    <content type="html"><![CDATA[]]></content>
-    
-    
-      
-      
-    <summary type="html">
-</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>贪心应用题</title>
-    <link href="http://little-hurui.cloud/2022/07/22/%E8%B4%AA%E5%BF%83%E5%BA%94%E7%94%A8%E9%A2%98/"/>
-    <id>http://little-hurui.cloud/2022/07/22/%E8%B4%AA%E5%BF%83%E5%BA%94%E7%94%A8%E9%A2%98/</id>
-    <published>2022-07-22T13:57:51.000Z</published>
-    <updated>2022-07-22T13:57:51.599Z</updated>
-    
-    <content type="html"><![CDATA[]]></content>
-    
-    
-      
-      
-    <summary type="html">
-</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
     <title>线段树-动态开点</title>
     <link href="http://little-hurui.cloud/2022/07/19/%E7%BA%BF%E6%AE%B5%E6%A0%91-%E5%8A%A8%E6%80%81%E5%BC%80%E7%82%B9/"/>
     <id>http://little-hurui.cloud/2022/07/19/%E7%BA%BF%E6%AE%B5%E6%A0%91-%E5%8A%A8%E6%80%81%E5%BC%80%E7%82%B9/</id>
     <published>2022-07-19T15:23:11.000Z</published>
-    <updated>2022-07-19T15:23:11.859Z</updated>
+    <updated>2022-09-17T00:02:54.585Z</updated>
     
-    <content type="html"><![CDATA[]]></content>
-    
-    
-      
-      
-    <summary type="html">
-</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>搜索模拟题</title>
-    <link href="http://little-hurui.cloud/2022/07/18/%E6%90%9C%E7%B4%A2%E6%A8%A1%E6%8B%9F%E9%A2%98/"/>
-    <id>http://little-hurui.cloud/2022/07/18/%E6%90%9C%E7%B4%A2%E6%A8%A1%E6%8B%9F%E9%A2%98/</id>
-    <published>2022-07-18T14:37:19.000Z</published>
-    <updated>2022-07-25T13:55:41.682Z</updated>
-    
-    <content type="html"><![CDATA[]]></content>
+    <content type="html"><![CDATA[<h1 id="range-模块"><a href="https://leetcode.cn/problems/range-module/">715. Range 模块</a></h1><p>Range模块是跟踪数字范围的模块。设计一个数据结构来跟踪表示为 <strong>半开区间</strong> 的范围并查询它们。</p><p><strong>半开区间</strong> <code>[left, right)</code> 表示所有 <code>left &lt;= x &lt; right</code> 的实数 <code>x</code> 。</p><p>实现 <code>RangeModule</code> 类:</p><ul><li><code>RangeModule()</code> 初始化数据结构的对象。</li><li><code>void addRange(int left, int right)</code> 添加 <strong>半开区间</strong> <code>[left, right)</code>，跟踪该区间中的每个实数。添加与当前跟踪的数字部分重叠的区间时，应当添加在区间 <code>[left, right)</code> 中尚未跟踪的任何数字到该区间中。</li><li><code>boolean queryRange(int left, int right)</code> 只有在当前正在跟踪区间 <code>[left, right)</code> 中的每一个实数时，才返回 <code>true</code> ，否则返回 <code>false</code> 。</li><li><code>void removeRange(int left, int right)</code> 停止跟踪 <strong>半开区间</strong> <code>[left, right)</code> 中当前正在跟踪的每个实数。</li></ul><p><strong>示例 1：</strong></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">输入</span><br><span class="line">["RangeModule", "addRange", "removeRange", "queryRange", "queryRange", "queryRange"]</span><br><span class="line">[[], [10, 20], [14, 16], [10, 14], [13, 15], [16, 17]]</span><br><span class="line">输出</span><br><span class="line">[null, null, null, true, false, true]</span><br><span class="line"></span><br><span class="line">解释</span><br><span class="line">RangeModule rangeModule = new RangeModule();</span><br><span class="line">rangeModule.addRange(10, 20);</span><br><span class="line">rangeModule.removeRange(14, 16);</span><br><span class="line">rangeModule.queryRange(10, 14); 返回 true （区间 [10, 14) 中的每个数都正在被跟踪）</span><br><span class="line">rangeModule.queryRange(13, 15); 返回 false（未跟踪区间 [13, 15) 中像 14, 14.03, 14.17 这样的数字）</span><br><span class="line">rangeModule.queryRange(16, 17); 返回 true （尽管执行了删除操作，区间 [16, 17) 中的数字 16 仍然会被跟踪）</span><br></pre></td></tr></table></figure><p><strong>提示：</strong></p><ul><li><code>1 &lt;= left &lt; right &lt;= 109</code></li><li>在单个测试用例中，对 <code>addRange</code> 、 <code>queryRange</code> 和 <code>removeRange</code> 的调用总数不超过 <code>104</code> 次</li></ul><h1 id="题解">题解</h1><h2 id="线段树引入">线段树引入</h2><p><strong>线段树解决的是「区间和」的问题，且该「区间」会被修改</strong></p><p>for example， 对于数组 <code>nums = [1,2,3,4,5]</code></p><p>如果我们需要多次求某些区间的和，是不是首先想到了利用「前缀和」</p><p>但是如果 <code>nums</code> 会被修改呢？前缀和就没有那么高效了，于是我们引入了线段树</p><h2 id="线段树原理和实现">线段树原理和实现</h2><p>所以<strong>线段树</strong>主要实现两个方法：「求区间和」&amp;&amp;「修改区间」，且时间复杂度均为 <code>O(logn)</code></p><p>始终记住一句话：<strong>线段树的每个节点代表一个区间</strong></p><p>上述数组对应的线段树如下图</p><p><img src="https://pic.leetcode-cn.com/1654588271-zbOpBr-1.svg"></p><p>我们可以根据题目需要，更改节点含义符合区间加法的例子</p><ul><li>数字之和</li><li>最大公因数（总GCD = gcd（左，右））</li><li>最大值</li></ul><p>不符合的例子</p><ul><li>众数</li><li>01序列的最长连续0</li></ul><h3 id="线段树的建立">线段树的建立</h3><p>数组 or 链表</p><p>如果题目给了具体范围，那我们根据该范围建立线段树</p><p>but，很多时候，没有具体范围，数据的取值范围很大，我们采取<code>动态开点</code></p><h3 id="线段树的更新">线段树的更新</h3><p>如果我们要把区间 [2, 4] 内的元素都「➕1」</p><p><img src="https://pic.leetcode-cn.com/1654588378-Bhkpkc-3.svg"></p><p>我们会发现一个很有意思的现象，我们只把 [2,2] 和 [3,4] 这两个区间对应的节点更新了，而区间 [3, 3] 和 [4,4] 并没有更新</p><p>按道理来说，[3, 3] 和 [4,4] 也是需要更新的，不然当我们查询区间 [3, 3] 和 [4,4] 的值，就会出现错误！！</p><p>这是因为我们使用了「懒惰标记」的方法，我们只需要更新到满足条件的区间即可，然后再给该区间对应的节点加一个懒惰标记，表示该节点所有对应的孩子节点都应该有此更新</p><p>当我们向孩子节点遍历的时候会把「懒惰标记」下推给孩子节点</p>]]></content>
     
     
       
       
-    <summary type="html">
-</summary>
+    <summary type="html">&lt;h1 id=&quot;range-模块&quot;&gt;&lt;a href=&quot;https://leetcode.cn/problems/range-module/&quot;&gt;715. Range 模块&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;Range模块是跟踪数字范围的模块。设计一个数据结构来跟踪表示为 &lt;strong&gt;半</summary>
       
     
     
@@ -542,7 +512,9 @@
     
     <category term="Algorithm" scheme="http://little-hurui.cloud/tags/Algorithm/"/>
     
-    <category term="搜索模拟" scheme="http://little-hurui.cloud/tags/%E6%90%9C%E7%B4%A2%E6%A8%A1%E6%8B%9F/"/>
+    <category term="线段树" scheme="http://little-hurui.cloud/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/"/>
+    
+    <category term="有序集合" scheme="http://little-hurui.cloud/tags/%E6%9C%89%E5%BA%8F%E9%9B%86%E5%90%88/"/>
     
   </entry>
   
@@ -572,6 +544,66 @@
     <category term="Algorithm" scheme="http://little-hurui.cloud/tags/Algorithm/"/>
     
     <category term="基数排序" scheme="http://little-hurui.cloud/tags/%E5%9F%BA%E6%95%B0%E6%8E%92%E5%BA%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MIT6.S086-Lab1</title>
+    <link href="http://little-hurui.cloud/2022/07/12/MIT6-S086-Lab1/"/>
+    <id>http://little-hurui.cloud/2022/07/12/MIT6-S086-Lab1/</id>
+    <published>2022-07-12T10:10:24.000Z</published>
+    <updated>2022-07-16T10:04:13.765Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="lab-1-unix-utilities">Lab 1 Unix Utilities</h1><p><img src="https://s2.loli.net/2022/07/12/LbeItZJorR7FOwE.png"></p><table><thead><tr class="header"><th>系统调用</th><th>描述</th></tr></thead><tbody><tr class="odd"><td>fork()</td><td>创建进程</td></tr><tr class="even"><td>exit()</td><td>结束当前进程</td></tr><tr class="odd"><td>wait()</td><td>等待子进程结束</td></tr><tr class="even"><td>kill(pid)</td><td>结束 pid 所指进程</td></tr><tr class="odd"><td>getpid()</td><td>获得当前进程 pid</td></tr><tr class="even"><td>sleep(n)</td><td>睡眠 n 秒</td></tr><tr class="odd"><td>exec(filename, *argv)</td><td>加载并执行一个文件</td></tr><tr class="even"><td>sbrk(n)</td><td>为进程内存空间增加 n 字节</td></tr><tr class="odd"><td>open(filename, flags)</td><td>打开文件，flags 指定读/写模式</td></tr><tr class="even"><td>read(fd, buf, n)</td><td>从文件中读 n 个字节到 buf</td></tr><tr class="odd"><td>write(fd, buf, n)</td><td>从 buf 中写 n 个字节到文件</td></tr><tr class="even"><td>close(fd)</td><td>关闭打开的 fd</td></tr><tr class="odd"><td>dup(fd)</td><td>复制 fd</td></tr><tr class="even"><td>pipe( p)</td><td>创建管道， 并把读和写的 fd 返回到p</td></tr><tr class="odd"><td>chdir(dirname)</td><td>改变当前目录</td></tr><tr class="even"><td>mkdir(dirname)</td><td>创建新的目录</td></tr><tr class="odd"><td>mknod(name, major, minor)</td><td>创建设备文件</td></tr><tr class="even"><td>fstat(fd)</td><td>返回文件信息</td></tr><tr class="odd"><td>link(f1, f2)</td><td>给 f1 创建一个新名字(f2)</td></tr><tr class="even"><td>unlink(filename)</td><td>删除文件</td></tr></tbody></table><h1 id="sleep">Sleep</h1><p>实现一个sleep的system call，实现休眠功能</p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">"kernel/types.h"</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">"user/user.h"</span></span></span><br><span class="line">   </span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">(<span class="type">int</span> argc, <span class="type">char</span> *argv[])</span> {</span><br><span class="line"><span class="keyword">if</span> (argc == <span class="number">1</span>) {</span><br><span class="line"><span class="built_in">fprintf</span>(<span class="number">2</span>, <span class="string">"ERROR: sleep time required\n"</span>);</span><br><span class="line"><span class="built_in">exit</span>(<span class="number">1</span>);</span><br><span class="line">}</span><br><span class="line">sleep(atoi(argv[<span class="number">1</span>])); <span class="comment">// atoi把字符串转化为int</span></span><br><span class="line"><span class="built_in">exit</span>(<span class="number">0</span>);</span><br><span class="line">}</span><br></pre></td></tr></table></figure><h1 id="参考">参考</h1><p><a href="https://th0ar.gitbooks.io/xv6-chinese/content/index.html">xv6 中文文档</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;lab-1-unix-utilities&quot;&gt;Lab 1 Unix Utilities&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&quot;https://s2.loli.net/2022/07/12/LbeItZJorR7FOwE.png&quot;&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;th</summary>
+      
+    
+    
+    
+    <category term="操作系统" scheme="http://little-hurui.cloud/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    
+    <category term="Mit6.S081" scheme="http://little-hurui.cloud/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Mit6-S081/"/>
+    
+    <category term="Lab" scheme="http://little-hurui.cloud/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Mit6-S081/Lab/"/>
+    
+    
+    <category term="Mit6.S081" scheme="http://little-hurui.cloud/tags/Mit6-S081/"/>
+    
+    <category term="操作系统" scheme="http://little-hurui.cloud/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Static Analysis 01 Introduction</title>
+    <link href="http://little-hurui.cloud/2022/07/12/Static-Analysis-01-Introduction/"/>
+    <id>http://little-hurui.cloud/2022/07/12/Static-Analysis-01-Introduction/</id>
+    <published>2022-07-12T09:32:36.000Z</published>
+    <updated>2022-09-15T12:01:16.616Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="programming-languages">Programming Languages</h1><p><img src="https://s2.loli.net/2022/07/22/m7oMrGAnIgRJwc8.png"></p><ul><li>命令式编程语言（C++，Java）</li><li>函数式编程语言（Js，Pascal，Python）</li><li>逻辑式编程语言/声明式编程语言（）</li></ul><h1 id="why-we-need-static-analysis">Why We Need Static Analysis</h1><ul><li>Program Reliability<ul><li>Null pointer dereference</li><li>memory leak</li><li>etc...</li></ul></li><li>Program Security<ul><li>Private information leak</li><li>injection attack</li><li>etc...</li></ul></li><li>Compiler Optimization<ul><li>Dead code elimination 死代码清楚</li><li>code motion</li><li>etc...</li></ul></li><li>Program Understanding<ul><li>IDE call hierarchy</li><li>type indication</li><li>etc...</li></ul></li></ul><blockquote><p>Unfortunately, by Rice’s Theorem, there is no such approach to determine whether P satisfies such non-trivial properties, i.e., giving exact answer: Yes or No</p></blockquote><p><img src="https://s2.loli.net/2022/07/22/Dfd2FPbjSMiJrVh.png"></p><ul><li>Compromise soundness (false negatives) 漏报</li><li>Compromise completeness (false positives) 误报</li></ul><p><img src="../../../../../../AppData/Roaming/Typora/typora-user-images/image-20220722224103692.png"></p><h1 id="static-analysis-bird-s-eye-view">Static Analysis — Bird‘ s Eye View</h1><p><img src="D:/tengxun/709034836/FileRecv/E316C0F1C7AAF56C9096CA3026FCD6FA.png"></p><blockquote><p>Static Analysis: ensure (or get close to) soundness, while making good trade-offs between analysis precision and analysis speed</p></blockquote><p><strong>Two Words to Conclude Static Analysis</strong></p><ul><li><strong>Abstraction</strong></li><li><strong>Over-approximation</strong><ul><li>Transfer functions</li><li>Control flows</li></ul></li></ul><p>抽象 + 近似</p><h2 id="abstraction">Abstraction</h2><p><img src="https://s2.loli.net/2022/09/15/7giDGP9WUIywsro.png"></p><h2 id="over-approximation">Over-approximation</h2><h3 id="transfer-functions">Transfer Functions</h3><ul><li>In static anaysis , transfer functions define how to evaluate different program statements on abstract values.</li><li>Transfer functions are defined according to "analysis problem" and the "semantics" of different program statements.</li></ul><h3 id="control-flows">Control flows</h3><p>控制流</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;programming-languages&quot;&gt;Programming Languages&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&quot;https://s2.loli.net/2022/07/22/m7oMrGAnIgRJwc8.png&quot;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;</summary>
+      
+    
+    
+    
+    <category term="软件分析" scheme="http://little-hurui.cloud/categories/%E8%BD%AF%E4%BB%B6%E5%88%86%E6%9E%90/"/>
+    
+    
+    <category term="软件分析" scheme="http://little-hurui.cloud/tags/%E8%BD%AF%E4%BB%B6%E5%88%86%E6%9E%90/"/>
     
   </entry>
   
