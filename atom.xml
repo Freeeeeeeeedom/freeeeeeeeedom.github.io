@@ -127,11 +127,11 @@
     
     <category term="Algorithm" scheme="http://little-hurui.cloud/tags/Algorithm/"/>
     
-    <category term="并查集" scheme="http://little-hurui.cloud/tags/%E5%B9%B6%E6%9F%A5%E9%9B%86/"/>
-    
     <category term="BFS" scheme="http://little-hurui.cloud/tags/BFS/"/>
     
     <category term="DFS" scheme="http://little-hurui.cloud/tags/DFS/"/>
+    
+    <category term="并查集" scheme="http://little-hurui.cloud/tags/%E5%B9%B6%E6%9F%A5%E9%9B%86/"/>
     
     <category term="枚举" scheme="http://little-hurui.cloud/tags/%E6%9E%9A%E4%B8%BE/"/>
     
@@ -197,13 +197,13 @@ II&lt;/a&gt;&lt;/h4&gt;
     
     <category term="Algorithm" scheme="http://little-hurui.cloud/tags/Algorithm/"/>
     
-    <category term="位运算" scheme="http://little-hurui.cloud/tags/%E4%BD%8D%E8%BF%90%E7%AE%97/"/>
-    
-    <category term="数学" scheme="http://little-hurui.cloud/tags/%E6%95%B0%E5%AD%A6/"/>
-    
     <category term="BFS" scheme="http://little-hurui.cloud/tags/BFS/"/>
     
     <category term="DFS" scheme="http://little-hurui.cloud/tags/DFS/"/>
+    
+    <category term="数学" scheme="http://little-hurui.cloud/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+    <category term="位运算" scheme="http://little-hurui.cloud/tags/%E4%BD%8D%E8%BF%90%E7%AE%97/"/>
     
   </entry>
   
@@ -584,9 +584,9 @@ IV&lt;/a&gt;&lt;/h1&gt;
     
     <category term="Algorithm" scheme="http://little-hurui.cloud/tags/Algorithm/"/>
     
-    <category term="哈希表" scheme="http://little-hurui.cloud/tags/%E5%93%88%E5%B8%8C%E8%A1%A8/"/>
-    
     <category term="DFS" scheme="http://little-hurui.cloud/tags/DFS/"/>
+    
+    <category term="哈希表" scheme="http://little-hurui.cloud/tags/%E5%93%88%E5%B8%8C%E8%A1%A8/"/>
     
   </entry>
   
