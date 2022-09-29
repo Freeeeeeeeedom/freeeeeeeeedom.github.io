@@ -314,13 +314,13 @@ Analyze</summary>
     <category term="常用算法" scheme="http://little-hurui.cloud/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95/"/>
     
     
-    <category term="Algorithm" scheme="http://little-hurui.cloud/tags/Algorithm/"/>
-    
     <category term="启发式搜索" scheme="http://little-hurui.cloud/tags/%E5%90%AF%E5%8F%91%E5%BC%8F%E6%90%9C%E7%B4%A2/"/>
     
     <category term="AStar" scheme="http://little-hurui.cloud/tags/AStar/"/>
     
     <category term="字符串" scheme="http://little-hurui.cloud/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
+    
+    <category term="Algorithm" scheme="http://little-hurui.cloud/tags/Algorithm/"/>
     
   </entry>
   
@@ -386,9 +386,9 @@ II&lt;/a&gt;&lt;/h4&gt;
     
     <category term="Algorithm" scheme="http://little-hurui.cloud/tags/Algorithm/"/>
     
-    <category term="线段树" scheme="http://little-hurui.cloud/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/"/>
-    
     <category term="扫描线" scheme="http://little-hurui.cloud/tags/%E6%89%AB%E6%8F%8F%E7%BA%BF/"/>
+    
+    <category term="线段树" scheme="http://little-hurui.cloud/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/"/>
     
     <category term="有序集合" scheme="http://little-hurui.cloud/tags/%E6%9C%89%E5%BA%8F%E9%9B%86%E5%90%88/"/>
     
@@ -608,13 +608,13 @@ IV&lt;/a&gt;&lt;/h1&gt;
     <category term="常用算法" scheme="http://little-hurui.cloud/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95/"/>
     
     
-    <category term="Algorithm" scheme="http://little-hurui.cloud/tags/Algorithm/"/>
-    
-    <category term="动态规划" scheme="http://little-hurui.cloud/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
-    
     <category term="字符串" scheme="http://little-hurui.cloud/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
     
+    <category term="Algorithm" scheme="http://little-hurui.cloud/tags/Algorithm/"/>
+    
     <category term="哈希表" scheme="http://little-hurui.cloud/tags/%E5%93%88%E5%B8%8C%E8%A1%A8/"/>
+    
+    <category term="动态规划" scheme="http://little-hurui.cloud/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
     
   </entry>
   
