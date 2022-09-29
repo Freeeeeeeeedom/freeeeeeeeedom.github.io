@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://little-hurui.cloud/2022/09/29/Static%20Analysis%2003%20Data%20Flow%20Analysis%E2%80%94Applications/</loc>
+    <lastmod>2022-09-29</lastmod>
+  </url>
+  <url>
     <loc>http://little-hurui.cloud/2022/09/29/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%93%88%E5%B8%8C/</loc>
     <lastmod>2022-09-29</lastmod>
   </url>
@@ -65,11 +69,11 @@
     <lastmod>2022-09-23</lastmod>
   </url>
   <url>
-    <loc>http://little-hurui.cloud/2022/09/22/Static-Analysis-02-Intermediate-Representation/</loc>
+    <loc>http://little-hurui.cloud/2022/09/22/Static%20Analysis%2002%20Intermediate%20Representation/</loc>
     <lastmod>2022-09-23</lastmod>
   </url>
   <url>
-    <loc>http://little-hurui.cloud/2022/07/12/Static-Analysis-01-Introduction/</loc>
+    <loc>http://little-hurui.cloud/2022/07/12/Static%20Analysis%2001%20Introduction/</loc>
     <lastmod>2022-09-22</lastmod>
   </url>
   <url>
