@@ -6,7 +6,7 @@
   <link href="http://little-hurui.cloud/atom.xml" rel="self"/>
   
   <link href="http://little-hurui.cloud/"/>
-  <updated>2022-10-06T10:17:39.472Z</updated>
+  <updated>2022-10-06T10:23:14.371Z</updated>
   <id>http://little-hurui.cloud/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://little-hurui.cloud/2022/10/06/Static%20Analysis%2004%20Data%20Flow%20Analysis%20%E2%80%94Applications%20(II)/"/>
     <id>http://little-hurui.cloud/2022/10/06/Static%20Analysis%2004%20Data%20Flow%20Analysis%20%E2%80%94Applications%20(II)/</id>
     <published>2022-10-06T09:04:20.000Z</published>
-    <updated>2022-10-06T10:17:39.472Z</updated>
+    <updated>2022-10-06T10:23:14.371Z</updated>
     
     <content type="html"><![CDATA[<h1 id="data-flow-analysis-applications-ii">Data Flow Analysis—Applications (II)</h1><h1 id="ii-live-variables-analysis">(II) Live Variables Analysis</h1><blockquote><p>Live variables analysis tells whether the value of variable v atprogram point p could be used along some path in CFG starting at p. Ifso, v is live at p; otherwise, v is dead at p</p></blockquote><ul><li>Information of live variables can be used for registerallocations.e.g., at some point all registers are full and we need touse one, then we should favor using a register with a dead value.</li></ul><p><img src="https://hurry11.oss-cn-nanjing.aliyuncs.com/img/image-20221006171126427.png"></p><h2 id="understanding-live-variables-analysis">Understanding LiveVariables Analysis</h2><p><img src="https://hurry11.oss-cn-nanjing.aliyuncs.com/img/image-20221006171432194.png"></p><p><strong>Backword!</strong></p><p><img src="https://hurry11.oss-cn-nanjing.aliyuncs.com/img/image-20221006173323078.png"></p><h2 id="algorithm-of-live-variables-analysis">Algorithm of LiveVariables Analysis</h2><p>一般情况下 May analysisi 初始化为 empty， Must analysis 初始化为All</p><p><strong>INPUT:</strong> CFG （<span class="math inline"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.464ex;" xmlns="http://www.w3.org/2000/svg" width="4.741ex" height="2.059ex" role="img" focusable="false" viewBox="0 -705 2095.7 910"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D451" d="M366 683Q367 683 438 688T511 694Q523 694 523 686Q523 679 450 384T375 83T374 68Q374 26 402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487H491Q506 153 506 145Q506 140 503 129Q490 79 473 48T445 8T417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157Q33 205 53 255T101 341Q148 398 195 420T280 442Q336 442 364 400Q369 394 369 396Q370 400 396 505T424 616Q424 629 417 632T378 637H357Q351 643 351 645T353 664Q358 683 366 683ZM352 326Q329 405 277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q233 26 290 98L298 109L352 326Z"></path></g><g data-mml-node="mi" transform="translate(520,0)"><path data-c="1D452" d="M39 168Q39 225 58 272T107 350T174 402T244 433T307 442H310Q355 442 388 420T421 355Q421 265 310 237Q261 224 176 223Q139 223 138 221Q138 219 132 186T125 128Q125 81 146 54T209 26T302 45T394 111Q403 121 406 121Q410 121 419 112T429 98T420 82T390 55T344 24T281 -1T205 -11Q126 -11 83 42T39 168ZM373 353Q367 405 305 405Q272 405 244 391T199 357T170 316T154 280T149 261Q149 260 169 260Q282 260 327 284T373 353Z"></path></g><g data-mml-node="msub" transform="translate(986,0)"><g data-mml-node="mi"><path data-c="1D453" d="M118 -162Q120 -162 124 -164T135 -167T147 -168Q160 -168 171 -155T187 -126Q197 -99 221 27T267 267T289 382V385H242Q195 385 192 387Q188 390 188 397L195 425Q197 430 203 430T250 431Q298 431 298 432Q298 434 307 482T319 540Q356 705 465 705Q502 703 526 683T550 630Q550 594 529 578T487 561Q443 561 443 603Q443 622 454 636T478 657L487 662Q471 668 457 668Q445 668 434 658T419 630Q412 601 403 552T387 469T380 433Q380 431 435 431Q480 431 487 430T498 424Q499 420 496 407T491 391Q489 386 482 386T428 385H372L349 263Q301 15 282 -47Q255 -132 212 -173Q175 -205 139 -205Q107 -205 81 -186T55 -132Q55 -95 76 -78T118 -61Q162 -61 162 -103Q162 -122 151 -136T127 -157L118 -162Z"></path></g><g data-mml-node="mi" transform="translate(523,-150) scale(0.707)"><path data-c="1D435" d="M231 637Q204 637 199 638T194 649Q194 676 205 682Q206 683 335 683Q594 683 608 681Q671 671 713 636T756 544Q756 480 698 429T565 360L555 357Q619 348 660 311T702 219Q702 146 630 78T453 1Q446 0 242 0Q42 0 39 2Q35 5 35 10Q35 17 37 24Q42 43 47 45Q51 46 62 46H68Q95 46 128 49Q142 52 147 61Q150 65 219 339T288 628Q288 635 231 637ZM649 544Q649 574 634 600T585 634Q578 636 493 637Q473 637 451 637T416 636H403Q388 635 384 626Q382 622 352 506Q352 503 351 500L320 374H401Q482 374 494 376Q554 386 601 434T649 544ZM595 229Q595 273 572 302T512 336Q506 337 429 337Q311 337 310 336Q310 334 293 263T258 122L240 52Q240 48 252 48T333 46Q422 46 429 47Q491 54 543 105T595 229Z"></path></g></g></g></g></svg></mjx-container></span> and <span class="math inline"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.339ex;" xmlns="http://www.w3.org/2000/svg" width="4.812ex" height="1.339ex" role="img" focusable="false" viewBox="0 -442 2126.7 592"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D462" d="M21 287Q21 295 30 318T55 370T99 420T158 442Q204 442 227 417T250 358Q250 340 216 246T182 105Q182 62 196 45T238 27T291 44T328 78L339 95Q341 99 377 247Q407 367 413 387T427 416Q444 431 463 431Q480 431 488 421T496 402L420 84Q419 79 419 68Q419 43 426 35T447 26Q469 29 482 57T512 145Q514 153 532 153Q551 153 551 144Q550 139 549 130T540 98T523 55T498 17T462 -8Q454 -10 438 -10Q372 -10 347 46Q345 45 336 36T318 21T296 6T267 -6T233 -11Q189 -11 155 7Q103 38 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="mi" transform="translate(572,0)"><path data-c="1D460" d="M131 289Q131 321 147 354T203 415T300 442Q362 442 390 415T419 355Q419 323 402 308T364 292Q351 292 340 300T328 326Q328 342 337 354T354 372T367 378Q368 378 368 379Q368 382 361 388T336 399T297 405Q249 405 227 379T204 326Q204 301 223 291T278 274T330 259Q396 230 396 163Q396 135 385 107T352 51T289 7T195 -10Q118 -10 86 19T53 87Q53 126 74 143T118 160Q133 160 146 151T160 120Q160 94 142 76T111 58Q109 57 108 57T107 55Q108 52 115 47T146 34T201 27Q237 27 263 38T301 66T318 97T323 122Q323 150 302 164T254 181T195 196T148 231Q131 256 131 289Z"></path></g><g data-mml-node="msub" transform="translate(1041,0)"><g data-mml-node="mi"><path data-c="1D452" d="M39 168Q39 225 58 272T107 350T174 402T244 433T307 442H310Q355 442 388 420T421 355Q421 265 310 237Q261 224 176 223Q139 223 138 221Q138 219 132 186T125 128Q125 81 146 54T209 26T302 45T394 111Q403 121 406 121Q410 121 419 112T429 98T420 82T390 55T344 24T281 -1T205 -11Q126 -11 83 42T39 168ZM373 353Q367 405 305 405Q272 405 244 391T199 357T170 316T154 280T149 261Q149 260 169 260Q282 260 327 284T373 353Z"></path></g><g data-mml-node="mi" transform="translate(499,-150) scale(0.707)"><path data-c="1D435" d="M231 637Q204 637 199 638T194 649Q194 676 205 682Q206 683 335 683Q594 683 608 681Q671 671 713 636T756 544Q756 480 698 429T565 360L555 357Q619 348 660 311T702 219Q702 146 630 78T453 1Q446 0 242 0Q42 0 39 2Q35 5 35 10Q35 17 37 24Q42 43 47 45Q51 46 62 46H68Q95 46 128 49Q142 52 147 61Q150 65 219 339T288 628Q288 635 231 637ZM649 544Q649 574 634 600T585 634Q578 636 493 637Q473 637 451 637T416 636H403Q388 635 384 626Q382 622 352 506Q352 503 351 500L320 374H401Q482 374 494 376Q554 386 601 434T649 544ZM595 229Q595 273 572 302T512 336Q506 337 429 337Q311 337 310 336Q310 334 293 263T258 122L240 52Q240 48 252 48T333 46Q422 46 429 47Q491 54 543 105T595 229Z"></path></g></g></g></g></svg></mjx-container></span> computed for each basic blockB)</p><p><strong>OUTPUT:</strong> IN[B] and OUT[B] for each basic block B</p><p><strong>METHOD:</strong></p><p><img src="https://hurry11.oss-cn-nanjing.aliyuncs.com/img/image-20221006175017136.png" alt="Method"></p><p><strong>Example</strong></p><p><img src="https://hurry11.oss-cn-nanjing.aliyuncs.com/img/image-20221006180055356.png" alt="Example"></p><h1 id="iii-available-expressions-analysis">(III) Available ExpressionsAnalysis</h1><blockquote><p>An expression x op y is available at program point p if (1) all pathsfrom the entry to p must pass through the evaluation of x op y, and (2)after the last evaluation of x op y, there is no redefinition of x ory</p></blockquote><ul><li>This definition means at program p, we can replace expression x op yby the result of its last evaluation</li><li>The information of available expressions can be used for detectingglobal common subexpressions</li></ul><h2 id="abstraction">Abstraction</h2><p><img src="https://hurry11.oss-cn-nanjing.aliyuncs.com/img/image-20221006181732494.png"></p>]]></content>
     
@@ -456,11 +456,11 @@ Analyze</summary>
     
     <category term="Algorithm" scheme="http://little-hurui.cloud/tags/Algorithm/"/>
     
-    <category term="并查集" scheme="http://little-hurui.cloud/tags/%E5%B9%B6%E6%9F%A5%E9%9B%86/"/>
-    
     <category term="DFS" scheme="http://little-hurui.cloud/tags/DFS/"/>
     
     <category term="BFS" scheme="http://little-hurui.cloud/tags/BFS/"/>
+    
+    <category term="并查集" scheme="http://little-hurui.cloud/tags/%E5%B9%B6%E6%9F%A5%E9%9B%86/"/>
     
     <category term="枚举" scheme="http://little-hurui.cloud/tags/%E6%9E%9A%E4%B8%BE/"/>
     
@@ -492,9 +492,9 @@ II&lt;/a&gt;&lt;/h4&gt;
     
     <category term="Algorithm" scheme="http://little-hurui.cloud/tags/Algorithm/"/>
     
-    <category term="扫描线" scheme="http://little-hurui.cloud/tags/%E6%89%AB%E6%8F%8F%E7%BA%BF/"/>
-    
     <category term="线段树" scheme="http://little-hurui.cloud/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/"/>
+    
+    <category term="扫描线" scheme="http://little-hurui.cloud/tags/%E6%89%AB%E6%8F%8F%E7%BA%BF/"/>
     
     <category term="有序集合" scheme="http://little-hurui.cloud/tags/%E6%9C%89%E5%BA%8F%E9%9B%86%E5%90%88/"/>
     
@@ -526,11 +526,11 @@ II&lt;/a&gt;&lt;/h4&gt;
     
     <category term="Algorithm" scheme="http://little-hurui.cloud/tags/Algorithm/"/>
     
-    <category term="位运算" scheme="http://little-hurui.cloud/tags/%E4%BD%8D%E8%BF%90%E7%AE%97/"/>
+    <category term="DFS" scheme="http://little-hurui.cloud/tags/DFS/"/>
     
     <category term="数学" scheme="http://little-hurui.cloud/tags/%E6%95%B0%E5%AD%A6/"/>
     
-    <category term="DFS" scheme="http://little-hurui.cloud/tags/DFS/"/>
+    <category term="位运算" scheme="http://little-hurui.cloud/tags/%E4%BD%8D%E8%BF%90%E7%AE%97/"/>
     
     <category term="BFS" scheme="http://little-hurui.cloud/tags/BFS/"/>
     
