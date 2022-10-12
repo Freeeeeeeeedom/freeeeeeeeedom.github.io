@@ -4,6 +4,41 @@
   
     
     <entry>
+      <title>Leetcode-正则匹配</title>
+      <link href="/2022/10/12/Leetcode-%E6%AD%A3%E5%88%99%E5%8C%B9%E9%85%8D/"/>
+      <url>/2022/10/12/Leetcode-%E6%AD%A3%E5%88%99%E5%8C%B9%E9%85%8D/</url>
+      
+        <content type="html"><![CDATA[<h2 id="利用等差性质降低正则字符串匹配的算法复杂度"><a class="markdownIt-Anchor" href="#利用等差性质降低正则字符串匹配的算法复杂度"></a> 利用等差性质降低正则字符串匹配的算法复杂度</h2><p>给你一个字符串 <code>s</code> 和一个字符规律 <code>p</code>，请你来实现一个支持 <code>'.'</code> 和 <code>'*'</code> 的正则表达式匹配。</p><ul><li><code>'.'</code> 匹配任意单个字符</li><li><code>'*'</code> 匹配零个或多个前面的那一个元素</li></ul><p>所谓匹配，是要涵盖 <strong>整个</strong> 字符串 <code>s</code>的，而不是部分字符串。</p><p><strong>示例 1：</strong></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">输入：s = "aa", p = "a"</span><br><span class="line">输出：false</span><br><span class="line">解释："a" 无法匹配 "aa" 整个字符串。</span><br></pre></td></tr></table></figure><p><strong>示例 2:</strong></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">输入：s = "aa", p = "a*"</span><br><span class="line">输出：true</span><br><span class="line">解释：因为 '*' 代表可以匹配零个或多个前面的那一个元素, 在这里前面的元素就是 'a'。因此，字符串 "aa" 可被视为 'a' 重复了一次。</span><br></pre></td></tr></table></figure><p><strong>示例 3：</strong></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">输入：s = "ab", p = ".*"</span><br><span class="line">输出：true</span><br><span class="line">解释：".*" 表示可匹配零个或多个（'*'）任意字符（'.'）。</span><br></pre></td></tr></table></figure><p><strong>提示：</strong></p><ul><li><code>1 &lt;= s.length &lt;= 20</code></li><li><code>1 &lt;= p.length &lt;= 30</code></li><li><code>s</code> 只包含从 <code>a-z</code> 的小写字母。</li><li><code>p</code> 只包含从 <code>a-z</code> 的小写字母，以及字符 <code>.</code> 和 <code>*</code>。</li><li>保证每次出现字符 <code>*</code> 时，前面都匹配到有效的字符</li></ul><h1 id="题解"><a class="markdownIt-Anchor" href="#题解"></a> 题解</h1><ul><li><p>所以本题关键是分析当出现 <code>a*</code> 这种字符时，是匹配 0 个 a、还是 1 个 a、还是 2 个 a …</p><p>本题可以使用动态规划进行求解：</p><ul><li>状态定义：<code>f(i,j)</code> 代表考虑 <code>s</code> 中以 <code>i</code> 为结尾的子串和 <code>p</code> 中的 <code>j</code> 为结尾的子串是否匹配。即最终我们要求的结果为 <code>f[n][m]</code></li><li>状态转移：也就是我们要考虑 <code>f(i,j)</code> 如何求得，前面说到了 <code>p</code> 有三种字符，所以这里的状态转移也要分三种情况讨论：<ol><li><code>p[j]</code> 为普通字符：匹配的条件是前面的字符匹配，同时 <code>s</code> 中的第 <code>i</code> 个字符和 <code>p</code> 中的第 <code>j</code> 位相同。 即 <code>f(i,j) = f(i - 1, j - 1) &amp;&amp; s[i] == p[j]</code> 。</li><li><code>p[j]</code> 为 <code>'.'</code>：匹配的条件是前面的字符匹配， <code>s</code> 中的第 <code>i</code> 个字符可以是任意字符。即 <code>f(i,j) = f(i - 1, j - 1) &amp;&amp; p[j] == '.'</code>。</li><li><code>p[j]</code> 为 <code>'*'</code>：读得 <code>p[j - 1]</code> 的字符，例如为字符 a。 然后根据 <code>a*</code> 实际匹配 <code>s</code> 中 <code>a</code> 的个数是 0 个、1 个、2 个 …<br>3.1. 当匹配为 0 个：<code>f(i,j) = f(i, j - 2)</code><br>3.2. 当匹配为 1 个：<code>f(i,j) = f(i - 1, j - 2) &amp;&amp; (s[i] == p[j - 1] || p[j - 1] == '.')</code><br>3.3. 当匹配为 2 个：<code>f(i,j) = f(i - 2, j - 2) &amp;&amp; ((s[i] == p[j - 1] &amp;&amp; s[i - 1] == p[j - 1]) || p[j - 1] == '.')</code><br>…</li></ol></li></ul><p><strong>我们知道，通过「枚举」来确定 <code>\*</code> 到底匹配多少个 <code>a</code> 这样的做法，算法复杂度是很高的。</strong></p></li></ul><p>表达式展开得</p><p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.452ex;" xmlns="http://www.w3.org/2000/svg" width="161.086ex" height="2.149ex" role="img" focusable="false" viewBox="0 -750 71200 950"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="merror" data-mjx-error="Misplaced &" title="Misplaced &"><rect data-background="true" width="71200" height="950" y="-200"></rect><title>Misplaced &</title><g data-mml-node="mtext" style="font-family: serif;"><text data-variant="-explicitFont" transform="scale(1,-1)" font-size="884px">f(i,j)=f(i,j-2) ;;|| ;;f(i-1,j-2 ) ;; &amp;&amp; ;; s[i] ; ;匹配;; p[j-1];; || ;; f(i-2,j-1) ;; &amp;&amp; ;; s[i-1: i];; 匹配 ;;p[j-1] </text></g></g></g></g></svg></mjx-container></p><p>每个item都相差了一个s[i]匹配p[j-1]，就是说 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>f</mi><mo stretchy="false">(</mo><mi>i</mi><mo separator="true">,</mo><mi>j</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">f(i,j)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathdefault">i</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.05724em;">j</span><span class="mclose">)</span></span></span></span> 和 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>f</mi><mo stretchy="false">(</mo><mi>i</mi><mo>−</mo><mn>1</mn><mo separator="true">,</mo><mi>j</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">f(i-1,j)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathdefault">i</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.05724em;">j</span><span class="mclose">)</span></span></span></span> 相差了一个 匹配</p><p>thus， <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>f</mi><mo stretchy="false">(</mo><mi>i</mi><mo separator="true">,</mo><mi>j</mi><mo stretchy="false">)</mo><mo>=</mo><mi>f</mi><mo stretchy="false">(</mo><mi>i</mi><mo separator="true">,</mo><mi>j</mi><mo>−</mo><mn>2</mn><mo stretchy="false">)</mo><mtext>  </mtext><mtext>  </mtext><mi mathvariant="normal">∣</mi><mi mathvariant="normal">∣</mi><mtext>  </mtext><mtext>  </mtext><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">(</mo><mi>i</mi><mo>−</mo><mn>1</mn><mo separator="true">,</mo><mi>j</mi><mo stretchy="false">)</mo><mtext>  </mtext><mtext>  </mtext><mi mathvariant="normal">&amp;</mi><mi mathvariant="normal">&amp;</mi><mtext>  </mtext><mtext>  </mtext><mo stretchy="false">(</mo><mi>s</mi><mo stretchy="false">[</mo><mi>i</mi><mo stretchy="false">]</mo><mo>=</mo><mo>=</mo><mi>p</mi><mo stretchy="false">[</mo><mi>j</mi><mo>−</mo><mn>1</mn><mo stretchy="false">]</mo><mtext>  </mtext><mtext>  </mtext><mi mathvariant="normal">∣</mi><mi mathvariant="normal">∣</mi><mtext>  </mtext><mtext>  </mtext><mi>p</mi><mo stretchy="false">[</mo><mi>j</mi><mo>−</mo><mn>1</mn><mo stretchy="false">]</mo><mo>=</mo><msup><mo>=</mo><mo mathvariant="normal">′</mo></msup><msup><mi mathvariant="normal">.</mi><mo mathvariant="normal">′</mo></msup><mo stretchy="false">)</mo><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">f(i,j) = f(i,j-2) \;\; || \;\;( f(i-1,j) \;\; \&amp;\&amp; \;\; (s[i] == p[j-1] \;\; || \;\; p[j-1] == '.') )</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathdefault">i</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.05724em;">j</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathdefault">i</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.05724em;">j</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">2</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mord">∣</span><span class="mord">∣</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathdefault">i</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.05724em;">j</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mord">&amp;</span><span class="mord">&amp;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mopen">(</span><span class="mord mathdefault">s</span><span class="mopen">[</span><span class="mord mathdefault">i</span><span class="mclose">]</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span></span><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">p</span><span class="mopen">[</span><span class="mord mathdefault" style="margin-right:0.05724em;">j</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mclose">]</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mord">∣</span><span class="mord">∣</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mord mathdefault">p</span><span class="mopen">[</span><span class="mord mathdefault" style="margin-right:0.05724em;">j</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mclose">]</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span></span><span class="base"><span class="strut" style="height:0.751892em;vertical-align:0em;"></span><span class="mrel"><span class="mrel">=</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.751892em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">′</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.001892em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord">.</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.751892em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">′</span></span></span></span></span></span></span></span></span><span class="mclose">)</span><span class="mclose">)</span></span></span></span></p><h2 id="代码实现"><a class="markdownIt-Anchor" href="#代码实现"></a> 代码实现</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> {</span><br><span class="line">    <span class="keyword">public</span> <span class="type">boolean</span> <span class="title function_">isMatch</span><span class="params">(String ss, String pp)</span> {</span><br><span class="line">        <span class="comment">// 技巧：往原字符头部插入空格，这样得到 char 数组是从 1 开始，而且可以使得 f[0][0] = true，可以将 true 这个结果滚动下去</span></span><br><span class="line">        <span class="type">int</span> <span class="variable">n</span> <span class="operator">=</span> ss.length(), m = pp.length();</span><br><span class="line">        ss = <span class="string">" "</span> + ss;</span><br><span class="line">        pp = <span class="string">" "</span> + pp;</span><br><span class="line">        <span class="type">char</span>[] s = ss.toCharArray(), p = pp.toCharArray();</span><br><span class="line">        <span class="comment">// f(i,j) 代表考虑 s 中的 1~i 字符和 p 中的 1~j 字符 是否匹配</span></span><br><span class="line">        <span class="type">boolean</span>[][] f = <span class="keyword">new</span> <span class="title class_">boolean</span>[n + <span class="number">1</span>][m + <span class="number">1</span>];</span><br><span class="line">        f[<span class="number">0</span>][<span class="number">0</span>] = <span class="literal">true</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt;= n; i++) {</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">j</span> <span class="operator">=</span> <span class="number">1</span>; j &lt;= m; j++) {</span><br><span class="line">                <span class="comment">// 如果下一个字符是 '*'，则代表当前字符不能被单独使用，跳过</span></span><br><span class="line">                <span class="keyword">if</span> (j + <span class="number">1</span> &lt;= m &amp;&amp; p[j + <span class="number">1</span>] == <span class="string">'*'</span>) <span class="keyword">continue</span>;</span><br><span class="line">                </span><br><span class="line">                <span class="keyword">if</span> (i - <span class="number">1</span> &gt;= <span class="number">0</span> &amp;&amp; p[j] != <span class="string">'*'</span>) {</span><br><span class="line">                    <span class="comment">// 对应了 p[j] 为普通字符和 '.' 的两种情况</span></span><br><span class="line">                    f[i][j] = f[i - <span class="number">1</span>][j - <span class="number">1</span>] &amp;&amp; (s[i] == p[j] || p[j] == <span class="string">'.'</span>);</span><br><span class="line">                } <span class="keyword">else</span> <span class="keyword">if</span> (p[j] == <span class="string">'*'</span>) {</span><br><span class="line">                    <span class="comment">// 对应了 p[j] 为 '*' 的情况</span></span><br><span class="line">                    f[i][j] = (j - <span class="number">2</span> &gt;= <span class="number">0</span> &amp;&amp; f[i][j - <span class="number">2</span>]) || (i - <span class="number">1</span> &gt;= <span class="number">0</span> &amp;&amp; f[i - <span class="number">1</span>][j] &amp;&amp; (s[i] == p[j - <span class="number">1</span>] || p[j - <span class="number">1</span>] == <span class="string">'.'</span>));</span><br><span class="line">                }</span><br><span class="line">            }</span><br><span class="line">        }</span><br><span class="line">        <span class="keyword">return</span> f[n][m];</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></table></figure><h2 id="参考"><a class="markdownIt-Anchor" href="#参考"></a> 参考</h2><p><a href="https://leetcode.cn/problems/regular-expression-matching/solutions/572931/shua-chuan-lc-dong-tai-gui-hua-jie-fa-by-zn9w/?languageTags=java">10. 正则表达式匹配 - 力扣（Leetcode）</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 数据结构与算法 </category>
+          
+          <category> 常用算法 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Algorithm </tag>
+            
+            <tag> 动态规划 </tag>
+            
+            <tag> 正则表达式 </tag>
+            
+            <tag> 递归 </tag>
+            
+            <tag> 字符串 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>形式语言与自动机 05 Context-Free Grammars</title>
       <link href="/2022/10/11/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA%2005%20Context-Free%20Grammars/"/>
       <url>/2022/10/11/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA%2005%20Context-Free%20Grammars/</url>
@@ -405,9 +440,9 @@
             
             <tag> 启发式搜索 </tag>
             
-            <tag> AStar </tag>
-            
             <tag> 字符串 </tag>
+            
+            <tag> AStar </tag>
             
         </tags>
       
@@ -1380,9 +1415,9 @@
       
         <tags>
             
-            <tag> 互联网计算 </tag>
-            
             <tag> 计算机网络 </tag>
+            
+            <tag> 互联网计算 </tag>
             
         </tags>
       
@@ -1409,9 +1444,9 @@
       
         <tags>
             
-            <tag> 互联网计算 </tag>
-            
             <tag> 计算机网络 </tag>
+            
+            <tag> 互联网计算 </tag>
             
         </tags>
       
@@ -1438,9 +1473,9 @@
       
         <tags>
             
-            <tag> 互联网计算 </tag>
-            
             <tag> 计算机网络 </tag>
+            
+            <tag> 互联网计算 </tag>
             
         </tags>
       
@@ -1467,9 +1502,9 @@
       
         <tags>
             
-            <tag> 互联网计算 </tag>
-            
             <tag> 计算机网络 </tag>
+            
+            <tag> 互联网计算 </tag>
             
         </tags>
       
@@ -1496,9 +1531,9 @@
       
         <tags>
             
-            <tag> 互联网计算 </tag>
-            
             <tag> 计算机网络 </tag>
+            
+            <tag> 互联网计算 </tag>
             
         </tags>
       
@@ -1525,9 +1560,9 @@
       
         <tags>
             
-            <tag> 互联网计算 </tag>
-            
             <tag> 计算机网络 </tag>
+            
+            <tag> 互联网计算 </tag>
             
         </tags>
       
@@ -1614,9 +1649,9 @@
       
         <tags>
             
-            <tag> 代码设计 </tag>
-            
             <tag> 软件工程 </tag>
+            
+            <tag> 代码设计 </tag>
             
         </tags>
       
@@ -1643,9 +1678,9 @@
       
         <tags>
             
-            <tag> 互联网计算 </tag>
-            
             <tag> 计算机网络 </tag>
+            
+            <tag> 互联网计算 </tag>
             
         </tags>
       
@@ -1672,9 +1707,9 @@
       
         <tags>
             
-            <tag> 互联网计算 </tag>
-            
             <tag> 计算机网络 </tag>
+            
+            <tag> 互联网计算 </tag>
             
         </tags>
       
@@ -1828,35 +1863,6 @@
     
     
     <entry>
-      <title>软件测试</title>
-      <link href="/2022/05/16/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/"/>
-      <url>/2022/05/16/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/</url>
-      
-        <content type="html"><![CDATA[<h2 id="软件测试"><a class="markdownIt-Anchor" href="#软件测试"></a> 软件测试</h2><h1 id="考试题"><a class="markdownIt-Anchor" href="#考试题"></a> 考试题</h1><ol><li>给出功能需求，设计功能测试用例</li><li>给出设计图，按要求写集成测试用例，Stub和Driver</li><li>给出方法的描述，按要求写单元测试用例，Mock Object</li><li>Junit基本用法</li></ol><h1 id="bug起源"><a class="markdownIt-Anchor" href="#bug起源"></a> Bug起源</h1><h2 id="第一个bug"><a class="markdownIt-Anchor" href="#第一个bug"></a> 第一个Bug</h2><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt19/1.png" alt=""></p><h2 id="千年虫病毒"><a class="markdownIt-Anchor" href="#千年虫病毒"></a> 千年虫病毒</h2><ol><li>在七十年代，程序员利用宝贵的内存和磁盘空间通过两位来存储年份</li><li>他们从来没有想到程序可以运行到2000年</li></ol><h2 id="辐射机问题"><a class="markdownIt-Anchor" href="#辐射机问题"></a> 辐射机问题</h2><ol><li>Therac-25放射治疗机中的软件有缺陷，导致数名癌症患者接受致命的过量放射。 四名患者死亡</li><li>独立科学家进行的一项调查发现，即使在加拿大原子能有限公司(AECL)认为已修复特定错误之后，仍发生了事故。</li><li>他们在报告中写道：“这里的基本错误涉及不良的软件工程实践，以及建立依赖该软件进行安全操作的机器。”</li></ol><h2 id="爱国者导弹防御1991"><a class="markdownIt-Anchor" href="#爱国者导弹防御1991"></a> 爱国者导弹防御1991</h2><ol><li>爱国者导弹防御系统未能防御多种导弹</li><li>系统时钟中累积了微小的计时误差，因此14小时后，跟踪系统不再准确</li><li>在对KSA达兰的攻击中，该系统已运行100多个小时</li><li>该系统是可移动的，因此开发人员没想到它会在一个地方停留14小时</li></ol><h2 id="奔腾处理器的浮点数bug"><a class="markdownIt-Anchor" href="#奔腾处理器的浮点数bug"></a> 奔腾处理器的浮点数bug</h2><ol><li>(4195835/3145727) * 3145727 - 4195835 ≠ 0</li><li>测试工程师企图淡化Bug，管理人员认为这并不要紧</li><li>一位用户报告说，1994年10月30日，英特尔试图淡化该错误。 如果您可以证明自己受到影响，可以更换芯片</li><li>最终，他们道歉。 更换所有芯片，耗资4.5亿美元</li><li>有趣的是，1.13 MHz Pentium III导致软件冻结</li></ol><h2 id="迪士尼的狮子王动画故事书-1994"><a class="markdownIt-Anchor" href="#迪士尼的狮子王动画故事书-1994"></a> 迪士尼的《狮子王动画故事书》 1994</h2><ol><li>迪士尼发行了第一张针对儿童的多媒体CD-ROM</li><li>一个大型广告系列，称其为"购买游戏"</li><li>圣诞节过后，许多生气的父母正与迪斯尼通电话，背景中有哭泣的孩子</li><li>问题是游戏只能在少数平台上运行，而包装盒上对此一无所知，因为迪斯尼尚未意识到问题所在</li><li>兼容性的问题，只能在部分CD中进行播放</li></ol><h1 id="什么是对的软件"><a class="markdownIt-Anchor" href="#什么是对的软件"></a> 什么是对的软件？</h1><h2 id="你是否正确的构造了软件"><a class="markdownIt-Anchor" href="#你是否正确的构造了软件"></a> 你是否正确的构造了软件</h2><ol><li>软件正确性<ol><li>在且仅在以下情况下，才根据规范S考虑程序P：对于每个有效输入，P的输出均符合规范S</li></ol></li><li>验证：常常我们会将软件与终端用户或者其他利益相关者的需求进行比较。</li></ol><h2 id="verification-and-validation-验证和确认-重要"><a class="markdownIt-Anchor" href="#verification-and-validation-验证和确认-重要"></a> Verification and Validation 验证和确认 重要</h2><ol><li>Verification: 验证，检查开发者是否正确地使用技术建立系统，确保系统能够在于其的环境中按照技术要求正确地运行。</li><li>Validation: 确认，检查开发者是否家里了正确的系统，确保最终产品符合规格。</li><li>V＆V差异无关紧要</li><li>V＆V通常是指试图确保软件按要求运行的任何活动。</li><li>Ex见课本320页,重要，会考V&amp;V</li></ol><h3 id="如果软件是错误的"><a class="markdownIt-Anchor" href="#如果软件是错误的"></a> 如果软件是错误的</h3><ol><li>定义<ol><li>缺陷:系统代码中存在的不正确的地方，计算时存在除0可能</li><li>错误:如果系统执行到缺陷代码，就可能使得执行结果不符合预期且无法预测，表现出来的不稳定的状态，比如计算时存在除0可能的代码，一旦除0则会发生错误</li><li>失败，有Failure一定有fault和Error，而倒过来是未必成立的。失败是指错误的发生会使得软件的功能失效，比如，系统某个功能输出不正确、异常终止、不符合时间或者空间的限制等。</li></ol></li><li>关系<ol><li>缺陷可能在被活动激发前很长时间不被检测到</li><li>如果错误传播到输出，则最终会导致失败。</li></ol></li><li>缺陷、错误和失败：该链可以递归地迭代：依次由其他交互系统的故障引起故障。</li></ol><h1 id="common-vv-activities-常见的vv活动"><a class="markdownIt-Anchor" href="#common-vv-activities-常见的vv活动"></a> Common V&amp;V Activities 常见的V＆V活动</h1><ol><li>静态分析技术<ol><li>仅基于(手动或自动)检查软件模型和代码的项目文档以及有关需求和设计的其他相关信息</li><li>通常会产生有效的结果，但精度可能较弱</li><li>容易产生误报，因为多态的存在导致很多只能在运行的时候才报错。</li></ol></li><li>动态测试技术<ol><li>运行软件以暴露可能的故障</li><li>还观察了程序的行为和性能属性</li><li>产生更精确的结果，但仅适用于经过检查的执行</li><li>动态容易漏报，没有运行到一定不会报告</li></ol></li></ol><h2 id="静态分析技术"><a class="markdownIt-Anchor" href="#静态分析技术"></a> 静态分析技术</h2><ol><li>可以在需求阶段应用； 在设计阶段； 在实施阶段</li><li>传统静态技术–大量手动操作，容易出错，耗时<ol><li>软件检查–根据已编译的常见和历史缺陷清单，对生成的文档(可交付成果)进行逐步分析</li><li>软件评审–将工作产品的不同方面呈现给项目人员(经理，用户，客户等)和其他感兴趣的涉众以征求意见或批准的过程</li><li>阅读代码–对生成的代码进行桌面分析，以发现不违反样式或语法的键入错误</li><li>算法分析和跟踪–可以得出所用算法的复杂性以及最坏情况，平均情况和概率分析评估的过程</li></ol></li><li>依靠形式化方法的静态分析技术</li><li>27min漏了</li></ol><h2 id="动态分析技术"><a class="markdownIt-Anchor" href="#动态分析技术"></a> 动态分析技术</h2><ol><li>测试–基于对有价输入的代码执行(必要时必须包括表征系统状态的参数和环境条件的定义)<ol><li>检查指定输入和指定输出</li></ol></li><li>性能分析–程序配置文件记录了一组受控执行过程中某些感兴趣的实体出现的次数<ol><li>频谱执行情况:一个向量，从第一行到最后一行，形成一个01向量</li><li>分支覆盖法</li></ol></li></ol><h2 id="软件开发中的验证与确认活动"><a class="markdownIt-Anchor" href="#软件开发中的验证与确认活动"></a> 软件开发中的验证与确认活动</h2><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt19/2.png" alt=""></p><h1 id="软件测试的目的"><a class="markdownIt-Anchor" href="#软件测试的目的"></a> 软件测试的目的</h1><ol><li>目的一:向开发者和用户展示软件满足了需求，表明软件产品是一个合格的产品。<ol><li>有效性测试</li></ol></li><li>目的二:找出软件中的缺陷和不足<ol><li>缺陷测试:只有发现了缺陷的测试才是成功的测试</li></ol></li><li>总而言之，软件测试是为评价与改进产品质量、标识产品缺陷和问题而进行的活动。</li></ol><h2 id="测试用例"><a class="markdownIt-Anchor" href="#测试用例"></a> 测试用例</h2><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt19/3.png" alt=""></p><ol><li>差分测试</li></ol><ul><li>开发者：理解系统含义，但是只是大体上，通过流程进行了测试</li><li>独立测试人员：必须学习系统相关，但是会去尝试破坏系统，并且是通过质量来驱动测试</li></ul><h2 id="桩与驱动"><a class="markdownIt-Anchor" href="#桩与驱动"></a> 桩与驱动</h2><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt19/4.png" alt=""></p><ol><li>桩程序是被测试部件的交互环境，他扮演被测试部件需要调用的其他系统部件。桩程序对其他系统部件的扮演仅限于规格相同，内部代码要简单的多，通常是直接返回固定数据或者按照固定规则返回数据。</li><li>驱动程序负责创建被测试部件的执行环境，并驱动和监控被测试部件执行测试用例的过程，判定测试用例的执行结果。</li></ol><h2 id="测试空间"><a class="markdownIt-Anchor" href="#测试空间"></a> 测试空间</h2><ol><li>黑盒测试、白盒测试、灰盒测试</li></ol><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt19/5.png" alt=""></p><h1 id="测试层次"><a class="markdownIt-Anchor" href="#测试层次"></a> 测试层次</h1><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt19/6.png" alt=""></p><ul><li>开发者主要是进行单元测试，可以进行一定程度上的集成测试和系统测试</li><li>重点:<ul><li>α测试:在软件发布前，让小规模、有代表性的潜在用户试用，可以在开发机构中进行。</li><li>β测试:在用户处进行</li></ul></li></ul><h2 id="单元测试"><a class="markdownIt-Anchor" href="#单元测试"></a> 单元测试</h2><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt19/7.png" alt=""></p><ol><li>在过程化编程中，一个单元就是一个函数与过程。</li><li>在面向对象编程中，一个单元就是类的一个方法。</li><li>发现技术缺陷和代码缺陷</li></ol><h2 id="集成测试"><a class="markdownIt-Anchor" href="#集成测试"></a> 集成测试</h2><ol><li>集成测试一般在单元测试和系统测试之间</li></ol><h3 id="自顶向下的集成测试"><a class="markdownIt-Anchor" href="#自顶向下的集成测试"></a> 自顶向下的集成测试</h3><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt19/8.png" alt=""></p><ol><li>一定要一步一步集成</li></ol><h3 id="自底向上的集成测试"><a class="markdownIt-Anchor" href="#自底向上的集成测试"></a> 自底向上的集成测试</h3><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt19/9.png" alt=""></p><h2 id="系统测试"><a class="markdownIt-Anchor" href="#系统测试"></a> 系统测试</h2><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt19/10.png" alt=""></p><h1 id="测试技术"><a class="markdownIt-Anchor" href="#测试技术"></a> 测试技术</h1><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt19/11.png" alt=""></p><ol><li>测试的目的是发现尽可能多的缺陷，并不绝对要求发现所有缺陷。</li></ol><h2 id="测试用例的选择"><a class="markdownIt-Anchor" href="#测试用例的选择"></a> 测试用例的选择</h2><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt19/12.png" alt=""></p><ol><li>课本P326页图 19-7 :工程追求足够好，而不是最好。</li></ol><h2 id="随机测试"><a class="markdownIt-Anchor" href="#随机测试"></a> 随机测试</h2><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt19/13.png" alt=""></p><ol><li>比如int的越界问题:两类测试用例，不越界和越界</li></ol><h2 id="黑盒测试-重要"><a class="markdownIt-Anchor" href="#黑盒测试-重要"></a> 黑盒测试 重要</h2><ol><li>黑盒测试是将测试对象作为一个黑盒子，完全基于输入和输出数据来判断测试对象的正确性。</li></ol><h3 id="黑盒测试方法-等价类划分"><a class="markdownIt-Anchor" href="#黑盒测试方法-等价类划分"></a> 黑盒测试方法-等价类划分</h3><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt19/14.png" alt=""></p><ul><li>把所有可能的输入数据，即程序的输入域划分为若干部分(子集)，从每个子集中选取少量具有代表性的数据作为测试用例。</li><li>例子</li></ul><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt19/15.png" alt=""></p><h3 id="黑盒测试方法-边界值分析"><a class="markdownIt-Anchor" href="#黑盒测试方法-边界值分析"></a> 黑盒测试方法-边界值分析</h3><ol><li>边界值分析是等价类划分方法的补充，实践证明，错误最容易发生在各等价类的边界，而不是等价类的内部。</li><li>对定价类划分的补充，错误容易发生在各个等价类的边界上，而不是等价类的内部，因此针对边界情况设计测试用例，可以发现更多的缺陷。</li></ol><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt19/16.png" alt=""></p><h3 id="黑盒测试方法-决策表"><a class="markdownIt-Anchor" href="#黑盒测试方法-决策表"></a> 黑盒测试方法-决策表</h3><ul><li>决策表是为复杂逻辑判断设计测试用例的技术。决策表示由条件声明、行动声明、规则选项和行动选项等四个象限组成的表格。</li></ul><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt19/17.png" alt=""></p><h3 id="黑盒测试方法-状态转换"><a class="markdownIt-Anchor" href="#黑盒测试方法-状态转换"></a> 黑盒测试方法-状态转换</h3><ul><li>状态转换是针对复杂测试对象的测试技术。该类复杂测试对象对输入数据的反映是多样的，还需要依赖自身的状态才能决定。</li><li>状态转换包含有效转换和无效转换，只有在复杂情况和可靠性要求较高的情况下才会为无效转换设计测试用例。</li></ul><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt19/18.png" alt=""></p><ul><li>例子</li></ul><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt19/25.png" alt=""><br><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt19/26.png" alt=""><br><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt19/27.png" alt=""></p><h2 id="白盒测试-重要"><a class="markdownIt-Anchor" href="#白盒测试-重要"></a> 白盒测试 重要</h2><ol><li>白盒测试是将测试对象看做透明的，不关心测试对象的规格，而是按照测试对象内部的程序结构来设计测试用例进行测试工作。</li></ol><h3 id="白盒测试方法-语句覆盖"><a class="markdownIt-Anchor" href="#白盒测试方法-语句覆盖"></a> 白盒测试方法-语句覆盖</h3><ol><li>语句覆盖设计测试用例的标注是保证被测试的对象的每一行代码都至少执行了一次。</li></ol><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt19/19.png" alt=""><br><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt19/20.png" alt=""></p><ul><li>所有的路径都覆盖一遍，路径覆盖</li></ul><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt19/21.png" alt=""></p><h3 id="白盒测试方法-条件覆盖"><a class="markdownIt-Anchor" href="#白盒测试方法-条件覆盖"></a> 白盒测试方法-条件覆盖</h3><ol><li>条件覆盖设计测试用例的标准是确保程序中每个判断的每个结果都至少满足一次。</li></ol><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt19/22.png" alt=""></p><h3 id="白盒测试方法-路径覆盖"><a class="markdownIt-Anchor" href="#白盒测试方法-路径覆盖"></a> 白盒测试方法-路径覆盖</h3><ol><li>路径覆盖测试用例的标准是确保程序中每一条独立执行的路径都至少执行一次。</li></ol><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt19/23.png" alt=""></p><h2 id="特定测试技术"><a class="markdownIt-Anchor" href="#特定测试技术"></a> 特定测试技术</h2><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt19/24.png" alt=""></p><h2 id="面向对象的测试技术"><a class="markdownIt-Anchor" href="#面向对象的测试技术"></a> 面向对象的测试技术</h2><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt19/28.png" alt=""></p><h1 id="测试活动"><a class="markdownIt-Anchor" href="#测试活动"></a> 测试活动</h1><ol><li>测试计划:在开始具体的软件测试活动之前，必须首先进行测试计划，以明确测试的工作范围、资源与成本、基本策略、进度安排等。</li><li>测试设计:测试的成功取决于有效设计的测试用例</li><li>测试执行:执行测试前需要选择好测试工具</li><li>测试评价:在测试完成后，必须评价测试结果</li><li>以上详见课本332页</li></ol><h2 id="测试用例日志"><a class="markdownIt-Anchor" href="#测试用例日志"></a> 测试用例日志</h2><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt19/29.png" alt=""></p><h2 id="缺陷报告"><a class="markdownIt-Anchor" href="#缺陷报告"></a> 缺陷报告</h2><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt19/30.png" alt=""></p><h1 id="测试度量"><a class="markdownIt-Anchor" href="#测试度量"></a> 测试度量</h1><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt19/31.png" alt=""></p><ul><li>需求覆盖率=被测试的需求数量/需求总数</li><li>模块覆盖率=被测试的模块数量/模块总数</li><li>代码覆盖率=被测试的代码行/代码行数</li></ul><h2 id="缺陷度量"><a class="markdownIt-Anchor" href="#缺陷度量"></a> 缺陷度量</h2><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt19/32.png" alt=""></p><h2 id="覆盖率"><a class="markdownIt-Anchor" href="#覆盖率"></a> 覆盖率</h2><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt19/33.png" alt=""></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 软件工程 </category>
-          
-          <category> 软件工程与计算2 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 软件工程 </tag>
-            
-            <tag> 软件测试 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>软件交付</title>
       <link href="/2022/05/16/%E8%BD%AF%E4%BB%B6%E4%BA%A4%E4%BB%98/"/>
       <url>/2022/05/16/%E8%BD%AF%E4%BB%B6%E4%BA%A4%E4%BB%98/</url>
@@ -1878,6 +1884,35 @@
             <tag> 软件工程 </tag>
             
             <tag> 软件交付 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>软件测试</title>
+      <link href="/2022/05/16/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/"/>
+      <url>/2022/05/16/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/</url>
+      
+        <content type="html"><![CDATA[<h2 id="软件测试"><a class="markdownIt-Anchor" href="#软件测试"></a> 软件测试</h2><h1 id="考试题"><a class="markdownIt-Anchor" href="#考试题"></a> 考试题</h1><ol><li>给出功能需求，设计功能测试用例</li><li>给出设计图，按要求写集成测试用例，Stub和Driver</li><li>给出方法的描述，按要求写单元测试用例，Mock Object</li><li>Junit基本用法</li></ol><h1 id="bug起源"><a class="markdownIt-Anchor" href="#bug起源"></a> Bug起源</h1><h2 id="第一个bug"><a class="markdownIt-Anchor" href="#第一个bug"></a> 第一个Bug</h2><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt19/1.png" alt=""></p><h2 id="千年虫病毒"><a class="markdownIt-Anchor" href="#千年虫病毒"></a> 千年虫病毒</h2><ol><li>在七十年代，程序员利用宝贵的内存和磁盘空间通过两位来存储年份</li><li>他们从来没有想到程序可以运行到2000年</li></ol><h2 id="辐射机问题"><a class="markdownIt-Anchor" href="#辐射机问题"></a> 辐射机问题</h2><ol><li>Therac-25放射治疗机中的软件有缺陷，导致数名癌症患者接受致命的过量放射。 四名患者死亡</li><li>独立科学家进行的一项调查发现，即使在加拿大原子能有限公司(AECL)认为已修复特定错误之后，仍发生了事故。</li><li>他们在报告中写道：“这里的基本错误涉及不良的软件工程实践，以及建立依赖该软件进行安全操作的机器。”</li></ol><h2 id="爱国者导弹防御1991"><a class="markdownIt-Anchor" href="#爱国者导弹防御1991"></a> 爱国者导弹防御1991</h2><ol><li>爱国者导弹防御系统未能防御多种导弹</li><li>系统时钟中累积了微小的计时误差，因此14小时后，跟踪系统不再准确</li><li>在对KSA达兰的攻击中，该系统已运行100多个小时</li><li>该系统是可移动的，因此开发人员没想到它会在一个地方停留14小时</li></ol><h2 id="奔腾处理器的浮点数bug"><a class="markdownIt-Anchor" href="#奔腾处理器的浮点数bug"></a> 奔腾处理器的浮点数bug</h2><ol><li>(4195835/3145727) * 3145727 - 4195835 ≠ 0</li><li>测试工程师企图淡化Bug，管理人员认为这并不要紧</li><li>一位用户报告说，1994年10月30日，英特尔试图淡化该错误。 如果您可以证明自己受到影响，可以更换芯片</li><li>最终，他们道歉。 更换所有芯片，耗资4.5亿美元</li><li>有趣的是，1.13 MHz Pentium III导致软件冻结</li></ol><h2 id="迪士尼的狮子王动画故事书-1994"><a class="markdownIt-Anchor" href="#迪士尼的狮子王动画故事书-1994"></a> 迪士尼的《狮子王动画故事书》 1994</h2><ol><li>迪士尼发行了第一张针对儿童的多媒体CD-ROM</li><li>一个大型广告系列，称其为"购买游戏"</li><li>圣诞节过后，许多生气的父母正与迪斯尼通电话，背景中有哭泣的孩子</li><li>问题是游戏只能在少数平台上运行，而包装盒上对此一无所知，因为迪斯尼尚未意识到问题所在</li><li>兼容性的问题，只能在部分CD中进行播放</li></ol><h1 id="什么是对的软件"><a class="markdownIt-Anchor" href="#什么是对的软件"></a> 什么是对的软件？</h1><h2 id="你是否正确的构造了软件"><a class="markdownIt-Anchor" href="#你是否正确的构造了软件"></a> 你是否正确的构造了软件</h2><ol><li>软件正确性<ol><li>在且仅在以下情况下，才根据规范S考虑程序P：对于每个有效输入，P的输出均符合规范S</li></ol></li><li>验证：常常我们会将软件与终端用户或者其他利益相关者的需求进行比较。</li></ol><h2 id="verification-and-validation-验证和确认-重要"><a class="markdownIt-Anchor" href="#verification-and-validation-验证和确认-重要"></a> Verification and Validation 验证和确认 重要</h2><ol><li>Verification: 验证，检查开发者是否正确地使用技术建立系统，确保系统能够在于其的环境中按照技术要求正确地运行。</li><li>Validation: 确认，检查开发者是否家里了正确的系统，确保最终产品符合规格。</li><li>V＆V差异无关紧要</li><li>V＆V通常是指试图确保软件按要求运行的任何活动。</li><li>Ex见课本320页,重要，会考V&amp;V</li></ol><h3 id="如果软件是错误的"><a class="markdownIt-Anchor" href="#如果软件是错误的"></a> 如果软件是错误的</h3><ol><li>定义<ol><li>缺陷:系统代码中存在的不正确的地方，计算时存在除0可能</li><li>错误:如果系统执行到缺陷代码，就可能使得执行结果不符合预期且无法预测，表现出来的不稳定的状态，比如计算时存在除0可能的代码，一旦除0则会发生错误</li><li>失败，有Failure一定有fault和Error，而倒过来是未必成立的。失败是指错误的发生会使得软件的功能失效，比如，系统某个功能输出不正确、异常终止、不符合时间或者空间的限制等。</li></ol></li><li>关系<ol><li>缺陷可能在被活动激发前很长时间不被检测到</li><li>如果错误传播到输出，则最终会导致失败。</li></ol></li><li>缺陷、错误和失败：该链可以递归地迭代：依次由其他交互系统的故障引起故障。</li></ol><h1 id="common-vv-activities-常见的vv活动"><a class="markdownIt-Anchor" href="#common-vv-activities-常见的vv活动"></a> Common V&amp;V Activities 常见的V＆V活动</h1><ol><li>静态分析技术<ol><li>仅基于(手动或自动)检查软件模型和代码的项目文档以及有关需求和设计的其他相关信息</li><li>通常会产生有效的结果，但精度可能较弱</li><li>容易产生误报，因为多态的存在导致很多只能在运行的时候才报错。</li></ol></li><li>动态测试技术<ol><li>运行软件以暴露可能的故障</li><li>还观察了程序的行为和性能属性</li><li>产生更精确的结果，但仅适用于经过检查的执行</li><li>动态容易漏报，没有运行到一定不会报告</li></ol></li></ol><h2 id="静态分析技术"><a class="markdownIt-Anchor" href="#静态分析技术"></a> 静态分析技术</h2><ol><li>可以在需求阶段应用； 在设计阶段； 在实施阶段</li><li>传统静态技术–大量手动操作，容易出错，耗时<ol><li>软件检查–根据已编译的常见和历史缺陷清单，对生成的文档(可交付成果)进行逐步分析</li><li>软件评审–将工作产品的不同方面呈现给项目人员(经理，用户，客户等)和其他感兴趣的涉众以征求意见或批准的过程</li><li>阅读代码–对生成的代码进行桌面分析，以发现不违反样式或语法的键入错误</li><li>算法分析和跟踪–可以得出所用算法的复杂性以及最坏情况，平均情况和概率分析评估的过程</li></ol></li><li>依靠形式化方法的静态分析技术</li><li>27min漏了</li></ol><h2 id="动态分析技术"><a class="markdownIt-Anchor" href="#动态分析技术"></a> 动态分析技术</h2><ol><li>测试–基于对有价输入的代码执行(必要时必须包括表征系统状态的参数和环境条件的定义)<ol><li>检查指定输入和指定输出</li></ol></li><li>性能分析–程序配置文件记录了一组受控执行过程中某些感兴趣的实体出现的次数<ol><li>频谱执行情况:一个向量，从第一行到最后一行，形成一个01向量</li><li>分支覆盖法</li></ol></li></ol><h2 id="软件开发中的验证与确认活动"><a class="markdownIt-Anchor" href="#软件开发中的验证与确认活动"></a> 软件开发中的验证与确认活动</h2><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt19/2.png" alt=""></p><h1 id="软件测试的目的"><a class="markdownIt-Anchor" href="#软件测试的目的"></a> 软件测试的目的</h1><ol><li>目的一:向开发者和用户展示软件满足了需求，表明软件产品是一个合格的产品。<ol><li>有效性测试</li></ol></li><li>目的二:找出软件中的缺陷和不足<ol><li>缺陷测试:只有发现了缺陷的测试才是成功的测试</li></ol></li><li>总而言之，软件测试是为评价与改进产品质量、标识产品缺陷和问题而进行的活动。</li></ol><h2 id="测试用例"><a class="markdownIt-Anchor" href="#测试用例"></a> 测试用例</h2><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt19/3.png" alt=""></p><ol><li>差分测试</li></ol><ul><li>开发者：理解系统含义，但是只是大体上，通过流程进行了测试</li><li>独立测试人员：必须学习系统相关，但是会去尝试破坏系统，并且是通过质量来驱动测试</li></ul><h2 id="桩与驱动"><a class="markdownIt-Anchor" href="#桩与驱动"></a> 桩与驱动</h2><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt19/4.png" alt=""></p><ol><li>桩程序是被测试部件的交互环境，他扮演被测试部件需要调用的其他系统部件。桩程序对其他系统部件的扮演仅限于规格相同，内部代码要简单的多，通常是直接返回固定数据或者按照固定规则返回数据。</li><li>驱动程序负责创建被测试部件的执行环境，并驱动和监控被测试部件执行测试用例的过程，判定测试用例的执行结果。</li></ol><h2 id="测试空间"><a class="markdownIt-Anchor" href="#测试空间"></a> 测试空间</h2><ol><li>黑盒测试、白盒测试、灰盒测试</li></ol><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt19/5.png" alt=""></p><h1 id="测试层次"><a class="markdownIt-Anchor" href="#测试层次"></a> 测试层次</h1><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt19/6.png" alt=""></p><ul><li>开发者主要是进行单元测试，可以进行一定程度上的集成测试和系统测试</li><li>重点:<ul><li>α测试:在软件发布前，让小规模、有代表性的潜在用户试用，可以在开发机构中进行。</li><li>β测试:在用户处进行</li></ul></li></ul><h2 id="单元测试"><a class="markdownIt-Anchor" href="#单元测试"></a> 单元测试</h2><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt19/7.png" alt=""></p><ol><li>在过程化编程中，一个单元就是一个函数与过程。</li><li>在面向对象编程中，一个单元就是类的一个方法。</li><li>发现技术缺陷和代码缺陷</li></ol><h2 id="集成测试"><a class="markdownIt-Anchor" href="#集成测试"></a> 集成测试</h2><ol><li>集成测试一般在单元测试和系统测试之间</li></ol><h3 id="自顶向下的集成测试"><a class="markdownIt-Anchor" href="#自顶向下的集成测试"></a> 自顶向下的集成测试</h3><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt19/8.png" alt=""></p><ol><li>一定要一步一步集成</li></ol><h3 id="自底向上的集成测试"><a class="markdownIt-Anchor" href="#自底向上的集成测试"></a> 自底向上的集成测试</h3><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt19/9.png" alt=""></p><h2 id="系统测试"><a class="markdownIt-Anchor" href="#系统测试"></a> 系统测试</h2><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt19/10.png" alt=""></p><h1 id="测试技术"><a class="markdownIt-Anchor" href="#测试技术"></a> 测试技术</h1><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt19/11.png" alt=""></p><ol><li>测试的目的是发现尽可能多的缺陷，并不绝对要求发现所有缺陷。</li></ol><h2 id="测试用例的选择"><a class="markdownIt-Anchor" href="#测试用例的选择"></a> 测试用例的选择</h2><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt19/12.png" alt=""></p><ol><li>课本P326页图 19-7 :工程追求足够好，而不是最好。</li></ol><h2 id="随机测试"><a class="markdownIt-Anchor" href="#随机测试"></a> 随机测试</h2><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt19/13.png" alt=""></p><ol><li>比如int的越界问题:两类测试用例，不越界和越界</li></ol><h2 id="黑盒测试-重要"><a class="markdownIt-Anchor" href="#黑盒测试-重要"></a> 黑盒测试 重要</h2><ol><li>黑盒测试是将测试对象作为一个黑盒子，完全基于输入和输出数据来判断测试对象的正确性。</li></ol><h3 id="黑盒测试方法-等价类划分"><a class="markdownIt-Anchor" href="#黑盒测试方法-等价类划分"></a> 黑盒测试方法-等价类划分</h3><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt19/14.png" alt=""></p><ul><li>把所有可能的输入数据，即程序的输入域划分为若干部分(子集)，从每个子集中选取少量具有代表性的数据作为测试用例。</li><li>例子</li></ul><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt19/15.png" alt=""></p><h3 id="黑盒测试方法-边界值分析"><a class="markdownIt-Anchor" href="#黑盒测试方法-边界值分析"></a> 黑盒测试方法-边界值分析</h3><ol><li>边界值分析是等价类划分方法的补充，实践证明，错误最容易发生在各等价类的边界，而不是等价类的内部。</li><li>对定价类划分的补充，错误容易发生在各个等价类的边界上，而不是等价类的内部，因此针对边界情况设计测试用例，可以发现更多的缺陷。</li></ol><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt19/16.png" alt=""></p><h3 id="黑盒测试方法-决策表"><a class="markdownIt-Anchor" href="#黑盒测试方法-决策表"></a> 黑盒测试方法-决策表</h3><ul><li>决策表是为复杂逻辑判断设计测试用例的技术。决策表示由条件声明、行动声明、规则选项和行动选项等四个象限组成的表格。</li></ul><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt19/17.png" alt=""></p><h3 id="黑盒测试方法-状态转换"><a class="markdownIt-Anchor" href="#黑盒测试方法-状态转换"></a> 黑盒测试方法-状态转换</h3><ul><li>状态转换是针对复杂测试对象的测试技术。该类复杂测试对象对输入数据的反映是多样的，还需要依赖自身的状态才能决定。</li><li>状态转换包含有效转换和无效转换，只有在复杂情况和可靠性要求较高的情况下才会为无效转换设计测试用例。</li></ul><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt19/18.png" alt=""></p><ul><li>例子</li></ul><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt19/25.png" alt=""><br><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt19/26.png" alt=""><br><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt19/27.png" alt=""></p><h2 id="白盒测试-重要"><a class="markdownIt-Anchor" href="#白盒测试-重要"></a> 白盒测试 重要</h2><ol><li>白盒测试是将测试对象看做透明的，不关心测试对象的规格，而是按照测试对象内部的程序结构来设计测试用例进行测试工作。</li></ol><h3 id="白盒测试方法-语句覆盖"><a class="markdownIt-Anchor" href="#白盒测试方法-语句覆盖"></a> 白盒测试方法-语句覆盖</h3><ol><li>语句覆盖设计测试用例的标注是保证被测试的对象的每一行代码都至少执行了一次。</li></ol><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt19/19.png" alt=""><br><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt19/20.png" alt=""></p><ul><li>所有的路径都覆盖一遍，路径覆盖</li></ul><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt19/21.png" alt=""></p><h3 id="白盒测试方法-条件覆盖"><a class="markdownIt-Anchor" href="#白盒测试方法-条件覆盖"></a> 白盒测试方法-条件覆盖</h3><ol><li>条件覆盖设计测试用例的标准是确保程序中每个判断的每个结果都至少满足一次。</li></ol><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt19/22.png" alt=""></p><h3 id="白盒测试方法-路径覆盖"><a class="markdownIt-Anchor" href="#白盒测试方法-路径覆盖"></a> 白盒测试方法-路径覆盖</h3><ol><li>路径覆盖测试用例的标准是确保程序中每一条独立执行的路径都至少执行一次。</li></ol><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt19/23.png" alt=""></p><h2 id="特定测试技术"><a class="markdownIt-Anchor" href="#特定测试技术"></a> 特定测试技术</h2><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt19/24.png" alt=""></p><h2 id="面向对象的测试技术"><a class="markdownIt-Anchor" href="#面向对象的测试技术"></a> 面向对象的测试技术</h2><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt19/28.png" alt=""></p><h1 id="测试活动"><a class="markdownIt-Anchor" href="#测试活动"></a> 测试活动</h1><ol><li>测试计划:在开始具体的软件测试活动之前，必须首先进行测试计划，以明确测试的工作范围、资源与成本、基本策略、进度安排等。</li><li>测试设计:测试的成功取决于有效设计的测试用例</li><li>测试执行:执行测试前需要选择好测试工具</li><li>测试评价:在测试完成后，必须评价测试结果</li><li>以上详见课本332页</li></ol><h2 id="测试用例日志"><a class="markdownIt-Anchor" href="#测试用例日志"></a> 测试用例日志</h2><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt19/29.png" alt=""></p><h2 id="缺陷报告"><a class="markdownIt-Anchor" href="#缺陷报告"></a> 缺陷报告</h2><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt19/30.png" alt=""></p><h1 id="测试度量"><a class="markdownIt-Anchor" href="#测试度量"></a> 测试度量</h1><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt19/31.png" alt=""></p><ul><li>需求覆盖率=被测试的需求数量/需求总数</li><li>模块覆盖率=被测试的模块数量/模块总数</li><li>代码覆盖率=被测试的代码行/代码行数</li></ul><h2 id="缺陷度量"><a class="markdownIt-Anchor" href="#缺陷度量"></a> 缺陷度量</h2><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt19/32.png" alt=""></p><h2 id="覆盖率"><a class="markdownIt-Anchor" href="#覆盖率"></a> 覆盖率</h2><p><img src="https://spricoder.oss-cn-shanghai.aliyuncs.com/2020-Software-Engineering-and-Computing-II/img/cpt19/33.png" alt=""></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件工程 </category>
+          
+          <category> 软件工程与计算2 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 软件工程 </tag>
+            
+            <tag> 软件测试 </tag>
             
         </tags>
       
@@ -2426,9 +2461,9 @@
       
         <tags>
             
-            <tag> 软件工程 </tag>
-            
             <tag> 人机交互设计 </tag>
+            
+            <tag> 软件工程 </tag>
             
         </tags>
       
@@ -4624,9 +4659,9 @@
       
         <tags>
             
-            <tag> 计算机网络 </tag>
-            
             <tag> CS144 </tag>
+            
+            <tag> 计算机网络 </tag>
             
         </tags>
       
@@ -4653,9 +4688,9 @@
       
         <tags>
             
-            <tag> 计算机网络 </tag>
-            
             <tag> CS144 </tag>
+            
+            <tag> 计算机网络 </tag>
             
         </tags>
       
@@ -4740,9 +4775,9 @@
       
         <tags>
             
-            <tag> 互联网计算 </tag>
-            
             <tag> 计算机网络 </tag>
+            
+            <tag> 互联网计算 </tag>
             
         </tags>
       
