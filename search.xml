@@ -22,15 +22,15 @@
       
         <tags>
             
-            <tag> Algorithm </tag>
+            <tag> 正则表达式 </tag>
             
             <tag> 动态规划 </tag>
             
+            <tag> 递归 </tag>
+            
             <tag> 字符串 </tag>
             
-            <tag> 正则表达式 </tag>
-            
-            <tag> 递归 </tag>
+            <tag> Algorithm </tag>
             
         </tags>
       
@@ -436,13 +436,13 @@
       
         <tags>
             
+            <tag> 字符串 </tag>
+            
             <tag> Algorithm </tag>
             
             <tag> 启发式搜索 </tag>
             
             <tag> AStar </tag>
-            
-            <tag> 字符串 </tag>
             
         </tags>
       
@@ -475,9 +475,9 @@
             
             <tag> DFS </tag>
             
-            <tag> BFS </tag>
-            
             <tag> 枚举 </tag>
+            
+            <tag> BFS </tag>
             
         </tags>
       
@@ -506,9 +506,9 @@
             
             <tag> Algorithm </tag>
             
-            <tag> 线段树 </tag>
-            
             <tag> 扫描线 </tag>
+            
+            <tag> 线段树 </tag>
             
             <tag> 有序集合 </tag>
             
@@ -601,9 +601,9 @@
       
         <tags>
             
-            <tag> Algorithm </tag>
-            
             <tag> 动态规划 </tag>
+            
+            <tag> Algorithm </tag>
             
             <tag> 数学 </tag>
             
@@ -719,11 +719,11 @@
       
         <tags>
             
-            <tag> Algorithm </tag>
-            
             <tag> 动态规划 </tag>
             
             <tag> 字符串 </tag>
+            
+            <tag> Algorithm </tag>
             
             <tag> 哈希表 </tag>
             
@@ -867,9 +867,9 @@
             
             <tag> Algorithm </tag>
             
-            <tag> DFS </tag>
-            
             <tag> 哈希表 </tag>
+            
+            <tag> DFS </tag>
             
         </tags>
       
@@ -1054,9 +1054,9 @@
       
         <tags>
             
-            <tag> Algorithm </tag>
-            
             <tag> 动态规划 </tag>
+            
+            <tag> Algorithm </tag>
             
         </tags>
       
@@ -1083,9 +1083,9 @@
       
         <tags>
             
-            <tag> Algorithm </tag>
-            
             <tag> 动态规划 </tag>
+            
+            <tag> Algorithm </tag>
             
         </tags>
       
@@ -1338,9 +1338,9 @@
       
         <tags>
             
-            <tag> Algorithm </tag>
-            
             <tag> 动态规划 </tag>
+            
+            <tag> Algorithm </tag>
             
             <tag> 博弈论 </tag>
             
@@ -1425,9 +1425,9 @@
       
         <tags>
             
-            <tag> Algorithm </tag>
-            
             <tag> 动态规划 </tag>
+            
+            <tag> Algorithm </tag>
             
         </tags>
       
@@ -1514,9 +1514,9 @@
       
         <tags>
             
-            <tag> Algorithm </tag>
-            
             <tag> 动态规划 </tag>
+            
+            <tag> Algorithm </tag>
             
             <tag> 博弈论 </tag>
             
@@ -1607,9 +1607,9 @@
       
         <tags>
             
-            <tag> Algorithm </tag>
-            
             <tag> 动态规划 </tag>
+            
+            <tag> Algorithm </tag>
             
         </tags>
       
@@ -2444,9 +2444,9 @@
       
         <tags>
             
-            <tag> Leetcode </tag>
-            
             <tag> 动态规划 </tag>
+            
+            <tag> Leetcode </tag>
             
         </tags>
       
@@ -2792,9 +2792,9 @@
       
         <tags>
             
-            <tag> Leetcode </tag>
-            
             <tag> Algorithm </tag>
+            
+            <tag> Leetcode </tag>
             
         </tags>
       
