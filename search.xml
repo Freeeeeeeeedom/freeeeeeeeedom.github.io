@@ -471,13 +471,13 @@
             
             <tag> Algorithm </tag>
             
-            <tag> 并查集 </tag>
-            
-            <tag> 枚举 </tag>
-            
             <tag> DFS </tag>
             
             <tag> BFS </tag>
+            
+            <tag> 并查集 </tag>
+            
+            <tag> 枚举 </tag>
             
         </tags>
       
@@ -539,11 +539,11 @@
             
             <tag> Algorithm </tag>
             
-            <tag> 位运算 </tag>
+            <tag> DFS </tag>
             
             <tag> 数学 </tag>
             
-            <tag> DFS </tag>
+            <tag> 位运算 </tag>
             
             <tag> BFS </tag>
             
