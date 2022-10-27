@@ -6,7 +6,7 @@
   <link href="http://little-hurui.cloud/atom.xml" rel="self"/>
   
   <link href="http://little-hurui.cloud/"/>
-  <updated>2022-10-25T01:28:17.781Z</updated>
+  <updated>2022-10-25T13:10:43.180Z</updated>
   <id>http://little-hurui.cloud/</id>
   
   <author>
@@ -15,32 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>Concurrency Algorithms and Theories 07 Concurrent Objects</title>
-    <link href="http://little-hurui.cloud/2022/10/25/Concurrency%20Algorithms%20and%20Theories%2007%20Concurrent%20Objects/"/>
-    <id>http://little-hurui.cloud/2022/10/25/Concurrency%20Algorithms%20and%20Theories%2007%20Concurrent%20Objects/</id>
-    <published>2022-10-25T00:41:53.000Z</published>
-    <updated>2022-10-25T01:28:17.781Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="Concurrent-Objects"><a href="#Concurrent-Objects" class="headerlink" title="Concurrent Objects"></a>Concurrent Objects</h1><p><img src="https://hurry11.oss-cn-nanjing.aliyuncs.com/img/image-20221025084456354.png" alt=""></p><h2 id="Objectivism"><a href="#Objectivism" class="headerlink" title="Objectivism"></a>Objectivism</h2><ul><li>What is a concurrent object ?<ul><li>How do we describe ?</li><li>How do we implement ?</li><li>How do we tell if we’re right ?</li></ul></li></ul><h3 id="A-Lock-Based-Queue"><a href="#A-Lock-Based-Queue" class="headerlink" title="A Lock-Based Queue"></a>A Lock-Based Queue</h3><blockquote><p>队列在数组中实现。所有操作都通过对象锁进行同步</p></blockquote><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">LockBasedQueue</span>&lt;T&gt; {  </span><br><span class="line">  <span class="type">int</span> head, tail;  </span><br><span class="line">  T[] items;  </span><br><span class="line">  Lock lock;  </span><br><span class="line">  <span class="keyword">public</span> <span class="title function_">LockBasedQueue</span><span class="params">(<span class="type">int</span> capacity)</span> {    </span><br><span class="line">    head = <span class="number">0</span>; tail = <span class="number">0</span>;    </span><br><span class="line">    lock = <span class="keyword">new</span> <span class="title class_">ReentrantLock</span>();    </span><br><span class="line">    items = (T[]) <span class="keyword">new</span> <span class="title class_">Object</span>[capacity];  </span><br><span class="line">}</span><br></pre></td></tr></table></figure><h2 id="Safety-and-Liveness"><a href="#Safety-and-Liveness" class="headerlink" title="Safety and Liveness"></a>Safety and Liveness</h2><h2 id="Correctness-and-Progress"><a href="#Correctness-and-Progress" class="headerlink" title="Correctness and Progress"></a>Correctness and Progress</h2><h3 id="Sequential-Objects"><a href="#Sequential-Objects" class="headerlink" title="Sequential Objects"></a>Sequential Objects</h3><ul><li>Each object has a state</li><li>Each object has a set of methods<ul><li>only way to manipulate state</li></ul></li></ul><h3 id="Sequential-Specifications"><a href="#Sequential-Specifications" class="headerlink" title="Sequential Specifications"></a>Sequential Specifications</h3><ul><li>If</li><li>Then</li><li>and</li></ul>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;Concurrent-Objects&quot;&gt;&lt;a href=&quot;#Concurrent-Objects&quot; class=&quot;headerlink&quot; title=&quot;Concurrent Objects&quot;&gt;&lt;/a&gt;Concurrent Objects&lt;/h1&gt;&lt;p&gt;&lt;img s</summary>
-      
-    
-    
-    
-    <category term="Concurrency Algorithms and Theories" scheme="http://little-hurui.cloud/categories/Concurrency-Algorithms-and-Theories/"/>
-    
-    
-    <category term="Concurrency Algorithms and Theories" scheme="http://little-hurui.cloud/tags/Concurrency-Algorithms-and-Theories/"/>
-    
-    <category term="Concurrent Objects" scheme="http://little-hurui.cloud/tags/Concurrent-Objects/"/>
-    
-  </entry>
   
   <entry>
     <title>Concurrency Algorithms and Theories 06 Promsing</title>
@@ -69,6 +43,32 @@
   </entry>
   
   <entry>
+    <title>Concurrency Algorithms and Theories 07 Concurrent Objects</title>
+    <link href="http://little-hurui.cloud/2022/10/25/Concurrency%20Algorithms%20and%20Theories%2007%20Concurrent%20Objects/"/>
+    <id>http://little-hurui.cloud/2022/10/25/Concurrency%20Algorithms%20and%20Theories%2007%20Concurrent%20Objects/</id>
+    <published>2022-10-25T00:41:53.000Z</published>
+    <updated>2022-10-25T01:28:17.781Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Concurrent-Objects"><a href="#Concurrent-Objects" class="headerlink" title="Concurrent Objects"></a>Concurrent Objects</h1><p><img src="https://hurry11.oss-cn-nanjing.aliyuncs.com/img/image-20221025084456354.png" alt=""></p><h2 id="Objectivism"><a href="#Objectivism" class="headerlink" title="Objectivism"></a>Objectivism</h2><ul><li>What is a concurrent object ?<ul><li>How do we describe ?</li><li>How do we implement ?</li><li>How do we tell if we’re right ?</li></ul></li></ul><h3 id="A-Lock-Based-Queue"><a href="#A-Lock-Based-Queue" class="headerlink" title="A Lock-Based Queue"></a>A Lock-Based Queue</h3><blockquote><p>队列在数组中实现。所有操作都通过对象锁进行同步</p></blockquote><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">LockBasedQueue</span>&lt;T&gt; {  </span><br><span class="line">  <span class="type">int</span> head, tail;  </span><br><span class="line">  T[] items;  </span><br><span class="line">  Lock lock;  </span><br><span class="line">  <span class="keyword">public</span> <span class="title function_">LockBasedQueue</span><span class="params">(<span class="type">int</span> capacity)</span> {    </span><br><span class="line">    head = <span class="number">0</span>; tail = <span class="number">0</span>;    </span><br><span class="line">    lock = <span class="keyword">new</span> <span class="title class_">ReentrantLock</span>();    </span><br><span class="line">    items = (T[]) <span class="keyword">new</span> <span class="title class_">Object</span>[capacity];  </span><br><span class="line">}</span><br></pre></td></tr></table></figure><h2 id="Safety-and-Liveness"><a href="#Safety-and-Liveness" class="headerlink" title="Safety and Liveness"></a>Safety and Liveness</h2><h2 id="Correctness-and-Progress"><a href="#Correctness-and-Progress" class="headerlink" title="Correctness and Progress"></a>Correctness and Progress</h2><h3 id="Sequential-Objects"><a href="#Sequential-Objects" class="headerlink" title="Sequential Objects"></a>Sequential Objects</h3><ul><li>Each object has a state</li><li>Each object has a set of methods<ul><li>only way to manipulate state</li></ul></li></ul><h3 id="Sequential-Specifications"><a href="#Sequential-Specifications" class="headerlink" title="Sequential Specifications"></a>Sequential Specifications</h3><ul><li>If</li><li>Then</li><li>and</li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;Concurrent-Objects&quot;&gt;&lt;a href=&quot;#Concurrent-Objects&quot; class=&quot;headerlink&quot; title=&quot;Concurrent Objects&quot;&gt;&lt;/a&gt;Concurrent Objects&lt;/h1&gt;&lt;p&gt;&lt;img s</summary>
+      
+    
+    
+    
+    <category term="Concurrency Algorithms and Theories" scheme="http://little-hurui.cloud/categories/Concurrency-Algorithms-and-Theories/"/>
+    
+    
+    <category term="Concurrency Algorithms and Theories" scheme="http://little-hurui.cloud/tags/Concurrency-Algorithms-and-Theories/"/>
+    
+    <category term="Concurrent Objects" scheme="http://little-hurui.cloud/tags/Concurrent-Objects/"/>
+    
+  </entry>
+  
+  <entry>
     <title>序列DP</title>
     <link href="http://little-hurui.cloud/2022/10/22/%E5%BA%8F%E5%88%97DP/"/>
     <id>http://little-hurui.cloud/2022/10/22/%E5%BA%8F%E5%88%97DP/</id>
@@ -90,9 +90,9 @@
     <category term="常用算法" scheme="http://little-hurui.cloud/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95/"/>
     
     
-    <category term="Algorithm" scheme="http://little-hurui.cloud/tags/Algorithm/"/>
-    
     <category term="动态规划" scheme="http://little-hurui.cloud/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
+    
+    <category term="Algorithm" scheme="http://little-hurui.cloud/tags/Algorithm/"/>
     
     <category term="二分查找" scheme="http://little-hurui.cloud/tags/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/"/>
     
@@ -153,15 +153,15 @@
     <category term="常用算法" scheme="http://little-hurui.cloud/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95/"/>
     
     
+    <category term="字符串" scheme="http://little-hurui.cloud/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
+    
     <category term="Algorithm" scheme="http://little-hurui.cloud/tags/Algorithm/"/>
     
-    <category term="数学" scheme="http://little-hurui.cloud/tags/%E6%95%B0%E5%AD%A6/"/>
-    
-    <category term="字符串" scheme="http://little-hurui.cloud/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
+    <category term="数位DP" scheme="http://little-hurui.cloud/tags/%E6%95%B0%E4%BD%8DDP/"/>
     
     <category term="二分查找" scheme="http://little-hurui.cloud/tags/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/"/>
     
-    <category term="数位DP" scheme="http://little-hurui.cloud/tags/%E6%95%B0%E4%BD%8DDP/"/>
+    <category term="数学" scheme="http://little-hurui.cloud/tags/%E6%95%B0%E5%AD%A6/"/>
     
   </entry>
   
@@ -215,13 +215,13 @@
     
     <category term="Algorithm" scheme="http://little-hurui.cloud/tags/Algorithm/"/>
     
-    <category term="并查集" scheme="http://little-hurui.cloud/tags/%E5%B9%B6%E6%9F%A5%E9%9B%86/"/>
-    
     <category term="DFS" scheme="http://little-hurui.cloud/tags/DFS/"/>
     
     <category term="BFS" scheme="http://little-hurui.cloud/tags/BFS/"/>
     
     <category term="二分图" scheme="http://little-hurui.cloud/tags/%E4%BA%8C%E5%88%86%E5%9B%BE/"/>
+    
+    <category term="并查集" scheme="http://little-hurui.cloud/tags/%E5%B9%B6%E6%9F%A5%E9%9B%86/"/>
     
   </entry>
   
@@ -247,11 +247,11 @@
     <category term="常用算法" scheme="http://little-hurui.cloud/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95/"/>
     
     
-    <category term="Algorithm" scheme="http://little-hurui.cloud/tags/Algorithm/"/>
-    
     <category term="动态规划" scheme="http://little-hurui.cloud/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
     
     <category term="字符串" scheme="http://little-hurui.cloud/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
+    
+    <category term="Algorithm" scheme="http://little-hurui.cloud/tags/Algorithm/"/>
     
   </entry>
   
@@ -303,15 +303,15 @@
     <category term="常用算法" scheme="http://little-hurui.cloud/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95/"/>
     
     
-    <category term="Algorithm" scheme="http://little-hurui.cloud/tags/Algorithm/"/>
+    <category term="正则表达式" scheme="http://little-hurui.cloud/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
     
     <category term="动态规划" scheme="http://little-hurui.cloud/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
-    
-    <category term="正则表达式" scheme="http://little-hurui.cloud/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
     
     <category term="递归" scheme="http://little-hurui.cloud/tags/%E9%80%92%E5%BD%92/"/>
     
     <category term="字符串" scheme="http://little-hurui.cloud/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
+    
+    <category term="Algorithm" scheme="http://little-hurui.cloud/tags/Algorithm/"/>
     
   </entry>
   

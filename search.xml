@@ -4,33 +4,6 @@
   
     
     <entry>
-      <title>Concurrency Algorithms and Theories 07 Concurrent Objects</title>
-      <link href="/2022/10/25/Concurrency%20Algorithms%20and%20Theories%2007%20Concurrent%20Objects/"/>
-      <url>/2022/10/25/Concurrency%20Algorithms%20and%20Theories%2007%20Concurrent%20Objects/</url>
-      
-        <content type="html"><![CDATA[<h1 id="Concurrent-Objects"><a href="#Concurrent-Objects" class="headerlink" title="Concurrent Objects"></a>Concurrent Objects</h1><p><img src="https://hurry11.oss-cn-nanjing.aliyuncs.com/img/image-20221025084456354.png" alt=""></p><h2 id="Objectivism"><a href="#Objectivism" class="headerlink" title="Objectivism"></a>Objectivism</h2><ul><li>What is a concurrent object ?<ul><li>How do we describe ?</li><li>How do we implement ?</li><li>How do we tell if we’re right ?</li></ul></li></ul><h3 id="A-Lock-Based-Queue"><a href="#A-Lock-Based-Queue" class="headerlink" title="A Lock-Based Queue"></a>A Lock-Based Queue</h3><blockquote><p>队列在数组中实现。所有操作都通过对象锁进行同步</p></blockquote><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">LockBasedQueue</span>&lt;T&gt; {  </span><br><span class="line">  <span class="type">int</span> head, tail;  </span><br><span class="line">  T[] items;  </span><br><span class="line">  Lock lock;  </span><br><span class="line">  <span class="keyword">public</span> <span class="title function_">LockBasedQueue</span><span class="params">(<span class="type">int</span> capacity)</span> {    </span><br><span class="line">    head = <span class="number">0</span>; tail = <span class="number">0</span>;    </span><br><span class="line">    lock = <span class="keyword">new</span> <span class="title class_">ReentrantLock</span>();    </span><br><span class="line">    items = (T[]) <span class="keyword">new</span> <span class="title class_">Object</span>[capacity];  </span><br><span class="line">}</span><br></pre></td></tr></table></figure><h2 id="Safety-and-Liveness"><a href="#Safety-and-Liveness" class="headerlink" title="Safety and Liveness"></a>Safety and Liveness</h2><h2 id="Correctness-and-Progress"><a href="#Correctness-and-Progress" class="headerlink" title="Correctness and Progress"></a>Correctness and Progress</h2><h3 id="Sequential-Objects"><a href="#Sequential-Objects" class="headerlink" title="Sequential Objects"></a>Sequential Objects</h3><ul><li>Each object has a state</li><li>Each object has a set of methods<ul><li>only way to manipulate state</li></ul></li></ul><h3 id="Sequential-Specifications"><a href="#Sequential-Specifications" class="headerlink" title="Sequential Specifications"></a>Sequential Specifications</h3><ul><li>If</li><li>Then</li><li>and</li></ul>]]></content>
-      
-      
-      <categories>
-          
-          <category> Concurrency Algorithms and Theories </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Concurrency Algorithms and Theories </tag>
-            
-            <tag> Concurrent Objects </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Concurrency Algorithms and Theories 06 Promsing</title>
       <link href="/2022/10/25/Concurrency%20Algorithms%20and%20Theories%2006%20Promosing/"/>
       <url>/2022/10/25/Concurrency%20Algorithms%20and%20Theories%2006%20Promosing/</url>
@@ -58,6 +31,33 @@
     
     
     <entry>
+      <title>Concurrency Algorithms and Theories 07 Concurrent Objects</title>
+      <link href="/2022/10/25/Concurrency%20Algorithms%20and%20Theories%2007%20Concurrent%20Objects/"/>
+      <url>/2022/10/25/Concurrency%20Algorithms%20and%20Theories%2007%20Concurrent%20Objects/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Concurrent-Objects"><a href="#Concurrent-Objects" class="headerlink" title="Concurrent Objects"></a>Concurrent Objects</h1><p><img src="https://hurry11.oss-cn-nanjing.aliyuncs.com/img/image-20221025084456354.png" alt=""></p><h2 id="Objectivism"><a href="#Objectivism" class="headerlink" title="Objectivism"></a>Objectivism</h2><ul><li>What is a concurrent object ?<ul><li>How do we describe ?</li><li>How do we implement ?</li><li>How do we tell if we’re right ?</li></ul></li></ul><h3 id="A-Lock-Based-Queue"><a href="#A-Lock-Based-Queue" class="headerlink" title="A Lock-Based Queue"></a>A Lock-Based Queue</h3><blockquote><p>队列在数组中实现。所有操作都通过对象锁进行同步</p></blockquote><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">LockBasedQueue</span>&lt;T&gt; {  </span><br><span class="line">  <span class="type">int</span> head, tail;  </span><br><span class="line">  T[] items;  </span><br><span class="line">  Lock lock;  </span><br><span class="line">  <span class="keyword">public</span> <span class="title function_">LockBasedQueue</span><span class="params">(<span class="type">int</span> capacity)</span> {    </span><br><span class="line">    head = <span class="number">0</span>; tail = <span class="number">0</span>;    </span><br><span class="line">    lock = <span class="keyword">new</span> <span class="title class_">ReentrantLock</span>();    </span><br><span class="line">    items = (T[]) <span class="keyword">new</span> <span class="title class_">Object</span>[capacity];  </span><br><span class="line">}</span><br></pre></td></tr></table></figure><h2 id="Safety-and-Liveness"><a href="#Safety-and-Liveness" class="headerlink" title="Safety and Liveness"></a>Safety and Liveness</h2><h2 id="Correctness-and-Progress"><a href="#Correctness-and-Progress" class="headerlink" title="Correctness and Progress"></a>Correctness and Progress</h2><h3 id="Sequential-Objects"><a href="#Sequential-Objects" class="headerlink" title="Sequential Objects"></a>Sequential Objects</h3><ul><li>Each object has a state</li><li>Each object has a set of methods<ul><li>only way to manipulate state</li></ul></li></ul><h3 id="Sequential-Specifications"><a href="#Sequential-Specifications" class="headerlink" title="Sequential Specifications"></a>Sequential Specifications</h3><ul><li>If</li><li>Then</li><li>and</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> Concurrency Algorithms and Theories </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Concurrency Algorithms and Theories </tag>
+            
+            <tag> Concurrent Objects </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>序列DP</title>
       <link href="/2022/10/22/%E5%BA%8F%E5%88%97DP/"/>
       <url>/2022/10/22/%E5%BA%8F%E5%88%97DP/</url>
@@ -76,9 +76,9 @@
       
         <tags>
             
-            <tag> Algorithm </tag>
-            
             <tag> 动态规划 </tag>
+            
+            <tag> Algorithm </tag>
             
             <tag> 二分查找 </tag>
             
@@ -140,15 +140,15 @@
       
         <tags>
             
+            <tag> 字符串 </tag>
+            
             <tag> Algorithm </tag>
             
-            <tag> 数学 </tag>
-            
-            <tag> 字符串 </tag>
+            <tag> 数位DP </tag>
             
             <tag> 二分查找 </tag>
             
-            <tag> 数位DP </tag>
+            <tag> 数学 </tag>
             
         </tags>
       
@@ -204,13 +204,13 @@
             
             <tag> Algorithm </tag>
             
-            <tag> 并查集 </tag>
-            
             <tag> DFS </tag>
             
             <tag> BFS </tag>
             
             <tag> 二分图 </tag>
+            
+            <tag> 并查集 </tag>
             
         </tags>
       
@@ -237,11 +237,11 @@
       
         <tags>
             
-            <tag> Algorithm </tag>
-            
             <tag> 动态规划 </tag>
             
             <tag> 字符串 </tag>
+            
+            <tag> Algorithm </tag>
             
         </tags>
       
@@ -295,15 +295,15 @@
       
         <tags>
             
-            <tag> Algorithm </tag>
+            <tag> 正则表达式 </tag>
             
             <tag> 动态规划 </tag>
-            
-            <tag> 正则表达式 </tag>
             
             <tag> 递归 </tag>
             
             <tag> 字符串 </tag>
+            
+            <tag> Algorithm </tag>
             
         </tags>
       
@@ -652,11 +652,11 @@
       
         <tags>
             
+            <tag> 字符串 </tag>
+            
             <tag> Algorithm </tag>
             
             <tag> 启发式搜索 </tag>
-            
-            <tag> 字符串 </tag>
             
             <tag> AStar </tag>
             
@@ -687,11 +687,11 @@
             
             <tag> Algorithm </tag>
             
-            <tag> 并查集 </tag>
-            
             <tag> DFS </tag>
             
             <tag> BFS </tag>
+            
+            <tag> 并查集 </tag>
             
             <tag> 枚举 </tag>
             
@@ -755,13 +755,13 @@
             
             <tag> Algorithm </tag>
             
-            <tag> 位运算 </tag>
-            
-            <tag> 数学 </tag>
-            
             <tag> DFS </tag>
             
             <tag> BFS </tag>
+            
+            <tag> 数学 </tag>
+            
+            <tag> 位运算 </tag>
             
         </tags>
       
@@ -788,9 +788,9 @@
       
         <tags>
             
-            <tag> Algorithm </tag>
-            
             <tag> 动态规划 </tag>
+            
+            <tag> Algorithm </tag>
             
             <tag> 数学 </tag>
             
@@ -877,11 +877,11 @@
       
         <tags>
             
-            <tag> Algorithm </tag>
-            
             <tag> 动态规划 </tag>
             
             <tag> 字符串 </tag>
+            
+            <tag> Algorithm </tag>
             
             <tag> 哈希表 </tag>
             
@@ -1149,9 +1149,9 @@
       
         <tags>
             
-            <tag> Algorithm </tag>
-            
             <tag> 动态规划 </tag>
+            
+            <tag> Algorithm </tag>
             
         </tags>
       
@@ -1178,9 +1178,9 @@
       
         <tags>
             
-            <tag> Algorithm </tag>
-            
             <tag> 动态规划 </tag>
+            
+            <tag> Algorithm </tag>
             
         </tags>
       
@@ -1433,9 +1433,9 @@
       
         <tags>
             
-            <tag> Algorithm </tag>
-            
             <tag> 动态规划 </tag>
+            
+            <tag> Algorithm </tag>
             
             <tag> 博弈论 </tag>
             
@@ -1520,9 +1520,9 @@
       
         <tags>
             
-            <tag> Algorithm </tag>
-            
             <tag> 动态规划 </tag>
+            
+            <tag> Algorithm </tag>
             
         </tags>
       
@@ -1609,9 +1609,9 @@
       
         <tags>
             
-            <tag> Algorithm </tag>
-            
             <tag> 动态规划 </tag>
+            
+            <tag> Algorithm </tag>
             
             <tag> 博弈论 </tag>
             
@@ -1702,9 +1702,9 @@
       
         <tags>
             
-            <tag> Algorithm </tag>
-            
             <tag> 动态规划 </tag>
+            
+            <tag> Algorithm </tag>
             
         </tags>
       
@@ -2394,9 +2394,9 @@
       
         <tags>
             
-            <tag> Leetcode </tag>
-            
             <tag> 数学 </tag>
+            
+            <tag> Leetcode </tag>
             
         </tags>
       
@@ -2597,9 +2597,9 @@
       
         <tags>
             
-            <tag> Leetcode </tag>
-            
             <tag> 并查集 </tag>
+            
+            <tag> Leetcode </tag>
             
         </tags>
       
@@ -2713,9 +2713,9 @@
       
         <tags>
             
-            <tag> Leetcode </tag>
-            
             <tag> 回溯 </tag>
+            
+            <tag> Leetcode </tag>
             
         </tags>
       
