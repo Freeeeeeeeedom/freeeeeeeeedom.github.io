@@ -155,13 +155,13 @@
             
             <tag> Algorithm </tag>
             
-            <tag> 数学 </tag>
-            
             <tag> 字符串 </tag>
+            
+            <tag> 二分查找 </tag>
             
             <tag> 数位DP </tag>
             
-            <tag> 二分查找 </tag>
+            <tag> 数学 </tag>
             
         </tags>
       
@@ -217,13 +217,13 @@
             
             <tag> Algorithm </tag>
             
-            <tag> 并查集 </tag>
-            
             <tag> DFS </tag>
             
             <tag> BFS </tag>
             
             <tag> 二分图 </tag>
+            
+            <tag> 并查集 </tag>
             
         </tags>
       
@@ -667,9 +667,9 @@
             
             <tag> Algorithm </tag>
             
-            <tag> 启发式搜索 </tag>
-            
             <tag> 字符串 </tag>
+            
+            <tag> 启发式搜索 </tag>
             
             <tag> AStar </tag>
             
@@ -700,11 +700,11 @@
             
             <tag> Algorithm </tag>
             
-            <tag> 并查集 </tag>
-            
             <tag> DFS </tag>
             
             <tag> BFS </tag>
+            
+            <tag> 并查集 </tag>
             
             <tag> 枚举 </tag>
             
@@ -768,13 +768,13 @@
             
             <tag> Algorithm </tag>
             
-            <tag> 位运算 </tag>
-            
-            <tag> 数学 </tag>
-            
             <tag> DFS </tag>
             
             <tag> BFS </tag>
+            
+            <tag> 数学 </tag>
+            
+            <tag> 位运算 </tag>
             
         </tags>
       
