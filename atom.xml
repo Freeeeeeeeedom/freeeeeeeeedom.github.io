@@ -6,7 +6,7 @@
   <link href="http://little-hurui.cloud/atom.xml" rel="self"/>
   
   <link href="http://little-hurui.cloud/"/>
-  <updated>2022-10-27T13:10:55.033Z</updated>
+  <updated>2022-11-02T09:38:36.257Z</updated>
   <id>http://little-hurui.cloud/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>IA</title>
-    <link href="http://little-hurui.cloud/2022/10/27/IA/"/>
-    <id>http://little-hurui.cloud/2022/10/27/IA/</id>
+    <title>Static Analysis 06 Interprocedural Analysis</title>
+    <link href="http://little-hurui.cloud/2022/10/27/Static%20Analysis%2006%20Interprocedural%20Analysis/"/>
+    <id>http://little-hurui.cloud/2022/10/27/Static%20Analysis%2006%20Interprocedural%20Analysis/</id>
     <published>2022-10-27T10:41:09.000Z</published>
-    <updated>2022-10-27T13:10:55.033Z</updated>
+    <updated>2022-11-02T09:38:36.257Z</updated>
     
     <content type="html"><![CDATA[<h1 id="interprocedural-analysis">Interprocedural Analysis</h1><h2 id="motivation">Motivation</h2><h3 id="motivation-of-interprocedural-analysis">Motivation ofInterprocedural Analysis</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">void</span> <span class="title function_">foo</span><span class="params">()</span>{</span><br><span class="line">    <span class="type">int</span> <span class="variable">n</span> <span class="operator">=</span> bar(<span class="number">42</span>);</span><br><span class="line">}</span><br><span class="line"><span class="type">int</span> <span class="title function_">bar</span><span class="params">(<span class="type">int</span> x)</span>{</span><br><span class="line">    <span class="type">int</span> <span class="variable">y</span> <span class="operator">=</span> x + <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">10</span>;</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="comment">//不进入bar中进一步分析的话，只能得到sound的结果</span></span><br></pre></td></tr></table></figure><p>So,we need Interprocedural analysis(过程间分析)</p><h2 id="call-graph-constructioncha">Call Graph Construction(CHA)</h2><p>程序调用图，是对程序间调用关系的表示，一个调用图是调用边的集合</p><p><img src="https://hurry11.oss-cn-nanjing.aliyuncs.com/img/image-20221027184815513.png" alt="image-20221027184815513"></p><h3 id="call-graph-construction-for-oo-pls-focus-on-java">Call GraphConstruction for OO PLs (focus on Java)</h3><p>面向对象语言的调用图</p><p>precise / efficient</p><p><img src="https://hurry11.oss-cn-nanjing.aliyuncs.com/img/image-20221027185225116.png"></p><h3 id="method-calls-invocations-in-java">Method Calls (Invocations) inJava</h3><p>Java中的方法调用（三种）</p><table><colgroup><col style="width: 18%"><col style="width: 11%"><col style="width: 47%"><col style="width: 22%"></colgroup><thead><tr class="header"><th></th><th>Static call</th><th>Special call</th><th>Virtual call</th></tr></thead><tbody><tr class="odd"><td><strong>Instruction</strong></td><td>invokestatic</td><td>invokespecial</td><td>invokeinterface/invokevirtual</td></tr><tr class="even"><td><strong>Receiver</strong> <strong>objects</strong></td><td>no</td><td>yes</td><td>yes</td></tr><tr class="odd"><td><strong>Target</strong> <strong>methods</strong></td><td>static methods</td><td>constructors/private instance methods/Superclass instancemethods</td><td>Other instance methods</td></tr><tr class="even"><td><strong>Target methods</strong></td><td>1</td><td>1</td><td>more than 1</td></tr><tr class="odd"><td><strong>Determinacy</strong></td><td>Compile-time</td><td>Compile-time</td><td>Run-time</td></tr></tbody></table><h3 id="method-dispatch-of-virtual-calls">Method Dispatch of VirtualCalls</h3><p><img src="https://hurry11.oss-cn-nanjing.aliyuncs.com/img/image-20221027210304983.png"></p><h3 id="class-hierarchy-analysis-cha">Class Hierarchy Analysis*(CHA)</h3><p>类层次分析</p><ul><li><p>需要程序的类层次信息</p></li><li><p>需要程序的类继承信息</p></li><li><p>需要程序的声明信息</p></li></ul><h3 id="call-resolution-of-cha">Call Resolution of CHA</h3><p>我们通过Resolve函数来处理类层次分析中的调用语句cs可能的目标方法</p><p><img src="https://hurry11.oss-cn-nanjing.aliyuncs.com/img/image-20221027192237193.png"></p><h3 id="features-of-cha">Features of CHA</h3><ul><li>Advantage: fast<ul><li>only consider the declared type of receiver variable at thecall-site, and its inheritance hierarchy</li><li>ignore data- and control-flow information</li></ul></li><li>Disadvantage: imprecise<ul><li>easily introduce spurious target methods</li><li>addressed in next lectures</li></ul></li></ul><h3 id="call-graph-construction">Call Graph Construction</h3><p>调用图构造</p><ul><li>从入口方法开始</li><li>对每个可达的方法m，通过CHA对其中的每个调用进行处理</li><li>重复，知道没有新发现的方法</li></ul><h3 id="call-graph-construction-algorithm">Call Graph Construction:Algorithm</h3><p><img src="https://hurry11.oss-cn-nanjing.aliyuncs.com/img/image-20221027210731206.png"></p><h2 id="interprocedural-control-flow-graph">Interprocedural Control-FlowGraph</h2><p>过程间控制流图，由多个控制流图加上两种附加边构成</p><ul><li>调用边</li><li>返回边</li></ul><p><strong>Example</strong></p><p><img src="https://hurry11.oss-cn-nanjing.aliyuncs.com/img/image-20221027200257679.png"></p><h2 id="interprocedural-data-flow-analysis">Interprocedural Data-FlowAnalysis</h2><p>过程间数据流分析</p><p><img src="https://hurry11.oss-cn-nanjing.aliyuncs.com/img/image-20221027210856219.png"></p><h3 id="intraprocedural-data-flow-analysis">Intraprocedural Data-FlowAnalysis</h3><p>过程中数据流分析</p><p><img src="https://hurry11.oss-cn-nanjing.aliyuncs.com/img/image-20221027211004916.png"></p><p>过程间常量传播比过程中常量传播更精确</p>]]></content>
     
@@ -35,6 +35,12 @@
     
     
     
+    <category term="软件分析" scheme="http://little-hurui.cloud/categories/%E8%BD%AF%E4%BB%B6%E5%88%86%E6%9E%90/"/>
+    
+    
+    <category term="软件分析" scheme="http://little-hurui.cloud/tags/%E8%BD%AF%E4%BB%B6%E5%88%86%E6%9E%90/"/>
+    
+    <category term="Interprocedural Analysis" scheme="http://little-hurui.cloud/tags/Interprocedural-Analysis/"/>
     
   </entry>
   
@@ -119,9 +125,9 @@ Concurrency in C/C++11 and LLVM&lt;/h1&gt;
     <category term="常用算法" scheme="http://little-hurui.cloud/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95/"/>
     
     
-    <category term="Algorithm" scheme="http://little-hurui.cloud/tags/Algorithm/"/>
-    
     <category term="动态规划" scheme="http://little-hurui.cloud/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
+    
+    <category term="Algorithm" scheme="http://little-hurui.cloud/tags/Algorithm/"/>
     
     <category term="二分查找" scheme="http://little-hurui.cloud/tags/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/"/>
     
@@ -187,9 +193,9 @@ Concurrency in C/C++11 and LLVM&lt;/h1&gt;
     <category term="常用算法" scheme="http://little-hurui.cloud/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95/"/>
     
     
-    <category term="Algorithm" scheme="http://little-hurui.cloud/tags/Algorithm/"/>
-    
     <category term="字符串" scheme="http://little-hurui.cloud/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
+    
+    <category term="Algorithm" scheme="http://little-hurui.cloud/tags/Algorithm/"/>
     
     <category term="二分查找" scheme="http://little-hurui.cloud/tags/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/"/>
     
@@ -289,11 +295,11 @@ Concurrency in C/C++11 and LLVM&lt;/h1&gt;
     <category term="常用算法" scheme="http://little-hurui.cloud/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95/"/>
     
     
-    <category term="Algorithm" scheme="http://little-hurui.cloud/tags/Algorithm/"/>
-    
     <category term="动态规划" scheme="http://little-hurui.cloud/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
     
     <category term="字符串" scheme="http://little-hurui.cloud/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
+    
+    <category term="Algorithm" scheme="http://little-hurui.cloud/tags/Algorithm/"/>
     
   </entry>
   
@@ -349,15 +355,15 @@ Foundations&lt;/h1&gt;
     <category term="常用算法" scheme="http://little-hurui.cloud/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95/"/>
     
     
-    <category term="Algorithm" scheme="http://little-hurui.cloud/tags/Algorithm/"/>
+    <category term="正则表达式" scheme="http://little-hurui.cloud/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
     
     <category term="动态规划" scheme="http://little-hurui.cloud/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
-    
-    <category term="正则表达式" scheme="http://little-hurui.cloud/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
     
     <category term="递归" scheme="http://little-hurui.cloud/tags/%E9%80%92%E5%BD%92/"/>
     
     <category term="字符串" scheme="http://little-hurui.cloud/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
+    
+    <category term="Algorithm" scheme="http://little-hurui.cloud/tags/Algorithm/"/>
     
   </entry>
   
