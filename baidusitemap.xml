@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://little-hurui.cloud/2022/11/03/Static%20Analysis%2008%20Pointer%20Analysis%20Foundations/</loc>
+    <lastmod>2022-11-03</lastmod>
+  </url>
+  <url>
+    <loc>http://little-hurui.cloud/2022/11/03/Static%20Analysis%2007%20Pointer%20Analysis/</loc>
+    <lastmod>2022-11-03</lastmod>
+  </url>
+  <url>
+    <loc>http://little-hurui.cloud/2022/07/12/Static%20Analysis%2001%20Introduction/</loc>
+    <lastmod>2022-11-03</lastmod>
+  </url>
+  <url>
     <loc>http://little-hurui.cloud/2022/10/27/Static%20Analysis%2006%20Interprocedural%20Analysis/</loc>
     <lastmod>2022-11-02</lastmod>
   </url>
@@ -46,10 +58,6 @@
   </url>
   <url>
     <loc>http://little-hurui.cloud/2022/10/18/%E6%95%B0%E4%BD%8DDP/</loc>
-    <lastmod>2022-10-19</lastmod>
-  </url>
-  <url>
-    <loc>http://little-hurui.cloud/2022/07/12/Static%20Analysis%2001%20Introduction/</loc>
     <lastmod>2022-10-19</lastmod>
   </url>
   <url>
