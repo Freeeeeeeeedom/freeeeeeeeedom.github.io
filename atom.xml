@@ -6,7 +6,7 @@
   <link href="http://little-hurui.cloud/atom.xml" rel="self"/>
   
   <link href="http://little-hurui.cloud/"/>
-  <updated>2022-11-04T04:13:56.392Z</updated>
+  <updated>2022-11-05T12:40:19.890Z</updated>
   <id>http://little-hurui.cloud/</id>
   
   <author>
@@ -15,6 +15,40 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>双栈！！</title>
+    <link href="http://little-hurui.cloud/2022/11/05/%E5%8F%8C%E6%A0%88%EF%BC%81%EF%BC%81/"/>
+    <id>http://little-hurui.cloud/2022/11/05/%E5%8F%8C%E6%A0%88%EF%BC%81%EF%BC%81/</id>
+    <published>2022-11-05T12:39:30.000Z</published>
+    <updated>2022-11-05T12:40:19.890Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="解析布尔表达式"><a href="https://leetcode.cn/problems/parsing-a-boolean-expression/">1106.解析布尔表达式</a></h1><p>给你一个以字符串形式表述的 <a href="https://baike.baidu.com/item/布尔表达式/1574380?fr=aladdin">布尔表达式</a>（boolean）<code>expression</code>，返回该式的运算结果。</p><p>有效的表达式需遵循以下约定：</p><ul><li><code>"t"</code>，运算结果为 <code>True</code></li><li><code>"f"</code>，运算结果为 <code>False</code></li><li><code>"!(expr)"</code>，运算过程为对内部表达式 <code>expr</code>进行逻辑 <strong>非的运算</strong>（NOT）</li><li><code>"&amp;(expr1,expr2,...)"</code>，运算过程为对 2个或以上内部表达式 <code>expr1, expr2, ...</code> 进行逻辑<strong>与的运算</strong>（AND）</li><li><code>"|(expr1,expr2,...)"</code>，运算过程为对 2 个或以上内部表达式<code>expr1, expr2, ...</code> 进行逻辑<strong>或的运算</strong>（OR）</li></ul><p><strong>示例 1：</strong></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入：expression = "!(f)"</span><br><span class="line">输出：true</span><br></pre></td></tr></table></figure><p><strong>示例 2：</strong></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入：expression = "|(f,t)"</span><br><span class="line">输出：true</span><br></pre></td></tr></table></figure><p><strong>示例 3：</strong></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入：expression = "&amp;(t,f)"</span><br><span class="line">输出：false</span><br></pre></td></tr></table></figure><p><strong>示例 4：</strong></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入：expression = "|(&amp;(t,f,t),!(t))"</span><br><span class="line">输出：false</span><br></pre></td></tr></table></figure><p><strong>提示：</strong></p><ul><li><code>1 &lt;= expression.length &lt;= 20000</code></li><li><code>expression[i]</code> 由<code>{'(', ')', '&amp;', '|', '!', 't', 'f', ','}</code>中的字符组成。</li><li><code>expression</code>是以上述形式给出的有效表达式，表示一个布尔值。</li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;解析布尔表达式&quot;&gt;&lt;a href=&quot;https://leetcode.cn/problems/parsing-a-boolean-expression/&quot;&gt;1106.
+解析布尔表达式&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;给你一个以字符串形式表述的 &lt;a href=&quot;htt</summary>
+      
+    
+    
+    
+    <category term="数据结构与算法" scheme="http://little-hurui.cloud/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="常用算法" scheme="http://little-hurui.cloud/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="Algorithm" scheme="http://little-hurui.cloud/tags/Algorithm/"/>
+    
+    <category term="栈" scheme="http://little-hurui.cloud/tags/%E6%A0%88/"/>
+    
+    <category term="递归" scheme="http://little-hurui.cloud/tags/%E9%80%92%E5%BD%92/"/>
+    
+    <category term="字符串" scheme="http://little-hurui.cloud/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
+    
+  </entry>
   
   <entry>
     <title>获取最小步数</title>
@@ -40,9 +74,9 @@
     <category term="常用算法" scheme="http://little-hurui.cloud/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95/"/>
     
     
-    <category term="Algorithm" scheme="http://little-hurui.cloud/tags/Algorithm/"/>
-    
     <category term="数学" scheme="http://little-hurui.cloud/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+    <category term="Algorithm" scheme="http://little-hurui.cloud/tags/Algorithm/"/>
     
   </entry>
   
@@ -212,9 +246,9 @@ Concurrency in C/C++11 and LLVM&lt;/h1&gt;
     <category term="常用算法" scheme="http://little-hurui.cloud/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95/"/>
     
     
-    <category term="动态规划" scheme="http://little-hurui.cloud/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
-    
     <category term="Algorithm" scheme="http://little-hurui.cloud/tags/Algorithm/"/>
+    
+    <category term="动态规划" scheme="http://little-hurui.cloud/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
     
     <category term="二分查找" scheme="http://little-hurui.cloud/tags/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/"/>
     
@@ -280,15 +314,15 @@ Concurrency in C/C++11 and LLVM&lt;/h1&gt;
     <category term="常用算法" scheme="http://little-hurui.cloud/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95/"/>
     
     
-    <category term="字符串" scheme="http://little-hurui.cloud/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
+    <category term="数学" scheme="http://little-hurui.cloud/tags/%E6%95%B0%E5%AD%A6/"/>
     
     <category term="Algorithm" scheme="http://little-hurui.cloud/tags/Algorithm/"/>
+    
+    <category term="字符串" scheme="http://little-hurui.cloud/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
     
     <category term="二分查找" scheme="http://little-hurui.cloud/tags/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/"/>
     
     <category term="数位DP" scheme="http://little-hurui.cloud/tags/%E6%95%B0%E4%BD%8DDP/"/>
-    
-    <category term="数学" scheme="http://little-hurui.cloud/tags/%E6%95%B0%E5%AD%A6/"/>
     
   </entry>
   
@@ -382,11 +416,11 @@ Concurrency in C/C++11 and LLVM&lt;/h1&gt;
     <category term="常用算法" scheme="http://little-hurui.cloud/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95/"/>
     
     
-    <category term="动态规划" scheme="http://little-hurui.cloud/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
+    <category term="Algorithm" scheme="http://little-hurui.cloud/tags/Algorithm/"/>
     
     <category term="字符串" scheme="http://little-hurui.cloud/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
     
-    <category term="Algorithm" scheme="http://little-hurui.cloud/tags/Algorithm/"/>
+    <category term="动态规划" scheme="http://little-hurui.cloud/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
     
   </entry>
   
@@ -442,15 +476,15 @@ Foundations&lt;/h1&gt;
     <category term="常用算法" scheme="http://little-hurui.cloud/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95/"/>
     
     
-    <category term="正则表达式" scheme="http://little-hurui.cloud/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
-    
-    <category term="动态规划" scheme="http://little-hurui.cloud/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
+    <category term="Algorithm" scheme="http://little-hurui.cloud/tags/Algorithm/"/>
     
     <category term="递归" scheme="http://little-hurui.cloud/tags/%E9%80%92%E5%BD%92/"/>
     
     <category term="字符串" scheme="http://little-hurui.cloud/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
     
-    <category term="Algorithm" scheme="http://little-hurui.cloud/tags/Algorithm/"/>
+    <category term="正则表达式" scheme="http://little-hurui.cloud/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
+    
+    <category term="动态规划" scheme="http://little-hurui.cloud/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
     
   </entry>
   
@@ -594,36 +628,6 @@ concurrency&lt;/h1&gt;
     <category term="软件分析" scheme="http://little-hurui.cloud/tags/%E8%BD%AF%E4%BB%B6%E5%88%86%E6%9E%90/"/>
     
     <category term="Data Flow Analysis" scheme="http://little-hurui.cloud/tags/Data-Flow-Analysis/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>字符串哈希</title>
-    <link href="http://little-hurui.cloud/2022/09/29/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%93%88%E5%B8%8C/"/>
-    <id>http://little-hurui.cloud/2022/09/29/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%93%88%E5%B8%8C/</id>
-    <published>2022-09-29T07:33:26.000Z</published>
-    <updated>2022-09-29T07:58:35.140Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="字符串哈希">字符串哈希</h1><p><strong>DNA序列</strong> 由一系列核苷酸组成，缩写为 <code>'A'</code>,<code>'C'</code>, <code>'G'</code> 和 <code>'T'</code>.。</p><ul><li>例如， <code>"ACGAATTCCG"</code> 是一个 <strong>DNA序列</strong>。</li></ul><p>在研究 <strong>DNA</strong> 时，识别 DNA 中的重复序列非常有用。</p><p>给定一个表示 <strong>DNA序列</strong> 的字符串 <code>s</code>，返回所有在 DNA 分子中出现不止一次的 <strong>长度为<code>10</code></strong> 的序列(子字符串)。你可以按<strong>任意顺序</strong> 返回答案。</p><p><strong>示例 1：</strong></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入：s = "AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT"</span><br><span class="line">输出：["AAAAACCCCC","CCCCCAAAAA"]</span><br></pre></td></tr></table></figure><p><strong>示例 2：</strong></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入：s = "AAAAAAAAAAAAA"</span><br><span class="line">输出：["AAAAAAAAAA"]</span><br></pre></td></tr></table></figure><h1 id="题解">题解</h1><p>一个朴素的想法时：使用滑动窗空遍历长度为10的子串，同时使用哈希表记录出现次数，如果出现超过一次，计入答案</p><p>上述解法的计算量为<span class="math inline"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="3.25ex" height="2.005ex" role="img" focusable="false" viewBox="0 -864 1436.6 886"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msup"><g data-mml-node="mn"><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path data-c="30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" transform="translate(500,0)"></path></g><g data-mml-node="mn" transform="translate(1033,393.1) scale(0.707)"><path data-c="36" d="M42 313Q42 476 123 571T303 666Q372 666 402 630T432 550Q432 525 418 510T379 495Q356 495 341 509T326 548Q326 592 373 601Q351 623 311 626Q240 626 194 566Q147 500 147 364L148 360Q153 366 156 373Q197 433 263 433H267Q313 433 348 414Q372 400 396 374T435 317Q456 268 456 210V192Q456 169 451 149Q440 90 387 34T253 -22Q225 -22 199 -14T143 16T92 75T56 172T42 313ZM257 397Q227 397 205 380T171 335T154 278T148 216Q148 133 160 97T198 39Q222 21 251 21Q302 21 329 59Q342 77 347 104T352 209Q352 289 347 316T329 361Q302 397 257 397Z"></path></g></g></g></g></svg></mjx-container></span></p><p>如果给定子串的长度大于100，计算量将会超过<span class="math inline"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="3.25ex" height="2.02ex" role="img" focusable="false" viewBox="0 -871.1 1436.6 893.1"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msup"><g data-mml-node="mn"><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path data-c="30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" transform="translate(500,0)"></path></g><g data-mml-node="mn" transform="translate(1033,393.1) scale(0.707)"><path data-c="37" d="M55 458Q56 460 72 567L88 674Q88 676 108 676H128V672Q128 662 143 655T195 646T364 644H485V605L417 512Q408 500 387 472T360 435T339 403T319 367T305 330T292 284T284 230T278 162T275 80Q275 66 275 52T274 28V19Q270 2 255 -10T221 -22Q210 -22 200 -19T179 0T168 40Q168 198 265 368Q285 400 349 489L395 552H302Q128 552 119 546Q113 543 108 522T98 479L95 458V455H55V458Z"></path></g></g></g></g></svg></mjx-container></span>,导致TLE</p><p>因此，我们采用一个<span class="math inline"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.566ex;" xmlns="http://www.w3.org/2000/svg" width="4.844ex" height="2.262ex" role="img" focusable="false" viewBox="0 -750 2141 1000"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D442" d="M740 435Q740 320 676 213T511 42T304 -22Q207 -22 138 35T51 201Q50 209 50 244Q50 346 98 438T227 601Q351 704 476 704Q514 704 524 703Q621 689 680 617T740 435ZM637 476Q637 565 591 615T476 665Q396 665 322 605Q242 542 200 428T157 216Q157 126 200 73T314 19Q404 19 485 98T608 313Q637 408 637 476Z"></path></g><g data-mml-node="mo" transform="translate(763,0)"><path data-c="28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path></g><g data-mml-node="mi" transform="translate(1152,0)"><path data-c="1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="mo" transform="translate(1752,0)"><path data-c="29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path></g></g></g></svg></mjx-container></span>的做法：字符串哈希 + 前缀和</p><p>具体做法为：我们使用一个与字符串等长的哈希数组<code>h[]</code>,以及次方数组<code>p[]</code></p><p>由字符串预处理得到这样的两个数组的复杂度为<span class="math inline"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.566ex;" xmlns="http://www.w3.org/2000/svg" width="4.844ex" height="2.262ex" role="img" focusable="false" viewBox="0 -750 2141 1000"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D442" d="M740 435Q740 320 676 213T511 42T304 -22Q207 -22 138 35T51 201Q50 209 50 244Q50 346 98 438T227 601Q351 704 476 704Q514 704 524 703Q621 689 680 617T740 435ZM637 476Q637 565 591 615T476 665Q396 665 322 605Q242 542 200 428T157 216Q157 126 200 73T314 19Q404 19 485 98T608 313Q637 408 637 476Z"></path></g><g data-mml-node="mo" transform="translate(763,0)"><path data-c="28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path></g><g data-mml-node="mi" transform="translate(1152,0)"><path data-c="1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="mo" transform="translate(1752,0)"><path data-c="29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path></g></g></g></svg></mjx-container></span>，而计算子串的哈希值，我们只需要利用前缀和的思想，即可在<span class="math inline"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.566ex;" xmlns="http://www.w3.org/2000/svg" width="4.618ex" height="2.262ex" role="img" focusable="false" viewBox="0 -750 2041 1000"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D442" d="M740 435Q740 320 676 213T511 42T304 -22Q207 -22 138 35T51 201Q50 209 50 244Q50 346 98 438T227 601Q351 704 476 704Q514 704 524 703Q621 689 680 617T740 435ZM637 476Q637 565 591 615T476 665Q396 665 322 605Q242 542 200 428T157 216Q157 126 200 73T314 19Q404 19 485 98T608 313Q637 408 637 476Z"></path></g><g data-mml-node="mo" transform="translate(763,0)"><path data-c="28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path></g><g data-mml-node="mn" transform="translate(1152,0)"><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path></g><g data-mml-node="mo" transform="translate(1652,0)"><path data-c="29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path></g></g></g></svg></mjx-container></span>的复杂度内得出哈希值(（与子串长度无关)</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>{</span><br><span class="line">    <span class="type">int</span>  <span class="variable">N</span> <span class="operator">=</span> (<span class="type">int</span>)<span class="number">1e5</span> + <span class="number">10</span>, P = <span class="number">13331</span>;</span><br><span class="line">    <span class="comment">//一般我们取P为131 或 13331， Q 为 264可以保证大部分情况下不出现哈希冲突</span></span><br><span class="line">    <span class="type">int</span>[] h = <span class="keyword">new</span> <span class="title class_">int</span>[N], p = <span class="keyword">new</span> <span class="title class_">int</span>[N];</span><br><span class="line">    <span class="keyword">public</span> List&lt;String&gt; <span class="title function_">findRepeatedDnaSequences</span><span class="params">(String s)</span>{</span><br><span class="line">        <span class="type">int</span> <span class="variable">n</span> <span class="operator">=</span> s.length();</span><br><span class="line">        List&lt;String&gt; ans = <span class="keyword">new</span> <span class="title class_">ArrayList</span>&lt;&gt;();</span><br><span class="line">        p[<span class="number">0</span>] = <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++){</span><br><span class="line">            h[i] = h[i - <span class="number">1</span>] * P + s.charAt(i - <span class="number">1</span>);</span><br><span class="line">            p[i] = p[i - <span class="number">1</span>] * P;</span><br><span class="line">        }</span><br><span class="line">        Map&lt;Integer, Integer&gt; map = <span class="keyword">new</span> <span class="title class_">HashMap</span>&lt;&gt;();</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">1</span>; i + <span class="number">10</span> - <span class="number">1</span> &lt;= n; i++) {</span><br><span class="line">            <span class="type">int</span> <span class="variable">j</span> <span class="operator">=</span> i + <span class="number">10</span> - <span class="number">1</span>;</span><br><span class="line">            <span class="type">int</span> <span class="variable">hash</span> <span class="operator">=</span> h[j] - h[i - <span class="number">1</span>] * p[j - i + <span class="number">1</span>];</span><br><span class="line">            <span class="comment">//前缀和 求出这个子串的hash值，与子串长度无关</span></span><br><span class="line">            <span class="type">int</span> <span class="variable">cnt</span> <span class="operator">=</span> map.getOrDefault(hash, <span class="number">0</span>);</span><br><span class="line">            <span class="keyword">if</span> (cnt == <span class="number">1</span>) ans.add(s.substring(i - <span class="number">1</span>, i + <span class="number">10</span> - <span class="number">1</span>));</span><br><span class="line">            map.put(hash, cnt + <span class="number">1</span>);</span><br><span class="line">        }</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">    <span class="comment">//一个小小的细节需要注意：如果我们期望做到严格 ，进行计数的「哈希表」就不能是以 String 作为 key，只能使用 Integer（也就是 hash 结果本身）作为 key。因为 Java 中的 String 的 hashCode 实现是会对字符串进行遍历的，这样哈希计数过程仍与长度有关，而 Integer 的 hashCode 就是该值本身，这是与长度无关的。</span></span><br><span class="line">}</span><br></pre></td></tr></table></figure>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;字符串哈希&quot;&gt;字符串哈希&lt;/h1&gt;
-&lt;p&gt;&lt;strong&gt;DNA序列&lt;/strong&gt; 由一系列核苷酸组成，缩写为 &lt;code&gt;&#39;A&#39;&lt;/code&gt;,
-&lt;code&gt;&#39;C&#39;&lt;/code&gt;, &lt;code&gt;&#39;G&#39;&lt;/code&gt; 和 &lt;code&gt;&#39;T&#39;&lt;/code&gt;.</summary>
-      
-    
-    
-    
-    <category term="数据结构与算法" scheme="http://little-hurui.cloud/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
-    
-    <category term="常用算法" scheme="http://little-hurui.cloud/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95/"/>
-    
-    
-    <category term="Algorithm" scheme="http://little-hurui.cloud/tags/Algorithm/"/>
-    
-    <category term="字符串哈希" scheme="http://little-hurui.cloud/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%93%88%E5%B8%8C/"/>
     
   </entry>
   
