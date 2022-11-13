@@ -8,7 +8,7 @@
       <link href="/2022/11/10/%E7%8A%B6%E6%80%81%E5%8E%8B%E7%BC%A9-BFS/"/>
       <url>/2022/11/10/%E7%8A%B6%E6%80%81%E5%8E%8B%E7%BC%A9-BFS/</url>
       
-        <content type="html"><![CDATA[<h1 id="获取所有钥匙的最短路径"><a href="https://leetcode.cn/problems/shortest-path-to-get-all-keys/description/">864.获取所有钥匙的最短路径</a></h1><p>给定一个二维网格 <code>grid</code> ，其中：</p><ul><li>'.' 代表一个空房间</li><li>'#' 代表一堵</li><li>'@' 是起点</li><li>小写字母代表钥匙</li><li>大写字母代表锁</li></ul><p>我们从起点开始出发，一次移动是指向四个基本方向之一行走一个单位空间。我们不能在网格外面行走，也无法穿过一堵墙。如果途经一个钥匙，我们就把它捡起来。除非我们手里有对应的钥匙，否则无法通过锁。</p><p>假设 k 为 钥匙/锁 的个数，且满足<code>1 &lt;= k &lt;= 6</code>，字母表中的前 <code>k</code>个字母在网格中都有自己对应的一个小写和一个大写字母。换言之，每个锁有唯一对应的钥匙，每个钥匙也有唯一对应的锁。另外，代表钥匙和锁的字母互为大小写并按字母顺序排列。</p><p>返回获取所有钥匙所需要的移动的最少次数。如果无法获取所有钥匙，返回<code>-1</code> 。</p><p><strong>示例 1：</strong></p><p><img src="https://assets.leetcode.com/uploads/2021/07/23/lc-keys2.jpg" alt="img"></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">输入：grid = ["@.a.#","###.#","b.A.B"]</span><br><span class="line">输出：8</span><br><span class="line">解释：目标是获得所有钥匙，而不是打开所有锁。</span><br></pre></td></tr></table></figure><p><strong>示例 2：</strong></p><p><img src="https://assets.leetcode.com/uploads/2021/07/23/lc-key2.jpg" alt="img"></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入：grid = ["@..aA","..B#.","....b"]</span><br><span class="line">输出：6</span><br></pre></td></tr></table></figure><p><strong>示例 3:</strong></p><p><img src="https://assets.leetcode.com/uploads/2021/07/23/lc-keys3.jpg" alt="img"></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入: grid = ["@Aa"]</span><br><span class="line">输出: -1</span><br></pre></td></tr></table></figure><h1 id="题解">题解</h1><p>这是一个BFS运用题，但是需要在BFS过程中记录收集到的钥匙状态</p><p>利用<code>钥匙数不超过6，并按字母顺序排列</code>，我们可以使用<code>state</code>记录当前收集到的钥匙情况</p><ul><li>若<code>state &gt;&gt; k &amp; 1 == 1</code>说明编号为k的钥匙已被收集，后续能通过对应的锁</li></ul><p>下面是常规的BFS过程：</p><ul><li>起始遍历一遍棋盘，找到起点，将其入队，队列维护<code>(x,y,state)</code>三元组状态，(其中<code>(x,y)</code>代表位置，<code>state</code>代表钥匙情况)，同时统计整个棋盘的钥匙数，并记录到达每个状态需要消耗的最小步数</li><li>进行四联通方向的BFS，转移过程中注意，「遇到锁时，必须有对应钥匙才能通过」&amp;「遇到钥匙时，需要更新对应的<code>state</code> 再进行入队」</li><li>当BFS过程中遇到<code>state = (1 &lt;&lt; cnt) - 1</code>时，代表所有的钥匙均被收集完成，结束搜索</li></ul>]]></content>
+        <content type="html"><![CDATA[<h1 id="获取所有钥匙的最短路径"><a href="https://leetcode.cn/problems/shortest-path-to-get-all-keys/description/">864.获取所有钥匙的最短路径</a></h1><p>给定一个二维网格 <code>grid</code> ，其中：</p><ul><li>'.' 代表一个空房间</li><li>'#' 代表一堵</li><li>'@' 是起点</li><li>小写字母代表钥匙</li><li>大写字母代表锁</li></ul><p>我们从起点开始出发，一次移动是指向四个基本方向之一行走一个单位空间。我们不能在网格外面行走，也无法穿过一堵墙。如果途经一个钥匙，我们就把它捡起来。除非我们手里有对应的钥匙，否则无法通过锁。</p><p>假设 k 为 钥匙/锁 的个数，且满足<code>1 &lt;= k &lt;= 6</code>，字母表中的前 <code>k</code>个字母在网格中都有自己对应的一个小写和一个大写字母。换言之，每个锁有唯一对应的钥匙，每个钥匙也有唯一对应的锁。另外，代表钥匙和锁的字母互为大小写并按字母顺序排列。</p><p>返回获取所有钥匙所需要的移动的最少次数。如果无法获取所有钥匙，返回<code>-1</code> 。</p><p><strong>示例 1：</strong></p><p><img src="https://assets.leetcode.com/uploads/2021/07/23/lc-keys2.jpg" alt="img"></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">输入：grid = ["@.a.#","###.#","b.A.B"]</span><br><span class="line">输出：8</span><br><span class="line">解释：目标是获得所有钥匙，而不是打开所有锁。</span><br></pre></td></tr></table></figure><p><strong>示例 2：</strong></p><p><img src="https://assets.leetcode.com/uploads/2021/07/23/lc-key2.jpg" alt="img"></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入：grid = ["@..aA","..B#.","....b"]</span><br><span class="line">输出：6</span><br></pre></td></tr></table></figure><p><strong>示例 3:</strong></p><p><img src="https://assets.leetcode.com/uploads/2021/07/23/lc-keys3.jpg" alt="img"></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入: grid = ["@Aa"]</span><br><span class="line">输出: -1</span><br></pre></td></tr></table></figure><h1 id="题解">题解</h1><p>这是一个BFS运用题，但是需要在BFS过程中记录收集到的钥匙状态</p><p>利用<code>钥匙数不超过6，并按字母顺序排列</code>，我们可以使用<code>state</code>记录当前收集到的钥匙情况</p><ul><li>若<code>state &gt;&gt; k &amp; 1 == 1</code>说明编号为k的钥匙已被收集，后续能通过对应的锁</li></ul><p>下面是常规的BFS过程：</p><ul><li>起始遍历一遍棋盘，找到起点，将其入队，队列维护<code>(x,y,state)</code>三元组状态，(其中<code>(x,y)</code>代表位置，<code>state</code>代表钥匙情况)，同时统计整个棋盘的钥匙数，并记录到达每个状态需要消耗的最小步数</li><li>进行四联通方向的BFS，转移过程中注意，「遇到锁时，必须有对应钥匙才能通过」&amp;「遇到钥匙时，需要更新对应的<code>state</code> 再进行入队」</li><li>当BFS过程中遇到<code>state = (1 &lt;&lt; cnt) - 1</code>时，代表所有的钥匙均被收集完成，结束搜索</li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> {</span><br><span class="line">    <span class="keyword">static</span> <span class="type">int</span> <span class="variable">N</span> <span class="operator">=</span> <span class="number">35</span>, K = <span class="number">10</span>, INF = <span class="number">0x3f3f3f3f</span>;</span><br><span class="line">    <span class="keyword">static</span> <span class="type">int</span>[][][] dist = <span class="keyword">new</span> <span class="title class_">int</span>[N][N][<span class="number">1</span> &lt;&lt; K];</span><br><span class="line">    <span class="keyword">static</span>  <span class="type">int</span>[][] dirs = <span class="keyword">new</span> <span class="title class_">int</span>[][]{{<span class="number">1</span>,<span class="number">0</span>},{-<span class="number">1</span>,<span class="number">0</span>},{<span class="number">0</span>,<span class="number">1</span>},{<span class="number">0</span>,-<span class="number">1</span>}};</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">shortestPathAllKeys</span><span class="params">(String[] grid)</span> {</span><br><span class="line">        <span class="type">int</span> <span class="variable">n</span> <span class="operator">=</span> grid.length;</span><br><span class="line">        <span class="type">int</span> <span class="variable">m</span> <span class="operator">=</span> grid[<span class="number">0</span>].length();</span><br><span class="line">        <span class="type">int</span> <span class="variable">cnt</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">        Deque&lt;<span class="type">int</span>[]&gt; d = <span class="keyword">new</span> <span class="title class_">ArrayDeque</span>&lt;&gt;();</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++){</span><br><span class="line">            <span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">0</span>;j&lt;m;j++){</span><br><span class="line">                Arrays.fill(dist[i][j],INF);</span><br><span class="line">                <span class="type">char</span> <span class="variable">c</span> <span class="operator">=</span> grid[i].charAt(j);</span><br><span class="line">                <span class="keyword">if</span>(c==<span class="string">'@'</span>){</span><br><span class="line">                    <span class="comment">//起始位置入栈</span></span><br><span class="line">                    d.addLast(<span class="keyword">new</span> <span class="title class_">int</span>[]{i,j,<span class="number">0</span>});</span><br><span class="line">                    dist[i][j][<span class="number">0</span>] = <span class="number">0</span>;</span><br><span class="line">                }</span><br><span class="line">                <span class="keyword">else</span> <span class="keyword">if</span>(c &gt;= <span class="string">'a'</span> &amp;&amp; c &lt;= <span class="string">'z'</span>) cnt++;</span><br><span class="line">            }</span><br><span class="line">        }</span><br><span class="line"></span><br><span class="line">        <span class="keyword">while</span>(!d.isEmpty()){</span><br><span class="line">            <span class="type">int</span>[] info = d.pollFirst();</span><br><span class="line">            <span class="type">int</span> <span class="variable">x</span> <span class="operator">=</span> info[<span class="number">0</span>], y = info[<span class="number">1</span>], cur = info[<span class="number">2</span>], step = dist[x][y][cur];</span><br><span class="line">            <span class="keyword">for</span>(<span class="type">int</span>[] di : dirs){</span><br><span class="line">                <span class="type">int</span> <span class="variable">nx</span> <span class="operator">=</span> x + di[<span class="number">0</span>], ny = y + di[<span class="number">1</span>];</span><br><span class="line">                <span class="keyword">if</span>(nx &lt; <span class="number">0</span> || nx &gt;= n || ny &lt; <span class="number">0</span> || ny &gt;= m) <span class="keyword">continue</span>;</span><br><span class="line">                <span class="type">char</span> <span class="variable">c</span> <span class="operator">=</span> grid[nx].charAt(ny);</span><br><span class="line">                <span class="keyword">if</span>(c == <span class="string">'#'</span>) <span class="keyword">continue</span>;</span><br><span class="line">                <span class="keyword">if</span>((c &gt;= <span class="string">'A'</span> &amp;&amp; c &lt;= <span class="string">'Z'</span>) &amp;&amp; ((cur &gt;&gt; (c - <span class="string">'A'</span>) &amp; <span class="number">1</span>) == <span class="number">0</span>)) <span class="keyword">continue</span>;</span><br><span class="line">                <span class="type">int</span> <span class="variable">ncur</span> <span class="operator">=</span> cur;</span><br><span class="line">                <span class="keyword">if</span>(c &gt;= <span class="string">'a'</span> &amp;&amp; c &lt;= <span class="string">'z'</span>) ncur = ncur | (<span class="number">1</span> &lt;&lt; (c - <span class="string">'a'</span>));</span><br><span class="line">                <span class="keyword">if</span>(ncur == (<span class="number">1</span> &lt;&lt; cnt) - <span class="number">1</span>) <span class="keyword">return</span> step + <span class="number">1</span>;</span><br><span class="line">                <span class="keyword">if</span>(step + <span class="number">1</span> &gt;= dist[nx][ny][ncur]) <span class="keyword">continue</span>;</span><br><span class="line">                dist[nx][ny][ncur] = step + <span class="number">1</span>;</span><br><span class="line">                d.addLast(<span class="keyword">new</span> <span class="title class_">int</span>[]{nx,ny,ncur});</span><br><span class="line">            }</span><br><span class="line">        }</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></table></figure>]]></content>
       
       
       <categories>
@@ -22,9 +22,11 @@
       
         <tags>
             
-            <tag> 状态压缩 </tag>
+            <tag> Algorithm </tag>
             
             <tag> 动态规划 </tag>
+            
+            <tag> 状态压缩 </tag>
             
             <tag> BFS </tag>
             
@@ -33,8 +35,6 @@
             <tag> 数组 </tag>
             
             <tag> 矩阵 </tag>
-            
-            <tag> Algorithm </tag>
             
         </tags>
       
@@ -312,11 +312,11 @@
       
         <tags>
             
+            <tag> Algorithm </tag>
+            
             <tag> 动态规划 </tag>
             
             <tag> 数组 </tag>
-            
-            <tag> Algorithm </tag>
             
             <tag> 二分查找 </tag>
             
@@ -378,9 +378,9 @@
             
             <tag> Algorithm </tag>
             
-            <tag> 数学 </tag>
-            
             <tag> 字符串 </tag>
+            
+            <tag> 数学 </tag>
             
             <tag> 数位DP </tag>
             
@@ -438,9 +438,9 @@
       
         <tags>
             
-            <tag> BFS </tag>
-            
             <tag> Algorithm </tag>
+            
+            <tag> BFS </tag>
             
             <tag> DFS </tag>
             
@@ -500,9 +500,9 @@
       
         <tags>
             
-            <tag> 动态规划 </tag>
-            
             <tag> Algorithm </tag>
+            
+            <tag> 动态规划 </tag>
             
             <tag> 字符串 </tag>
             
@@ -558,9 +558,9 @@
       
         <tags>
             
-            <tag> 动态规划 </tag>
-            
             <tag> Algorithm </tag>
+            
+            <tag> 动态规划 </tag>
             
             <tag> 递归 </tag>
             
@@ -921,9 +921,9 @@
       
         <tags>
             
-            <tag> BFS </tag>
-            
             <tag> Algorithm </tag>
+            
+            <tag> BFS </tag>
             
             <tag> DFS </tag>
             
@@ -989,11 +989,11 @@
       
         <tags>
             
+            <tag> Algorithm </tag>
+            
             <tag> BFS </tag>
             
             <tag> 位运算 </tag>
-            
-            <tag> Algorithm </tag>
             
             <tag> 数学 </tag>
             
@@ -1024,9 +1024,9 @@
       
         <tags>
             
-            <tag> 动态规划 </tag>
-            
             <tag> Algorithm </tag>
+            
+            <tag> 动态规划 </tag>
             
             <tag> 数学 </tag>
             
@@ -1113,9 +1113,9 @@
       
         <tags>
             
-            <tag> 动态规划 </tag>
-            
             <tag> Algorithm </tag>
+            
+            <tag> 动态规划 </tag>
             
             <tag> 字符串 </tag>
             
@@ -1385,9 +1385,9 @@
       
         <tags>
             
-            <tag> 动态规划 </tag>
-            
             <tag> Algorithm </tag>
+            
+            <tag> 动态规划 </tag>
             
         </tags>
       
@@ -1414,9 +1414,9 @@
       
         <tags>
             
-            <tag> 动态规划 </tag>
-            
             <tag> Algorithm </tag>
+            
+            <tag> 动态规划 </tag>
             
         </tags>
       
@@ -1669,9 +1669,9 @@
       
         <tags>
             
-            <tag> 动态规划 </tag>
-            
             <tag> Algorithm </tag>
+            
+            <tag> 动态规划 </tag>
             
             <tag> 博弈论 </tag>
             
@@ -1727,9 +1727,9 @@
       
         <tags>
             
-            <tag> 状态压缩 </tag>
-            
             <tag> Algorithm </tag>
+            
+            <tag> 状态压缩 </tag>
             
         </tags>
       
@@ -1756,9 +1756,9 @@
       
         <tags>
             
-            <tag> 动态规划 </tag>
-            
             <tag> Algorithm </tag>
+            
+            <tag> 动态规划 </tag>
             
         </tags>
       
@@ -1845,9 +1845,9 @@
       
         <tags>
             
-            <tag> 动态规划 </tag>
-            
             <tag> Algorithm </tag>
+            
+            <tag> 动态规划 </tag>
             
             <tag> 博弈论 </tag>
             
@@ -1938,9 +1938,9 @@
       
         <tags>
             
-            <tag> 动态规划 </tag>
-            
             <tag> Algorithm </tag>
+            
+            <tag> 动态规划 </tag>
             
         </tags>
       
@@ -2514,9 +2514,9 @@
       
         <tags>
             
-            <tag> 位运算 </tag>
-            
             <tag> Leetcode </tag>
+            
+            <tag> 位运算 </tag>
             
         </tags>
       
@@ -2630,9 +2630,9 @@
       
         <tags>
             
-            <tag> 数学 </tag>
-            
             <tag> Leetcode </tag>
+            
+            <tag> 数学 </tag>
             
         </tags>
       
