@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://little-hurui.cloud/2022/11/18/JAVA%E8%BF%9B%E9%98%B6/</loc>
+    <lastmod>2022-11-18</lastmod>
+  </url>
+  <url>
     <loc>http://little-hurui.cloud/2022/11/03/Static%20Analysis%2008%20Pointer%20Analysis%20Foundations/</loc>
     <lastmod>2022-11-17</lastmod>
   </url>
