@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://little-hurui.cloud/2022/11/24/Static%20Analysis%2009%20Pointer%20Analysis%20Context%20Sensitivity/</loc>
+    <lastmod>2022-11-24</lastmod>
+  </url>
+  <url>
+    <loc>http://little-hurui.cloud/2022/11/03/Static%20Analysis%2008%20Pointer%20Analysis%20Foundations/</loc>
+    <lastmod>2022-11-24</lastmod>
+  </url>
+  <url>
+    <loc>http://little-hurui.cloud/2022/11/03/Static%20Analysis%2007%20Pointer%20Analysis/</loc>
+    <lastmod>2022-11-24</lastmod>
+  </url>
+  <url>
     <loc>http://little-hurui.cloud/2022/11/19/Review/</loc>
     <lastmod>2022-11-23</lastmod>
   </url>
@@ -15,10 +27,6 @@
   <url>
     <loc>http://little-hurui.cloud/2022/11/18/JAVA%E8%BF%9B%E9%98%B6/</loc>
     <lastmod>2022-11-18</lastmod>
-  </url>
-  <url>
-    <loc>http://little-hurui.cloud/2022/11/03/Static%20Analysis%2008%20Pointer%20Analysis%20Foundations/</loc>
-    <lastmod>2022-11-17</lastmod>
   </url>
   <url>
     <loc>http://little-hurui.cloud/2022/11/17/%E8%B7%B3%E8%A1%A8%E5%AE%9E%E7%8E%B0/</loc>
@@ -63,10 +71,6 @@
   <url>
     <loc>http://little-hurui.cloud/2022/11/04/%E8%8E%B7%E5%8F%96%E6%9C%80%E5%B0%8F%E6%AD%A5%E6%95%B0/</loc>
     <lastmod>2022-11-04</lastmod>
-  </url>
-  <url>
-    <loc>http://little-hurui.cloud/2022/11/03/Static%20Analysis%2007%20Pointer%20Analysis/</loc>
-    <lastmod>2022-11-03</lastmod>
   </url>
   <url>
     <loc>http://little-hurui.cloud/2022/07/12/Static%20Analysis%2001%20Introduction/</loc>
