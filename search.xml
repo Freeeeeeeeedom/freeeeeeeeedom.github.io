@@ -194,15 +194,15 @@
       
         <tags>
             
+            <tag> Algorithm </tag>
+            
             <tag> 动态规划 </tag>
             
-            <tag> Algorithm </tag>
+            <tag> 状态压缩 </tag>
             
             <tag> BFS </tag>
             
             <tag> 数组 </tag>
-            
-            <tag> 状态压缩 </tag>
             
             <tag> 位运算 </tag>
             
@@ -287,11 +287,11 @@
       
         <tags>
             
+            <tag> Algorithm </tag>
+            
             <tag> 递归 </tag>
             
             <tag> 字符串 </tag>
-            
-            <tag> Algorithm </tag>
             
             <tag> 栈 </tag>
             
@@ -412,33 +412,6 @@
     
     
     <entry>
-      <title>Concurrency Algorithms and Theories 06 Promsing</title>
-      <link href="/2022/10/25/Concurrency%20Algorithms%20and%20Theories%2006%20Promosing/"/>
-      <url>/2022/10/25/Concurrency%20Algorithms%20and%20Theories%2006%20Promosing/</url>
-      
-        <content type="html"><![CDATA[<h1 id="weak-memory-concurrency-in-cc11-and-llvm">Weak MemoryConcurrency in C/C++11 and LLVM</h1><p>编译器会对程序进行某种优化</p><p><img src="https://hurry11.oss-cn-nanjing.aliyuncs.com/img/image-20221025205237408.png" alt="image-20221025205237408"></p><p>但两种优化合并同时产生是，会发生严重的错误</p><p><img src="https://hurry11.oss-cn-nanjing.aliyuncs.com/img/image-20221025205318905.png"></p><p>所以</p><ul><li>C11 禁止 load hoisting，允许CSE</li><li>LLVM 允许 load hoisting,禁止CSE</li></ul><p>但WMM仍然有很多问题。。。</p><h1 id="the-c11-momery-model">The C11 momery model</h1><p><img src="https://hurry11.oss-cn-nanjing.aliyuncs.com/img/image-20221025210140196.png" alt="image-20221025210140196"></p><h1 id="the-oota-problem">The OOTA problem</h1><p>OUT-OF-THIN-AIR，即凭空产生的值，这是我们不想看到的情况</p><p>往往是因为产生了数据依赖</p><p><img src="https://hurry11.oss-cn-nanjing.aliyuncs.com/img/image-20221025210416137.png" alt="image-20221025210416137"></p><h1 id="a-promising-solution-to-oota">A promising solution to OOTA</h1><p>我们将程序中的write抽象成memory中的message，每条msg都有自己时间戳，对于read，只能读取自己时间戳及后面的值，切读完后需要更新自己所在线程在这个loc的view，write只能write在view之后，且需要更新线程自身的view</p><p>在其中，我们允许promise，即可以读取未来<strong>必然会写入</strong>的值，（其他线程的视角中可以）</p><p><img src="https://hurry11.oss-cn-nanjing.aliyuncs.com/img/image-20221025210920704.png" alt="image-20221025210920704"></p><p><img src="https://hurry11.oss-cn-nanjing.aliyuncs.com/img/image-20221025210944247.png" alt="image-20221025210944247"></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Concurrency Algorithms and Theories </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Concurrency Algorithms and Theories </tag>
-            
-            <tag> Promising </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Concurrency Algorithms and Theories 07 Concurrent Objects</title>
       <link href="/2022/10/25/Concurrency%20Algorithms%20and%20Theories%2007%20Concurrent%20Objects/"/>
       <url>/2022/10/25/Concurrency%20Algorithms%20and%20Theories%2007%20Concurrent%20Objects/</url>
@@ -466,6 +439,33 @@
     
     
     <entry>
+      <title>Concurrency Algorithms and Theories 06 Promsing</title>
+      <link href="/2022/10/25/Concurrency%20Algorithms%20and%20Theories%2006%20Promosing/"/>
+      <url>/2022/10/25/Concurrency%20Algorithms%20and%20Theories%2006%20Promosing/</url>
+      
+        <content type="html"><![CDATA[<h1 id="weak-memory-concurrency-in-cc11-and-llvm">Weak MemoryConcurrency in C/C++11 and LLVM</h1><p>编译器会对程序进行某种优化</p><p><img src="https://hurry11.oss-cn-nanjing.aliyuncs.com/img/image-20221025205237408.png" alt="image-20221025205237408"></p><p>但两种优化合并同时产生是，会发生严重的错误</p><p><img src="https://hurry11.oss-cn-nanjing.aliyuncs.com/img/image-20221025205318905.png"></p><p>所以</p><ul><li>C11 禁止 load hoisting，允许CSE</li><li>LLVM 允许 load hoisting,禁止CSE</li></ul><p>但WMM仍然有很多问题。。。</p><h1 id="the-c11-momery-model">The C11 momery model</h1><p><img src="https://hurry11.oss-cn-nanjing.aliyuncs.com/img/image-20221025210140196.png" alt="image-20221025210140196"></p><h1 id="the-oota-problem">The OOTA problem</h1><p>OUT-OF-THIN-AIR，即凭空产生的值，这是我们不想看到的情况</p><p>往往是因为产生了数据依赖</p><p><img src="https://hurry11.oss-cn-nanjing.aliyuncs.com/img/image-20221025210416137.png" alt="image-20221025210416137"></p><h1 id="a-promising-solution-to-oota">A promising solution to OOTA</h1><p>我们将程序中的write抽象成memory中的message，每条msg都有自己时间戳，对于read，只能读取自己时间戳及后面的值，切读完后需要更新自己所在线程在这个loc的view，write只能write在view之后，且需要更新线程自身的view</p><p>在其中，我们允许promise，即可以读取未来<strong>必然会写入</strong>的值，（其他线程的视角中可以）</p><p><img src="https://hurry11.oss-cn-nanjing.aliyuncs.com/img/image-20221025210920704.png" alt="image-20221025210920704"></p><p><img src="https://hurry11.oss-cn-nanjing.aliyuncs.com/img/image-20221025210944247.png" alt="image-20221025210944247"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Concurrency Algorithms and Theories </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Concurrency Algorithms and Theories </tag>
+            
+            <tag> Promising </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>序列DP</title>
       <link href="/2022/10/22/%E5%BA%8F%E5%88%97DP/"/>
       <url>/2022/10/22/%E5%BA%8F%E5%88%97DP/</url>
@@ -484,9 +484,9 @@
       
         <tags>
             
-            <tag> 动态规划 </tag>
-            
             <tag> Algorithm </tag>
+            
+            <tag> 动态规划 </tag>
             
             <tag> 二分查找 </tag>
             
@@ -548,9 +548,9 @@
       
         <tags>
             
-            <tag> 字符串 </tag>
-            
             <tag> Algorithm </tag>
+            
+            <tag> 字符串 </tag>
             
             <tag> 二分查找 </tag>
             
@@ -672,11 +672,11 @@
       
         <tags>
             
+            <tag> Algorithm </tag>
+            
             <tag> 动态规划 </tag>
             
             <tag> 字符串 </tag>
-            
-            <tag> Algorithm </tag>
             
         </tags>
       
@@ -730,15 +730,15 @@
       
         <tags>
             
-            <tag> 正则表达式 </tag>
+            <tag> Algorithm </tag>
             
             <tag> 动态规划 </tag>
+            
+            <tag> 正则表达式 </tag>
             
             <tag> 递归 </tag>
             
             <tag> 字符串 </tag>
-            
-            <tag> Algorithm </tag>
             
         </tags>
       
@@ -1060,9 +1060,9 @@
       
         <tags>
             
-            <tag> 字符串 </tag>
-            
             <tag> Algorithm </tag>
+            
+            <tag> 字符串 </tag>
             
             <tag> 启发式搜索 </tag>
             
@@ -1196,9 +1196,9 @@
       
         <tags>
             
-            <tag> 动态规划 </tag>
-            
             <tag> Algorithm </tag>
+            
+            <tag> 动态规划 </tag>
             
             <tag> 数学 </tag>
             
@@ -1285,11 +1285,11 @@
       
         <tags>
             
+            <tag> Algorithm </tag>
+            
             <tag> 动态规划 </tag>
             
             <tag> 字符串 </tag>
-            
-            <tag> Algorithm </tag>
             
             <tag> 哈希表 </tag>
             
@@ -1526,9 +1526,9 @@
       
         <tags>
             
-            <tag> 动态规划 </tag>
-            
             <tag> Algorithm </tag>
+            
+            <tag> 动态规划 </tag>
             
         </tags>
       
@@ -1555,9 +1555,9 @@
       
         <tags>
             
-            <tag> 动态规划 </tag>
-            
             <tag> Algorithm </tag>
+            
+            <tag> 动态规划 </tag>
             
         </tags>
       
@@ -1779,9 +1779,9 @@
       
         <tags>
             
-            <tag> 动态规划 </tag>
-            
             <tag> Algorithm </tag>
+            
+            <tag> 动态规划 </tag>
             
             <tag> 博弈论 </tag>
             
@@ -1866,9 +1866,9 @@
       
         <tags>
             
-            <tag> 动态规划 </tag>
-            
             <tag> Algorithm </tag>
+            
+            <tag> 动态规划 </tag>
             
         </tags>
       
@@ -1955,9 +1955,9 @@
       
         <tags>
             
-            <tag> 动态规划 </tag>
-            
             <tag> Algorithm </tag>
+            
+            <tag> 动态规划 </tag>
             
             <tag> 博弈论 </tag>
             
@@ -2048,9 +2048,9 @@
       
         <tags>
             
-            <tag> 动态规划 </tag>
-            
             <tag> Algorithm </tag>
+            
+            <tag> 动态规划 </tag>
             
         </tags>
       
