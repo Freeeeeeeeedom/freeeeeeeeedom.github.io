@@ -222,9 +222,9 @@
             
             <tag> 状态压缩 </tag>
             
-            <tag> 数组 </tag>
-            
             <tag> BFS </tag>
+            
+            <tag> 数组 </tag>
             
             <tag> 位运算 </tag>
             
@@ -311,9 +311,9 @@
             
             <tag> Algorithm </tag>
             
-            <tag> 递归 </tag>
-            
             <tag> 字符串 </tag>
+            
+            <tag> 递归 </tag>
             
             <tag> 栈 </tag>
             
@@ -574,9 +574,9 @@
             
             <tag> 字符串 </tag>
             
-            <tag> 二分查找 </tag>
-            
             <tag> 数位DP </tag>
+            
+            <tag> 二分查找 </tag>
             
             <tag> 数学 </tag>
             
@@ -756,11 +756,11 @@
             
             <tag> 动态规划 </tag>
             
+            <tag> 字符串 </tag>
+            
             <tag> 正则表达式 </tag>
             
             <tag> 递归 </tag>
-            
-            <tag> 字符串 </tag>
             
         </tags>
       
