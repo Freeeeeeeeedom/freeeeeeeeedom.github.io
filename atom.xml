@@ -257,11 +257,11 @@
     
     <category term="动态规划" scheme="http://little-hurui.cloud/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
     
+    <category term="数组" scheme="http://little-hurui.cloud/tags/%E6%95%B0%E7%BB%84/"/>
+    
     <category term="Algorithm" scheme="http://little-hurui.cloud/tags/Algorithm/"/>
     
     <category term="BFS" scheme="http://little-hurui.cloud/tags/BFS/"/>
-    
-    <category term="数组" scheme="http://little-hurui.cloud/tags/%E6%95%B0%E7%BB%84/"/>
     
     <category term="状态压缩" scheme="http://little-hurui.cloud/tags/%E7%8A%B6%E6%80%81%E5%8E%8B%E7%BC%A9/"/>
     
@@ -346,11 +346,11 @@
     <category term="常用算法" scheme="http://little-hurui.cloud/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95/"/>
     
     
+    <category term="Algorithm" scheme="http://little-hurui.cloud/tags/Algorithm/"/>
+    
     <category term="递归" scheme="http://little-hurui.cloud/tags/%E9%80%92%E5%BD%92/"/>
     
     <category term="字符串" scheme="http://little-hurui.cloud/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
-    
-    <category term="Algorithm" scheme="http://little-hurui.cloud/tags/Algorithm/"/>
     
     <category term="栈" scheme="http://little-hurui.cloud/tags/%E6%A0%88/"/>
     
@@ -465,32 +465,6 @@
   </entry>
   
   <entry>
-    <title>Concurrency Algorithms and Theories 06 Promsing</title>
-    <link href="http://little-hurui.cloud/2022/10/25/Concurrency%20Algorithms%20and%20Theories%2006%20Promosing/"/>
-    <id>http://little-hurui.cloud/2022/10/25/Concurrency%20Algorithms%20and%20Theories%2006%20Promosing/</id>
-    <published>2022-10-25T00:41:53.000Z</published>
-    <updated>2022-10-25T13:10:43.180Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="weak-memory-concurrency-in-cc11-and-llvm"><a class="markdownIt-Anchor" href="#weak-memory-concurrency-in-cc11-and-llvm"></a> Weak Memory Concurrency in C/C++11 and LLVM</h1><p>编译器会对程序进行某种优化</p><p><img src="https://hurry11.oss-cn-nanjing.aliyuncs.com/img/image-20221025205237408.png" alt="image-20221025205237408"></p><p>但两种优化合并同时产生是，会发生严重的错误</p><p><img src="https://hurry11.oss-cn-nanjing.aliyuncs.com/img/image-20221025205318905.png" alt=""></p><p>所以</p><ul><li>C11 禁止 load hoisting，允许CSE</li><li>LLVM 允许 load hoisting,禁止CSE</li></ul><p>但WMM仍然有很多问题。。。</p><h1 id="the-c11-momery-model"><a class="markdownIt-Anchor" href="#the-c11-momery-model"></a> The C11 momery model</h1><p><img src="https://hurry11.oss-cn-nanjing.aliyuncs.com/img/image-20221025210140196.png" alt="image-20221025210140196"></p><h1 id="the-oota-problem"><a class="markdownIt-Anchor" href="#the-oota-problem"></a> The OOTA  problem</h1><p>OUT-OF-THIN-AIR，即凭空产生的值，这是我们不想看到的情况</p><p>往往是因为产生了数据依赖</p><p><img src="https://hurry11.oss-cn-nanjing.aliyuncs.com/img/image-20221025210416137.png" alt="image-20221025210416137"></p><h1 id="a-promising-solution-to-oota"><a class="markdownIt-Anchor" href="#a-promising-solution-to-oota"></a> A promising solution to OOTA</h1><p>我们将程序中的write抽象成memory中的message，每条msg都有自己时间戳，对于read，只能读取自己时间戳及后面的值，切读完后需要更新自己所在线程在这个loc的view，write只能write在view之后，且需要更新线程自身的view</p><p>在其中，我们允许promise，即可以读取未来<strong>必然会写入</strong>的值，（其他线程的视角中可以）</p><p><img src="https://hurry11.oss-cn-nanjing.aliyuncs.com/img/image-20221025210920704.png" alt="image-20221025210920704"></p><p><img src="https://hurry11.oss-cn-nanjing.aliyuncs.com/img/image-20221025210944247.png" alt="image-20221025210944247"></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;weak-memory-concurrency-in-cc11-and-llvm&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#weak-memory-concurrency-in-cc11-and-llvm&quot;&gt;&lt;/a&gt; Weak Me</summary>
-      
-    
-    
-    
-    <category term="Concurrency Algorithms and Theories" scheme="http://little-hurui.cloud/categories/Concurrency-Algorithms-and-Theories/"/>
-    
-    
-    <category term="Concurrency Algorithms and Theories" scheme="http://little-hurui.cloud/tags/Concurrency-Algorithms-and-Theories/"/>
-    
-    <category term="Promising" scheme="http://little-hurui.cloud/tags/Promising/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Concurrency Algorithms and Theories 07 Concurrent Objects</title>
     <link href="http://little-hurui.cloud/2022/10/25/Concurrency%20Algorithms%20and%20Theories%2007%20Concurrent%20Objects/"/>
     <id>http://little-hurui.cloud/2022/10/25/Concurrency%20Algorithms%20and%20Theories%2007%20Concurrent%20Objects/</id>
@@ -518,6 +492,32 @@
   </entry>
   
   <entry>
+    <title>Concurrency Algorithms and Theories 06 Promsing</title>
+    <link href="http://little-hurui.cloud/2022/10/25/Concurrency%20Algorithms%20and%20Theories%2006%20Promosing/"/>
+    <id>http://little-hurui.cloud/2022/10/25/Concurrency%20Algorithms%20and%20Theories%2006%20Promosing/</id>
+    <published>2022-10-25T00:41:53.000Z</published>
+    <updated>2022-10-25T13:10:43.180Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="weak-memory-concurrency-in-cc11-and-llvm"><a class="markdownIt-Anchor" href="#weak-memory-concurrency-in-cc11-and-llvm"></a> Weak Memory Concurrency in C/C++11 and LLVM</h1><p>编译器会对程序进行某种优化</p><p><img src="https://hurry11.oss-cn-nanjing.aliyuncs.com/img/image-20221025205237408.png" alt="image-20221025205237408"></p><p>但两种优化合并同时产生是，会发生严重的错误</p><p><img src="https://hurry11.oss-cn-nanjing.aliyuncs.com/img/image-20221025205318905.png" alt=""></p><p>所以</p><ul><li>C11 禁止 load hoisting，允许CSE</li><li>LLVM 允许 load hoisting,禁止CSE</li></ul><p>但WMM仍然有很多问题。。。</p><h1 id="the-c11-momery-model"><a class="markdownIt-Anchor" href="#the-c11-momery-model"></a> The C11 momery model</h1><p><img src="https://hurry11.oss-cn-nanjing.aliyuncs.com/img/image-20221025210140196.png" alt="image-20221025210140196"></p><h1 id="the-oota-problem"><a class="markdownIt-Anchor" href="#the-oota-problem"></a> The OOTA  problem</h1><p>OUT-OF-THIN-AIR，即凭空产生的值，这是我们不想看到的情况</p><p>往往是因为产生了数据依赖</p><p><img src="https://hurry11.oss-cn-nanjing.aliyuncs.com/img/image-20221025210416137.png" alt="image-20221025210416137"></p><h1 id="a-promising-solution-to-oota"><a class="markdownIt-Anchor" href="#a-promising-solution-to-oota"></a> A promising solution to OOTA</h1><p>我们将程序中的write抽象成memory中的message，每条msg都有自己时间戳，对于read，只能读取自己时间戳及后面的值，切读完后需要更新自己所在线程在这个loc的view，write只能write在view之后，且需要更新线程自身的view</p><p>在其中，我们允许promise，即可以读取未来<strong>必然会写入</strong>的值，（其他线程的视角中可以）</p><p><img src="https://hurry11.oss-cn-nanjing.aliyuncs.com/img/image-20221025210920704.png" alt="image-20221025210920704"></p><p><img src="https://hurry11.oss-cn-nanjing.aliyuncs.com/img/image-20221025210944247.png" alt="image-20221025210944247"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;weak-memory-concurrency-in-cc11-and-llvm&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#weak-memory-concurrency-in-cc11-and-llvm&quot;&gt;&lt;/a&gt; Weak Me</summary>
+      
+    
+    
+    
+    <category term="Concurrency Algorithms and Theories" scheme="http://little-hurui.cloud/categories/Concurrency-Algorithms-and-Theories/"/>
+    
+    
+    <category term="Concurrency Algorithms and Theories" scheme="http://little-hurui.cloud/tags/Concurrency-Algorithms-and-Theories/"/>
+    
+    <category term="Promising" scheme="http://little-hurui.cloud/tags/Promising/"/>
+    
+  </entry>
+  
+  <entry>
     <title>序列DP</title>
     <link href="http://little-hurui.cloud/2022/10/22/%E5%BA%8F%E5%88%97DP/"/>
     <id>http://little-hurui.cloud/2022/10/22/%E5%BA%8F%E5%88%97DP/</id>
@@ -541,11 +541,11 @@
     
     <category term="动态规划" scheme="http://little-hurui.cloud/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
     
-    <category term="Algorithm" scheme="http://little-hurui.cloud/tags/Algorithm/"/>
-    
     <category term="二分查找" scheme="http://little-hurui.cloud/tags/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/"/>
     
     <category term="数组" scheme="http://little-hurui.cloud/tags/%E6%95%B0%E7%BB%84/"/>
+    
+    <category term="Algorithm" scheme="http://little-hurui.cloud/tags/Algorithm/"/>
     
   </entry>
   
