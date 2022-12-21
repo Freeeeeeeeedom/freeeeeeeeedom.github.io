@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://little-hurui.cloud/2022/12/20/Manacher%E7%AE%97%E6%B3%95/</loc>
+    <lastmod>2022-12-20</lastmod>
+  </url>
+  <url>
     <loc>http://little-hurui.cloud/2022/11/24/Static%20Analysis%2008%20Pointer%20Analysis%20Context%20Sensitivity/</loc>
     <lastmod>2022-12-15</lastmod>
   </url>
