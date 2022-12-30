@@ -38,11 +38,11 @@
     <category term="常用算法" scheme="http://little-hurui.cloud/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95/"/>
     
     
-    <category term="Algorithm" scheme="http://little-hurui.cloud/tags/Algorithm/"/>
-    
     <category term="回文串" scheme="http://little-hurui.cloud/tags/%E5%9B%9E%E6%96%87%E4%B8%B2/"/>
     
     <category term="马拉车" scheme="http://little-hurui.cloud/tags/%E9%A9%AC%E6%8B%89%E8%BD%A6/"/>
+    
+    <category term="Algorithm" scheme="http://little-hurui.cloud/tags/Algorithm/"/>
     
   </entry>
   
@@ -97,9 +97,9 @@
     
     <category term="Algorithm" scheme="http://little-hurui.cloud/tags/Algorithm/"/>
     
-    <category term="动态规划" scheme="http://little-hurui.cloud/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
-    
     <category term="单调队列" scheme="http://little-hurui.cloud/tags/%E5%8D%95%E8%B0%83%E9%98%9F%E5%88%97/"/>
+    
+    <category term="动态规划" scheme="http://little-hurui.cloud/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
     
     <category term="滑动窗口" scheme="http://little-hurui.cloud/tags/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/"/>
     
@@ -291,11 +291,11 @@
     
     <category term="状态压缩" scheme="http://little-hurui.cloud/tags/%E7%8A%B6%E6%80%81%E5%8E%8B%E7%BC%A9/"/>
     
+    <category term="位运算" scheme="http://little-hurui.cloud/tags/%E4%BD%8D%E8%BF%90%E7%AE%97/"/>
+    
     <category term="BFS" scheme="http://little-hurui.cloud/tags/BFS/"/>
     
     <category term="数组" scheme="http://little-hurui.cloud/tags/%E6%95%B0%E7%BB%84/"/>
-    
-    <category term="位运算" scheme="http://little-hurui.cloud/tags/%E4%BD%8D%E8%BF%90%E7%AE%97/"/>
     
     <category term="矩阵" scheme="http://little-hurui.cloud/tags/%E7%9F%A9%E9%98%B5/"/>
     
@@ -378,11 +378,11 @@
     
     <category term="Algorithm" scheme="http://little-hurui.cloud/tags/Algorithm/"/>
     
-    <category term="递归" scheme="http://little-hurui.cloud/tags/%E9%80%92%E5%BD%92/"/>
-    
     <category term="字符串" scheme="http://little-hurui.cloud/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
     
     <category term="栈" scheme="http://little-hurui.cloud/tags/%E6%A0%88/"/>
+    
+    <category term="递归" scheme="http://little-hurui.cloud/tags/%E9%80%92%E5%BD%92/"/>
     
   </entry>
   
