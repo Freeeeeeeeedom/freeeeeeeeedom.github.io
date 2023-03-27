@@ -291,11 +291,11 @@
     
     <category term="状态压缩" scheme="http://little-hurui.cloud/tags/%E7%8A%B6%E6%80%81%E5%8E%8B%E7%BC%A9/"/>
     
+    <category term="数组" scheme="http://little-hurui.cloud/tags/%E6%95%B0%E7%BB%84/"/>
+    
     <category term="BFS" scheme="http://little-hurui.cloud/tags/BFS/"/>
     
     <category term="位运算" scheme="http://little-hurui.cloud/tags/%E4%BD%8D%E8%BF%90%E7%AE%97/"/>
-    
-    <category term="数组" scheme="http://little-hurui.cloud/tags/%E6%95%B0%E7%BB%84/"/>
     
     <category term="矩阵" scheme="http://little-hurui.cloud/tags/%E7%9F%A9%E9%98%B5/"/>
     
@@ -378,11 +378,11 @@
     
     <category term="Algorithm" scheme="http://little-hurui.cloud/tags/Algorithm/"/>
     
-    <category term="栈" scheme="http://little-hurui.cloud/tags/%E6%A0%88/"/>
+    <category term="字符串" scheme="http://little-hurui.cloud/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
     
     <category term="递归" scheme="http://little-hurui.cloud/tags/%E9%80%92%E5%BD%92/"/>
     
-    <category term="字符串" scheme="http://little-hurui.cloud/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
+    <category term="栈" scheme="http://little-hurui.cloud/tags/%E6%A0%88/"/>
     
   </entry>
   
