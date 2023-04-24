@@ -241,13 +241,13 @@
       
         <tags>
             
-            <tag> Algorithm </tag>
-            
             <tag> BFS </tag>
             
             <tag> 离散化 </tag>
             
             <tag> 置换环 </tag>
+            
+            <tag> Algorithm </tag>
             
         </tags>
       
@@ -274,17 +274,17 @@
       
         <tags>
             
-            <tag> Algorithm </tag>
+            <tag> BFS </tag>
             
-            <tag> 动态规划 </tag>
+            <tag> Algorithm </tag>
             
             <tag> 状态压缩 </tag>
             
-            <tag> BFS </tag>
-            
-            <tag> 数组 </tag>
+            <tag> 动态规划 </tag>
             
             <tag> 位运算 </tag>
+            
+            <tag> 数组 </tag>
             
             <tag> 矩阵 </tag>
             
@@ -369,11 +369,11 @@
             
             <tag> Algorithm </tag>
             
+            <tag> 栈 </tag>
+            
             <tag> 递归 </tag>
             
             <tag> 字符串 </tag>
-            
-            <tag> 栈 </tag>
             
         </tags>
       
@@ -568,9 +568,9 @@
             
             <tag> 动态规划 </tag>
             
-            <tag> 二分查找 </tag>
-            
             <tag> 数组 </tag>
+            
+            <tag> 二分查找 </tag>
             
         </tags>
       
@@ -632,11 +632,11 @@
             
             <tag> 字符串 </tag>
             
+            <tag> 数学 </tag>
+            
             <tag> 二分查找 </tag>
             
             <tag> 数位DP </tag>
-            
-            <tag> 数学 </tag>
             
         </tags>
       
@@ -690,11 +690,11 @@
       
         <tags>
             
+            <tag> BFS </tag>
+            
             <tag> Algorithm </tag>
             
             <tag> DFS </tag>
-            
-            <tag> BFS </tag>
             
             <tag> 二分图 </tag>
             
@@ -814,11 +814,11 @@
             
             <tag> 动态规划 </tag>
             
-            <tag> 正则表达式 </tag>
-            
             <tag> 递归 </tag>
             
             <tag> 字符串 </tag>
+            
+            <tag> 正则表达式 </tag>
             
         </tags>
       
@@ -1146,11 +1146,11 @@
       
         <tags>
             
+            <tag> BFS </tag>
+            
             <tag> Algorithm </tag>
             
             <tag> DFS </tag>
-            
-            <tag> BFS </tag>
             
             <tag> 并查集 </tag>
             
@@ -1214,15 +1214,15 @@
       
         <tags>
             
+            <tag> BFS </tag>
+            
             <tag> Algorithm </tag>
             
-            <tag> DFS </tag>
-            
-            <tag> BFS </tag>
+            <tag> 位运算 </tag>
             
             <tag> 数学 </tag>
             
-            <tag> 位运算 </tag>
+            <tag> DFS </tag>
             
         </tags>
       
