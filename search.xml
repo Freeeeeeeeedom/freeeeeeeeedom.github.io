@@ -304,9 +304,9 @@
             
             <tag> Algorithm </tag>
             
-            <tag> 动态规划 </tag>
-            
             <tag> 状态压缩 </tag>
+            
+            <tag> 动态规划 </tag>
             
             <tag> 位运算 </tag>
             
@@ -780,9 +780,9 @@
             
             <tag> Algorithm </tag>
             
-            <tag> 字符串 </tag>
-            
             <tag> 动态规划 </tag>
+            
+            <tag> 字符串 </tag>
             
         </tags>
       
@@ -838,11 +838,11 @@
             
             <tag> Algorithm </tag>
             
+            <tag> 动态规划 </tag>
+            
             <tag> 递归 </tag>
             
             <tag> 字符串 </tag>
-            
-            <tag> 动态规划 </tag>
             
             <tag> 正则表达式 </tag>
             
@@ -1366,9 +1366,9 @@
             
             <tag> Algorithm </tag>
             
-            <tag> 字符串 </tag>
-            
             <tag> 动态规划 </tag>
+            
+            <tag> 字符串 </tag>
             
             <tag> 哈希表 </tag>
             
