@@ -106,9 +106,9 @@
       
         <tags>
             
-            <tag> 动态规划 </tag>
-            
             <tag> Algorithm </tag>
+            
+            <tag> 动态规划 </tag>
             
             <tag> 单调队列 </tag>
             
@@ -267,13 +267,13 @@
       
         <tags>
             
-            <tag> Algorithm </tag>
-            
             <tag> BFS </tag>
             
             <tag> 离散化 </tag>
             
             <tag> 置换环 </tag>
+            
+            <tag> Algorithm </tag>
             
         </tags>
       
@@ -300,17 +300,17 @@
       
         <tags>
             
-            <tag> 动态规划 </tag>
+            <tag> BFS </tag>
             
             <tag> Algorithm </tag>
             
-            <tag> BFS </tag>
-            
-            <tag> 数组 </tag>
+            <tag> 动态规划 </tag>
             
             <tag> 状态压缩 </tag>
             
             <tag> 位运算 </tag>
+            
+            <tag> 数组 </tag>
             
             <tag> 矩阵 </tag>
             
@@ -393,13 +393,13 @@
       
         <tags>
             
-            <tag> 递归 </tag>
-            
-            <tag> 字符串 </tag>
-            
             <tag> Algorithm </tag>
             
             <tag> 栈 </tag>
+            
+            <tag> 递归 </tag>
+            
+            <tag> 字符串 </tag>
             
         </tags>
       
@@ -518,33 +518,6 @@
     
     
     <entry>
-      <title>Concurrency Algorithms and Theories 07 Concurrent Objects</title>
-      <link href="/2022/10/25/Concurrency%20Algorithms%20and%20Theories%2007%20Concurrent%20Objects/"/>
-      <url>/2022/10/25/Concurrency%20Algorithms%20and%20Theories%2007%20Concurrent%20Objects/</url>
-      
-        <content type="html"><![CDATA[<h1 id="concurrent-objects">Concurrent Objects</h1><p><img src="https://hurry11.oss-cn-nanjing.aliyuncs.com/img/image-20221025084456354.png"></p><h2 id="objectivism">Objectivism</h2><ul><li>What is a concurrent object ?<ul><li>How do we describe ?</li><li>How do we implement ?</li><li>How do we tell if we're right ?</li></ul></li></ul><h3 id="a-lock-based-queue">A Lock-Based Queue</h3><blockquote><p>队列在数组中实现。所有操作都通过对象锁进行同步</p></blockquote><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">LockBasedQueue</span>&lt;T&gt; {  </span><br><span class="line">  <span class="type">int</span> head, tail;  </span><br><span class="line">  T[] items;  </span><br><span class="line">  Lock lock;  </span><br><span class="line">  <span class="keyword">public</span> <span class="title function_">LockBasedQueue</span><span class="params">(<span class="type">int</span> capacity)</span> {    </span><br><span class="line">    head = <span class="number">0</span>; tail = <span class="number">0</span>;    </span><br><span class="line">    lock = <span class="keyword">new</span> <span class="title class_">ReentrantLock</span>();    </span><br><span class="line">    items = (T[]) <span class="keyword">new</span> <span class="title class_">Object</span>[capacity];  </span><br><span class="line">}</span><br></pre></td></tr></table></figure><h2 id="safety-and-liveness">Safety and Liveness</h2><h2 id="correctness-and-progress">Correctness and Progress</h2><h3 id="sequential-objects">Sequential Objects</h3><ul><li>Each object has a state</li><li>Each object has a set of methods<ul><li>only way to manipulate state</li></ul></li></ul><h3 id="sequential-specifications">Sequential Specifications</h3><ul><li>If</li><li>Then</li><li>and</li></ul><h2 id="progress-conditions">Progress Conditions</h2><ul><li>Deadlock-free 某些试图拿到锁的线程最终会终止 （公平调度下)</li><li>Starvation-free 所有试图拿到锁的线程最终会终止（公平调度下）</li><li>Lock-free在所有执行下，总有某些线程调用方法最终返回（不需要调度是公平的），不会出现阻塞（因为没有锁）</li><li>Wait-free所有线程调用方法并最终返回（不需要调度是公平的），不会出现阻塞（因为没有锁）</li></ul><p><img src="https://hurry11.oss-cn-nanjing.aliyuncs.com/img/image-20221108081752964.png"></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Concurrency Algorithms and Theories </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Concurrency Algorithms and Theories </tag>
-            
-            <tag> Concurrent Objects </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Concurrency Algorithms and Theories 06 Promsing</title>
       <link href="/2022/10/25/Concurrency%20Algorithms%20and%20Theories%2006%20Promosing/"/>
       <url>/2022/10/25/Concurrency%20Algorithms%20and%20Theories%2006%20Promosing/</url>
@@ -572,6 +545,33 @@
     
     
     <entry>
+      <title>Concurrency Algorithms and Theories 07 Concurrent Objects</title>
+      <link href="/2022/10/25/Concurrency%20Algorithms%20and%20Theories%2007%20Concurrent%20Objects/"/>
+      <url>/2022/10/25/Concurrency%20Algorithms%20and%20Theories%2007%20Concurrent%20Objects/</url>
+      
+        <content type="html"><![CDATA[<h1 id="concurrent-objects">Concurrent Objects</h1><p><img src="https://hurry11.oss-cn-nanjing.aliyuncs.com/img/image-20221025084456354.png"></p><h2 id="objectivism">Objectivism</h2><ul><li>What is a concurrent object ?<ul><li>How do we describe ?</li><li>How do we implement ?</li><li>How do we tell if we're right ?</li></ul></li></ul><h3 id="a-lock-based-queue">A Lock-Based Queue</h3><blockquote><p>队列在数组中实现。所有操作都通过对象锁进行同步</p></blockquote><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">LockBasedQueue</span>&lt;T&gt; {  </span><br><span class="line">  <span class="type">int</span> head, tail;  </span><br><span class="line">  T[] items;  </span><br><span class="line">  Lock lock;  </span><br><span class="line">  <span class="keyword">public</span> <span class="title function_">LockBasedQueue</span><span class="params">(<span class="type">int</span> capacity)</span> {    </span><br><span class="line">    head = <span class="number">0</span>; tail = <span class="number">0</span>;    </span><br><span class="line">    lock = <span class="keyword">new</span> <span class="title class_">ReentrantLock</span>();    </span><br><span class="line">    items = (T[]) <span class="keyword">new</span> <span class="title class_">Object</span>[capacity];  </span><br><span class="line">}</span><br></pre></td></tr></table></figure><h2 id="safety-and-liveness">Safety and Liveness</h2><h2 id="correctness-and-progress">Correctness and Progress</h2><h3 id="sequential-objects">Sequential Objects</h3><ul><li>Each object has a state</li><li>Each object has a set of methods<ul><li>only way to manipulate state</li></ul></li></ul><h3 id="sequential-specifications">Sequential Specifications</h3><ul><li>If</li><li>Then</li><li>and</li></ul><h2 id="progress-conditions">Progress Conditions</h2><ul><li>Deadlock-free 某些试图拿到锁的线程最终会终止 （公平调度下)</li><li>Starvation-free 所有试图拿到锁的线程最终会终止（公平调度下）</li><li>Lock-free在所有执行下，总有某些线程调用方法最终返回（不需要调度是公平的），不会出现阻塞（因为没有锁）</li><li>Wait-free所有线程调用方法并最终返回（不需要调度是公平的），不会出现阻塞（因为没有锁）</li></ul><p><img src="https://hurry11.oss-cn-nanjing.aliyuncs.com/img/image-20221108081752964.png"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Concurrency Algorithms and Theories </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Concurrency Algorithms and Theories </tag>
+            
+            <tag> Concurrent Objects </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>序列DP</title>
       <link href="/2022/10/22/%E5%BA%8F%E5%88%97DP/"/>
       <url>/2022/10/22/%E5%BA%8F%E5%88%97DP/</url>
@@ -590,13 +590,13 @@
       
         <tags>
             
-            <tag> 动态规划 </tag>
-            
             <tag> Algorithm </tag>
             
-            <tag> 二分查找 </tag>
+            <tag> 动态规划 </tag>
             
             <tag> 数组 </tag>
+            
+            <tag> 二分查找 </tag>
             
         </tags>
       
@@ -654,15 +654,15 @@
       
         <tags>
             
+            <tag> Algorithm </tag>
+            
             <tag> 字符串 </tag>
             
-            <tag> Algorithm </tag>
+            <tag> 数学 </tag>
             
             <tag> 二分查找 </tag>
             
             <tag> 数位DP </tag>
-            
-            <tag> 数学 </tag>
             
         </tags>
       
@@ -716,11 +716,11 @@
       
         <tags>
             
+            <tag> BFS </tag>
+            
             <tag> Algorithm </tag>
             
             <tag> DFS </tag>
-            
-            <tag> BFS </tag>
             
             <tag> 二分图 </tag>
             
@@ -778,11 +778,11 @@
       
         <tags>
             
-            <tag> 动态规划 </tag>
+            <tag> Algorithm </tag>
             
             <tag> 字符串 </tag>
             
-            <tag> Algorithm </tag>
+            <tag> 动态规划 </tag>
             
         </tags>
       
@@ -836,15 +836,15 @@
       
         <tags>
             
-            <tag> 正则表达式 </tag>
-            
-            <tag> 动态规划 </tag>
+            <tag> Algorithm </tag>
             
             <tag> 递归 </tag>
             
             <tag> 字符串 </tag>
             
-            <tag> Algorithm </tag>
+            <tag> 动态规划 </tag>
+            
+            <tag> 正则表达式 </tag>
             
         </tags>
       
@@ -1139,9 +1139,9 @@
       
         <tags>
             
-            <tag> 字符串 </tag>
-            
             <tag> Algorithm </tag>
+            
+            <tag> 字符串 </tag>
             
             <tag> 启发式搜索 </tag>
             
@@ -1172,11 +1172,11 @@
       
         <tags>
             
+            <tag> BFS </tag>
+            
             <tag> Algorithm </tag>
             
             <tag> DFS </tag>
-            
-            <tag> BFS </tag>
             
             <tag> 并查集 </tag>
             
@@ -1240,15 +1240,15 @@
       
         <tags>
             
+            <tag> BFS </tag>
+            
             <tag> Algorithm </tag>
             
-            <tag> DFS </tag>
-            
-            <tag> BFS </tag>
+            <tag> 位运算 </tag>
             
             <tag> 数学 </tag>
             
-            <tag> 位运算 </tag>
+            <tag> DFS </tag>
             
         </tags>
       
@@ -1275,9 +1275,9 @@
       
         <tags>
             
-            <tag> 动态规划 </tag>
-            
             <tag> Algorithm </tag>
+            
+            <tag> 动态规划 </tag>
             
             <tag> 数学 </tag>
             
@@ -1364,11 +1364,11 @@
       
         <tags>
             
-            <tag> 动态规划 </tag>
+            <tag> Algorithm </tag>
             
             <tag> 字符串 </tag>
             
-            <tag> Algorithm </tag>
+            <tag> 动态规划 </tag>
             
             <tag> 哈希表 </tag>
             
@@ -1605,9 +1605,9 @@
       
         <tags>
             
-            <tag> 动态规划 </tag>
-            
             <tag> Algorithm </tag>
+            
+            <tag> 动态规划 </tag>
             
         </tags>
       
@@ -1634,9 +1634,9 @@
       
         <tags>
             
-            <tag> 动态规划 </tag>
-            
             <tag> Algorithm </tag>
+            
+            <tag> 动态规划 </tag>
             
         </tags>
       
@@ -1858,9 +1858,9 @@
       
         <tags>
             
-            <tag> 动态规划 </tag>
-            
             <tag> Algorithm </tag>
+            
+            <tag> 动态规划 </tag>
             
             <tag> 博弈论 </tag>
             
@@ -1945,9 +1945,9 @@
       
         <tags>
             
-            <tag> 动态规划 </tag>
-            
             <tag> Algorithm </tag>
+            
+            <tag> 动态规划 </tag>
             
         </tags>
       
@@ -2034,9 +2034,9 @@
       
         <tags>
             
-            <tag> 动态规划 </tag>
-            
             <tag> Algorithm </tag>
+            
+            <tag> 动态规划 </tag>
             
             <tag> 博弈论 </tag>
             
@@ -2127,9 +2127,9 @@
       
         <tags>
             
-            <tag> 动态规划 </tag>
-            
             <tag> Algorithm </tag>
+            
+            <tag> 动态规划 </tag>
             
         </tags>
       
